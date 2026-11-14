@@ -1,0 +1,76 @@
+name: Daily cloud job update
+on:
+  schedule:
+    - cron: '30 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['cloud/**', '.github/workflows/daily.yml', 'index.html']
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: career-cloud-publish
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify updater
+        run: python -m unittest discover -s cloud/tests -v
+      - name: Fetch and update evidence
+        run: python cloud/update_jobs.py --data data/dashboard.json --output data/dashboard.json --evidence-dir evidence --database data/jobs.sqlite --max-pages 120
+      - name: Preserve snapshots and commit changed data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data evidence
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update cloud job evidence and database'
+            git push origin HEAD:main
+          fi
+      - name: Prepare website
+        run: |
+          mkdir -p _site
+          cp index.html favicon.svg og.png _site/
+          cp -r assets data evidence _site/
+          if [ -f .nojekyll ]; then cp .nojekyll _site/; fi
+          if [ -d sinopec ]; then cp -r sinopec _site/; fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Publish fixed Pages website
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Verify published data
+        run: |
+          python - <<'PY'
+          import json,time,urllib.request
+          expected=json.load(open('data/dashboard.json',encoding='utf-8'))['cloudUpdate']['checkedAt']
+          for attempt in range(8):
+              try:
+                  req=urllib.request.Request('https://mrdou01.github.io/ningbo-geotech-career-2027/data/dashboard.json?run='+str(time.time()),headers={'Cache-Control':'no-cache'})
+                  actual=json.load(urllib.request.urlopen(req,timeout=30))
+                  if actual.get('cloudUpdate',{}).get('checkedAt')==expected:
+                      print('Published cloud timestamp verified');break
+              except Exception as exc: print(type(exc).__name__)
+              time.sleep(10)
+          else: raise SystemExit('Published data did not match this run')
+          PY
+      - name: Preserve run diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloud-job-diagnostics-${{ github.run_id }}
+          path: evidence/
+          retention-days: 30
