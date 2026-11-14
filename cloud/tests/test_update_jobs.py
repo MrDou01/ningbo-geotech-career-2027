@@ -134,7 +134,7 @@ class UpdateTests(unittest.TestCase):
         self.assertEqual(third["cloudUpdate"]["urlState"]["https://example.edu.cn/jobs/1.html"]["textHash"], old_hash)
 
     def test_candidates_are_isolated_same_host_pending(self):
-        links = [{"url": "/jobs/2.html", "title": "2027校园招聘"},
+        links = [{"url": "/jobs/2.html", "title": "2027岩土工程博士招聘"},
                  {"url": "https://other.edu.cn/2", "title": "2027招聘"},
                  {"url": "/news/a", "title": "普通校友新闻"},
                  {"url": "/jobs/1.html", "title": "已入库招聘"}]
@@ -249,6 +249,57 @@ class UpdateTests(unittest.TestCase):
                                "finalUrl": url, "dataBytes": b"<html>captcha</html>"})
         self.assertNotIn("cloudAttachments", self.read())
         self.assertFalse((self.evidence / "attachments").exists())
+
+    def test_candidate_title_relevance(self):
+        for title in ("招聘会", "招聘信息", "2027校园招聘", "招聘场地简介",
+                      "医科招聘信息", "报名费用减免指南", "博士后招聘指南", "博士后面试结果", "岩土博士招聘拟聘公示",
+                      "护理学院2027博士招聘", "某公司销售经理招聘"):
+            with self.subTest(title=title):
+                self.assertIsNotNone(monitor.candidate_filter_reason(title))
+        for title in ("岩土工程博士后招聘公告", "2027 CAE 仿真算法工程师招聘",
+                      "地震研究所科研岗位招聘"):
+            self.assertIsNone(monitor.candidate_filter_reason(title))
+        self.assertIsNone(monitor.candidate_filter_reason("某某大学2027教师招聘", ["某某大学"]))
+
+    def test_existing_noise_archived_losslessly_reviewed_kept(self):
+        old_archive = {"candidate": {"id": "OLD", "title": "旧记录"}, "reason": "先前人工归档"}
+        noisy = {"id": "N1", "title": "招聘信息", "url": "https://example.edu.cn/nav",
+                 "reviewStatus": "pending", "discoveredAt": "2026-11-14", "evidence": {"keep": 1}}
+        reviewed = {"id": "R1", "title": "招聘信息", "reviewStatus": "reviewed"}
+        valid = {"id": "V1", "title": "岩土工程博士后招聘", "reviewStatus": "pending"}
+        self.data["cloudCandidates"] = [noisy, reviewed, valid]
+        self.data["cloudCandidateArchive"] = [old_archive]
+        self.path.write_text(json.dumps(self.data), encoding="utf-8")
+        self.run_monitor(datetime(2026, 11, 15, tzinfo=timezone.utc), max_pages=0)
+        result = self.read()
+        self.assertEqual([c["id"] for c in result["cloudCandidates"]], ["R1", "V1"])
+        self.assertEqual(result["cloudCandidateArchive"][0], old_archive)
+        self.assertEqual(result["cloudCandidateArchive"][1]["candidate"], noisy)
+        self.assertIn("reason", result["cloudCandidateArchive"][1])
+        self.assertEqual(result["cloudUpdate"]["archivedCandidates"], 1)
+        self.run_monitor(datetime(2026, 11, 15, tzinfo=timezone.utc), max_pages=0)
+        self.assertEqual(len(self.read()["cloudCandidateArchive"]), 2)
+
+    def test_job_monitor_compact_but_evidence_remains_detailed(self):
+        source = self.data["jobs"][0]["announcementUrl"]
+        legacy = {"checkedAt": "2026-11-14", "httpStatus": 200, "bodyFetched": True,
+                  "textHash": "old", "contentChanged": False, "error": None,
+                  "jobIds": ["NI001"] * 200, "redirects": [{"url": "https://example.edu.cn"}],
+                  "diff": {"characters": 500}, "url": source, "contentType": "text/html"}
+        self.data["jobs"][0]["cloudMonitor"] = {"checkedAt": "2026-11-14", "sources": {source: legacy}}
+        self.path.write_text(json.dumps(self.data), encoding="utf-8")
+        self.run_monitor(datetime(2026, 11, 15, tzinfo=timezone.utc), max_pages=0)
+        compact = self.read()["jobs"][0]["cloudMonitor"]["sources"][source]
+        self.assertEqual(set(compact), set(monitor.COMPACT_OBSERVATION_FIELDS))
+        self.assertEqual(compact["textHash"], "old")
+        self.assertEqual(self.read()["jobs"][0]["verifiedAt"], "2026-10-29")
+        self.run_monitor(datetime(2026, 11, 16, tzinfo=timezone.utc))
+        compact = self.read()["jobs"][0]["cloudMonitor"]["sources"][source]
+        self.assertEqual(set(compact), set(monitor.COMPACT_OBSERVATION_FIELDS))
+        evidence = json.loads(sorted(self.evidence.glob("cloud-*.json"))[-1].read_text(encoding="utf-8"))
+        self.assertEqual(evidence["attempts"][0]["jobIds"], ["NI001"])
+        self.assertIn("diff", evidence["attempts"][0])
+        self.assertIn("redirects", evidence["attempts"][0])
 
     def test_province_rotation_and_urgent_priority(self):
         jobs = []

@@ -28,7 +28,7 @@ jobs:
       - name: Verify updater
         run: python -m unittest discover -s cloud/tests -v
       - name: Fetch and update evidence
-        run: python cloud/update_jobs.py --data data/dashboard.json --output data/dashboard.json --evidence-dir evidence --database data/jobs.sqlite --max-pages 120
+        run: python cloud/update_jobs.py --data data/dashboard.json --output data/dashboard.json --evidence-dir evidence --database data/jobs.sqlite --max-pages ${{ github.event_name == 'schedule' && '120' || '24' }}
       - name: Preserve snapshots and commit changed data
         run: |
           git config user.name 'github-actions[bot]'

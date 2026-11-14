@@ -324,7 +324,7 @@ def validate_data(data):
         ids.add(job["id"])
         if "links" in job and not isinstance(job["links"], list):
             raise ValueError("invalid job links")
-    for key in ("papers", "talentAssessments", "journalRankings", "cloudCandidates"):
+    for key in ("papers", "talentAssessments", "journalRankings", "cloudCandidates", "cloudCandidateArchive"):
         if key in data and not isinstance(data[key], list):
             raise ValueError("invalid list: " + key)
     if "profile" in data and not isinstance(data["profile"], (dict, list)):
@@ -403,8 +403,98 @@ def official_seed(job, url):
         return False
 
 
+
+CANDIDATE_FILTER_VERSION = "title-relevance-v1"
+NON_POSITION_TITLE = re.compile(
+    r"招聘会|双选会|宣讲会|招聘场地|场地.{0,8}(?:简介|介绍)|费用减免|"
+    r"报名.{0,8}(?:费用|指南)|缴费|报考指南|报名指南|申请指南|办事指南|"
+    r"拟聘|拟录用|录用公示|录取公示|公示|招聘结果|考试结果|考核结果|"
+    r"成绩|录取名单|合格名单|面试名单|体检名单|资格复审名单|"
+    r"面试通知|笔试通知|考试通知|常见问题|操作手册|指南|结果", re.I)
+UNRELATED_TITLE = re.compile(r"临床|护理|医科|口腔|助产|医学检验|药学|clinical|nursing", re.I)
+RELATED_TITLE = re.compile(
+    r"岩土|土木|地震|地质|力学|仿真|\\bCAE\\b|工程|能源|交通|港口|水利|"
+    r"科研软件|博士后|科研院所|研究所|研究院|研究中心|postdoc|"
+    r"geotechn|civil engineering|seismic|geolog|mechanics|simulation", re.I)
+GENERIC_TITLES = {
+    "招聘", "招聘信息", "招聘公告", "招聘动态", "最新招聘", "最新招聘信息",
+    "人才招聘", "人才引进", "校园招聘", "校园招聘信息", "社会招聘",
+    "招聘岗位", "招聘职位", "职位列表", "岗位列表", "招聘专区", "招聘专栏",
+    "博士后", "博士后招聘", "博士后招聘信息", "博士后工作站", "科研招聘",
+    "就业信息", "报名入口", "网上报名", "招聘报名", "招聘报名入口",
+    "招聘会", "招聘场地简介", "医科招聘信息", "更多招聘",
+    "job", "jobs", "career", "careers", "recruitment", "vacancies",
+}
+
+
+def candidate_filter_reason(title, organizations=()):
+    """Conservative discovery filter, not a semantic eligibility assessment."""
+    title = " ".join(str(title or "").split())
+    compact = re.sub(r"\\s+", "", title).lower()
+    generic = re.sub(r"20\\d{2}(?:年|届)?|[【】\\[\\]（）():：·—_-]", "", compact)
+    if not title or generic in GENERIC_TITLES:
+        return "泛招聘导航或缺少具体主体/方向的短标题"
+    if NON_POSITION_TITLE.search(title):
+        return "招聘会、指南、场地、缴费、公示或结果等非岗位信息"
+    if UNRELATED_TITLE.search(title):
+        return "标题明确属于临床、护理、医科等非目标方向"
+    if not RECRUITMENT.search(title):
+        return "标题缺少招聘或博士后招收信号"
+    organization_match = any(isinstance(org, str) and len(org.strip()) >= 4
+                             and re.sub(r"\\s+", "", org).lower() in compact
+                             for org in organizations)
+    if not RELATED_TITLE.search(title) and not organization_match:
+        return "标题未提供目标专业、科研方向或原单位名称的关联证据"
+    return None
+
+
+
+COMPACT_OBSERVATION_FIELDS = ("checkedAt", "httpStatus", "bodyFetched", "textHash",
+                              "contentChanged", "error")
+
+
+def compact_observation(observation):
+    return {key: copy.deepcopy(observation[key]) for key in COMPACT_OBSERVATION_FIELDS
+            if key in observation}
+
+
+def compact_existing_monitors(data):
+    for job in data["jobs"]:
+        monitor = job.get("cloudMonitor")
+        if not isinstance(monitor, dict) or not isinstance(monitor.get("sources"), dict):
+            continue
+        monitor["sources"] = {url: compact_observation(observation)
+                              for url, observation in monitor["sources"].items()
+                              if isinstance(observation, dict)}
+
+
+def filter_existing_candidates(data, now):
+    by_id = {job["id"]: job for job in data["jobs"]}
+    kept = []
+    archived = []
+    archive = data.setdefault("cloudCandidateArchive", [])
+    for candidate in data.get("cloudCandidates", []):
+        if not isinstance(candidate, dict) or candidate.get("reviewStatus", "pending") != "pending" or candidate.get("reviewedAt") or candidate.get("reviewedBy"):
+            kept.append(candidate)
+            continue
+        organizations = [candidate.get("organization")]
+        organizations += [by_id[job_id].get("organization") for job_id in candidate.get("sourceJobIds", [])
+                          if job_id in by_id]
+        reason = candidate_filter_reason(candidate.get("title"), organizations)
+        if reason:
+            # Keep the complete original object, including original timestamps/evidence.
+            archive.append({"candidate": copy.deepcopy(candidate), "archivedAt": stamp(now),
+                            "reason": reason, "ruleVersion": CANDIDATE_FILTER_VERSION})
+            archived.append(candidate.get("id") or candidate.get("url"))
+        else:
+            kept.append(candidate)
+    data["cloudCandidates"] = kept
+    return archived
+
+
 def candidate_from_link(link, base_url, item, known_urls, existing, now):
-    if not isinstance(link, dict) or not RECRUITMENT.search(str(link.get("title", ""))):
+    if not isinstance(link, dict) or candidate_filter_reason(
+            link.get("title"), [job.get("organization") for job in item["jobs"]]):
         return None
     if not any(official_seed(job, item["url"]) for job in item["jobs"]):
         return None
@@ -551,8 +641,10 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
     data = json.loads(raw.decode("utf-8-sig"), parse_constant=lambda _: (_ for _ in ()).throw(ValueError("nonfinite JSON")))
     validate_data(data)  # Must precede every file mutation, including directory creation.
     original = copy.deepcopy(data)
+    compact_existing_monitors(data)
     previous = data.get("cloudUpdate", {})
     states = copy.deepcopy(previous.get("urlState", {}))
+    archived_candidates = filter_existing_candidates(data, now)
     candidates = data.setdefault("cloudCandidates", [])
     known_urls = {url for job in data["jobs"] for url in job_urls(job)}
     candidate_urls = {candidate.get("url") for candidate in candidates if isinstance(candidate, dict)}
@@ -602,7 +694,7 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
             monitor = job.setdefault("cloudMonitor", {})
             monitor["checkedAt"] = stamp(now)
             monitor["scope"] = "自动抓取，不是人工全文/资格核验"
-            monitor.setdefault("sources", {})[observation["url"]] = copy.deepcopy(observation)
+            monitor.setdefault("sources", {})[observation["url"]] = compact_observation(observation)
         if result.get("ok"):
             for link in result.get("links", [])[:500]:
                 candidate = candidate_from_link(link, result.get("finalUrl", url), item, known_urls, candidate_urls, now)
@@ -646,7 +738,8 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
         "updatedAt": stamp(now), "checkedAt": stamp(now), "timezone": "Asia/Shanghai", "checked": len(attempts),
         "successful": successes, "failed": len(attempts) - successes,
         "changed": sum(attempt["contentChanged"] for attempt in attempts),
-        "newCandidates": len(new_candidates), "expired": len(expired),
+        "newCandidates": len(new_candidates), "archivedCandidates": len(archived_candidates),
+        "candidateFilterVersion": CANDIDATE_FILTER_VERSION, "expired": len(expired),
         "provinceCursor": cursor, "provincesChecked": sorted({item["province"] for item in selected[:len(attempts)]}),
         "limitReached": len(attempts) < len(selected), "maxPages": max_pages,
         "urlState": states, "scope": CAVEAT}
@@ -664,7 +757,8 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
             raise AssertionError("protected section changed")
     evidence = {"run": {key: value for key, value in summary.items() if key != "urlState"},
                 "attempts": attempts, "expiredJobIds": expired, "newCandidateIds": new_candidates,
-                "inputSha256": hashlib.sha256(raw).hexdigest(), "attachments": attachment_attempts}
+                "inputSha256": hashlib.sha256(raw).hexdigest(), "attachments": attachment_attempts,
+                "archivedCandidateIds": archived_candidates}
     output = Path(output_path)
     database = Path(database_path)
     if output.resolve() == database.resolve() or Path(data_path).resolve() == database.resolve():
