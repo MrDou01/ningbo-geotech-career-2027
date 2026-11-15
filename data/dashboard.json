@@ -2612,7 +2612,37 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://jobs.nottingham.edu.cn/jobs-at-unnc/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "2faf91f6edeabdacdd068bfd5a9a6bbbcee10408134cc7aed5deba146227af56",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.nottingham.edu.cn/cn/science-engineering/departments-schools/ce/home.aspx": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "ffc7ec9caae444dcc1505f6c66157bcfea8384e55c879129798a2286245abdbc",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.nottingham.edu.cn/en/Science-Engineering/Department/CE/Home.aspx": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "7c4a507699315844cb7cb616cd7a8997f722246f549860eeb937c84e41aad1d6",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J009",
@@ -2669,7 +2699,29 @@
       "availability": "open",
       "eligibility": "uncertain",
       "sourceTrust": "official",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://recruit.nimte.ac.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "25082e488d51fbdb9052ae482d73d2fd892a259cff967daf0b59445a56bbbab1",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://recruit.nimte.ac.cn/system/userInfo/positionInfo?id=1802509568478314497&isDelivery=null": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d8ec25167953e288a577db19f306bac376528620bb089ef060f613eed07cee72",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J010",
@@ -2740,7 +2792,29 @@
       "availability": "open",
       "eligibility": "uncertain",
       "sourceTrust": "official",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://recruit.nimte.ac.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "25082e488d51fbdb9052ae482d73d2fd892a259cff967daf0b59445a56bbbab1",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://recruit.nimte.ac.cn/system/userInfo/positionInfo?id=2064548826217492481&isDelivery=null": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "3a2be40e7e799fb79e355652225e048c0afee272493241076a8e0ad768def61c",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J011",
@@ -2811,7 +2885,7 @@
       "sourceTrust": "official",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.ylab.ac.cn/": {
@@ -2819,6 +2893,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "59ebed1e0f9316a0e0e55bb5a254296c9d9d1ec7e3b8829463429947eafe2449",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.ylab.ac.cn/news/yJ_news/08-24/1019596508.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "f4435a4182541a4eba07448a2d0bd59805ba619012cab6d29d8d4cf5235acd65",
             "contentChanged": false,
             "error": null
           }
@@ -3273,7 +3355,7 @@
       "sourceTrust": "mixed",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.zjrc.com/": {
@@ -3283,6 +3365,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "TimeoutError"
+          },
+          "https://www.shushuqiuzhi.com/article/119252": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "8e45534b9d042a1c4ce23b75fcc3276d21fb6bb9f6e7388635f1aa2274d7de7b",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -3344,7 +3434,7 @@
       "sourceTrust": "mixed",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/FindJob/List?id=0": {
@@ -3352,6 +3442,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "f8b33ac69dcce80d51102c493b24d5f9875d50955e7eee4d3c33a7de9b06d40b",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.cehuiyc.com/Company_Detail.asp?Param=CHq7qw0zpeiv7017": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "e1dcd859e8c80fb95d38e61714893b0f7280eb1abb09fc31bd81adcac0add24f",
             "contentChanged": false,
             "error": null
           }
@@ -3562,7 +3660,29 @@
       "availability": "historical",
       "eligibility": "monitor",
       "sourceTrust": "official",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.ningbowater.com/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "b4fd94c7196b95b98ec8a99278349033a68671c90d25985c518577e071c563dd",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.ningbowater.com/art/2026/3/3/art_24_7549.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "a4506ec251806efb2f9c2803adf3e651615322ba81e3dedcd8aaaa245fba710b",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J022",
@@ -3793,7 +3913,7 @@
       "sourceTrust": "mixed",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://bmxt.nbhr.org.cn/": {
@@ -3801,6 +3921,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "8a5e605899a18ba6b8140c8bd9a81a7cb7b0ae995a6138ee5607d57e07dca0c6",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.boshijob.com/article/202606/22283283.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "b52df7815336cd095639af92fc7072d73df789ccd1ac2576988af77a49be8127",
             "contentChanged": false,
             "error": null
           }
@@ -4293,7 +4421,29 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "mixed",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.auxgroup.com/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "b069412e9fb90b131c5d62da72a6765c7ffa8a2ac0807a93ff625aa3a9abc102",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.zhaopin.com/jobdetail/CC120230020J40700167606.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "58d00cbea2b273dd1503d8fa1aa1d4c0c0fea0913623f53738e2d1102db2da53",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J033",
@@ -4774,7 +4924,29 @@
       "availability": "open",
       "eligibility": "contact_early",
       "sourceTrust": "official",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://recruit.nimte.ac.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "25082e488d51fbdb9052ae482d73d2fd892a259cff967daf0b59445a56bbbab1",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://recruit.nimte.ac.cn/system/userInfo/positionInfo?id=2003995233035337730&isDelivery=null": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "056fd7f75154957c6f9f12ecacce3075810ebacebfe91ad31fbcdab5e825f137",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J039",
@@ -4841,7 +5013,29 @@
       "availability": "open",
       "eligibility": "uncertain",
       "sourceTrust": "official",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://recruit.nimte.ac.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "25082e488d51fbdb9052ae482d73d2fd892a259cff967daf0b59445a56bbbab1",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://recruit.nimte.ac.cn/system/userInfo/positionInfo?id=1939493541426536450&isDelivery=null": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d9a03122c6204f10f3ec0cb04f56f5b356b61110af5b10e86a16208a2bbe0f74",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J112",
@@ -4898,7 +5092,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://bm.nbks.cn/": {
@@ -4908,6 +5102,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "TimeoutError"
+          },
+          "https://ycyg.nbhr.org.cn/Article/Info?ClassGuid=45c2f5bb-5221-45a5-a7cc-da6eb580e79d&InfoGuid=db3b731b-7a49-4789-9be8-5332d5a16dd7": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "1dc55275c53f6a43eb19dadd065793b24244ac0712a7ce5d92ce86fa774f227b",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -5384,7 +5586,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.nankai.edu.cn/correcruit/content/id/120061.html": {
@@ -5392,6 +5594,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "89f24258e1472373a6ba08d53557c6b39bfa0a6ab2cb0b42241830907752b28d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://cug.91wllm.cn/campus/view/id/1007305": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d6b498116b5f52c3d408ea84b73d2e25c5409f92f924cd3e381ce11be48a29e3",
             "contentChanged": false,
             "error": null
           }
@@ -6850,7 +7060,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/jobfair/info?guid=175912a9-04bc-42d4-8289-318de3ff50e2": {
@@ -6858,6 +7068,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "e7620fe23e065a0ffb01efdd48d1eff12f8bf5540f316fbd7abe178b8c4e6254",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=eaf91efe-c70c-4b08-8b55-a09757cd120a": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "8ca97c9d013a824ca3b108d947aec7b78260e281b029ae0ff73ea202ece17409",
             "contentChanged": false,
             "error": null
           }
@@ -6923,7 +7141,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/jobfair/info?guid=175912a9-04bc-42d4-8289-318de3ff50e2": {
@@ -6931,6 +7149,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "e7620fe23e065a0ffb01efdd48d1eff12f8bf5540f316fbd7abe178b8c4e6254",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=0cf0eea5-6a51-4b0e-a7ae-95aedb59f515": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "96fd6a1cd098d89ed184172d887d9a8aaafee709011567597c3d0b1c7ad7a9c4",
             "contentChanged": false,
             "error": null
           }
@@ -7073,7 +7299,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/jobfair/info?guid=175912a9-04bc-42d4-8289-318de3ff50e2": {
@@ -7081,6 +7307,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "e7620fe23e065a0ffb01efdd48d1eff12f8bf5540f316fbd7abe178b8c4e6254",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=330711d7-aeca-41f4-995e-548cc20e49e6": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d4efeb961dfd7e74406163bb386567ec8b40e3f548c07cfa395aed04a112f694",
             "contentChanged": false,
             "error": null
           }
@@ -7215,7 +7449,37 @@
       "availability": "open",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://ningbo.nwpu.edu.cn/__local/2/1C/CC/F6C9494967CB0AD71FC8FACC2D7_13080D46_44D9F.jpg": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          },
+          "https://ningbo.nwpu.edu.cn/__local/7/CB/61/6A15B5523307661153C09A24D34_8C2FF0EE_A5D30.jpg": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          },
+          "https://ningbo.nwpu.edu.cn/info/1013/4849.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "57a45106c5436d19c5dbea1383070d3296719863a473023014d1aeca6c27b059",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J076",
@@ -7276,7 +7540,37 @@
       "availability": "open",
       "eligibility": "contact_early",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://ningbo.nwpu.edu.cn/__local/1/C1/89/E470B5CA25E1775185B105ACFF0_A4D3F431_D1491.jpg": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          },
+          "https://ningbo.nwpu.edu.cn/__local/2/70/89/E1A5ECC92BB9CA1675A1E062AC1_B93BD80E_86BB3.jpg": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          },
+          "https://ningbo.nwpu.edu.cn/info/1013/4849.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "57a45106c5436d19c5dbea1383070d3296719863a473023014d1aeca6c27b059",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J077",
@@ -7397,7 +7691,29 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://ycyg.nbhr.org.cn/Article/Info?ClassGuid=0a45f49d-f714-49c5-9adc-3bd8c4811636&InfoGuid=9520cdbb-280a-48f6-aabc-20c790cf322b": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "23e1a8b76fe370664651415b477e921cc913edcf20a2d52dcdc61f8194f93ece",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/jobfair/info?guid=d8e19812-b23f-466f-a53a-c7c67998f74c": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "4a631ded9561f914fe0eb4f6301ef365419489e07bc932c16a72f45e04bd5730",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J079",
@@ -7458,7 +7774,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/jobfair/info?guid=175912a9-04bc-42d4-8289-318de3ff50e2": {
@@ -7466,6 +7782,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "e7620fe23e065a0ffb01efdd48d1eff12f8bf5540f316fbd7abe178b8c4e6254",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=4fa5deef-563c-4125-aab1-51d3387607d4": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "1a60487dc370a4e095fed290d7b2d1fcbf0b88e57c658b34c7a7bf96f356d624",
             "contentChanged": false,
             "error": null
           }
@@ -7527,7 +7851,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/jobfair/info?guid=175912a9-04bc-42d4-8289-318de3ff50e2": {
@@ -7535,6 +7859,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "e7620fe23e065a0ffb01efdd48d1eff12f8bf5540f316fbd7abe178b8c4e6254",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=ecd6f401-2c1c-481c-8832-6ea510ef09ea": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "a0287ae89678567f561f34d347ecf23b2cfaf6665d096b30421a41c74accdcaf",
             "contentChanged": false,
             "error": null
           }
@@ -7598,7 +7930,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/jobfair/info?guid=175912a9-04bc-42d4-8289-318de3ff50e2": {
@@ -7606,6 +7938,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "e7620fe23e065a0ffb01efdd48d1eff12f8bf5540f316fbd7abe178b8c4e6254",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=03e369f8-b42b-4fb5-b312-d49a7eb15486": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "da584d752daa7dae35187b4efabb47d38b64d9a6b7c8165d33416ccffaa80d3f",
             "contentChanged": false,
             "error": null
           }
@@ -7669,7 +8009,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/jobfair/info?guid=175912a9-04bc-42d4-8289-318de3ff50e2": {
@@ -7677,6 +8017,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "e7620fe23e065a0ffb01efdd48d1eff12f8bf5540f316fbd7abe178b8c4e6254",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=d8e8eeba-5716-463f-a149-a85b7a45b688": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "6efb146b9ae44f67f4376660ae0fae0d09f8557c103cc691ae313faabff826c4",
             "contentChanged": false,
             "error": null
           }
@@ -7740,7 +8088,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/jobfair/info?guid=175912a9-04bc-42d4-8289-318de3ff50e2": {
@@ -7748,6 +8096,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "e7620fe23e065a0ffb01efdd48d1eff12f8bf5540f316fbd7abe178b8c4e6254",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=13c29582-a242-4515-b31b-3c3ecf0e917e": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "4fce0d663f04b5f12e51f7214fcee12509e0209ae42dd4336af7283363b1efb1",
             "contentChanged": false,
             "error": null
           }
@@ -7874,7 +8230,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "mixed",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.fenbi.com/page/fenxiaozhaokaodetail/26/3877/468751961839616": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "e60122f1d7f8e0dfc7fc93c40015825eb5871fba32b931877a079af2b2413cb1",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J086",
@@ -8093,7 +8463,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://job.haut.edu.cn/module/campustalkdetail/id-6a97a952c30d403dff64c173/nid-8781": {
@@ -8103,6 +8473,14 @@
             "textHash": "a4b57f1a8b537522f5d6aed275c11126360395defb540b63be4f73196b37943d",
             "contentChanged": false,
             "error": null
+          },
+          "https://www.scccnce.com.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "RemoteDisconnected"
           }
         }
       }
@@ -8251,7 +8629,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/jobfair/info?guid=ba338afa-8ee5-464c-be83-41b1b65514d8": {
@@ -8259,6 +8637,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "a814a3899ed58eb6d59287614b7514341b803106f7769d8704cfbf7745e8788a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=89d01f3a-dd41-4fff-983e-68de09957999": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "2ed76d4716760ac071642c1d43855ae6cf8fbb7d2fdbe29324f241337375cbc8",
             "contentChanged": false,
             "error": null
           }
@@ -8387,7 +8773,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/": {
@@ -8395,6 +8781,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "92e2b74e69dc4d165bd5104bde7ab2b280b13b9974c5d8b110dd5875938d7286",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/Article/Info?ClassGuid=0a45f49d-f714-49c5-9adc-3bd8c4811636&InfoGuid=e7ddab34-e1c5-4ec7-84d7-2554b65ae087": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "8c7ded83423ec421036fec2fe93dbe75956f0cc8c6e06cd308ea0a30f1e14b12",
             "contentChanged": false,
             "error": null
           }
@@ -8458,7 +8852,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ycyg.nbhr.org.cn/jobfair/info?guid=175912a9-04bc-42d4-8289-318de3ff50e2": {
@@ -8466,6 +8860,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "e7620fe23e065a0ffb01efdd48d1eff12f8bf5540f316fbd7abe178b8c4e6254",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=d08a8572-a336-418a-992b-f58ed4a7269e": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "7e9c3d757074ac104f841234bfa8ab05558bd927ccd4c31d10365d4e2a90f9f6",
             "contentChanged": false,
             "error": null
           }
@@ -8724,7 +9126,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://auxgroup.zhiye.com/": {
@@ -8740,6 +9142,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "068fd524ad9a1f7bf539642236b3675f459395d8987bab980f12b547fc82f2df",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.nowcoder.com/jobs/detail/466586": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "f333521debe48bae6224fcbb9954b63054b71e1e43324b0907a37a1c2b816477",
             "contentChanged": false,
             "error": null
           }
@@ -9999,7 +10409,7 @@
       "sourceTrust": "mixed",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://gs.china-cdt.com/cdtgs/xwzx/jtxw/2026/9/I1552059660066881536.html": {
@@ -10007,6 +10417,22 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "7e6469cb67ce2de5289241762497cf5cf430e1af929f45a8423445d345bb574c",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.fenbi.com/page/fenxiaozhaokaodetail/26/3877/469294613288960": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "eab8f2bde280b703e5a124fa659564cfdf49a9d067a5185e9f09abbf20a080ec",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://zhaopin.china-cdt.com/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "85cc001b6e61aaf888f4cf7d4cdd5881a925c0fe8420fb457a75f4c17e63a083",
             "contentChanged": false,
             "error": null
           }
@@ -10081,7 +10507,45 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "mixed",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.deizao.net/m/index/gonggaoxq/nwid/27534": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "ef7158e05e435f0bac78e6167dd737a77347e80bf342d737dce406e699a8c4ab",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.fenbi.com/page/fenxiaozhaokaodetail/20/3428/469294201461760": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "779dc54fc8fb87522be4c0cc3229cb2e20ddebcfbd1503371a9d00229eba2f43",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.zjnrg.com/recruit.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "f6104e284ec4dfedfa27a56ed4a7fc6eb6d46acd6db324cd7008418a95bcf8f8",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://zjnrghr.zjgeobigdata.com/RedseaPlatform/zhaopin/zpChannelQrCode/campus_recruit/officeWebsite.mob": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5edd1234fab1a2a94506ff74a5b7e4920fb215d906773d5c06c4142a7a0ed066",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J120",
@@ -10138,7 +10602,29 @@
       "availability": "open",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://tmgc.sdjtu.edu.cn/info/1191/2592.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "TimeoutError"
+          },
+          "https://www.cccc-cgc.com/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "897a612d69374fb5a5fe4b7c5c7a51214fb734e815af201c2661a915730f3365",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J121",
@@ -10197,7 +10683,37 @@
       "availability": "open_but_ineligible",
       "eligibility": "ineligible",
       "sourceTrust": "mixed",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://m.yingjiesheng.com/job-008-097-425.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "1af9ecce2f29597510d685fef4be95a76b13b697ce834be0aa776d87f9168d63",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ts.jrzp.com/shiyezhaopin/DDC63D2E59513315.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "aa8fee398b84aa684e19878bfd384694ffe2569c80e6507da20a5252927fc687",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.nbuci.com/tzgg/rsxx/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "22347adeb179e9386cff6d7da4337e1dcd724fb0d0af9fcfcc2ca81003c1b0f0",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J122",
@@ -10258,7 +10774,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://hcm.pub/pe634": {
@@ -10266,6 +10782,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "0bc61ce3e8f58c5efdcccd575ace0945d0522b81ebd0a1db1aca67b426faa3f2",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://job.hust.edu.cn/extxjh/701788157448759.do": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "1a50e147c6bf43ebc04d76cbe88a2526f8c7e9f6f8ce898c44bb2e7760a3f770",
             "contentChanged": false,
             "error": null
           }
@@ -10347,7 +10871,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.nankai.edu.cn/correcruit/content/id/117993.html": {
@@ -10355,6 +10879,30 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "b777d807f0cefa2a87e92fda9b19b779bb69ae6293062a725b26792d2a2158cd",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ronbay.zhiye.com/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "bbbd3c68381566bc5eae4e744ddbecd1bf7b1c9d1bfc96f80d2cd0bdb5d26881",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://ronbay.zhiye.com/Campus?activityGuid=7339da17-ee9b-4eb8-bfd5-b1c85a2a135c&ActivityJumpPage=PortalPage": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "bbbd3c68381566bc5eae4e744ddbecd1bf7b1c9d1bfc96f80d2cd0bdb5d26881",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5A90EE5918508B39E0653A68DD0E9B18": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "ebae0ad08ef377cfdca96746c0ce66cd2eb273ec7cb0484fc895b4a377c3b03f",
             "contentChanged": false,
             "error": null
           }
@@ -10416,7 +10964,29 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://tmgc.sdjtu.edu.cn/info/1191/2542.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "TimeoutError"
+          },
+          "https://www.fheb.cn/html/fheb/renliziyuan/rczp/xyzp/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "1abbf61cb4cacf6bc507a022f0a263afadcabef2e5907540b09398517e130b89",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J125",
@@ -10526,7 +11096,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://job.usth.edu.cn/detail/job?career_id=717408&id=3238558": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "feba39f5738599526a52ea7822aca8f439cbde4c9747c8fe0055ee102645ea7d",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "J127",
@@ -10597,7 +11181,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.joyson.com/campus": {
@@ -10607,6 +11191,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "ValueError"
+          },
+          "https://www.career.zju.edu.cn/jyxt/sczp/xjhgl/ckXjhgwXq.zf?xjhbh=ee0dd996d19ef76078f8fa1cc39c1a1d": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "482ff1bac41dff078d80887e9dd0464aaee4d9298a15a4d48ef01fc5dfa7b593",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -10680,7 +11272,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.joyson.com/campus": {
@@ -10690,6 +11282,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "ValueError"
+          },
+          "https://www.career.zju.edu.cn/jyxt/sczp/xjhgl/ckXjhgwXq.zf?xjhbh=ee0dd996d19ef76078f8fa1cc39c1a1d": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "482ff1bac41dff078d80887e9dd0464aaee4d9298a15a4d48ef01fc5dfa7b593",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -10763,7 +11363,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.joyson.com/campus": {
@@ -10773,6 +11373,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "ValueError"
+          },
+          "https://www.career.zju.edu.cn/jyxt/sczp/xjhgl/ckXjhgwXq.zf?xjhbh=ee0dd996d19ef76078f8fa1cc39c1a1d": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "482ff1bac41dff078d80887e9dd0464aaee4d9298a15a4d48ef01fc5dfa7b593",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -10846,7 +11454,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.joyson.com/campus": {
@@ -10856,6 +11464,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "ValueError"
+          },
+          "https://www.career.zju.edu.cn/jyxt/sczp/xjhgl/ckXjhgwXq.zf?xjhbh=ee0dd996d19ef76078f8fa1cc39c1a1d": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "482ff1bac41dff078d80887e9dd0464aaee4d9298a15a4d48ef01fc5dfa7b593",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -10931,7 +11547,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.joyson.com/campus": {
@@ -10941,6 +11557,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "ValueError"
+          },
+          "https://www.career.zju.edu.cn/jyxt/sczp/xjhgl/ckXjhgwXq.zf?xjhbh=ee0dd996d19ef76078f8fa1cc39c1a1d": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "482ff1bac41dff078d80887e9dd0464aaee4d9298a15a4d48ef01fc5dfa7b593",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -11014,7 +11638,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.joyson.com/campus": {
@@ -11024,6 +11648,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "ValueError"
+          },
+          "https://www.career.zju.edu.cn/jyxt/sczp/xjhgl/ckXjhgwXq.zf?xjhbh=ee0dd996d19ef76078f8fa1cc39c1a1d": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "482ff1bac41dff078d80887e9dd0464aaee4d9298a15a4d48ef01fc5dfa7b593",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -11092,7 +11724,21 @@
       "availability": "open",
       "eligibility": "uncertain",
       "sourceTrust": "official",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://recruit.nimte.ac.cn/system/userInfo/positionInfo?id=2059526346696359938&isDelivery=null": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "f4eabceebab73df6240e45d208110039b9b4b97fdbfa71960da064c7d818eb26",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "verifiedAt": "2026-10-12",
@@ -11160,7 +11806,21 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=4142CA163414015CE0653A68DD0E9B18": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "29f4b7080dcb46bf8cb6515dcf7e396cd2253c2541c16d936335a75dea37d360",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "verifiedAt": "2026-10-27",
@@ -12155,7 +12815,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://facultyce.szu.edu.cn/liukai/zh_CN/article/25477/content/1523.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "fbaad6c6b2e8ac9da973154de47ba63aafbd35577cbfde12ca2062123b438ff3",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NA005",
@@ -12363,7 +13037,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ce.hnu.edu.cn/__local/E/E9/A3/A1E96AB7A247F78764960A5AFD2_CBD13715_105816.pdf": {
@@ -12373,6 +13047,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://ce.hnu.edu.cn/szdw/jszp.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "9c62f7fe865a839f40c5f78c2a62a3055fcddb7cec98ae82c543d77eceb8dee6",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -12442,7 +13124,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://perdep.dlut.edu.cn/info/1401/21561.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "f3d7077c67ef1082cb536c0527bc174792d30746c702a8d04b3ee8f2cbc38b3d",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NA009",
@@ -12577,7 +13273,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "http://join.tju.edu.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "009c1457480711968d6ca7a0bec29b5839cd9699cd1e9bd3b355a6b0cb3d47e0",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NA011",
@@ -12786,7 +13496,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://jtte.swjtu.edu.cn/": {
@@ -12794,6 +13504,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "1ca40c8896ee17240943320bd2b3b51aeeee8a5fcd962b83daa7a67bedef974b",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://jtte.swjtu.edu.cn/info/1231/3725.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "e17b9c01dd10257c608ff1db52afa6a7d1322fb762a7ddefb7e1172f580b284c",
             "contentChanged": false,
             "error": null
           }
@@ -13087,7 +13805,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://cms.sdust.edu.cn/info/1076/10986.htm": {
@@ -13095,6 +13813,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "d2fdac5c88034552da1f47f9f393deb76cbb5a6fd92edd8302867f264633770c",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://rsgl.sdust.edu.cn/recruit": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "6b65ecf3d4e8364c27c8460aedb4ecd8b5503f6bd0334caa3cbdd03617f095d3",
             "contentChanged": false,
             "error": null
           }
@@ -13171,7 +13897,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://careers.jlu.edu.cn/": {
@@ -13179,6 +13905,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "ff3adefea64ea87ddf6e63e66de45355c4fff0eaeaef53d3c070526021101cf8",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://const.jlu.edu.cn/info/1065/8611.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "8e4bafd544d81e21f56deb6962e32150e22af11af0b5883659212230bf2040cf",
             "contentChanged": false,
             "error": null
           }
@@ -13608,7 +14342,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "http://zhaopin.hqu.edu.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "19bdbe1a29921a9db74cbbe1ab47109d8eadd90a1d41dea70b5aae36ec46ca8a",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NA025",
@@ -13778,7 +14526,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://hr.cumt.edu.cn/index.htm": {
@@ -13786,6 +14534,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "3d7f404f8ca4d6fe461c82292feede9521840db2fc117e7bc08b90156667f8a8",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://hr.cumt.edu.cn/info/1026/4315.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "28df60b9b569d1031a5b350addeb414e60d0048cba273cb00c5211ce98a48ed6",
             "contentChanged": false,
             "error": null
           }
@@ -14233,7 +14989,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://rsc.xauat.edu.cn/info/1275/1926.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "bb9ddacf0eeb53d71f8fbe17fee3d3aba81495ff96fe8df7a722d4b3bf491200",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NA033",
@@ -14378,7 +15148,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://mkzn.tyut.edu.cn/info/1021/1832.htm": {
@@ -14386,6 +15156,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "452a88d0f58b11f08a497eb8bff7bf92441d3e5121be8b7b97b86a498c014f26",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://zpxt.tyut.edu.cn/indexzpw.aspx": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "86348521953c8e66dbd745a32010f4b25b843f0c98544017c6cc3a7cb4cf5f1c",
             "contentChanged": false,
             "error": null
           }
@@ -14748,7 +15526,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://rcyj.qhu.edu.cn/": {
@@ -14756,6 +15534,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "d0739fb8661e3f2e979c1a9ff589b1cb1f4af6a2eccc494d9e443cef2725c817",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.qhu.edu.cn/rczp1/rczp/12f2a8bc702d4900acb422e8deb7296e.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "2f7c2cd9f4595e0d08a650c75f521fd300354af27b9923e9048edd8e2701fa2f",
             "contentChanged": false,
             "error": null
           }
@@ -14992,7 +15778,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "mixed",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.gaoxiaojob.com/announcement/detail/226238.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "335edbc54485f2a50e876949a1704fa6c9e38f4b758851ab0c3e9b46a4703a8b",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NA043",
@@ -16102,7 +16902,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.eitech.edu.cn/2026/0731/c409a7182/page.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "TimeoutError"
+          }
+        }
+      }
     },
     {
       "id": "NA059",
@@ -16166,7 +16980,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.eitech.edu.cn/2026/0121/c409a4099/page.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "fb5f04d16c723a0335452f0a1ac4958a907d0ab7531e995b454ab6fcde73b824",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NA060",
@@ -16632,11 +17460,19 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://rsc.zit.edu.cn/info/1001/1682.htm": {
             "checkedAt": "2026-11-14T15:10:32+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "SSLError"
+          },
+          "https://rsc.zit.edu.cn/info/1013/1681.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -17183,11 +18019,11 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://job.hust.edu.cn/zpinfo1/2421214.htm": {
-            "checkedAt": "2026-11-14T15:10:32+08:00",
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "9c8b99dbf24068a6eafbcbbbefa20d65abd1b378bfe5f82408254a3fd45d0035",
@@ -17276,7 +18112,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://job.hust.edu.cn/zpinfo1/2431913.htm": {
@@ -17286,6 +18122,14 @@
             "textHash": "e3162c7d5f0eddb76576c399cdd6a7ec7cc2fdea775184c001cb3f39fa526cdb",
             "contentChanged": false,
             "error": null
+          },
+          "https://myjob.dlmu.edu.cn/campus/view/id/868736": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "TimeoutError"
           }
         }
       }
@@ -17579,7 +18423,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.nankai.edu.cn/correcruit/content/id/117233.html": {
@@ -17587,6 +18431,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "4043640b85b426f68d53d432e8d7737fc7246088c853e987e23dd44a9a1965c1",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=a61677638d3449d18933a78d450bf6fd": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "fe9a013b004bfb38dd929ec4b397cbded3a99a5b1bb9c7078f93faab3e673a45",
             "contentChanged": false,
             "error": null
           }
@@ -17729,7 +18581,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.gdut.edu.cn/campus/view/id/1020741": {
@@ -17737,6 +18589,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "02b21a9416c398bd935cd6bd84d378627f16ca6f30a8cf4fc0a4fc92c960fa3b",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://career.nankai.edu.cn/correcruit/content/id/113075.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "1eb48a3dd92368c2f2436dd86bc206952ba4026272a1222d2e1ad68fa6bc6683",
             "contentChanged": false,
             "error": null
           }
@@ -17960,7 +18820,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.nankai.edu.cn/correcruit/content/id/119307.html": {
@@ -17968,6 +18828,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "8d7cafc1244c80474c1c71c11777d4b27c68263ff66608f5cf3d99ef571dfaf1",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://gyyhr.powerchina.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "c5770c28318d2d1c739cf5b3e7eafc3256885a687fa415d2e7e276ea0b2833cf",
             "contentChanged": false,
             "error": null
           }
@@ -18209,7 +19077,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://career.hebut.edu.cn/recruitment/content/type/2/id/5345.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "be387b9a830624bf1db2a1f989f9816d41de256988cad1e92c9966c5523a0dbb",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NI015",
@@ -18349,11 +19231,11 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://job.hust.edu.cn/extxjh/971789883632717.do": {
-            "checkedAt": "2026-11-14T15:10:32+08:00",
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "01461e9a2e03d3610f02b46a1655234f38365d7d7223d6214f844ca6d72676a2",
@@ -18431,7 +19313,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:18:05+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://cug.91wllm.cn/attachment/cug/ueditor/file/20260612/4777_%E9%99%84%E4%BB%B6%EF%BC%9A%E4%B8%AD%E9%93%81%E7%AC%AC%E4%B8%80%E5%8B%98%E5%AF%9F%E8%AE%BE%E8%AE%A1%E9%99%A2%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B82027%E5%B9%B4%E6%8B%9B%E8%81%98%E9%9C%80%E6%B1%82%E4%B8%80%E8%A7%88%E8%A1%A8.pdf": {
@@ -18441,6 +19323,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://cug.91wllm.cn/campus/view/id/999435": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "ea424244bfc4e9e15eb8343f8b1d959eecc6d7700dbbb4a79b811584cda75e0a",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -18504,7 +19394,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://tmgc.sdjtu.edu.cn/info/1191/2592.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "TimeoutError"
+          }
+        }
+      }
     },
     {
       "id": "NI019",
@@ -18572,7 +19476,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://tmgc.sdjtu.edu.cn/info/1191/2542.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "TimeoutError"
+          }
+        }
+      }
     },
     {
       "id": "NI020",
@@ -18642,15 +19560,15 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.hebut.edu.cn/recruitment/content/type/2/id/5145.html": {
-            "checkedAt": "2026-11-14T15:10:32+08:00",
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "110abc13e560a7abd53bb3be4a6486547cae6a086d1610825a5d1f3bed37b39b",
-            "contentChanged": false,
+            "textHash": "990f19cf1d68a7fbc73a814fca842bebe672a0422b8b5e14ec22dcbcf2b13c32",
+            "contentChanged": true,
             "error": null
           }
         }
@@ -18722,15 +19640,15 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://job.henu.edu.cn/module/campustalkdetail/id-6aa2347ab314d85b779da158/nid-2570": {
-            "checkedAt": "2026-11-14T15:10:32+08:00",
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "60f2ce028f44a3042789acbca80bb167603bbf84d00cd6b5e63ed50c79ae5c52",
-            "contentChanged": false,
+            "textHash": "d8d77fbe7319b5cb53f7762abeea8252d77e29be91109478438a4f5c789216bf",
+            "contentChanged": true,
             "error": null
           }
         }
@@ -18865,7 +19783,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://crrc-sfs.hotjob.cn/": {
@@ -18873,6 +19791,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "5edd1234fab1a2a94506ff74a5b7e4920fb215d906773d5c06c4142a7a0ed066",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://job.hust.edu.cn/zpinfo1/2439775.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "7406564aa950176738e54736ca69646aabdac38f3a505ba5545e8e941193f36f",
             "contentChanged": false,
             "error": null
           }
@@ -18944,11 +19870,11 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://jobs.tiangong.edu.cn/recruitment/content/type/2/id/2745.html": {
-            "checkedAt": "2026-11-14T15:10:32+08:00",
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -19029,7 +19955,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.hebut.edu.cn/recruitment/content/type/2/id/5288.html": {
@@ -19039,6 +19965,14 @@
             "textHash": "e36af2aff2673e0f81af41f7edf2a2b000415388b77e28bb47d63608f8bff1ee",
             "contentChanged": false,
             "error": null
+          },
+          "https://hr.cnnc.com.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "OSError"
           }
         }
       }
@@ -19110,11 +20044,11 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://dhxy.aust.edu.cn/info/1358/9264.htm": {
-            "checkedAt": "2026-11-14T15:10:32+08:00",
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "0428876774ca09f0eb092bfba7fba5c2a6ee06e960961ce88069805f51cd6429",
@@ -19199,7 +20133,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.nankai.edu.cn/correcruit/content/id/119091.html": {
@@ -19209,6 +20143,14 @@
             "textHash": "5965e4311570ec5cd1b20057308421fe247e94809e37b7643d4803bab05c8eb1",
             "contentChanged": false,
             "error": null
+          },
+          "https://zhaopin.pipechina.com.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "TimeoutError"
           }
         }
       }
@@ -19286,7 +20228,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.chng.com.cn/detail_zpxx/-/article/YjJqG0pRRQU6/v/1325989.html": {
@@ -19294,6 +20236,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "d83b9856bd353628abd73f9f12af4f8c8da6939168ce82e68bdcd65e9c73cfed",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.gaodun.com/jr/1798726.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "574fbd3acc6cb0248fab016cf4a17ab325bef210c550458532c6a641a2ecc33d",
             "contentChanged": false,
             "error": null
           }
@@ -19364,7 +20314,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://hr.cnnc.com.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "OSError"
+          }
+        }
+      }
     },
     {
       "id": "NI030",
@@ -19446,7 +20410,7 @@
       "sourceTrust": "mixed",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://www.cjwsjy.com.cn/p1/rczp/20260911/51272.html": {
@@ -19454,6 +20418,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "d51c03a939315705226fec5d8a8a082b3c0c93e1dc1d6fe1883b132819dfdfbf",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://campus.51job.com/cjwsjy": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "8e40f61a1ea63393e3c839ab447367e09fe66b48798e0980b7d168d1bef6456b",
             "contentChanged": false,
             "error": null
           }
@@ -19528,15 +20500,15 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.hebut.edu.cn/recruitment/content/type/2/id/5169.html": {
-            "checkedAt": "2026-11-14T15:10:32+08:00",
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "48cbc906563326f9947d362d47353b1b49222bdec52bea4cf0858e95fb9d5a3d",
-            "contentChanged": false,
+            "textHash": "f1b36ee259170c3b3b682b22638dc3331b8a928098bfa27bb300d6276f9d8c48",
+            "contentChanged": true,
             "error": null
           }
         }
@@ -19612,7 +20584,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://job.hust.edu.cn/zpinfo1/2433933.htm": {
@@ -19620,6 +20592,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "0da34e28eb47d3cf11850b0ca6a9329e0f0d10cff6cc5b825e1d238643a8ee03",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.iguopin.com/company?id=10685374849647460": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "c325e198a837ed1767e4effc91640d8d18e07a9818d33c925782ac7acc450325",
             "contentChanged": false,
             "error": null
           }
@@ -19851,7 +20831,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://zhaopin.cnpc.com.cn/": {
@@ -19861,6 +20841,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "http_status"
+          },
+          "https://career.hebut.edu.cn/recruitment/content/type/2/id/5381.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "87aa9ef2c3c5172b7a14c9b5cc9cb9b994ba46759f607253c2c9c4d7f4315359",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -20027,7 +21015,21 @@
       "availability": "monitoring",
       "eligibility": "uncertain",
       "sourceTrust": "mixed",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://nxny.chinalco.com.cn/rlzy/zpxx/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "8377abd102895ed1d63069a9e637cd6eb110e84be65cb76759d85367cebe33c2",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NI038",
@@ -20096,7 +21098,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://job.usth.edu.cn/detail/career?id=694460": {
@@ -20104,6 +21106,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "b0437ba0f616fe5eacaa5f8bbb7050983525af34ca0f4840e142b71f78a26b75",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://job.usth.edu.cn/detail/job?career_id=694460&id=2598515": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "1ae375ff19f9fface7f2af105ac9766095b796c61be26c113834f9362d7d639e",
             "contentChanged": false,
             "error": null
           }
@@ -20280,15 +21290,15 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.hebut.edu.cn/home/correcruit/content/id/80134.html": {
-            "checkedAt": "2026-11-14T15:10:32+08:00",
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "1976dffc6effe1c1ef91dca2633c794561018ca603329404abe72bf0a00afdc2",
-            "contentChanged": false,
+            "textHash": "92109f1565aa73b0767f85629b08108030aa9c9d3753003923388c341144d340",
+            "contentChanged": true,
             "error": null
           }
         }
@@ -20461,7 +21471,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://3y.nuc.edu.cn/info/1553/20108.htm": {
@@ -20469,6 +21479,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "9d18d343a10fd4a1518b47cd28549f2b489a7e5118c1fe3b9468d040c8c0c3b0",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://sxjrzyxy.bysjy.com.cn/detail/career?id=714852": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "796d0a8ebf77bb290e0b34d981a2c91731bb26ff90fe9aff5609b8c0608d2571",
             "contentChanged": false,
             "error": null
           }
@@ -20542,7 +21560,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://ceec.iguopin.com/": {
@@ -20550,6 +21568,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "5edd1234fab1a2a94506ff74a5b7e4920fb215d906773d5c06c4142a7a0ed066",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://dhxy.aust.edu.cn/info/1358/9058.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "2caa09aaaede74d6c103376e10b9ba6f0d2c07815e60102d339cc85d2e84713e",
             "contentChanged": false,
             "error": null
           }
@@ -20698,7 +21724,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -20708,6 +21734,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -20786,7 +21820,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -20796,6 +21830,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -20874,7 +21916,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -20884,6 +21926,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -20961,7 +22011,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -20971,6 +22021,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -21049,7 +22107,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -21059,6 +22117,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -21137,7 +22203,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -21147,6 +22213,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -21224,7 +22298,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -21234,6 +22308,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -21312,7 +22394,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -21322,6 +22404,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -21399,7 +22489,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -21409,6 +22499,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -21486,7 +22584,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -21496,6 +22594,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -25339,7 +26445,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.sustech.edu.cn/detail/online?id=3619149": {
@@ -25347,6 +26453,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "144e160a6e884eec89fb50816c34127bbda063fed154adbe1a9b89c70d772402",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://cosl.zhiye.com/custom/campus?hideAll=true": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "9e3b8671546adb79fa771221f443aa049646841b9864ada01d9eeefd664b0a4f",
             "contentChanged": false,
             "error": null
           }
@@ -25773,7 +26887,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://cae.jhte.ac.cn/": {
@@ -25781,6 +26895,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "2f587fb3ac6f8c0eec338e6f978925324591e236ac2ff7997c233f1f80827a55",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://cae.jhte.ac.cn/job_sq-597.php": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "4666339229a70e483263392e749f5e729a35284fcb727ca64e5e709d2017784d",
             "contentChanged": false,
             "error": null
           }
@@ -26152,7 +27274,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.csu.edu.cn/campus/view/id/590848": {
@@ -26160,6 +27282,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "0e173321820f60a71fd4a8eb636e19f2f1b4781ac435099a442c4494ea2f4170",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://career.hebut.edu.cn/correcruit/content/id/80129.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "82ff4bfefbbe366cbb2dea2449ff2313968195c85bb6ff9b38c702911ee0ac94",
             "contentChanged": false,
             "error": null
           }
@@ -26248,7 +27378,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.csu.edu.cn/campus/view/id/590707": {
@@ -26256,6 +27386,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "d38981647aeccddda50ed16ac7f118e1f0120f699e28d4807968799911c7242f",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://gzpi.hotjob.cn/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5edd1234fab1a2a94506ff74a5b7e4920fb215d906773d5c06c4142a7a0ed066",
             "contentChanged": false,
             "error": null
           }
@@ -26339,7 +27477,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://job.tju.edu.cn/recruitment/content/type/2/id/6537.html": {
@@ -26349,6 +27487,14 @@
             "textHash": "f89fb2e00a3c202a744e0572066801fb207526bf73aed5bc65f199812585deaa",
             "contentChanged": false,
             "error": null
+          },
+          "https://www.bhidi.com/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "SSLError"
           }
         }
       }
@@ -26635,7 +27781,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://ideal.51job.com/zywk2027": {
@@ -26643,6 +27789,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "b40cc571727b2f6c392ab722deb492fa6cb88df8268d4570b7460dc7408e1727",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://jy.gzhu.edu.cn/web/index/jobs-brief-detail?id=SMUXSVZ": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "6b2bf5ba13ea919076cbf078cbd81845f39bceb805e0200b0d37d9b8e0ad4f5d",
             "contentChanged": false,
             "error": null
           }
@@ -26818,7 +27972,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.gdut.edu.cn/campus/view/id/1020879": {
@@ -26826,6 +27980,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "0896997985bb7fd4623b57f70492460db257a3bfcae56167a2a176c285bcd57e",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://gdadri.zhiye.com/": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "ae7926434d5faf631928ff5a5b8e26cb040480666095d9a278b77e99d7099de3",
             "contentChanged": false,
             "error": null
           }
@@ -27272,7 +28434,21 @@
       "availability": "open",
       "eligibility": "uncertain",
       "sourceTrust": "mixed",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://campus.51job.com/csadi2027/p1.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "7008bcd64d76327692e758b57b1f778bf1e3f7d0b4f222ad981fdb0c019d1571",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "verifiedAt": "2026-10-31",
@@ -27717,7 +28893,21 @@
       "availability": "open",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "http://jmc.zhiye.com/campus": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "b9e8f5f5493044c17a1b779ad213d7875faf086941f4f209cf7030ca10e72785",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "organization": "深圳市大数极限科技有限公司",
@@ -27797,7 +28987,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.nankai.edu.cn/company/index/id/35624.html": {
@@ -27805,6 +28995,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "f3774f17ea21be905b072859685b24295437c7029dfe79de984235753bc43513",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://career.nankai.edu.cn/correcruit/content/id/119896.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "707074bb4b35897e488ce16e63bd81dca4375d259185a640122027ed6b6c514e",
             "contentChanged": false,
             "error": null
           }
@@ -27889,7 +29087,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.nankai.edu.cn/company/index/id/35624.html": {
@@ -27897,6 +29095,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "f3774f17ea21be905b072859685b24295437c7029dfe79de984235753bc43513",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://career.nankai.edu.cn/correcruit/content/id/119896.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "707074bb4b35897e488ce16e63bd81dca4375d259185a640122027ed6b6c514e",
             "contentChanged": false,
             "error": null
           }
@@ -27984,7 +29190,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.hebut.edu.cn/recruitment/content/type/2/id/5379.html": {
@@ -27992,6 +29198,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "4278fa291b949a4624be075ab8420b314de504080ea9534ec426f09ab4a3894b",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://career.tjcu.edu.cn/recruitment/content/type/2/id/911.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "c4eafbbf9e8c4013ffb711fda43c70a7fe14dcd4c65c6cdc79b9f1822b6c9416",
             "contentChanged": false,
             "error": null
           }
@@ -29152,11 +30366,19 @@
       "sourceTrust": "mixed",
       "sourceHealth": "unreachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.idsse.cas.cn/rcdw/rczp/202602/P020260316553715586041.pdf": {
             "checkedAt": "2026-11-14T15:10:32+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "SSLCertVerificationError"
+          },
+          "https://www.idsse.cas.cn/rcdw/rczp/202602/t20260214_8144718.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -29489,7 +30711,7 @@
       "sourceTrust": "mixed",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://rccp.jtzyzg.org.cn/": {
@@ -29497,6 +30719,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "b8564487939625ce13b9269f88d404c100cd3d9d8e71d249ea310e25546975aa",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://xxgk.mot.gov.cn/jigou/rsjys/202607/t20260702_4208676.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "2f958a0c9ddac7886e9df356a105972691d131b8ca1a9ea01092dd768c043fe1",
             "contentChanged": false,
             "error": null
           }
@@ -30331,7 +31561,21 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "unreachable"
+      "sourceHealth": "unreachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://job.sdu.edu.cn/info/1130/33987.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "c9d2cf793ef75425ceba53667cbbbe2ec6cff426841b5f64ec8706c6724c8ac0",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NR032",
@@ -30434,7 +31678,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://job.sdu.edu.cn/info/1130/33988.htm": {
@@ -30442,6 +31686,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "9b2716f1879192b0882f287e65ddeaf4797543077efcf564a500f34ea3243467",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://xds.ecnu.edu.cn/ec/40/c51123a781376/page.htm": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "2ba440e9c14f52fd0b204889a96a65a9e65c14b9eee05083168515771a074969",
             "contentChanged": false,
             "error": null
           }
@@ -99197,7 +100449,7 @@
       "sourceTrust": "official",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://edu.iphy.ac.cn/cmsfiles/4523_2026100908385036941.doc": {
@@ -99207,6 +100459,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "http_status"
+          },
+          "https://iap.cas.cn/gb/yjsjy/jyxx/202610/t20261009_8290564.html": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "0d2cb400f4c023c698c683a7f418fa74fabb9ae96aab7a5c4001bf0e2b3a1b3e",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -99984,11 +101244,19 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/P020261020562416765430.xlsx": {
             "checkedAt": "2026-11-14T15:10:32+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "TimeoutError"
+          },
+          "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/t20261020_63609.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -100091,11 +101359,19 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/P020261020562416765430.xlsx": {
             "checkedAt": "2026-11-14T15:10:32+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "TimeoutError"
+          },
+          "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/t20261020_63609.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -100198,11 +101474,19 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/P020261020562416765430.xlsx": {
             "checkedAt": "2026-11-14T15:10:32+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "TimeoutError"
+          },
+          "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/t20261020_63609.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -100304,11 +101588,19 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/P020261020562416765430.xlsx": {
             "checkedAt": "2026-11-14T15:10:32+08:00",
+            "httpStatus": null,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "TimeoutError"
+          },
+          "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/t20261020_63609.shtml": {
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -102031,11 +103323,11 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://rst.xinjiang.gov.cn/xjrst/c112746/202611/313dbbdd7f354ac58590f0c249f751e3.shtml": {
-            "checkedAt": "2026-11-14T15:10:32+08:00",
+            "checkedAt": "2026-11-15T14:59:50+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "501f23bb4c3c2dc6d8a6cb78e9db32225b92676b8347faf6b96118b4306719e9",
@@ -117703,6 +118995,329 @@
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
       "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-9e27b713b23c2daf",
+      "url": "https://zpxt.tyut.edu.cn/newszpw/show-1169.aspx",
+      "title": "太原理工大学2024年诚聘海内外全职博士后",
+      "sourceUrl": "https://zpxt.tyut.edu.cn/indexzpw.aspx",
+      "sourceJobIds": [
+        "NA034"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-a05204664f81e26c",
+      "url": "https://zpxt.tyut.edu.cn/newszpw/show-1165.aspx",
+      "title": "太原理工大学2023年师资博士后招收公告",
+      "sourceUrl": "https://zpxt.tyut.edu.cn/indexzpw.aspx",
+      "sourceJobIds": [
+        "NA034"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-8644e6d586907ce6",
+      "url": "https://zpxt.tyut.edu.cn/newszpw/show-1159.aspx",
+      "title": "太原理工大学2022年师资博士后招收公告",
+      "sourceUrl": "https://zpxt.tyut.edu.cn/indexzpw.aspx",
+      "sourceJobIds": [
+        "NA034"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-f237bb2ef9e82564",
+      "url": "https://hr.cumt.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1989217584&wbfileid=18183796",
+      "title": "新进人员情况登记表-博士后.docx",
+      "sourceUrl": "https://hr.cumt.edu.cn/info/1026/4315.htm",
+      "sourceJobIds": [
+        "NA026"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-421c9fd9d2817a9e",
+      "url": "https://hr.cumt.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1989217584&wbfileid=18630739",
+      "title": "Registration Form for New Postdoctoral Researchers 新进外籍博士后情况登记表.docx",
+      "sourceUrl": "https://hr.cumt.edu.cn/info/1026/4315.htm",
+      "sourceJobIds": [
+        "NA026"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-2bad8555d4350383",
+      "url": "https://jy.gzhu.edu.cn/web/index/jobs-brief-detail?id=SQUXSVM",
+      "title": "融捷集团之新能源业务板块2027届校园招聘简章 一、 融捷集团及融捷能源简介融捷投资控股集团有限公司（简称“融捷集团”）成立于1995年，...",
+      "sourceUrl": "https://jy.gzhu.edu.cn/web/index/jobs-brief-detail?id=SMUXSVZ",
+      "sourceJobIds": [
+        "NI105"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-b23884cb38c36e79",
+      "url": "https://jy.gzhu.edu.cn/web/index/jobs-brief-detail?id=SMUXSVD",
+      "title": "2026年春季招聘公告 我们只招募一流选手！ 岗位信息：招聘岗位①：高端直驱卧式五轴机床研发工程师研究课题：研发用...",
+      "sourceUrl": "https://jy.gzhu.edu.cn/web/index/jobs-brief-detail?id=SMUXSVZ",
+      "sourceJobIds": [
+        "NI105"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-1c118ed3c09d27b0",
+      "url": "https://perdep.dlut.edu.cn/bshgz/ldzjj.htm",
+      "title": "博士后工作",
+      "sourceUrl": "https://perdep.dlut.edu.cn/info/1401/21561.htm",
+      "sourceJobIds": [
+        "NA008"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-bff1913916005e13",
+      "url": "https://rsc.xauat.edu.cn/bsh/bshly.htm",
+      "title": "博士后联谊",
+      "sourceUrl": "https://rsc.xauat.edu.cn/info/1275/1926.htm",
+      "sourceJobIds": [
+        "NA032"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-7ae4a90608282fb0",
+      "url": "https://rsc.xauat.edu.cn/info/1275/1985.htm",
+      "title": "上一篇：西安建筑科技大学土木工程建造与管理课题组博士后招聘启事",
+      "sourceUrl": "https://rsc.xauat.edu.cn/info/1275/1926.htm",
+      "sourceJobIds": [
+        "NA032"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-93221486220a850d",
+      "url": "https://rsc.xauat.edu.cn/info/1275/1928.htm",
+      "title": "下一篇：西安建筑科技大学张崇淼环境微生物与水污染控制研究团队科研博士后招聘启事",
+      "sourceUrl": "https://rsc.xauat.edu.cn/info/1275/1926.htm",
+      "sourceJobIds": [
+        "NA032"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-45a26b3a3d21d301",
+      "url": "https://recruit.nimte.ac.cn/recruitWelfareDetail/1651096437693247489",
+      "title": "博士后 POST-DOCTORAL",
+      "sourceUrl": "https://recruit.nimte.ac.cn/",
+      "sourceJobIds": [
+        "J009",
+        "J010",
+        "J038",
+        "J039"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-c2ae552822d9d1bf",
+      "url": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5D776B7CB3EDCE19E0653A68DD0E9B18",
+      "title": "博士后等",
+      "sourceUrl": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=4142CA163414015CE0653A68DD0E9B18",
+      "sourceJobIds": [
+        "J134"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-632e71f6d225d862",
+      "url": "https://www.cccc-cgc.com/rcjs/zpxx/202210/t20221031_243568.html",
+      "title": "中交建筑集团有限公司所属单位及项目管理岗位公开招聘",
+      "sourceUrl": "https://www.cccc-cgc.com/",
+      "sourceJobIds": [
+        "J120"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-afda27d9520b17fd",
+      "url": "https://www.cccc-cgc.com/rcjs/zpxx/202210/t20221008_243453.html",
+      "title": "中交建筑集团有限公司2023届校园招聘公告",
+      "sourceUrl": "https://www.cccc-cgc.com/",
+      "sourceJobIds": [
+        "J120"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-2d5357c2b331693a",
+      "url": "https://www.eitech.edu.cn/2026/1030/c409a11747/page.htm",
+      "title": "碳纳米管方向博士后-李润伟课题组",
+      "sourceUrl": "https://www.eitech.edu.cn/2026/0121/c409a4099/page.htm",
+      "sourceJobIds": [
+        "NA059"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-8105be3ffd7f0125",
+      "url": "https://www.eitech.edu.cn/2026/0107/c409a3965/page.htm",
+      "title": "工学部王平课题组博士后",
+      "sourceUrl": "https://www.eitech.edu.cn/2026/0121/c409a4099/page.htm",
+      "sourceJobIds": [
+        "NA059"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-c38829384adbd09f",
+      "url": "https://www.eitech.edu.cn/2026/0526/c409a6223/page.htm",
+      "title": "工学部赵一帆课题组博士后",
+      "sourceUrl": "https://www.eitech.edu.cn/2026/0121/c409a4099/page.htm",
+      "sourceJobIds": [
+        "NA059"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-e3d46056cb8a5f72",
+      "url": "https://www.eitech.edu.cn/2026/0306/c409a4685/page.htm",
+      "title": "理学部张惠明课题组博士后",
+      "sourceUrl": "https://www.eitech.edu.cn/2026/0121/c409a4099/page.htm",
+      "sourceJobIds": [
+        "NA059"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+    },
+    {
+      "id": "CLOUD-9e8d60f75a06b12b",
+      "url": "https://www.fheb.cn/html/renliziyuan/rczp//2021/xyzp_1227/4774.shtml",
+      "title": "中交一公局集团有限公司2022届毕业生人才招聘简章",
+      "sourceUrl": "https://www.fheb.cn/html/fheb/renliziyuan/rczp/xyzp/",
+      "sourceJobIds": [
+        "J124"
+      ],
+      "discoveredAt": "2026-11-15T14:59:50+08:00",
+      "reviewStatus": "pending",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
     }
   ],
   "cloudAttachments": [
@@ -117770,35 +119385,82 @@
   "cloudUpdate": {
     "success": true,
     "completed": true,
-    "updatedAt": "2026-11-14T15:18:05+08:00",
-    "checkedAt": "2026-11-14T15:18:05+08:00",
+    "updatedAt": "2026-11-15T14:59:50+08:00",
+    "checkedAt": "2026-11-15T14:59:50+08:00",
     "timezone": "Asia/Shanghai",
-    "checked": 24,
-    "successful": 14,
-    "failed": 10,
-    "changed": 0,
-    "newCandidates": 0,
-    "archivedCandidates": 200,
+    "checked": 120,
+    "successful": 104,
+    "failed": 16,
+    "changed": 4,
+    "newCandidates": 20,
+    "archivedCandidates": 0,
     "candidateFilterVersion": "title-relevance-v1",
     "expired": 0,
-    "provinceCursor": 4,
+    "provinceCursor": 64,
     "provincesChecked": [
-      "上海",
-      "云南",
-      "云南、四川、贵州、重庆、西藏、新疆、青海、甘肃、陕西、山西、吉林、黑龙江等",
-      "云南及全国",
+      "全国",
+      "全国、浙江",
+      "内蒙古",
+      "北京",
+      "北京、天津、湖南、内蒙古",
+      "北京、江苏及全国",
+      "吉林",
+      "四川",
+      "四川、北京",
+      "四川、湖北、重庆、陕西、西藏、新疆",
+      "四川、重庆、贵州、云南及全国",
+      "四川及全国",
+      "天津",
+      "天津/北京",
+      "天津、河北、上海、浙江、四川",
+      "天津、辽宁、江苏、山东、福建等",
+      "宁夏",
+      "安徽",
+      "山东",
+      "山东、北京、江苏、湖南",
+      "山东、海南、福建",
+      "山西",
+      "山西、内蒙古、北京、天津、河北、湖南、广东等",
+      "广东",
+      "广东、北京、上海、重庆、湖北、陕西等",
+      "广东、四川",
+      "广东、江苏、北京、上海、河南",
+      "广东、重庆、湖南、湖北、广西、海南、陕西",
+      "广东等",
+      "广西",
+      "待确认",
+      "新疆",
+      "新疆、山东",
+      "新疆、青海、宁夏、甘肃、黑龙江、吉林、辽宁、河北、陕西、四川、天津",
+      "江苏",
+      "江苏、安徽、江西",
+      "江西",
+      "河北",
+      "河南",
       "浙江",
+      "海南",
+      "湖北",
+      "湖北、上海、广东、四川、天津、陕西、云南",
+      "湖北等",
+      "湖南",
+      "湖南、山西、广东、天津、河北、江西、江苏",
+      "湖南、广东、上海",
+      "湖南及全国/海外项目",
+      "甘肃",
+      "甘肃、辽宁、山东、浙江、江苏、海南",
+      "福建",
+      "贵州",
+      "贵州、四川、湖北、江苏及全国",
+      "辽宁",
+      "辽宁、北京、上海、广东、陕西、四川、湖北",
+      "重庆",
       "陕西",
       "陕西、甘肃、新疆",
       "陕西及全国",
-      "青海",
-      "黑龙江",
-      "黑龙江/河北",
-      "黑龙江、内蒙古、北京、河北",
-      "黑龙江、新疆、陕西、广东"
+      "青海"
     ],
     "limitReached": false,
-    "maxPages": 24,
+    "maxPages": 120,
     "urlState": {
       "https://civileng.tongji.edu.cn/18061/list.htm": {
         "checkedAt": "2026-11-14T15:10:32+08:00",
@@ -117857,8 +119519,8 @@
         "bodyFetched": true
       },
       "https://career.hebut.edu.cn/home/correcruit/content/id/80134.html": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
-        "textHash": "1976dffc6effe1c1ef91dca2633c794561018ca603329404abe72bf0a00afdc2",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "92109f1565aa73b0767f85629b08108030aa9c9d3753003923388c341144d340",
         "characters": 3880,
         "httpStatus": 200,
         "bodyFetched": true
@@ -117892,21 +119554,21 @@
         "bodyFetched": true
       },
       "https://dhxy.aust.edu.cn/info/1358/9264.htm": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "textHash": "0428876774ca09f0eb092bfba7fba5c2a6ee06e960961ce88069805f51cd6429",
         "characters": 3473,
         "httpStatus": 200,
         "bodyFetched": true
       },
       "https://job.henu.edu.cn/module/campustalkdetail/id-6aa2347ab314d85b779da158/nid-2570": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
-        "textHash": "60f2ce028f44a3042789acbca80bb167603bbf84d00cd6b5e63ed50c79ae5c52",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "d8d77fbe7319b5cb53f7762abeea8252d77e29be91109478438a4f5c789216bf",
         "characters": 3685,
         "httpStatus": 200,
         "bodyFetched": true
       },
       "https://job.hust.edu.cn/extxjh/971789883632717.do": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "textHash": "01461e9a2e03d3610f02b46a1655234f38365d7d7223d6214f844ca6d72676a2",
         "characters": 1262,
         "httpStatus": 200,
@@ -117934,7 +119596,7 @@
         "bodyFetched": true
       },
       "https://jobs.tiangong.edu.cn/recruitment/content/type/2/id/2745.html": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "textHash": null,
         "characters": null,
         "httpStatus": null,
@@ -118046,15 +119708,15 @@
         "bodyFetched": false
       },
       "https://rst.xinjiang.gov.cn/xjrst/c112746/202611/313dbbdd7f354ac58590f0c249f751e3.shtml": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "textHash": "501f23bb4c3c2dc6d8a6cb78e9db32225b92676b8347faf6b96118b4306719e9",
         "characters": 5397,
         "httpStatus": 200,
         "bodyFetched": true
       },
       "https://career.hebut.edu.cn/recruitment/content/type/2/id/5169.html": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
-        "textHash": "48cbc906563326f9947d362d47353b1b49222bdec52bea4cf0858e95fb9d5a3d",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "f1b36ee259170c3b3b682b22638dc3331b8a928098bfa27bb300d6276f9d8c48",
         "characters": 3635,
         "httpStatus": 200,
         "bodyFetched": true
@@ -118144,14 +119806,14 @@
         "bodyFetched": false
       },
       "https://career.hebut.edu.cn/recruitment/content/type/2/id/5145.html": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
-        "textHash": "110abc13e560a7abd53bb3be4a6486547cae6a086d1610825a5d1f3bed37b39b",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "990f19cf1d68a7fbc73a814fca842bebe672a0422b8b5e14ec22dcbcf2b13c32",
         "characters": 4440,
         "httpStatus": 200,
         "bodyFetched": true
       },
       "https://job.hust.edu.cn/zpinfo1/2421214.htm": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-15T14:59:50+08:00",
         "textHash": "9c8b99dbf24068a6eafbcbbbefa20d65abd1b378bfe5f82408254a3fd45d0035",
         "characters": 1880,
         "httpStatus": 200,
@@ -118807,10 +120469,787 @@
         "characters": 3529,
         "httpStatus": 200,
         "bodyFetched": true
+      },
+      "https://campus.51job.com/csadi2027/p1.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "7008bcd64d76327692e758b57b1f778bf1e3f7d0b4f222ad981fdb0c019d1571",
+        "characters": 1427,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://cug.91wllm.cn/campus/view/id/1007305": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "d6b498116b5f52c3d408ea84b73d2e25c5409f92f924cd3e381ce11be48a29e3",
+        "characters": 503,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://job.usth.edu.cn/detail/job?career_id=694460&id=2598515": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "1ae375ff19f9fface7f2af105ac9766095b796c61be26c113834f9362d7d639e",
+        "characters": 25,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://cae.jhte.ac.cn/job_sq-597.php": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "4666339229a70e483263392e749f5e729a35284fcb727ca64e5e709d2017784d",
+        "characters": 59,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.bhidi.com/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": null,
+        "bodyFetched": false
+      },
+      "https://const.jlu.edu.cn/info/1065/8611.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "8e4bafd544d81e21f56deb6962e32150e22af11af0b5883659212230bf2040cf",
+        "characters": 2174,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://jtte.swjtu.edu.cn/info/1231/3725.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "e17b9c01dd10257c608ff1db52afa6a7d1322fb762a7ddefb7e1172f580b284c",
+        "characters": 420,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=a61677638d3449d18933a78d450bf6fd": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "fe9a013b004bfb38dd929ec4b397cbded3a99a5b1bb9c7078f93faab3e673a45",
+        "characters": 2725,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "http://join.tju.edu.cn/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "009c1457480711968d6ca7a0bec29b5839cd9699cd1e9bd3b355a6b0cb3d47e0",
+        "characters": 364,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://xxgk.mot.gov.cn/jigou/rsjys/202607/t20260702_4208676.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "2f958a0c9ddac7886e9df356a105972691d131b8ca1a9ea01092dd768c043fe1",
+        "characters": 3852,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://cosl.zhiye.com/custom/campus?hideAll=true": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "9e3b8671546adb79fa771221f443aa049646841b9864ada01d9eeefd664b0a4f",
+        "characters": 12,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://nxny.chinalco.com.cn/rlzy/zpxx/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "8377abd102895ed1d63069a9e637cd6eb110e84be65cb76759d85367cebe33c2",
+        "characters": 666,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://dhxy.aust.edu.cn/info/1358/9058.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "2caa09aaaede74d6c103376e10b9ba6f0d2c07815e60102d339cc85d2e84713e",
+        "characters": 2370,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://rsgl.sdust.edu.cn/recruit": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "6b65ecf3d4e8364c27c8460aedb4ecd8b5503f6bd0334caa3cbdd03617f095d3",
+        "characters": 10,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://job.hust.edu.cn/zpinfo1/2439775.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "7406564aa950176738e54736ca69646aabdac38f3a505ba5545e8e941193f36f",
+        "characters": 2686,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.gaodun.com/jr/1798726.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "574fbd3acc6cb0248fab016cf4a17ab325bef210c550458532c6a641a2ecc33d",
+        "characters": 7291,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://zpxt.tyut.edu.cn/indexzpw.aspx": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "86348521953c8e66dbd745a32010f4b25b843f0c98544017c6cc3a7cb4cf5f1c",
+        "characters": 833,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://sxjrzyxy.bysjy.com.cn/detail/career?id=714852": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "796d0a8ebf77bb290e0b34d981a2c91731bb26ff90fe9aff5609b8c0608d2571",
+        "characters": 1811,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://facultyce.szu.edu.cn/liukai/zh_CN/article/25477/content/1523.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "fbaad6c6b2e8ac9da973154de47ba63aafbd35577cbfde12ca2062123b438ff3",
+        "characters": 2902,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://gzpi.hotjob.cn/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "5edd1234fab1a2a94506ff74a5b7e4920fb215d906773d5c06c4142a7a0ed066",
+        "characters": 4,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://career.nankai.edu.cn/correcruit/content/id/119896.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "707074bb4b35897e488ce16e63bd81dca4375d259185a640122027ed6b6c514e",
+        "characters": 4806,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://career.tjcu.edu.cn/recruitment/content/type/2/id/911.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "c4eafbbf9e8c4013ffb711fda43c70a7fe14dcd4c65c6cdc79b9f1822b6c9416",
+        "characters": 4039,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://gdadri.zhiye.com/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "ae7926434d5faf631928ff5a5b8e26cb040480666095d9a278b77e99d7099de3",
+        "characters": 5,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://career.nankai.edu.cn/correcruit/content/id/113075.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "1eb48a3dd92368c2f2436dd86bc206952ba4026272a1222d2e1ad68fa6bc6683",
+        "characters": 4132,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.iguopin.com/company?id=10685374849647460": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "c325e198a837ed1767e4effc91640d8d18e07a9818d33c925782ac7acc450325",
+        "characters": 2,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+        "characters": 2034,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://career.hebut.edu.cn/recruitment/content/type/2/id/5381.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "87aa9ef2c3c5172b7a14c9b5cc9cb9b994ba46759f607253c2c9c4d7f4315359",
+        "characters": 6384,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://hr.cumt.edu.cn/info/1026/4315.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "28df60b9b569d1031a5b350addeb414e60d0048cba273cb00c5211ce98a48ed6",
+        "characters": 9095,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://zhaopin.pipechina.com.cn/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": null,
+        "bodyFetched": false
+      },
+      "http://jmc.zhiye.com/campus": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "b9e8f5f5493044c17a1b779ad213d7875faf086941f4f209cf7030ca10e72785",
+        "characters": 8,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.gaoxiaojob.com/announcement/detail/226238.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "335edbc54485f2a50e876949a1704fa6c9e38f4b758851ab0c3e9b46a4703a8b",
+        "characters": 4583,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://rsc.zit.edu.cn/info/1013/1681.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": null,
+        "bodyFetched": false
+      },
+      "https://job.hust.edu.cn/extxjh/701788157448759.do": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "1a50e147c6bf43ebc04d76cbe88a2526f8c7e9f6f8ce898c44bb2e7760a3f770",
+        "characters": 3635,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.idsse.cas.cn/rcdw/rczp/202602/t20260214_8144718.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": null,
+        "bodyFetched": false
+      },
+      "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/t20261020_63609.shtml": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": null,
+        "bodyFetched": false
+      },
+      "https://jy.gzhu.edu.cn/web/index/jobs-brief-detail?id=SMUXSVZ": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "6b2bf5ba13ea919076cbf078cbd81845f39bceb805e0200b0d37d9b8e0ad4f5d",
+        "characters": 4645,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://campus.51job.com/cjwsjy": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "8e40f61a1ea63393e3c839ab447367e09fe66b48798e0980b7d168d1bef6456b",
+        "characters": 79,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ce.hnu.edu.cn/szdw/jszp.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "9c62f7fe865a839f40c5f78c2a62a3055fcddb7cec98ae82c543d77eceb8dee6",
+        "characters": 587,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://career.hebut.edu.cn/correcruit/content/id/80129.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "82ff4bfefbbe366cbb2dea2449ff2313968195c85bb6ff9b38c702911ee0ac94",
+        "characters": 3686,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://job.sdu.edu.cn/info/1130/33987.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "c9d2cf793ef75425ceba53667cbbbe2ec6cff426841b5f64ec8706c6724c8ac0",
+        "characters": 1090,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://hr.cnnc.com.cn/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": null,
+        "bodyFetched": false
+      },
+      "http://zhaopin.hqu.edu.cn/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "19bdbe1a29921a9db74cbbe1ab47109d8eadd90a1d41dea70b5aae36ec46ca8a",
+        "characters": 471,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://xds.ecnu.edu.cn/ec/40/c51123a781376/page.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "2ba440e9c14f52fd0b204889a96a65a9e65c14b9eee05083168515771a074969",
+        "characters": 5202,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://gyyhr.powerchina.cn/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "c5770c28318d2d1c739cf5b3e7eafc3256885a687fa415d2e7e276ea0b2833cf",
+        "characters": 9,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://perdep.dlut.edu.cn/info/1401/21561.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "f3d7077c67ef1082cb536c0527bc174792d30746c702a8d04b3ee8f2cbc38b3d",
+        "characters": 3487,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://myjob.dlmu.edu.cn/campus/view/id/868736": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": null,
+        "bodyFetched": false
+      },
+      "https://iap.cas.cn/gb/yjsjy/jyxx/202610/t20261009_8290564.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "0d2cb400f4c023c698c683a7f418fa74fabb9ae96aab7a5c4001bf0e2b3a1b3e",
+        "characters": 5940,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://rsc.xauat.edu.cn/info/1275/1926.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "bb9ddacf0eeb53d71f8fbe17fee3d3aba81495ff96fe8df7a722d4b3bf491200",
+        "characters": 3025,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://cug.91wllm.cn/campus/view/id/999435": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "ea424244bfc4e9e15eb8343f8b1d959eecc6d7700dbbb4a79b811584cda75e0a",
+        "characters": 492,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://career.hebut.edu.cn/recruitment/content/type/2/id/5345.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "be387b9a830624bf1db2a1f989f9816d41de256988cad1e92c9966c5523a0dbb",
+        "characters": 2229,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.qhu.edu.cn/rczp1/rczp/12f2a8bc702d4900acb422e8deb7296e.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "2f7c2cd9f4595e0d08a650c75f521fd300354af27b9923e9048edd8e2701fa2f",
+        "characters": 6082,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://job.usth.edu.cn/detail/job?career_id=717408&id=3238558": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "feba39f5738599526a52ea7822aca8f439cbde4c9747c8fe0055ee102645ea7d",
+        "characters": 1074,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://jobs.nottingham.edu.cn/jobs-at-unnc/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "2faf91f6edeabdacdd068bfd5a9a6bbbcee10408134cc7aed5deba146227af56",
+        "characters": 2642,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://m.yingjiesheng.com/job-008-097-425.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "1af9ecce2f29597510d685fef4be95a76b13b697ce834be0aa776d87f9168d63",
+        "characters": 10113,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ningbo.nwpu.edu.cn/__local/1/C1/89/E470B5CA25E1775185B105ACFF0_A4D3F431_D1491.jpg": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": 200,
+        "bodyFetched": false
+      },
+      "https://ningbo.nwpu.edu.cn/__local/2/1C/CC/F6C9494967CB0AD71FC8FACC2D7_13080D46_44D9F.jpg": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": 200,
+        "bodyFetched": false
+      },
+      "https://ningbo.nwpu.edu.cn/__local/2/70/89/E1A5ECC92BB9CA1675A1E062AC1_B93BD80E_86BB3.jpg": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": 200,
+        "bodyFetched": false
+      },
+      "https://ningbo.nwpu.edu.cn/__local/7/CB/61/6A15B5523307661153C09A24D34_8C2FF0EE_A5D30.jpg": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": 200,
+        "bodyFetched": false
+      },
+      "https://ningbo.nwpu.edu.cn/info/1013/4849.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "57a45106c5436d19c5dbea1383070d3296719863a473023014d1aeca6c27b059",
+        "characters": 664,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://recruit.nimte.ac.cn/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "25082e488d51fbdb9052ae482d73d2fd892a259cff967daf0b59445a56bbbab1",
+        "characters": 1309,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://recruit.nimte.ac.cn/system/userInfo/positionInfo?id=1802509568478314497&isDelivery=null": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "d8ec25167953e288a577db19f306bac376528620bb089ef060f613eed07cee72",
+        "characters": 1123,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://recruit.nimte.ac.cn/system/userInfo/positionInfo?id=1939493541426536450&isDelivery=null": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "d9a03122c6204f10f3ec0cb04f56f5b356b61110af5b10e86a16208a2bbe0f74",
+        "characters": 1309,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://recruit.nimte.ac.cn/system/userInfo/positionInfo?id=2003995233035337730&isDelivery=null": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "056fd7f75154957c6f9f12ecacce3075810ebacebfe91ad31fbcdab5e825f137",
+        "characters": 1004,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://recruit.nimte.ac.cn/system/userInfo/positionInfo?id=2059526346696359938&isDelivery=null": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "f4eabceebab73df6240e45d208110039b9b4b97fdbfa71960da064c7d818eb26",
+        "characters": 915,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://recruit.nimte.ac.cn/system/userInfo/positionInfo?id=2064548826217492481&isDelivery=null": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "3a2be40e7e799fb79e355652225e048c0afee272493241076a8e0ad768def61c",
+        "characters": 1270,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ronbay.zhiye.com/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "bbbd3c68381566bc5eae4e744ddbecd1bf7b1c9d1bfc96f80d2cd0bdb5d26881",
+        "characters": 6,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ronbay.zhiye.com/Campus?activityGuid=7339da17-ee9b-4eb8-bfd5-b1c85a2a135c&ActivityJumpPage=PortalPage": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "bbbd3c68381566bc5eae4e744ddbecd1bf7b1c9d1bfc96f80d2cd0bdb5d26881",
+        "characters": 6,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://tmgc.sdjtu.edu.cn/info/1191/2542.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": null,
+        "bodyFetched": false
+      },
+      "https://tmgc.sdjtu.edu.cn/info/1191/2592.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": null,
+        "bodyFetched": false
+      },
+      "https://ts.jrzp.com/shiyezhaopin/DDC63D2E59513315.shtml": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "aa8fee398b84aa684e19878bfd384694ffe2569c80e6507da20a5252927fc687",
+        "characters": 11012,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.auxgroup.com/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "b069412e9fb90b131c5d62da72a6765c7ffa8a2ac0807a93ff625aa3a9abc102",
+        "characters": 1966,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.boshijob.com/article/202606/22283283.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "b52df7815336cd095639af92fc7072d73df789ccd1ac2576988af77a49be8127",
+        "characters": 8444,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.career.zju.edu.cn/jyxt/sczp/xjhgl/ckXjhgwXq.zf?xjhbh=ee0dd996d19ef76078f8fa1cc39c1a1d": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "482ff1bac41dff078d80887e9dd0464aaee4d9298a15a4d48ef01fc5dfa7b593",
+        "characters": 2026,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=4142CA163414015CE0653A68DD0E9B18": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "29f4b7080dcb46bf8cb6515dcf7e396cd2253c2541c16d936335a75dea37d360",
+        "characters": 2923,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=5A90EE5918508B39E0653A68DD0E9B18": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "ebae0ad08ef377cfdca96746c0ce66cd2eb273ec7cb0484fc895b4a377c3b03f",
+        "characters": 1951,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.cccc-cgc.com/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "897a612d69374fb5a5fe4b7c5c7a51214fb734e815af201c2661a915730f3365",
+        "characters": 1586,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.cehuiyc.com/Company_Detail.asp?Param=CHq7qw0zpeiv7017": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "e1dcd859e8c80fb95d38e61714893b0f7280eb1abb09fc31bd81adcac0add24f",
+        "characters": 1169,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.deizao.net/m/index/gonggaoxq/nwid/27534": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "ef7158e05e435f0bac78e6167dd737a77347e80bf342d737dce406e699a8c4ab",
+        "characters": 1646,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.eitech.edu.cn/2026/0121/c409a4099/page.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "fb5f04d16c723a0335452f0a1ac4958a907d0ab7531e995b454ab6fcde73b824",
+        "characters": 1813,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.eitech.edu.cn/2026/0731/c409a7182/page.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": null,
+        "bodyFetched": false
+      },
+      "https://www.fenbi.com/page/fenxiaozhaokaodetail/20/3428/469294201461760": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "779dc54fc8fb87522be4c0cc3229cb2e20ddebcfbd1503371a9d00229eba2f43",
+        "characters": 680,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.fenbi.com/page/fenxiaozhaokaodetail/26/3877/468751961839616": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "e60122f1d7f8e0dfc7fc93c40015825eb5871fba32b931877a079af2b2413cb1",
+        "characters": 2119,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.fenbi.com/page/fenxiaozhaokaodetail/26/3877/469294613288960": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "eab8f2bde280b703e5a124fa659564cfdf49a9d067a5185e9f09abbf20a080ec",
+        "characters": 658,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.fheb.cn/html/fheb/renliziyuan/rczp/xyzp/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "1abbf61cb4cacf6bc507a022f0a263afadcabef2e5907540b09398517e130b89",
+        "characters": 997,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.nbuci.com/tzgg/rsxx/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "22347adeb179e9386cff6d7da4337e1dcd724fb0d0af9fcfcc2ca81003c1b0f0",
+        "characters": 480,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.ningbowater.com/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "b4fd94c7196b95b98ec8a99278349033a68671c90d25985c518577e071c563dd",
+        "characters": 1467,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.ningbowater.com/art/2026/3/3/art_24_7549.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "a4506ec251806efb2f9c2803adf3e651615322ba81e3dedcd8aaaa245fba710b",
+        "characters": 3369,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.nottingham.edu.cn/cn/science-engineering/departments-schools/ce/home.aspx": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "ffc7ec9caae444dcc1505f6c66157bcfea8384e55c879129798a2286245abdbc",
+        "characters": 2573,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.nottingham.edu.cn/en/Science-Engineering/Department/CE/Home.aspx": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "7c4a507699315844cb7cb616cd7a8997f722246f549860eeb937c84e41aad1d6",
+        "characters": 7852,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.nowcoder.com/jobs/detail/466586": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "f333521debe48bae6224fcbb9954b63054b71e1e43324b0907a37a1c2b816477",
+        "characters": 985,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.scccnce.com.cn/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": null,
+        "bodyFetched": false
+      },
+      "https://www.shushuqiuzhi.com/article/119252": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "8e45534b9d042a1c4ce23b75fcc3276d21fb6bb9f6e7388635f1aa2274d7de7b",
+        "characters": 16272,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.ylab.ac.cn/news/yJ_news/08-24/1019596508.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "f4435a4182541a4eba07448a2d0bd59805ba619012cab6d29d8d4cf5235acd65",
+        "characters": 8730,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.zhaopin.com/jobdetail/CC120230020J40700167606.htm": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "58d00cbea2b273dd1503d8fa1aa1d4c0c0fea0913623f53738e2d1102db2da53",
+        "characters": 2712,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.zjnrg.com/recruit.html": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "f6104e284ec4dfedfa27a56ed4a7fc6eb6d46acd6db324cd7008418a95bcf8f8",
+        "characters": 143,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/Article/Info?ClassGuid=0a45f49d-f714-49c5-9adc-3bd8c4811636&InfoGuid=9520cdbb-280a-48f6-aabc-20c790cf322b": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "23e1a8b76fe370664651415b477e921cc913edcf20a2d52dcdc61f8194f93ece",
+        "characters": 1735,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/Article/Info?ClassGuid=0a45f49d-f714-49c5-9adc-3bd8c4811636&InfoGuid=e7ddab34-e1c5-4ec7-84d7-2554b65ae087": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "8c7ded83423ec421036fec2fe93dbe75956f0cc8c6e06cd308ea0a30f1e14b12",
+        "characters": 1858,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/Article/Info?ClassGuid=45c2f5bb-5221-45a5-a7cc-da6eb580e79d&InfoGuid=db3b731b-7a49-4789-9be8-5332d5a16dd7": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "1dc55275c53f6a43eb19dadd065793b24244ac0712a7ce5d92ce86fa774f227b",
+        "characters": 3789,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=03e369f8-b42b-4fb5-b312-d49a7eb15486": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "da584d752daa7dae35187b4efabb47d38b64d9a6b7c8165d33416ccffaa80d3f",
+        "characters": 1009,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=0cf0eea5-6a51-4b0e-a7ae-95aedb59f515": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "96fd6a1cd098d89ed184172d887d9a8aaafee709011567597c3d0b1c7ad7a9c4",
+        "characters": 991,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=13c29582-a242-4515-b31b-3c3ecf0e917e": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "4fce0d663f04b5f12e51f7214fcee12509e0209ae42dd4336af7283363b1efb1",
+        "characters": 1181,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=330711d7-aeca-41f4-995e-548cc20e49e6": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "d4efeb961dfd7e74406163bb386567ec8b40e3f548c07cfa395aed04a112f694",
+        "characters": 1352,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=4fa5deef-563c-4125-aab1-51d3387607d4": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "1a60487dc370a4e095fed290d7b2d1fcbf0b88e57c658b34c7a7bf96f356d624",
+        "characters": 1381,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=89d01f3a-dd41-4fff-983e-68de09957999": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "2ed76d4716760ac071642c1d43855ae6cf8fbb7d2fdbe29324f241337375cbc8",
+        "characters": 1703,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=d08a8572-a336-418a-992b-f58ed4a7269e": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "7e9c3d757074ac104f841234bfa8ab05558bd927ccd4c31d10365d4e2a90f9f6",
+        "characters": 981,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=d8e8eeba-5716-463f-a149-a85b7a45b688": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "6efb146b9ae44f67f4376660ae0fae0d09f8557c103cc691ae313faabff826c4",
+        "characters": 1082,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=eaf91efe-c70c-4b08-8b55-a09757cd120a": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "8ca97c9d013a824ca3b108d947aec7b78260e281b029ae0ff73ea202ece17409",
+        "characters": 1182,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=ecd6f401-2c1c-481c-8832-6ea510ef09ea": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "a0287ae89678567f561f34d347ecf23b2cfaf6665d096b30421a41c74accdcaf",
+        "characters": 903,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://ycyg.nbhr.org.cn/jobfair/info?guid=d8e19812-b23f-466f-a53a-c7c67998f74c": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "4a631ded9561f914fe0eb4f6301ef365419489e07bc932c16a72f45e04bd5730",
+        "characters": 1890,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://zhaopin.china-cdt.com/": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "85cc001b6e61aaf888f4cf7d4cdd5881a925c0fe8420fb457a75f4c17e63a083",
+        "characters": 18,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://zjnrghr.zjgeobigdata.com/RedseaPlatform/zhaopin/zpChannelQrCode/campus_recruit/officeWebsite.mob": {
+        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "textHash": "5edd1234fab1a2a94506ff74a5b7e4920fb215d906773d5c06c4142a7a0ed066",
+        "characters": 4,
+        "httpStatus": 200,
+        "bodyFetched": true
       }
     },
     "scope": "仅自动抓取、发现链接和变化监测；不自动完成岗位资格语义审查、论文认定或人才定档，不刷新人工核验日期。",
-    "attachmentsDownloaded": 0
+    "attachmentsDownloaded": 5
   },
   "cloudCandidateArchive": [
     {
