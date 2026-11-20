@@ -942,6 +942,84 @@ class UpdateTests(unittest.TestCase):
         refreshed = next(j for j in self.read()["jobs"] if j["id"] == old["id"])
         self.assertEqual(refreshed["autoEvidence"]["extractionVersion"], monitor.AUTO_VERSION)
 
+    def test_historical_transition_updates_status_atomically_without_reopening(self):
+        self.queue_detail()
+        seeded = self.run_details()
+        original_id = self.automatic_jobs(seeded)[0]["id"]
+        title = "某地质研究院2025届岩土工程校园招聘公告"
+        body = DETAIL_BODY.replace(DETAIL_TITLE, title).replace("2027届毕业生", "2025届毕业生")
+        changed = self.run_details(lambda url: detail_response(url, body=body, title=title),
+                                   now=datetime(2026, 11, 22, 1, tzinfo=timezone.utc))
+        job = next(j for j in changed["jobs"] if j["id"] == original_id)
+        self.assertEqual(job["availability"], "historical")
+        self.assertEqual(job["availabilityCode"], "historical")
+        self.assertIn("旧届", job["currentStatus"])
+        self.assertNotIn("窗口或部分条件未明确", job["currentStatus"])
+
+        # Reproduce the real v2 artifact: historical code/text were not synchronized.
+        job["availabilityCode"] = "monitoring"
+        job["currentStatus"] = "自动采集：相关招聘正文已入库，开放窗口或部分条件未明确"
+        job["ingestionMethod"] = "official_body_rules_v2"
+        job["autoEvidence"]["extractionVersion"] = "official_body_rules_v2"
+        self.path.write_text(json.dumps(changed), encoding="utf-8")
+        repaired = self.run_details(lambda url: detail_response(url, body=body, title=title),
+                                    now=datetime(2026, 11, 23, 1, tzinfo=timezone.utc))
+        fixed = next(j for j in repaired["jobs"] if j["id"] == original_id)
+        self.assertEqual(fixed["availabilityCode"], "historical")
+        self.assertIn("旧届", fixed["currentStatus"])
+        self.assertEqual(fixed["autoEvidence"]["extractionVersion"], monitor.AUTO_VERSION)
+        self.assertEqual(fixed["verifiedAt"], "")
+
+        reopened = self.run_details(now=datetime(2026, 11, 24, 1, tzinfo=timezone.utc))
+        still_historical = next(j for j in reopened["jobs"] if j["id"] == original_id)
+        self.assertEqual(still_historical["availability"], "historical")
+        self.assertEqual(still_historical["availabilityCode"], "historical")
+        self.assertEqual(still_historical["currentStatus"], fixed["currentStatus"])
+
+        current_title = "某地质研究院2026年校园招聘公告"
+        current_body = DETAIL_BODY.replace(DETAIL_TITLE, current_title).replace(
+            "报名时间：2026年11月20日至2026年12月10日17:00。", "").replace(
+            "报名截止时间：2026年12月10日17:00。", "")
+        for past_deadline, expected in ((None, "monitoring"), ("2026-11-01", "historical")):
+            with self.subTest(past_deadline=past_deadline):
+                legacy = copy.deepcopy(reopened)
+                old_auto = next(j for j in legacy["jobs"] if j["id"] == original_id)
+                old_auto.update(position=current_title, availability="historical",
+                                availabilityCode="historical", currentStatus="旧版按年份归档",
+                                deadline=past_deadline, deadlineTime=None,
+                                ingestionMethod="official_body_rules_v2")
+                old_auto["autoEvidence"]["extractionVersion"] = "official_body_rules_v2"
+                fields = old_auto["autoEvidence"]["fields"]
+                fields.pop("deadline", None)
+                fields.pop("deadlineTime", None)
+                if past_deadline:
+                    fields["deadline"] = {"value": past_deadline, "quote": "报名截止时间：2026年11月1日"}
+                fields["cohortExpiry"] = {
+                    "value": {"cohortYear": 2026, "targetYear": 2027,
+                              "basis": "explicit_old_campus_or_spring_cycle"},
+                    "quote": current_title}
+                self.path.write_text(json.dumps(legacy), encoding="utf-8")
+                corrected = self.run_details(
+                    lambda url: detail_response(url, body=current_body, title=current_title),
+                    now=datetime(2026, 11, 25, 1, tzinfo=timezone.utc))
+                corrected_job = next(j for j in corrected["jobs"] if j["id"] == original_id)
+                self.assertEqual(corrected_job["availability"], expected)
+                self.assertEqual(corrected_job["availabilityCode"], expected)
+                if past_deadline is None:
+                    self.assertIn("恢复监测", corrected_job["currentStatus"])
+                    self.assertEqual(corrected_job["autoEvidence"]["algorithmCorrection"]["kind"],
+                                     "v2_current_year_campus_false_expiry")
+                else:
+                    self.assertNotIn("algorithmCorrection", corrected_job["autoEvidence"])
+
+        for current in ("某院2026年校园招聘", "某院2026秋季校园招聘"):
+            with self.subTest(title=current):
+                self.assertIsNone(monitor.title_cohort_expiry(current, DETAIL_NOW))
+        for expired in ("某院2024应届毕业生招聘", "某院2025校园招聘",
+                        "某院2026春季校园招聘", "某院2026届校园招聘"):
+            with self.subTest(title=expired):
+                self.assertIsNotNone(monitor.title_cohort_expiry(expired, DETAIL_NOW))
+
     def test_province_rotation_and_urgent_priority(self):
         jobs = []
         for i, province in enumerate(("浙江", "湖北", "四川", "陕西", "广东")):

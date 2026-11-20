@@ -582,7 +582,7 @@ def candidate_from_link(link, base_url, item, known_urls, existing, now):
 
 
 
-AUTO_VERSION = "official_body_rules_v2"
+AUTO_VERSION = "official_body_rules_v3"
 STRONG_RELEVANCE = re.compile(r"岩土|土木|地震|地质|力学|仿真|\bCAE\b|水利|水电|地下工程|结构工程|防灾|能源|交通|港口|科研软件|计算物理|数值模拟|有限元|工程|geotechn|seismic|geolog|mechanics|simulation", re.I)
 SECONDARY_HOSTS = ("gaoxiaojob.com", "jobui.com", "zhipin.com", "51job.com", "zhaopin.com", "gongzhao.com", "shixiseng.com")
 UNKNOWN = "公告未明确/自动提取未取得"
@@ -749,9 +749,9 @@ def title_cohort_expiry(title, now):
         year, season = int(match.group(1)), match.group(2)
         old_spring = season in ("春季", "春招") and (year < now.year or (year == now.year and now.month >= 8))
         old_campus = "校园" in match.group() or "校招" in match.group()
-        # Current-year autumn can describe the season, not the graduation year.
-        expired_campus = old_campus and (year < now.year or
-            (year == now.year and now.month >= 8 and season not in ("秋季", "秋招")))
+        # A current-year label without an explicit graduation cohort or elapsed
+        # spring season does not establish expiry (including autumn recruitment).
+        expired_campus = old_campus and year < now.year
         if old_spring or expired_campus:
             return {"cohortYear": year, "targetYear": target_year, "basis": "explicit_old_campus_or_spring_cycle"}
     return None
@@ -1086,9 +1086,30 @@ def automatic_detail_phase(data, now, fetcher, max_detail_pages, cache, previous
         if existing:
             if existing.get("ingestionMode") == "automatic":
                 changes = {}
+                was_historical = existing.get("availability") == "historical"
                 earlier_evidence = copy.deepcopy(existing.get("autoEvidence", {}))
                 migrating = earlier_evidence.get("extractionVersion") != AUTO_VERSION
                 explicit = new["autoEvidence"]["fields"]
+                prior_cohort = earlier_evidence.get("fields", {}).get("cohortExpiry", {})
+                prior_cohort_value = prior_cohort.get("value", {}) if isinstance(prior_cohort, dict) else {}
+                prior_deadline = parse_deadline(existing)
+                current_deadline = parse_deadline(new)
+                correct_v2_false_expiry = (
+                    was_historical and earlier_evidence.get("extractionVersion") == "official_body_rules_v2"
+                    and isinstance(prior_cohort_value, dict)
+                    and prior_cohort_value.get("basis") == "explicit_old_campus_or_spring_cycle"
+                    and prior_cohort_value.get("cohortYear") == now.year
+                    and not re.search(r"届|春季|春招", new.get("position", ""))
+                    and not title_cohort_expiry(new.get("position", ""), now)
+                    and not (prior_deadline and now >= prior_deadline)
+                    and not (current_deadline and now >= current_deadline)
+                    and new.get("availability") != "historical")
+                if correct_v2_false_expiry:
+                    new["availability"] = new["availabilityCode"] = "monitoring"
+                    new["currentStatus"] = "自动纠错：旧版仅按当前年份误判到期，已恢复监测；开放窗口仍按公告证据判断"
+                    new["autoEvidence"]["algorithmCorrection"] = {
+                        "kind": "v2_current_year_campus_false_expiry", "correctedAt": stamp(now),
+                        "previousCohortEvidence": copy.deepcopy(prior_cohort)}
                 for key in SEMANTIC_FIELDS:
                     if key in ("organization", "region", "province", "education", "requirements", "sourcePublishedAt",
                                "deadline", "deadlineTime", "eligibility2027") and key not in explicit and not migrating:
@@ -1097,7 +1118,8 @@ def automatic_detail_phase(data, now, fetcher, max_detail_pages, cache, previous
                         continue
                     if key == "timeWindow" and new.get(key) == UNKNOWN and not migrating:
                         continue
-                    if key in ("availability", "availabilityCode", "currentStatus") and existing.get("availability") == "historical":
+                    if (key in ("availability", "availabilityCode", "currentStatus")
+                            and was_historical and not correct_v2_false_expiry and new.get("availability") != "historical"):
                         continue
                     if existing.get(key) != new.get(key):
                         changes[key] = {"before": existing.get(key), "after": new.get(key)}
