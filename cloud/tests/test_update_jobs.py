@@ -74,6 +74,40 @@ def detail_response(url, body=DETAIL_BODY, title=DETAIL_TITLE, page_body=None):
             "links": [], "contentType": "text/html"}
 
 
+# Reduced real template from hr.cumt.edu.cn: section headings are h1, article
+# titles h5, body v_news_content. Bodies below are paraphrased test text; no contacts.
+CUMT_POLICY_TITLE = "《中国矿业大学博士后管理办法》（中矿大人字〔2026〕3号）"
+CUMT_RECRUIT_TITLE = "中国矿业大学范钢伟教授团队博士后招聘启事"
+CUMT_POLICY_HTML = (
+    "<html><head><title>" + CUMT_POLICY_TITLE + "-中国矿业大学 人力资源部</title></head><body>"
+    "<h1>学校政策</h1><h1>规章制度</h1><h5>" + CUMT_POLICY_TITLE + "</h5>"
+    "<span>时间：2026-06-16</span><div class='v_news_content'>"
+    "<h2>第一章 总则</h2><p>本管理制度规定博士后培养、服务、考核和经费管理的通用要求。"
+    "学校的能源资源、土木工程、地质和力学研究平台按本办法组织管理工作。</p>"
+    "<h2>第三章 博士后的招收</h2><p>博士后申请应具备博士学位，相关管理机构负责审核申请材料。"
+    "招收标准、办理程序、在站考核与工作职责按照各章规定执行。"
+    "该文件是一项学校人事管理制度，不是具体团队岗位的招聘公告。</p></div></body></html>")
+CUMT_RECRUIT_HTML = (
+    "<html><head><title>" + CUMT_RECRUIT_TITLE + "-中国矿业大学 人力资源部</title></head><body>"
+    "<h1>博士后</h1><h1>招聘信息</h1><h5>" + CUMT_RECRUIT_TITLE + "</h5>"
+    "<span>时间：2026-01-22</span><div class='v_news_content'>"
+    "<p>团队围绕矿井水利用开展研究，本次招募二至四位博士后。</p>"
+    "<p>研究方向包括矿井水处理和电解水制氢。申请人应已获或即将获得环境、水文、材料、"
+    "化工或能源相关博士学位，具备对应研究基础和独立科研能力。</p>"
+    "<p>应聘条件另要求近三年的相关SCI成果，按第一或通讯作者和JCR分区认定。"
+    "具体岗位职责包括参与研究项目、独立开展研究、成果总结以及学术合作。</p>"
+    "</div></body></html>")
+
+
+def html_fixture_response(url, html):
+    parser = monitor.VisibleHTML()
+    parser.feed(html)
+    return {"url": url, "finalUrl": url, "httpStatus": 200, "ok": True,
+            "bodyText": parser.text, "articleText": parser.article_text,
+            "pageTitle": parser.title, "headings": parser.headings,
+            "links": parser.links, "contentType": "text/html"}
+
+
 class UpdateTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -727,6 +761,186 @@ class UpdateTests(unittest.TestCase):
         self.assertEqual(after["deadline"], "2026-12-10")
         self.assertEqual(after["verifiedAt"], "")
         self.assertEqual(after["autoEvidence"]["fields"]["deadline"], retained)
+
+    def test_cumt_real_h5_title_beats_generic_sidebar_headings(self):
+        candidate = {"id": "CUMT", "url": "https://hr.cumt.edu.cn/info/1026/4337.htm",
+                     "title": CUMT_RECRUIT_TITLE}
+        result = html_fixture_response(candidate["url"], CUMT_RECRUIT_HTML)
+        job, reason = monitor.extract_automatic_job(candidate, result, DETAIL_NOW)
+        self.assertIsNone(reason)
+        self.assertEqual(job["position"], CUMT_RECRUIT_TITLE)
+        self.assertEqual(job["organization"], "中国矿业大学")
+        self.assertNotEqual(job["position"], "博士后")
+
+    def test_cumt_policy_real_title_cannot_be_replaced_by_recruitment_chapter(self):
+        candidate = {"id": "POLICY", "url": "https://hr.cumt.edu.cn/info/1033/4475.htm",
+                     "title": CUMT_POLICY_TITLE}
+        result = html_fixture_response(candidate["url"], CUMT_POLICY_HTML)
+        job, reason = monitor.extract_automatic_job(candidate, result, DETAIL_NOW)
+        self.assertIsNone(job)
+        self.assertEqual(reason, "policy_document")
+
+    def test_old_cohorts_expire_but_old_publication_date_alone_does_not(self):
+        for title in ("某地质研究院2024应届博士招聘公告", "某地质研究院2025校园招聘公告",
+                      "某地质研究院2026春季校园招聘公告", "某地质研究院2026届校园招聘公告"):
+            with self.subTest(title=title):
+                candidate = {"id": "COHORT", "url": "https://example.edu.cn/jobs/cohort.html", "title": title}
+                body = DETAIL_BODY.replace(DETAIL_TITLE, title).replace(
+                    "报名时间：2026年11月20日至2026年12月10日17:00。", "").replace(
+                    "报名截止时间：2026年12月10日17:00。", "")
+                job, reason = monitor.extract_automatic_job(
+                    candidate, detail_response(candidate["url"], body=body, title=title), DETAIL_NOW)
+                self.assertIsNone(reason)
+                self.assertEqual(job["availability"], "historical")
+                self.assertIn("cohortExpiry", job["autoEvidence"]["fields"])
+                self.assertIn(title, job["autoEvidence"]["fields"]["cohortExpiry"]["quote"])
+                self.assertIsNone(job.get("deadline"))
+        title = "某地质研究院岩土博士招聘公告"
+        candidate = {"url": "https://example.edu.cn/jobs/dated.html", "title": title}
+        body = DETAIL_BODY.replace(DETAIL_TITLE, title).replace(
+            "发布日期：2026年11月20日。", "发布日期：2024年11月20日。").replace(
+            "报名时间：2026年11月20日至2026年12月10日17:00。", "").replace(
+            "报名截止时间：2026年12月10日17:00。", "").replace("招聘对象：2027届毕业生。", "")
+        job, reason = monitor.extract_automatic_job(
+            candidate, detail_response(candidate["url"], body=body, title=title), DETAIL_NOW)
+        self.assertIsNone(reason)
+        self.assertEqual(job["availability"], "monitoring")
+        self.assertNotIn("cohortExpiry", job["autoEvidence"]["fields"])
+
+    def test_company_suffix_in_actual_page_title_identifies_employer(self):
+        title = "2027届岩土工程校园招聘-华北工程设计有限公司"
+        body = DETAIL_BODY.replace(DETAIL_TITLE, "2027届岩土工程校园招聘").replace(
+            "招聘单位：某地质研究院。", "")
+        candidate = {"url": "https://example.edu.cn/jobs/company.html",
+                     "title": "2027届岩土工程校园招聘"}
+        job, reason = monitor.extract_automatic_job(
+            candidate, detail_response(candidate["url"], body=body, title=title), DETAIL_NOW)
+        self.assertIsNone(reason)
+        self.assertEqual(job["organization"], "华北工程设计有限公司")
+
+    def test_hebut_main_article_excludes_other_recruitment_and_right_sidebar(self):
+        title = "某工程有限公司岩土科研人员招聘公告"
+        body = DETAIL_BODY.replace(DETAIL_TITLE, title).replace(
+            "招聘单位：某地质研究院。", "招聘单位：某工程有限公司。").replace(
+            "招聘对象：2027届毕业生。", "").replace(
+            "应聘者须于2027年7月31日前取得博士学历学位证书。", "")
+        html = ("<html><head><title>" + title + "-河北工业大学就业平台</title></head><body>"
+                "<div class='zhaopinxx_con1'><h5>" + title + "</h5></div>"
+                "<div class='zhaopinxx_con2'><p>" + body.replace("\n", "</p><p>") + "</p></div>"
+                "<div class='zhaopinxx_con3'><h2>其他招聘</h2>"
+                "<p>另一单位面向2027届毕业生，2027年12月31日前取得学位即可。</p></div>"
+                "<div class='s_right'>推荐招聘：2027届博士绿色通道。</div></body></html>")
+        candidate = {"url": "https://career.hebut.edu.cn/home/correcruit/content/id/79815.html", "title": title}
+        job, reason = monitor.extract_automatic_job(candidate, html_fixture_response(candidate["url"], html), DETAIL_NOW)
+        self.assertIsNone(reason)
+        self.assertEqual(job["organization"], "某工程有限公司")
+        self.assertNotIn("2027届毕业生", job["eligibility2027"])
+        self.assertNotIn("2027年12月31日", json.dumps(job["autoEvidence"], ensure_ascii=False))
+        self.assertNotIn("另一单位", json.dumps(job, ensure_ascii=False))
+
+    def test_existing_automatic_policy_is_archived_not_deleted_and_manual_protected(self):
+        self.queue_detail()
+        seeded = self.run_details()
+        auto = copy.deepcopy(self.automatic_jobs(seeded)[0])
+        auto["ingestionMethod"] = "official_body_rules_v1"
+        auto["autoEvidence"]["extractionVersion"] = "official_body_rules_v1"
+        auto["position"] = "第三章 博士后的招收"
+        auto["announcementUrl"] = "https://example.edu.cn/jobs/policy.html"
+        auto["recruitmentUrl"] = auto["announcementUrl"]
+        auto["links"] = [{"url": auto["announcementUrl"], "label": "旧自动正文"}]
+        manual = copy.deepcopy(self.data["jobs"][0])
+        manual.update(id="MANUAL-POLICY", announcementUrl=auto["announcementUrl"],
+                      recruitmentUrl=auto["announcementUrl"], deadline=None, deadlineTime=None)
+        self.data = sample()
+        self.data["jobs"].extend([auto, manual])
+        self.data["stats"]["nationalAdded"] = 821
+        self.data["cloudCandidates"] = []
+        self.path.write_text(json.dumps(self.data), encoding="utf-8")
+        corrected = self.run_details(lambda url: html_fixture_response(url, CUMT_POLICY_HTML))
+        self.assertFalse(any(j["id"] == auto["id"] for j in corrected["jobs"]))
+        self.assertTrue(any(j["id"] == "MANUAL-POLICY" for j in corrected["jobs"]))
+        saved_manual = next(j for j in corrected["jobs"] if j["id"] == "MANUAL-POLICY")
+        self.assertEqual(saved_manual["verifiedAt"], manual["verifiedAt"])
+        archive = corrected["cloudJobArchive"]
+        self.assertEqual(len(archive), 1)
+        self.assertEqual(archive[0]["job"], auto)
+        self.assertEqual(archive[0]["reason"], "policy_document")
+        self.assertEqual(corrected["cloudUpdate"]["autoArchived"], 1)
+        self.assertEqual(corrected["stats"]["nationalAdded"], 820)
+        second = self.run_details(lambda url: html_fixture_response(url, CUMT_POLICY_HTML),
+                                  now=datetime(2026, 11, 22, 1, tzinfo=timezone.utc))
+        self.assertEqual(second["cloudJobArchive"], archive)
+        self.assertEqual(second["cloudUpdate"]["autoArchived"], 0)
+        self.assertEqual(second["stats"]["nationalAdded"], 820)
+        # Isolate archive dedup from the manual job URL guard tested above.
+        archive_only = sample()
+        archive_only["cloudJobArchive"] = copy.deepcopy(archive)
+        self.path.write_text(json.dumps(archive_only), encoding="utf-8")
+        detail_calls = []
+        monitor.run_update(self.path, self.path, self.evidence, self.db,
+                           now=datetime(2026, 11, 23, 1, tzinfo=timezone.utc), max_pages=1,
+                           max_detail_pages=30, fetcher=lambda url: fake_fetch(url, links=[
+                               {"url": auto["announcementUrl"], "title": DETAIL_TITLE}]),
+                           detail_fetcher=lambda url: detail_calls.append(url) or detail_response(url))
+        self.assertEqual(self.read()["cloudUpdate"]["newCandidates"], 0)
+        self.assertEqual(detail_calls, [])
+        self.assertEqual(self.read()["cloudJobArchive"], archive)
+
+    def test_fifteen_legacy_automatic_policy_records_migrate_without_losing_evidence(self):
+        self.queue_detail()
+        seeded = self.run_details()
+        template = self.automatic_jobs(seeded)[0]
+        self.data = sample()
+        original_records = []
+        for index in range(15):
+            job = copy.deepcopy(template)
+            url = "https://example.edu.cn/jobs/legacy-policy-" + str(index) + ".html"
+            job.update(id="AUTO-LEGACY-" + str(index), announcementUrl=url, recruitmentUrl=url,
+                       position="第三章 博士后的招收", ingestionMethod="official_body_rules_v1",
+                       links=[{"url": url, "label": "旧自动正文"}])
+            job["autoEvidence"]["extractionVersion"] = "official_body_rules_v1"
+            original_records.append(copy.deepcopy(job))
+            self.data["jobs"].append(job)
+        self.data["stats"]["nationalAdded"] = 835
+        self.path.write_text(json.dumps(self.data), encoding="utf-8")
+        result = self.run_details(lambda url: html_fixture_response(url, CUMT_POLICY_HTML), limit=30)
+        self.assertEqual(result["cloudUpdate"]["autoArchived"], 15)
+        self.assertEqual(result["stats"]["nationalAdded"], 820)
+        self.assertEqual(len(result["jobs"]), 1)
+        archived = {item["job"]["id"]: item["job"] for item in result["cloudJobArchive"]}
+        self.assertEqual(archived, {item["id"]: item for item in original_records})
+        self.assertEqual(result["jobs"][0]["verifiedAt"], "2026-10-29")
+
+    def test_legacy_migration_priority_then_new_cohorts_without_starvation(self):
+        self.queue_detail()
+        seeded = self.run_details()
+        old = self.automatic_jobs(seeded)[0]
+        old["ingestionMethod"] = "official_body_rules_v1"
+        old["autoEvidence"]["extractionVersion"] = "official_body_rules_v1"
+        seeded["cloudCandidates"] = []
+        for year in (2025, 2026, 2027):
+            seeded["cloudCandidates"].append({
+                "id": "Q" + str(year), "url": "https://example.edu.cn/jobs/queue-" + str(year) + ".html",
+                "title": "某地质研究院" + str(year) + "届岩土工程校园招聘公告",
+                "sourceUrl": self.data["jobs"][0]["announcementUrl"], "sourceJobIds": ["NI001"],
+                "reviewStatus": "queued", "discoveredAt": "2026-11-22T08:00:00+08:00"})
+        self.path.write_text(json.dumps(seeded), encoding="utf-8")
+        calls = []
+        def detail(url):
+            calls.append(url)
+            if "queue-" in url:
+                year = url.split("queue-")[1][:4]
+                title = "某地质研究院" + year + "届岩土工程校园招聘公告"
+                return detail_response(url, body=DETAIL_BODY.replace(DETAIL_TITLE, title), title=title)
+            return detail_response(url)
+        for day in range(22, 26):
+            self.run_details(detail, now=datetime(2026, 11, day, 1, tzinfo=timezone.utc), limit=1)
+        self.assertEqual(calls, [old["announcementUrl"],
+                               "https://example.edu.cn/jobs/queue-2027.html",
+                               "https://example.edu.cn/jobs/queue-2026.html",
+                               "https://example.edu.cn/jobs/queue-2025.html"])
+        refreshed = next(j for j in self.read()["jobs"] if j["id"] == old["id"])
+        self.assertEqual(refreshed["autoEvidence"]["extractionVersion"], monitor.AUTO_VERSION)
 
     def test_province_rotation_and_urgent_priority(self):
         jobs = []

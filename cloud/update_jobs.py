@@ -125,7 +125,7 @@ def bounded_resolve(host, port, **kwargs):
 
 
 class VisibleHTML(HTMLParser):
-    ARTICLE_MARKERS = re.compile(r"v_news_content|wp_articlecontent|trs_editor|article[-_]?content|article[-_]?body|news[-_]?content|content[-_]?detail", re.I)
+    ARTICLE_MARKERS = re.compile(r"v_news_content|wp_articlecontent|trs_editor|article[-_]?content|article[-_]?body|news[-_]?content|content[-_]?detail|zhaopinxx_con[12](?:\\s|$)", re.I)
     VOID = {"br", "hr", "img", "input", "meta", "link", "area", "source", "embed", "wbr"}
 
     def __init__(self):
@@ -158,7 +158,7 @@ class VisibleHTML(HTMLParser):
             return
         if tag == "a":
             self.anchor = [values.get("href", ""), []]
-        if tag in ("h1", "h2"):
+        if tag in ("h1", "h2", "h3", "h4", "h5", "h6"):
             self.heading_parts = []
         if tag in ("p", "div", "br", "li", "tr", "h1", "h2", "h3"):
             self.parts.append("\n")
@@ -172,7 +172,7 @@ class VisibleHTML(HTMLParser):
             if not hidden and len(self.links) < 500:
                 self.links.append({"url": self.anchor[0], "title": " ".join("".join(self.anchor[1]).split())[:180]})
             self.anchor = None
-        if tag in ("h1", "h2") and self.heading_parts:
+        if tag in ("h1", "h2", "h3", "h4", "h5", "h6") and self.heading_parts:
             self.headings.append(" ".join("".join(self.heading_parts).split())[:180])
             self.heading_parts = []
         for index in range(len(self.stack) - 1, -1, -1):
@@ -190,7 +190,7 @@ class VisibleHTML(HTMLParser):
         tags = {entry[0] for entry in self.stack}
         if "title" in tags:
             self.title_parts.append(data)
-        if tags.intersection(("h1", "h2")):
+        if tags.intersection(("h1", "h2", "h3", "h4", "h5", "h6")):
             self.heading_parts.append(data)
         self.parts.append(data)
         if self.stack and self.stack[-1][2]:
@@ -380,7 +380,7 @@ def validate_data(data):
         ids.add(job["id"])
         if "links" in job and not isinstance(job["links"], list):
             raise ValueError("invalid job links")
-    for key in ("papers", "talentAssessments", "journalRankings", "cloudCandidates", "cloudCandidateArchive"):
+    for key in ("papers", "talentAssessments", "journalRankings", "cloudCandidates", "cloudCandidateArchive", "cloudJobArchive"):
         if key in data and not isinstance(data[key], list):
             raise ValueError("invalid list: " + key)
     if "profile" in data and not isinstance(data["profile"], (dict, list)):
@@ -460,7 +460,7 @@ def official_seed(job, url):
 
 
 
-CANDIDATE_FILTER_VERSION = "title-relevance-v1"
+CANDIDATE_FILTER_VERSION = "title-relevance-v2"
 NON_POSITION_TITLE = re.compile(
     r"招聘会|双选会|宣讲会|招聘场地|场地.{0,8}(?:简介|介绍)|费用减免|"
     r"报名.{0,8}(?:费用|指南)|缴费|报考指南|报名指南|申请指南|办事指南|"
@@ -490,6 +490,8 @@ def candidate_filter_reason(title, organizations=()):
     generic = re.sub(r"20\d{2}(?:年|届)?|[【】\[\]（）():：·—_-]", "", compact)
     if not title or generic in GENERIC_TITLES:
         return "泛招聘导航或缺少具体主体/方向的短标题"
+    if POLICY_TITLE.search(title):
+        return "政策制度文件，不是具体招聘岗位"
     if NON_POSITION_TITLE.search(title):
         return "招聘会、指南、场地、缴费、公示或结果等非岗位信息"
     if UNRELATED_TITLE.search(title) and not STRONG_RELEVANCE.search(title):
@@ -580,7 +582,7 @@ def candidate_from_link(link, base_url, item, known_urls, existing, now):
 
 
 
-AUTO_VERSION = "official_body_rules_v1"
+AUTO_VERSION = "official_body_rules_v2"
 STRONG_RELEVANCE = re.compile(r"岩土|土木|地震|地质|力学|仿真|\bCAE\b|水利|水电|地下工程|结构工程|防灾|能源|交通|港口|科研软件|计算物理|数值模拟|有限元|工程|geotechn|seismic|geolog|mechanics|simulation", re.I)
 SECONDARY_HOSTS = ("gaoxiaojob.com", "jobui.com", "zhipin.com", "51job.com", "zhaopin.com", "gongzhao.com", "shixiseng.com")
 UNKNOWN = "公告未明确/自动提取未取得"
@@ -707,19 +709,94 @@ def explicit_dates(text):
     return result
 
 
+POLICY_TITLE = re.compile(r"管理(?:办法|规定|制度|细则)|实施(?:办法|细则)|工作(?:条例|规程|规定)|规章制度|薪酬办法|考核办法|工作流程|管理政策|第[一二三四五六七八九十百\d]+章", re.I)
+
+
+def is_generic_heading(title):
+    compact = re.sub(r"\s+", "", str(title or "")).lower()
+    return not compact or compact in GENERIC_TITLES or bool(re.match(r"^第[一二三四五六七八九十百\d]+[章节条]", compact))
+
+
+def clean_document_title(value):
+    value = " ".join(str(value or "").split())
+    parts = re.split(r"\s*(?:\|| - |-(?=[\u4e00-\u9fff]))\s*", value)
+    if len(parts) > 1 and re.search(ORG_SUFFIX + r"|人事|人力资源|教师工作|就业|招聘网", parts[-1]):
+        return "-".join(parts[:-1]).strip()
+    return value
+
+
+def choose_document_title(candidate, result):
+    # Document title takes precedence over sidebar H1/H2 and chapter headings.
+    page_title = clean_document_title(result.get("pageTitle"))
+    if page_title and not is_generic_heading(page_title) and (RECRUITMENT.search(page_title) or POLICY_TITLE.search(page_title)):
+        return page_title[:180]
+    for heading in result.get("headings", []):
+        heading = clean_document_title(heading)
+        if not is_generic_heading(heading) and (RECRUITMENT.search(heading) or POLICY_TITLE.search(heading)):
+            return heading[:180]
+    return clean_document_title(candidate.get("title"))[:180]
+
+
+def title_cohort_expiry(title, now):
+    title = re.sub(r"\s+", "", str(title))
+    target_year = now.year + (1 if now.month >= 8 else 0)
+    # Explicit graduation cohort is distinct from the publication year.
+    for match in re.finditer(r"(20\d{2})(?:年(?:度)?)?(?:届|应届|高校毕业生|毕业生)", title):
+        year = int(match.group(1))
+        if year < target_year:
+            return {"cohortYear": year, "targetYear": target_year, "basis": "explicit_old_graduation_cohort"}
+    for match in re.finditer(r"(20\d{2})(?:年(?:度)?)?(春季|春招|秋季|秋招)?(?:校园招聘|校招|招聘)", title):
+        year, season = int(match.group(1)), match.group(2)
+        old_spring = season in ("春季", "春招") and (year < now.year or (year == now.year and now.month >= 8))
+        old_campus = "校园" in match.group() or "校招" in match.group()
+        # Current-year autumn can describe the season, not the graduation year.
+        expired_campus = old_campus and (year < now.year or
+            (year == now.year and now.month >= 8 and season not in ("秋季", "秋招")))
+        if old_spring or expired_campus:
+            return {"cohortYear": year, "targetYear": target_year, "basis": "explicit_old_campus_or_spring_cycle"}
+    return None
+
+
+def detail_recency(candidate, now):
+    title = str(candidate.get("title", ""))
+    years = [int(value) for value in re.findall(r"20\d{2}", title)]
+    target = now.year + (1 if now.month >= 8 else 0)
+    return (0 if target in years else 1 if now.year in years else 2 if not years else 3,
+            -max(years) if years else 0)
+
+
+def organization_from_title(candidate, result, title, text):
+    # Employer suffix on university employment platforms is an explicit identity,
+    # whereas the recruitment-title prefix is not an organization name.
+    normalized_text = re.sub(r"\s+", "", text)
+    for full in (result.get("pageTitle", ""), candidate.get("title", "")):
+        segments = re.split(r"\s*(?:\|| - |-(?=[\u4e00-\u9fff]))\s*", str(full))
+        if len(segments) > 1:
+            for segment in reversed(segments[1:]):
+                segment = segment.strip()
+                if (re.fullmatch(r"[^，。；:\n]{2,80}" + ORG_SUFFIX, segment)
+                    and not RECRUITMENT.search(segment) and not re.search(r"20\d{2}", segment)
+                    and (re.search(r"(?:有限公司|有限责任公司|股份公司|集团公司)$", segment)
+                         or re.sub(r"\s+", "", segment) in normalized_text)):
+                    return segment, str(full)[:240]
+    match = re.search(r"^(?:关于)?([^，。；:\n]{2,70}?" + ORG_SUFFIX +
+                      r")(?=\s|20\d{2}|招聘|公开|博士后|面向|[\u4e00-\u9fff]{2,4}(?:教授|院士)|$)", title)
+    if match and not RECRUITMENT.search(match.group(1)) and not re.search(r"20\d{2}", match.group(1)):
+        return match.group(1), title
+    return None, None
+
 def recruitment_body(candidate, result):
     article = str(result.get("articleText") or "").strip()
     text = article or str(result.get("bodyText") or "").strip()
     if not article:
         # Truncate recognizable related-news/footer sections in generic pages.
-        text = re.split(r"(?:相关文章|相关新闻|推荐阅读|上一条[：:]|下一条[：:]|上一篇[：:]|下一篇[：:]|友情链接)", text)[0]
-    title = str(candidate.get("title") or "")
-    headings = [str(value) for value in result.get("headings", []) if RECRUITMENT.search(str(value))]
-    page_title = str(result.get("pageTitle") or "").split(" - ")[0].split(" | ")[0]
-    if headings:
-        title = headings[0]
-    elif page_title and RECRUITMENT.search(page_title):
-        title = page_title[:180]
+        text = re.split(r"(?:企业其他招聘信息|招聘日历|重要通知|相关文章|相关新闻|推荐阅读|上一条[：:]|下一条[：:]|上一篇[：:]|下一篇[：:]|友情链接)", text)[0]
+    title = choose_document_title(candidate, result)
+    true_page_title = str(result.get("pageTitle") or "")
+    if POLICY_TITLE.search(true_page_title) or POLICY_TITLE.search(title):
+        return None, "policy_document", title
+    if len(re.findall(r"第[一二三四五六七八九十百\\d]+条", text)) >= 4 and re.search(r"总则|管理办法|本办法|本规定", text):
+        return None, "policy_document", title
     lead = title + "\n" + text[:160]
     if NON_POSITION_TITLE.search(title) or re.search(r"联谊会|初面.{0,12}名单|面试.{0,12}名单|拟聘用|拟录用", lead):
         return None, "non_position", title
@@ -778,10 +855,10 @@ def extract_automatic_job(candidate, result, now):
     if organization:
         organization = save("organization", organization, quote)
     else:
-        org = re.search(r"^(?:关于)?([^，。；:\n]{2,70}?" + ORG_SUFFIX + r")(?=\s|20\d{2}|招聘|公开|博士后|面向|$)", title)
-        if org and org.group(1) in text:
-            organization = save("organization", org.group(1), title)
-    location, quote = labeled_value(text, r"工作地点|岗位地点|工作地区|任职地点|工作区域")
+        organization, quote = organization_from_title(candidate, result, title, text)
+        if organization:
+            organization = save("organization", organization, quote)
+    location, quote = labeled_value(text, r"工作地点|岗位地点|工作地区|任职地点|工作区域|工作地域")
     save("region", location, quote)
     province_matches = [province for province, cities in PROVINCES.items() if location and any(city in location for city in cities)]
     province = province_matches[0] if len(province_matches) == 1 else "未知"
@@ -791,7 +868,7 @@ def extract_automatic_job(candidate, result, now):
     if education:
         save("education", education, quote)
     else:
-        match = re.search(r"(?:须|应|需|具有|获得|取得|要求)[^。；;\n]{0,20}(?:博士|硕士)(?:研究生|学位|学历)", text)
+        match = re.search(r"(?:申请人|应聘者|应聘人员)?(?:须|应|需|已|即将|具有|获得|取得|要求)[^。；;\n]{0,35}(?:博士|硕士)(?:学位|学历)", text)
         if match:
             education = save("education", match.group(), match.group())
     requirement_clauses = []
@@ -830,10 +907,16 @@ def extract_automatic_job(candidate, result, now):
         availability = "upcoming"
     elif window and window > now and ((start and start[0] <= now) or (published and published[0] <= now)):
         availability = "open"
+    cohort_expiry = title_cohort_expiry(title, now)
+    if cohort_expiry:
+        availability = "historical"
+        save("cohortExpiry", cohort_expiry, title)
     status = {"monitoring": "自动采集：相关招聘正文已入库，开放窗口或部分条件未明确",
               "historical": "自动采集：公告所列报名截止已过，保留历史",
               "upcoming": "自动采集：公告所列发布或报名开始时间尚未到达",
               "open": "自动采集：公告所列报名窗口内，个人资格仍不确定"}[availability]
+    if cohort_expiry:
+        status = "自动采集：标题明确为旧届或旧季招聘，归为历史；未据此虚构报名截止"
     window_quotes = list(dict.fromkeys(entry[1] for key, entry in dates.items() if key in ("start", "deadline")))
     time_window = "；".join(public_condition_snippet(value) for value in window_quotes) or UNKNOWN
     category = automatic_route(title, text, organization)
@@ -874,7 +957,7 @@ def extract_automatic_job(candidate, result, now):
     return job, None
 
 
-def automatic_detail_phase(data, now, fetcher, max_detail_pages, cache, previous, started):
+def automatic_detail_phase(data, now, fetcher, max_detail_pages, cache, previous, started, original_jobs):
     detail_state = copy.deepcopy(previous.get("detailState", {}))
     queue_items = []
     seen_urls = set()
@@ -903,18 +986,27 @@ def automatic_detail_phase(data, now, fetcher, max_detail_pages, cache, previous
             queue_items.append({"url": url, "candidate": {
                 "id": job["id"], "url": url, "title": job["position"], "jobId": job["id"],
                 "sourceUrl": ev.get("discoverySourceUrl", url), "sourceJobIds": ev.get("sourceJobIds", [])}})
-    queue_items.sort(key=lambda item: (detail_state.get(item["url"], {}).get("attemptedAt", ""),
-                                      item["candidate"].get("discoveredAt", ""), item["url"]))
+    def detail_priority(item):
+        prior = detail_state.get(item["url"], {})
+        existing = by_id.get(item["candidate"].get("jobId"))
+        old_version = existing.get("autoEvidence", {}).get("extractionVersion") if existing else None
+        migration = existing and old_version != AUTO_VERSION and (
+            prior.get("attemptedVersion") != AUTO_VERSION or prior.get("attemptedFromVersion") != old_version)
+        return (0 if migration else 1, prior.get("attemptedAt", ""),
+                str(item["candidate"].get("discoveredAt", ""))[:10],
+                detail_recency(item["candidate"], now), item["url"])
+    queue_items.sort(key=detail_priority)
     selected = queue_items[:max_detail_pages]
-    attempts, added, updated, archived = [], [], [], []
-    permanent = {"non_position", "unrelated_medical", "unrelated_body", "not_recruitment", "not_detail_page", "navigation_page"}
+    attempts, added, updated, archived, archived_jobs = [], [], [], [], []
+    permanent = {"non_position", "unrelated_medical", "unrelated_body", "not_recruitment", "not_detail_page", "navigation_page", "policy_document"}
     for item in selected:
         if time.monotonic() - started >= RUN_TIMEOUT:
             break
         candidate, url = item["candidate"], item["url"]
         observation = {"url": safe_url(url), "candidateId": candidate.get("id"), "attemptedAt": stamp(now),
                        "httpStatus": None, "success": False}
-        detail_state[url] = {"attemptedAt": stamp(now)}
+        detail_state[url] = {"attemptedAt": stamp(now), "attemptedVersion": AUTO_VERSION,
+                             "attemptedFromVersion": by_id.get(candidate.get("jobId"), {}).get("autoEvidence", {}).get("extractionVersion")}
         existing = by_id.get(candidate.get("jobId"))
         if not source_trust(candidate, data):
             observation["error"] = "untrusted_origin"
@@ -941,7 +1033,33 @@ def automatic_detail_phase(data, now, fetcher, max_detail_pages, cache, previous
         if reason:
             observation["error"] = reason
             candidate["lastDetailAttemptAt"] = stamp(now)
-            if reason in permanent and not existing:
+            if reason in permanent and existing and existing.get("ingestionMode") == "automatic":
+                job_id = existing["id"]
+                original_job = copy.deepcopy(original_jobs.get(job_id, existing))
+                old_news = [copy.deepcopy(event) for event in data.get("updates", [])
+                            if event.get("jobId") == job_id and
+                            (event.get("ingestionMode") == "automatic" or str(event.get("type", "")).startswith("自动"))]
+                data.setdefault("cloudJobArchive", []).append({
+                    "job": original_job, "updates": old_news, "archivedAt": stamp(now),
+                    "reason": reason, "ruleVersion": AUTO_VERSION,
+                    "evidence": {"url": safe_url(result.get("finalUrl", url)),
+                                 "pageTitle": public_condition_snippet(result.get("pageTitle", ""))[:240],
+                                 "textHash": hashlib.sha256(str(result.get("articleText") or result.get("bodyText") or "").encode()).hexdigest()}})
+                data["jobs"] = [job for job in data["jobs"] if job["id"] != job_id]
+                data["updates"] = [event for event in data.get("updates", []) if not (
+                    event.get("jobId") == job_id and (event.get("ingestionMode") == "automatic" or str(event.get("type", "")).startswith("自动")))]
+                by_id.pop(job_id, None)
+                archived_jobs.append(job_id)
+                for old_candidate in data.get("cloudCandidates", []):
+                    if isinstance(old_candidate, dict) and old_candidate.get("jobId") == job_id:
+                        data.setdefault("cloudCandidateArchive", []).append({
+                            "candidate": copy.deepcopy(old_candidate), "archivedAt": stamp(now),
+                            "reason": reason, "ruleVersion": AUTO_VERSION})
+                        old_candidate["reviewStatus"] = "archived"
+                        archived.append(old_candidate.get("id"))
+                candidate["reviewStatus"] = "archived"
+                observation.update(success=True, disposition="job_archived", jobId=job_id)
+            elif reason in permanent and not existing:
                 data.setdefault("cloudCandidateArchive", []).append({"candidate": copy.deepcopy(candidate),
                     "archivedAt": stamp(now), "reason": reason, "ruleVersion": AUTO_VERSION})
                 candidate["reviewStatus"] = "archived"
@@ -968,33 +1086,35 @@ def automatic_detail_phase(data, now, fetcher, max_detail_pages, cache, previous
         if existing:
             if existing.get("ingestionMode") == "automatic":
                 changes = {}
+                earlier_evidence = copy.deepcopy(existing.get("autoEvidence", {}))
+                migrating = earlier_evidence.get("extractionVersion") != AUTO_VERSION
                 explicit = new["autoEvidence"]["fields"]
                 for key in SEMANTIC_FIELDS:
                     if key in ("organization", "region", "province", "education", "requirements", "sourcePublishedAt",
-                               "deadline", "deadlineTime", "eligibility2027") and key not in explicit:
+                               "deadline", "deadlineTime", "eligibility2027") and key not in explicit and not migrating:
                         continue
-                    if key in ("provinceList", "scope") and "region" not in explicit:
+                    if key in ("provinceList", "scope") and "region" not in explicit and not migrating:
                         continue
-                    if key == "timeWindow" and new.get(key) == UNKNOWN:
+                    if key == "timeWindow" and new.get(key) == UNKNOWN and not migrating:
                         continue
                     if key in ("availability", "availabilityCode", "currentStatus") and existing.get("availability") == "historical":
                         continue
                     if existing.get(key) != new.get(key):
                         changes[key] = {"before": existing.get(key), "after": new.get(key)}
                         existing[key] = new.get(key)
-                earlier_evidence = existing.get("autoEvidence", {})
                 for key, value in earlier_evidence.get("fields", {}).items():
-                    if key not in explicit and isinstance(value, dict):
+                    if key not in explicit and isinstance(value, dict) and not migrating:
                         retained = copy.deepcopy(value)
                         retained["retainedFromEarlier"] = True
                         retained.setdefault("observedAt", existing.get("sourceCheckedAt"))
                         retained.setdefault("sourceUrl", earlier_evidence.get("url"))
                         new["autoEvidence"]["fields"][key] = retained
                 existing["sourceCheckedAt"] = stamp(now)
+                existing["ingestionMethod"] = AUTO_VERSION
                 existing["autoEvidence"] = new["autoEvidence"]
                 if changes:
                     existing.setdefault("autoHistory", []).append({"at": stamp(now), "changes": changes,
-                                                                  "sourceUrl": new["announcementUrl"]})
+                                                                  "sourceUrl": new["announcementUrl"], "previousEvidence": earlier_evidence})
                     updated.append(existing["id"])
                     observation["changes"] = changes
             job_id = existing["id"]
@@ -1013,10 +1133,11 @@ def automatic_detail_phase(data, now, fetcher, max_detail_pages, cache, previous
     pending = sum(isinstance(candidate, dict) and candidate.get("reviewStatus") != "imported"
                   for candidate in data.get("cloudCandidates", []))
     return {"attempts": attempts, "added": list(dict.fromkeys(added)), "updated": list(dict.fromkeys(updated)),
-            "archived": archived, "pending": pending, "state": detail_state}
+            "archived": archived, "archivedJobs": list(dict.fromkeys(archived_jobs)),
+            "pending": pending, "state": detail_state}
 
 
-def refresh_stats(data, auto_added=0):
+def refresh_stats(data, auto_added=0, auto_archived=0):
     stats = data.setdefault("stats", {})
     jobs = data["jobs"]
     provinces = set()
@@ -1032,7 +1153,7 @@ def refresh_stats(data, auto_added=0):
                  provinces=len(provinces), priorityA=sum(job.get("priority") == "A" for job in jobs),
                  nearby=sum(job.get("scope") == "nearby" for job in jobs))
     if isinstance(stats.get("nationalAdded"), int):
-        stats["nationalAdded"] += auto_added
+        stats["nationalAdded"] = max(0, stats["nationalAdded"] + auto_added - auto_archived)
     elif auto_added:
         stats["nationalAdded"] = auto_added
 
@@ -1074,7 +1195,7 @@ def write_sqlite(path, data):
     with closing(sqlite3.connect(path)) as conn:
         conn.execute("PRAGMA user_version = 1")
         for table in ("jobs", "links", "paper_policies", "profile_records",
-                      "talent_assessments", "journal_rankings", "candidates", "dashboard_snapshot"):
+                      "talent_assessments", "journal_rankings", "candidates", "job_archive", "dashboard_snapshot"):
             conn.execute("CREATE TABLE " + table + " (id TEXT PRIMARY KEY, payload_json TEXT NOT NULL)")
         def insert(table, key, payload):
             conn.execute("INSERT INTO " + table + " VALUES (?, ?)",
@@ -1096,7 +1217,7 @@ def write_sqlite(path, data):
             for index, record in enumerate(records):
                 insert("profile_records", "record:" + str(index), record)
         for key, table in (("talentAssessments", "talent_assessments"),
-                           ("journalRankings", "journal_rankings"), ("cloudCandidates", "candidates")):
+                           ("journalRankings", "journal_rankings"), ("cloudCandidates", "candidates"), ("cloudJobArchive", "job_archive")):
             for index, record in enumerate(data.get(key, [])):
                 insert(table, index, record)
         insert("dashboard_snapshot", "dashboard", data)
@@ -1165,6 +1286,9 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
     candidate_urls = {candidate.get("url") for candidate in candidates if isinstance(candidate, dict)}
     candidate_urls.update(entry.get("candidate", {}).get("url") for entry in data.get("cloudCandidateArchive", [])
                           if isinstance(entry, dict) and isinstance(entry.get("candidate"), dict))
+    for entry in data.get("cloudJobArchive", []):
+        if isinstance(entry, dict) and isinstance(entry.get("job"), dict):
+            candidate_urls.update(job_urls(entry["job"]))
     expired = []
     for job in data["jobs"]:
         deadline = parse_deadline(job)
@@ -1258,10 +1382,20 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
                 except Exception as exc:
                     entry["error"] = type(exc).__name__
                 attachment_attempts.append(entry)
-    details = automatic_detail_phase(data, now, detail_fetcher, max_detail_pages, detail_cache, previous, started)
+    details = automatic_detail_phase(data, now, detail_fetcher, max_detail_pages, detail_cache, previous, started,
+                                     {job["id"]: job for job in original["jobs"]})
     archived_candidates.extend(details["archived"])
     updates = data.setdefault("updates", [])
     indexed = {job["id"]: job for job in data["jobs"]}
+    indexed.update({entry["job"]["id"]: entry["job"] for entry in data.get("cloudJobArchive", []) if isinstance(entry.get("job"), dict)})
+    for entry in data.get("cloudJobArchive", []):
+        job = entry.get("job", {})
+        if job.get("id") in details["archivedJobs"]:
+            updates.insert(0, {"date": now.date().isoformat(), "type": "自动纠错归档",
+                              "target": entry.get("evidence", {}).get("pageTitle") or job.get("position", ""),
+                              "priority": "B", "jobId": job["id"],
+                              "summary": "原自动记录已识别为非招聘岗位，移出岗位库；完整原记录与自动新闻保存在cloudJobArchive。",
+                              "url": job.get("announcementUrl", ""), "ingestionMode": "automatic"})
     for kind, ids in (("自动新增", details["added"]), ("自动更新", details["updated"]), ("自动归档", expired)):
         for job_id in ids:
             job = indexed[job_id]
@@ -1281,14 +1415,22 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
         "provinceCursor": cursor, "provincesChecked": sorted({item["province"] for item in selected[:len(attempts)]}),
         "limitReached": len(attempts) < len(selected), "maxPages": max_pages,
         "urlState": states, "scope": CAVEAT, "maxDetailPages": max_detail_pages,
-        "autoAdded": len(details["added"]), "autoUpdated": len(details["updated"]),
+        "autoAdded": len(details["added"]), "autoUpdated": len(details["updated"]), "autoArchived": len(details["archivedJobs"]),
         "pendingDetails": details["pending"], "detailChecked": len(details["attempts"]),
         "detailSuccessful": detail_successes, "detailState": details["state"]}
     summary["attachmentsDownloaded"] = len(attachment_files)
     data["cloudUpdate"] = summary
-    refresh_stats(data, len(details["added"]))
+    refresh_stats(data, len(details["added"]), len(details["archivedJobs"]))
     # Deliberate invariants: automated monitoring cannot alter semantic conclusions.
-    for old, new in zip(original["jobs"], data["jobs"]):
+    new_jobs_by_id = {job["id"]: job for job in data["jobs"]}
+    for old in original["jobs"]:
+        new = new_jobs_by_id.get(old["id"])
+        if new is None:
+            if old.get("ingestionMode") != "automatic" or not any(
+                entry.get("job") == old and entry.get("ruleVersion") == AUTO_VERSION
+                for entry in data.get("cloudJobArchive", [])):
+                raise AssertionError("job removed without full automatic archive")
+            continue
         for key in ("verifiedAt", "eligibility", "eligibilityCode", "eligibility2027", "paperPolicy"):
             if key == "eligibility2027" and old.get("ingestionMode") == "automatic":
                 continue
@@ -1301,7 +1443,7 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
                 "attempts": attempts, "expiredJobIds": expired, "newCandidateIds": new_candidates,
                 "inputSha256": hashlib.sha256(raw).hexdigest(), "attachments": attachment_attempts,
                 "archivedCandidateIds": archived_candidates, "detailAttempts": details["attempts"],
-                "autoAddedJobIds": details["added"], "autoUpdatedJobIds": details["updated"]}
+                "autoAddedJobIds": details["added"], "autoUpdatedJobIds": details["updated"], "autoArchivedJobIds": details["archivedJobs"]}
     output = Path(output_path)
     database = Path(database_path)
     if output.resolve() == database.resolve() or Path(data_path).resolve() == database.resolve():
