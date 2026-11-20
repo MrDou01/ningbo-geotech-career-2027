@@ -6004,7 +6004,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-19T15:46:58+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.cncico.com/content/82659": {
@@ -6016,7 +6016,7 @@
             "error": null
           },
           "[rejected-url]": {
-            "checkedAt": "2026-11-19T15:46:58+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -9785,7 +9785,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-19T15:46:58+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://cctegjob.iguopin.com/campus": {
@@ -9801,6 +9801,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "2c66328760fe52a55caae49697fa12c19dbe232108503fa4070cccda904b6bfa",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=323EFCACC7E1E19FE0653A68DD0E9B18": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "2bd2135175a4005e4748b40c9feeca30cbbee81464e9587f0ae2119dc8ccb719",
             "contentChanged": false,
             "error": null
           }
@@ -10622,11 +10630,11 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-19T15:46:58+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "[rejected-url]": {
-            "checkedAt": "2026-11-19T15:46:58+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -10717,11 +10725,11 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-19T15:46:58+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "[rejected-url]": {
-            "checkedAt": "2026-11-19T15:46:58+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -11029,7 +11037,7 @@
       "sourceTrust": "mixed",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-17T16:20:54+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.iguopin.com/company?id=10685401245839252": {
@@ -11037,6 +11045,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "c325e198a837ed1767e4effc91640d8d18e07a9818d33c925782ac7acc450325",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.100zp.com/m_zpgg-c_detail-id_2586-ggclass1_2.html": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "contentChanged": false,
             "error": null
           }
@@ -17041,11 +17057,11 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://gcjs.ncu.edu.cn/copy_1_article.jsp?urltype=news.NewsContentUrl&wbnewsid=25901&wbtreeid=14811": {
-            "checkedAt": "2026-11-14T15:10:32+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "9210848e44ee2cf9c3172c579f848c1aa0ff2f9f1ad0e5e656d107abcd483c8e",
@@ -17426,7 +17442,7 @@
       "sourceTrust": "mixed",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-19T15:46:58+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.gaoxiaojob.com/announcement/detail/226238.html": {
@@ -17438,7 +17454,7 @@
             "error": null
           },
           "https://zp.stdu.edu.cn/": {
-            "checkedAt": "2026-11-16T15:08:01+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -18979,7 +18995,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://rsc.ahpu.edu.cn/": {
@@ -18987,6 +19003,22 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "2a10715fd16e7f82e229f3bc86e50df422bbadc17a71099b4fcde6e0dc99d791",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.ahpu.edu.cn/2026/1019/c5a280067/page.htm": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "9a7f682b6136283e070e9a0917f4f755dfc9ee084b24a8907a84611a33607b8f",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.ahpu.edu.cn/jzgcxy/2026/1026/c3848a280899/page.htm": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "b01a257708a434e36158447e87228a1e5f9a3e6db4af4e9b57ebf4971aa69c67",
             "contentChanged": false,
             "error": null
           }
@@ -19062,7 +19094,29 @@
       "availability": "rolling",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.ahpu.edu.cn/2026/1019/c5a280067/page.htm": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "9a7f682b6136283e070e9a0917f4f755dfc9ee084b24a8907a84611a33607b8f",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.ahpu.edu.cn/jzgcxy/2026/1026/c3848a280900/page.htm": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "0d6c95f154074e8c4df2c8427b71f08e3fd656164c1870b511abbed72841ee78",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NA062",
@@ -19462,7 +19516,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-19T15:46:58+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://rsc.zit.edu.cn/info/1001/1682.htm": {
@@ -19474,7 +19528,7 @@
             "error": "TimeoutError"
           },
           "https://rsc.zit.edu.cn/info/1013/1681.htm": {
-            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -20799,7 +20853,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.gdut.edu.cn/campus/view/id/1020741": {
@@ -20811,11 +20865,11 @@
             "error": null
           },
           "https://career.nankai.edu.cn/correcruit/content/id/113075.html": {
-            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "1eb48a3dd92368c2f2436dd86bc206952ba4026272a1222d2e1ad68fa6bc6683",
-            "contentChanged": false,
+            "textHash": "e59a36322d90cdba0c4a122555dc1b6d3a36b7c3a89088e909976d2205b360a7",
+            "contentChanged": true,
             "error": null
           },
           "https://careers.oppo.com/campus": {
@@ -22411,7 +22465,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.nankai.edu.cn/correcruit/content/id/119091.html": {
@@ -22423,7 +22477,7 @@
             "error": null
           },
           "https://zhaopin.pipechina.com.cn/": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -22818,14 +22872,14 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.hebut.edu.cn/recruitment/content/type/2/id/5169.html": {
-            "checkedAt": "2026-11-18T15:51:40+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "7c3ccecfe5627bb0299f1efc1623459ecf0c3a6b865766487d341384d2d27e61",
+            "textHash": "24f531b11f322f3315dee588a9dfae1832f35779827b8618ea2975c619a23a26",
             "contentChanged": true,
             "error": null
           }
@@ -23201,7 +23255,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://zhaopin.cnpc.com.cn/": {
@@ -23213,10 +23267,10 @@
             "error": "http_status"
           },
           "https://career.hebut.edu.cn/recruitment/content/type/2/id/5381.html": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "499a670ec21f8d83cda7bdb8bbc485a0bb756c99ddc385b11356434847f490b9",
+            "textHash": "7799017c87882eeec08c68afb6724c9e36820f36726690b97f56f23df5b91418",
             "contentChanged": true,
             "error": null
           }
@@ -24140,7 +24194,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -24152,7 +24206,7 @@
             "error": "unsupported_content_type"
           },
           "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
@@ -24236,7 +24290,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -24248,7 +24302,7 @@
             "error": "unsupported_content_type"
           },
           "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
@@ -24332,7 +24386,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -24344,7 +24398,7 @@
             "error": "unsupported_content_type"
           },
           "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
@@ -24427,7 +24481,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -24439,7 +24493,7 @@
             "error": "unsupported_content_type"
           },
           "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
@@ -24523,7 +24577,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -24535,7 +24589,7 @@
             "error": "unsupported_content_type"
           },
           "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
@@ -24619,7 +24673,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -24631,7 +24685,7 @@
             "error": "unsupported_content_type"
           },
           "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
@@ -24714,7 +24768,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -24726,7 +24780,7 @@
             "error": "unsupported_content_type"
           },
           "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
@@ -24810,7 +24864,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -24822,7 +24876,7 @@
             "error": "unsupported_content_type"
           },
           "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
@@ -24905,7 +24959,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -24917,7 +24971,7 @@
             "error": "unsupported_content_type"
           },
           "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
@@ -25000,7 +25054,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.hubwd.com/upload/2026/1002/2106001352101597184.docx": {
@@ -25012,7 +25066,7 @@
             "error": "unsupported_content_type"
           },
           "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
@@ -34953,7 +35007,45 @@
       "availability": "historical",
       "eligibility": "eligible_2027",
       "sourceTrust": "mixed",
-      "sourceHealth": "reachable"
+      "sourceHealth": "reachable",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.beijing.gov.cn/cs/gncs/zcwj/202609/W020260910591853363866.doc": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          },
+          "https://www.beijing.gov.cn/cs/gncs/zcwj/202609/W020260910591853482204.xls": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          },
+          "https://www.beijing.gov.cn/cs/gncs/zcwj/202609/W020260910591853664415.xls": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          },
+          "https://www.beijing.gov.cn/cs/gncs/zcwj/202609/t20260910_4858513.html": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "1c85eebe3a470461ac97cc33940b27cf25f72dabdcbb2ad7b62d4e9649ae91f7",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
     },
     {
       "id": "NR028",
@@ -115739,7 +115831,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-19T15:46:58+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://whrsm.cas.cn/xwdt2020/zszp/zpxx_168106/202610/P020261009624260410034.docx": {
@@ -115749,6 +115841,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "unsupported_content_type"
+          },
+          "https://whrsm.cas.cn/xwdt2020/zszp/zpxx_168106/202610/t20261009_8290622.html": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "88b47517d22b6ad5840f4f0ff3ea656d63950b9b2ad17a492a307021624546c4",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -116359,7 +116459,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-19T15:46:58+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://job.ucas.ac.cn/frontpage/ucas/html/newsDetail.html?id=396236a9030b49cfa31502c8d377b7fb": {
@@ -116377,6 +116477,14 @@
             "textHash": "af3594c045aa557b783e0286f73ee474dbea334d492ec3a8e1c27ef9022751d0",
             "contentChanged": false,
             "error": null
+          },
+          "https://www.jsxf.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3acCZJipmwSmaxxMCiGLX3MfiNGOUwLSAArQfLFrEFzUJQk8HNZ9Y6WOE%2FlYhOhlXuevYnxo0K1VTOK56leKuJxc%2F3vS7%2B4wlIKS5HRcXS9X9vTi6wHSi3kH237Uh1GOv4o%3D&fileName=%E9%99%84%E4%BB%B63.+%E5%8E%BF%E7%BA%A7%E4%BB%A5%E4%B8%8A%E6%9C%BA%E5%85%B3%E9%80%89%E8%B0%83%EF%BC%88%E5%90%8D%E6%A0%A1%E4%BC%98%E7%94%9F%E9%80%89%E8%B0%83%EF%BC%89%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.pdf": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
           }
         }
       }
@@ -116579,7 +116687,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-17T16:20:54+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://iap.cas.cn/gb/yjsjy/jyxx/202610/P020261016536262991220.doc": {
@@ -116597,6 +116705,14 @@
             "textHash": "bf65af1f90bfee1d01b58789e76d91ad8a444918684eeb636611f1e61adce3fb",
             "contentChanged": false,
             "error": null
+          },
+          "https://www.gxu.edu.cn/system/_content/download.jsp?owner=1556120285&urltype=news.DownloadAttachUrl&wbfileid=14929619": {
+            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
           }
         }
       }
@@ -119167,7 +119283,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://rst.xinjiang.gov.cn/xjrst/c112746/202611/313dbbdd7f354ac58590f0c249f751e3.shtml": {
@@ -119203,7 +119319,7 @@
             "error": "unsupported_content_type"
           },
           "https://rst.xinjiang.gov.cn/xjrst/c112746/202611/313dbbdd7f354ac58590f0c249f751e3/files/4.%E6%96%B0%E7%96%86%E7%94%9F%E4%BA%A7%E5%BB%BA%E8%AE%BE%E5%85%B5%E5%9B%A22027%E5%B9%B4%E5%BA%A6%E9%80%89%E8%B0%83%E7%94%9F%E8%81%8C%E4%BD%8D%E8%A1%A8.xlsx": {
-            "checkedAt": "2026-11-14T15:10:32+08:00",
+            "checkedAt": "2026-11-20T14:11:47+08:00",
             "httpStatus": 200,
             "bodyFetched": false,
             "textHash": null,
@@ -138626,84 +138742,37 @@
   "cloudUpdate": {
     "success": true,
     "completed": true,
-    "updatedAt": "2026-11-19T15:46:58+08:00",
-    "checkedAt": "2026-11-19T15:46:58+08:00",
+    "updatedAt": "2026-11-20T14:11:47+08:00",
+    "checkedAt": "2026-11-20T14:11:47+08:00",
     "timezone": "Asia/Shanghai",
-    "checked": 120,
-    "successful": 80,
-    "failed": 40,
-    "changed": 12,
-    "newCandidates": 55,
+    "checked": 24,
+    "successful": 12,
+    "failed": 12,
+    "changed": 3,
+    "newCandidates": 0,
     "archivedCandidates": 0,
     "candidateFilterVersion": "title-relevance-v1",
     "expired": 0,
-    "provinceCursor": 32,
+    "provinceCursor": 44,
     "provincesChecked": [
-      "上海",
-      "云南",
-      "云南、四川、贵州、重庆、西藏、新疆、青海、甘肃、陕西、山西、吉林、黑龙江等",
-      "云南及全国",
-      "全国",
-      "全国、浙江",
-      "内蒙古",
       "北京",
-      "北京、天津、湖南、内蒙古",
-      "北京、江苏及全国",
-      "吉林",
-      "四川",
-      "四川、北京",
-      "四川、湖北、重庆、陕西、西藏、新疆",
-      "四川、重庆、贵州、云南及全国",
-      "四川及全国",
-      "天津",
-      "天津/北京",
-      "天津、河北、上海、浙江、四川",
-      "天津、辽宁、江苏、山东、福建等",
-      "宁夏",
       "安徽",
-      "山东",
-      "山东、北京、江苏、湖南",
-      "山东、海南、福建",
-      "山西",
-      "山西、内蒙古、北京、天津、河北、湖南、广东等",
-      "广东",
-      "广东、北京、上海、重庆、湖北、陕西等",
-      "广东、四川",
-      "广东、江苏、北京、上海、河南",
-      "广东、重庆、湖南、湖北、广西、海南、陕西",
+      "广东等",
       "广西",
+      "待确认",
+      "新疆",
+      "新疆、山东",
+      "新疆、青海、宁夏、甘肃、黑龙江、吉林、辽宁、河北、陕西、四川、天津",
       "江苏",
+      "江苏、安徽、江西",
       "江西",
       "河北",
       "河南",
       "浙江",
-      "海南",
-      "湖北",
-      "湖北、上海、广东、四川、天津、陕西、云南",
-      "湖北等",
-      "湖南",
-      "湖南、山西、广东、天津、河北、江西、江苏",
-      "湖南、广东、上海",
-      "湖南及全国/海外项目",
-      "甘肃",
-      "甘肃、辽宁、山东、浙江、江苏、海南",
-      "福建",
-      "贵州",
-      "贵州、四川、湖北、江苏及全国",
-      "辽宁",
-      "辽宁、北京、上海、广东、陕西、四川、湖北",
-      "重庆",
-      "陕西",
-      "陕西、甘肃、新疆",
-      "陕西及全国",
-      "青海",
-      "黑龙江",
-      "黑龙江/河北",
-      "黑龙江、内蒙古、北京、河北",
-      "黑龙江、新疆、陕西、广东"
+      "湖北"
     ],
     "limitReached": false,
-    "maxPages": 120,
+    "maxPages": 24,
     "urlState": {
       "https://civileng.tongji.edu.cn/18061/list.htm": {
         "checkedAt": "2026-11-14T15:10:32+08:00",
@@ -138958,9 +139027,9 @@
         "bodyFetched": true
       },
       "https://career.hebut.edu.cn/recruitment/content/type/2/id/5169.html": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
-        "textHash": "7c3ccecfe5627bb0299f1efc1623459ecf0c3a6b865766487d341384d2d27e61",
-        "characters": 3618,
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": "24f531b11f322f3315dee588a9dfae1832f35779827b8618ea2975c619a23a26",
+        "characters": 3625,
         "httpStatus": 200,
         "bodyFetched": true
       },
@@ -138986,7 +139055,7 @@
         "bodyFetched": true
       },
       "https://gcjs.ncu.edu.cn/copy_1_article.jsp?urltype=news.NewsContentUrl&wbnewsid=25901&wbtreeid=14811": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "textHash": "9210848e44ee2cf9c3172c579f848c1aa0ff2f9f1ad0e5e656d107abcd483c8e",
         "characters": 3309,
         "httpStatus": 200,
@@ -139147,7 +139216,7 @@
         "bodyFetched": false
       },
       "https://rst.xinjiang.gov.cn/xjrst/c112746/202611/313dbbdd7f354ac58590f0c249f751e3/files/4.%E6%96%B0%E7%96%86%E7%94%9F%E4%BA%A7%E5%BB%BA%E8%AE%BE%E5%85%B5%E5%9B%A22027%E5%B9%B4%E5%BA%A6%E9%80%89%E8%B0%83%E7%94%9F%E8%81%8C%E4%BD%8D%E8%A1%A8.xlsx": {
-        "checkedAt": "2026-11-14T15:10:32+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "textHash": null,
         "characters": null,
         "httpStatus": 200,
@@ -139875,8 +139944,8 @@
         "bodyFetched": true
       },
       "https://career.nankai.edu.cn/correcruit/content/id/113075.html": {
-        "checkedAt": "2026-11-15T14:59:50+08:00",
-        "textHash": "1eb48a3dd92368c2f2436dd86bc206952ba4026272a1222d2e1ad68fa6bc6683",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": "e59a36322d90cdba0c4a122555dc1b6d3a36b7c3a89088e909976d2205b360a7",
         "characters": 4132,
         "httpStatus": 200,
         "bodyFetched": true
@@ -139889,16 +139958,16 @@
         "bodyFetched": true
       },
       "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml": {
-        "checkedAt": "2026-11-17T16:20:54+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "textHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
         "characters": 2034,
         "httpStatus": 200,
         "bodyFetched": true
       },
       "https://career.hebut.edu.cn/recruitment/content/type/2/id/5381.html": {
-        "checkedAt": "2026-11-17T16:20:54+08:00",
-        "textHash": "499a670ec21f8d83cda7bdb8bbc485a0bb756c99ddc385b11356434847f490b9",
-        "characters": 6367,
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": "7799017c87882eeec08c68afb6724c9e36820f36726690b97f56f23df5b91418",
+        "characters": 6374,
         "httpStatus": 200,
         "bodyFetched": true
       },
@@ -139910,7 +139979,7 @@
         "bodyFetched": true
       },
       "https://zhaopin.pipechina.com.cn/": {
-        "checkedAt": "2026-11-17T16:20:54+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "textHash": null,
         "characters": null,
         "httpStatus": null,
@@ -139931,7 +140000,7 @@
         "bodyFetched": true
       },
       "https://rsc.zit.edu.cn/info/1013/1681.htm": {
-        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "textHash": null,
         "characters": null,
         "httpStatus": null,
@@ -140673,7 +140742,7 @@
         "bodyFetched": true
       },
       "https://zp.stdu.edu.cn/": {
-        "checkedAt": "2026-11-16T15:08:01+08:00",
+        "checkedAt": "2026-11-20T14:11:47+08:00",
         "textHash": null,
         "characters": null,
         "httpStatus": null,
@@ -142799,6 +142868,90 @@
         "characters": null,
         "httpStatus": 200,
         "bodyFetched": false
+      },
+      "https://www.gxu.edu.cn/system/_content/download.jsp?owner=1556120285&urltype=news.DownloadAttachUrl&wbfileid=14929619": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": 200,
+        "bodyFetched": false
+      },
+      "https://www.jsxf.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3acCZJipmwSmaxxMCiGLX3MfiNGOUwLSAArQfLFrEFzUJQk8HNZ9Y6WOE%2FlYhOhlXuevYnxo0K1VTOK56leKuJxc%2F3vS7%2B4wlIKS5HRcXS9X9vTi6wHSi3kH237Uh1GOv4o%3D&fileName=%E9%99%84%E4%BB%B63.+%E5%8E%BF%E7%BA%A7%E4%BB%A5%E4%B8%8A%E6%9C%BA%E5%85%B3%E9%80%89%E8%B0%83%EF%BC%88%E5%90%8D%E6%A0%A1%E4%BC%98%E7%94%9F%E9%80%89%E8%B0%83%EF%BC%89%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.pdf": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": 200,
+        "bodyFetched": false
+      },
+      "https://whrsm.cas.cn/xwdt2020/zszp/zpxx_168106/202610/t20261009_8290622.html": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": "88b47517d22b6ad5840f4f0ff3ea656d63950b9b2ad17a492a307021624546c4",
+        "characters": 2691,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.100zp.com/m_zpgg-c_detail-id_2586-ggclass1_2.html": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "characters": 0,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.ahpu.edu.cn/2026/1019/c5a280067/page.htm": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": "9a7f682b6136283e070e9a0917f4f755dfc9ee084b24a8907a84611a33607b8f",
+        "characters": 2420,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.ahpu.edu.cn/jzgcxy/2026/1026/c3848a280899/page.htm": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": "b01a257708a434e36158447e87228a1e5f9a3e6db4af4e9b57ebf4971aa69c67",
+        "characters": 1172,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.ahpu.edu.cn/jzgcxy/2026/1026/c3848a280900/page.htm": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": "0d6c95f154074e8c4df2c8427b71f08e3fd656164c1870b511abbed72841ee78",
+        "characters": 992,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.beijing.gov.cn/cs/gncs/zcwj/202609/W020260910591853363866.doc": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": 200,
+        "bodyFetched": false
+      },
+      "https://www.beijing.gov.cn/cs/gncs/zcwj/202609/W020260910591853482204.xls": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": 200,
+        "bodyFetched": false
+      },
+      "https://www.beijing.gov.cn/cs/gncs/zcwj/202609/W020260910591853664415.xls": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": 200,
+        "bodyFetched": false
+      },
+      "https://www.beijing.gov.cn/cs/gncs/zcwj/202609/t20260910_4858513.html": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": "1c85eebe3a470461ac97cc33940b27cf25f72dabdcbb2ad7b62d4e9649ae91f7",
+        "characters": 5073,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=323EFCACC7E1E19FE0653A68DD0E9B18": {
+        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "textHash": "2bd2135175a4005e4748b40c9feeca30cbbee81464e9587f0ae2119dc8ccb719",
+        "characters": 1621,
+        "httpStatus": 200,
+        "bodyFetched": true
       }
     },
     "scope": "仅自动抓取、发现链接和变化监测；不自动完成岗位资格语义审查、论文认定或人才定档，不刷新人工核验日期。",
