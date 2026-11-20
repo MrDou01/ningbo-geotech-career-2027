@@ -1,0 +1,3996 @@
+{
+  "run": {
+    "success": true,
+    "completed": true,
+    "updatedAt": "2026-11-20T15:39:11+08:00",
+    "checkedAt": "2026-11-20T15:39:11+08:00",
+    "timezone": "Asia/Shanghai",
+    "checked": 120,
+    "successful": 92,
+    "failed": 28,
+    "changed": 42,
+    "newCandidates": 26,
+    "archivedCandidates": 7,
+    "candidateFilterVersion": "title-relevance-v2",
+    "expired": 0,
+    "provinceCursor": 51,
+    "provincesChecked": [
+      "上海",
+      "云南",
+      "云南、四川、贵州、重庆、西藏、新疆、青海、甘肃、陕西、山西、吉林、黑龙江等",
+      "云南及全国",
+      "全国",
+      "全国、浙江",
+      "内蒙古",
+      "北京",
+      "北京、天津、湖南、内蒙古",
+      "北京、江苏及全国",
+      "吉林",
+      "四川",
+      "四川、北京",
+      "四川、湖北、重庆、陕西、西藏、新疆",
+      "四川、重庆、贵州、云南及全国",
+      "四川及全国",
+      "天津",
+      "天津/北京",
+      "天津、河北、上海、浙江、四川",
+      "天津、辽宁、江苏、山东、福建等",
+      "宁夏",
+      "安徽",
+      "山东",
+      "山东、北京、江苏、湖南",
+      "山东、海南、福建",
+      "山西",
+      "山西、内蒙古、北京、天津、河北、湖南、广东等",
+      "广东",
+      "广东、北京、上海、重庆、湖北、陕西等",
+      "广东、四川",
+      "广东、江苏、北京、上海、河南",
+      "广东、重庆、湖南、湖北、广西、海南、陕西",
+      "广东等",
+      "广西",
+      "待确认",
+      "新疆",
+      "新疆、山东",
+      "新疆、青海、宁夏、甘肃、黑龙江、吉林、辽宁、河北、陕西、四川、天津",
+      "未知",
+      "江苏",
+      "江苏、安徽、江西",
+      "江西",
+      "河北",
+      "河南",
+      "浙江",
+      "海南",
+      "湖北",
+      "湖北、上海、广东、四川、天津、陕西、云南",
+      "湖北等",
+      "湖南",
+      "湖南、山西、广东、天津、河北、江西、江苏",
+      "甘肃",
+      "重庆",
+      "陕西",
+      "陕西、甘肃、新疆",
+      "陕西及全国",
+      "青海",
+      "黑龙江",
+      "黑龙江/河北",
+      "黑龙江、内蒙古、北京、河北",
+      "黑龙江、新疆、陕西、广东"
+    ],
+    "limitReached": false,
+    "maxPages": 120,
+    "scope": "自动读取官方招聘正文并直接入库；不确定字段保留未知，不据此认定本人资格、论文等级或人才档次，不刷新原人工核验日期。",
+    "maxDetailPages": 30,
+    "autoAdded": 14,
+    "autoUpdated": 0,
+    "autoArchived": 0,
+    "pendingDetails": 139,
+    "detailChecked": 30,
+    "detailSuccessful": 14,
+    "attachmentsDownloaded": 0
+  },
+  "attempts": [
+    {
+      "url": "https://www.12371.gov.cn/",
+      "finalUrl": "https://www.12371.gov.cn/",
+      "jobIds": [
+        "NR595"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "00f10d753ffe69f433bb9456a8ea63117507057affe6e4b80dbbb4b67f7fd48d",
+      "previousTextHash": "08c4bc382d7ed6fd1a70ab1d75c1da7769c1550471339f60e8900e930b129c6e",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 4872,
+        "characters": 4996
+      },
+      "error": null,
+      "elapsedMs": 3150,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "[rejected-url]",
+      "finalUrl": "[rejected-url]",
+      "jobIds": [
+        "NI110",
+        "NI114",
+        "NI115"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "ValueError",
+      "elapsedMs": null,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://cug.91wllm.cn/attachment/cug/ueditor/file/20260612/4777_%E9%99%84%E4%BB%B6%EF%BC%9A%E4%B8%AD%E9%93%81%E7%AC%AC%E4%B8%80%E5%8B%98%E5%AF%9F%E8%AE%BE%E8%AE%A1%E9%99%A2%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B82027%E5%B9%B4%E6%8B%9B%E8%81%98%E9%9C%80%E6%B1%82%E4%B8%80%E8%A7%88%E8%A1%A8.pdf",
+      "finalUrl": "https://cug.91wllm.cn/attachment/cug/ueditor/file/20260612/4777_%E9%99%84%E4%BB%B6%EF%BC%9A%E4%B8%AD%E9%93%81%E7%AC%AC%E4%B8%80%E5%8B%98%E5%AF%9F%E8%AE%BE%E8%AE%A1%E9%99%A2%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B82027%E5%B9%B4%E6%8B%9B%E8%81%98%E9%9C%80%E6%B1%82%E4%B8%80%E8%A7%88%E8%A1%A8.pdf",
+      "jobIds": [
+        "NI017"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "application/pdf",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "unsupported_content_type",
+      "elapsedMs": 2218,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://jobs.tiangong.edu.cn/recruitment/content/type/2/id/2731.html",
+      "finalUrl": "https://jobs.tiangong.edu.cn/recruitment/content/type/2/id/2731.html",
+      "jobIds": [
+        "NI010"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "b62be3e632a4e66e764a18b96cd0c7885586a0ed707aeafe37ae380a6176efc6",
+      "previousTextHash": "8906f5952ca73f3b1ef90cf07c14d5019b5bc63b167243f1cc4c45e268a8791c",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 4278,
+        "characters": 4161
+      },
+      "error": null,
+      "elapsedMs": 3288,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://xds.ecnu.edu.cn/0e/ae/c51123a790190/page.htm",
+      "finalUrl": "https://xds.ecnu.edu.cn/0e/ae/c51123a790190/page.htm",
+      "jobIds": [
+        "NR624"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "35d31a32a28c83078fac49b3b016559f6af9ff3aeac14a06f3ba191997d42280",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 5660
+      },
+      "error": null,
+      "elapsedMs": 3943,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://civil.hit.edu.cn/rczp/list.htm",
+      "finalUrl": "https://civil.hit.edu.cn/rczp/list.htm",
+      "jobIds": [
+        "NA009"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "905fac6947c07539683cc8dca0f4fda870c913b207a6fe7a9eab5bc23ec95d7b",
+      "previousTextHash": "5da49221ce7f036104a85631b8c14de2037630834ef4fb663349305317e757c5",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 962,
+        "characters": 961
+      },
+      "error": null,
+      "elapsedMs": 4891,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://iem.ac.cn/zxgl/info?id=4416",
+      "finalUrl": "https://iem.ac.cn/zxgl/info?id=4416",
+      "jobIds": [
+        "NR011",
+        "NR033",
+        "NR034",
+        "NR035",
+        "NR036",
+        "NR037",
+        "NR038",
+        "NR039",
+        "NR040",
+        "NR041",
+        "NR042",
+        "NR043",
+        "NR044",
+        "NR045",
+        "NR046",
+        "NR047",
+        "NR048",
+        "NR049",
+        "NR050",
+        "NR051",
+        "NR052",
+        "NR053",
+        "NR054",
+        "NR055",
+        "NR056",
+        "NR057",
+        "NR058",
+        "NR059",
+        "NR060",
+        "NR061",
+        "NR062",
+        "NR063",
+        "NR064",
+        "NR065",
+        "NR066",
+        "NR067",
+        "NR068",
+        "NR069",
+        "NR070",
+        "NR071",
+        "NR072",
+        "NR073",
+        "NR074",
+        "NR075",
+        "NR076",
+        "NR077",
+        "NR078",
+        "NR079",
+        "NR080",
+        "NR081",
+        "NR082",
+        "NR083",
+        "NR084",
+        "NR085",
+        "NR086",
+        "NR087",
+        "NR088",
+        "NR089",
+        "NR090",
+        "NR091",
+        "NR092",
+        "NR093",
+        "NR094",
+        "NR095",
+        "NR096",
+        "NR097",
+        "NR098",
+        "NR099",
+        "NR100",
+        "NR101",
+        "NR102",
+        "NR103",
+        "NR104",
+        "NR105",
+        "NR106",
+        "NR107",
+        "NR108",
+        "NR109",
+        "NR110",
+        "NR111",
+        "NR112",
+        "NR113",
+        "NR114",
+        "NR115",
+        "NR116",
+        "NR117",
+        "NR118",
+        "NR119",
+        "NR120",
+        "NR121",
+        "NR122",
+        "NR123",
+        "NR124",
+        "NR125",
+        "NR126",
+        "NR127",
+        "NR128",
+        "NR129",
+        "NR130",
+        "NR131",
+        "NR132",
+        "NR133",
+        "NR134",
+        "NR135",
+        "NR136",
+        "NR137",
+        "NR138",
+        "NR139",
+        "NR140",
+        "NR141",
+        "NR142",
+        "NR143",
+        "NR144",
+        "NR145",
+        "NR146",
+        "NR147",
+        "NR148",
+        "NR149",
+        "NR150",
+        "NR151",
+        "NR152",
+        "NR153",
+        "NR154",
+        "NR155",
+        "NR156",
+        "NR157",
+        "NR158",
+        "NR159",
+        "NR160",
+        "NR161",
+        "NR162",
+        "NR163",
+        "NR164",
+        "NR165",
+        "NR166",
+        "NR167",
+        "NR168"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "4f0822e79ddc1867acf0f7a5c077ddff290685a480fc5d73f41d4d355199ff7e",
+      "previousTextHash": "4dea64cbe36e484c842b3c6d097107c26c54fb0ee5a0698b6c1e933f051deecc",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 4026,
+        "characters": 3792
+      },
+      "error": null,
+      "elapsedMs": 2577,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.csu.edu.cn/job/view/id/1191453",
+      "finalUrl": "https://career.csu.edu.cn/job/view/id/1191453",
+      "jobIds": [
+        "NI041"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=utf-8",
+      "textHash": "fc7253745374f3b1e226d717889c4d8f9b87f0fa90d058bfcd2ce8d18b449c49",
+      "previousTextHash": "882d0192edff60b8190f6d505056baace65063a60c51d2291d9ea10c20da9260",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 873,
+        "characters": 855
+      },
+      "error": null,
+      "elapsedMs": 3963,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/80508.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/80508.html",
+      "jobIds": [
+        "NI036"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "f2ac28e13eaccd0b38a2726e66da08dffed1a1770f3f1660804ba82066083991",
+      "previousTextHash": "4c7cffba8569f1fad87cc26b8c151a00757f9d432ea27300bba10db40e44bcd6",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 12119,
+        "characters": 12119
+      },
+      "error": null,
+      "elapsedMs": 2634,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.senergy.sjtu.edu.cn/index/rencaizhaopin/4114.html",
+      "finalUrl": "https://www.senergy.sjtu.edu.cn/index/rencaizhaopin/4114.html",
+      "jobIds": [
+        "NA066"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "958085be68f8490149f1f63bdaaea5b97fef8f663b779f06f3544001053f1e84",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2482
+      },
+      "error": null,
+      "elapsedMs": 4886,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://edu.iphy.ac.cn/cmsfiles/4523_2026110608174883787.xlsx",
+      "finalUrl": "https://edu.iphy.ac.cn/cmsfiles/4523_2026110608174883787.xlsx",
+      "jobIds": [
+        "NR626"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 406,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "http_status",
+      "elapsedMs": 1072,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=387c8a6284af4386b93a15f13563548a",
+      "finalUrl": "https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=387c8a6284af4386b93a15f13563548a",
+      "jobIds": [
+        "NI039"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "acb95154de1d90be3ca6ccf60caff53c60ac96e5bbb3401c5774988336785045",
+      "previousTextHash": "6888a1b2ea3ee1397b4161d1d9a890b5508919840410cc6eafe108bce77ed02d",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 3816,
+        "characters": 3661
+      },
+      "error": null,
+      "elapsedMs": 3325,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://xyzp.51job.com/kmy2027",
+      "finalUrl": "https://xyzp.51job.com/kmy2027",
+      "jobIds": [
+        "NI012"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": "48e0100b4da5d26c3e09bc572af6bc4e7463b7199f52be13061cf551341a9ac8",
+      "previousTextHash": "48e0100b4da5d26c3e09bc572af6bc4e7463b7199f52be13061cf551341a9ac8",
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": 92,
+        "characters": null
+      },
+      "error": "ConnectionResetError",
+      "elapsedMs": 1381,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://zhaopin.chnenergy.com.cn/annc/showgg?id=41594bdf-42d1-46f9-b239-a3ba765286d7",
+      "finalUrl": "https://zhaopin.chnenergy.com.cn/annc/showgg?id=41594bdf-42d1-46f9-b239-a3ba765286d7",
+      "jobIds": [
+        "NI055",
+        "NI056",
+        "NI057",
+        "NI058",
+        "NI059",
+        "NI060",
+        "NI061",
+        "NI062",
+        "NI063"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "f3fc3fe56daa98058f3b38c825a3b4740d5c050f21899788b5faa1b1ed52ae5b",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2504
+      },
+      "error": null,
+      "elapsedMs": 2284,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh5eZmKu9Syypzddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+      "finalUrl": "https://jy.scu.edu.cn/index/index/employjobdetail.html?data=MDAwMDAwMDAwMJG6n3_Ed6imi4qQtLh5eZmKu9Syypzddricp9CWi5qikaeWacSdqLqGfaK2w4iil5C4zNbGiL-E",
+      "jobIds": [
+        "J047"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 403,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "text/html;charset=utf8",
+      "textHash": "3304bbbd43a9e34ee4795ce67c30cb8b45c688d486b7c3f4da90f8aec63da1aa",
+      "previousTextHash": "3304bbbd43a9e34ee4795ce67c30cb8b45c688d486b7c3f4da90f8aec63da1aa",
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": 2741,
+        "characters": null
+      },
+      "error": "http_status",
+      "elapsedMs": 1715,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.usth.edu.cn/detail/job?career_id=694460&id=2598515",
+      "finalUrl": "https://job.usth.edu.cn/detail/job?career_id=694460&id=2598515",
+      "jobIds": [
+        "NI038"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=UTF-8",
+      "textHash": "1ae375ff19f9fface7f2af105ac9766095b796c61be26c113834f9362d7d639e",
+      "previousTextHash": "1ae375ff19f9fface7f2af105ac9766095b796c61be26c113834f9362d7d639e",
+      "contentChanged": false,
+      "diff": {
+        "kind": "unchanged",
+        "previousCharacters": 25,
+        "characters": 25
+      },
+      "error": null,
+      "elapsedMs": 1880,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.slrsks.cn/slgg",
+      "finalUrl": "https://www.slrsks.cn/slgg",
+      "jobIds": [
+        "NR019"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "778a8e24a71c9482fcd247791d6b7b54a582aced5b860d5b00d74558b37bb0ab",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 1278
+      },
+      "error": null,
+      "elapsedMs": 3724,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/80134.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/80134.html",
+      "jobIds": [
+        "NI040"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "5dbcc3fb015f7c754719a3e330a12753157846054bb67299fd3c5a00dfd64b3b",
+      "previousTextHash": "5dbcc3fb015f7c754719a3e330a12753157846054bb67299fd3c5a00dfd64b3b",
+      "contentChanged": false,
+      "diff": {
+        "kind": "unchanged",
+        "previousCharacters": 3772,
+        "characters": 3772
+      },
+      "error": null,
+      "elapsedMs": 1422,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.bhidi.com/",
+      "finalUrl": "https://www.bhidi.com/",
+      "jobIds": [
+        "NI101"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "SSLError",
+      "elapsedMs": 2243,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://iga.cas.cn/temp/zp/202610/P020261028557559461289.xlsx",
+      "finalUrl": "https://iga.cas.cn/temp/zp/202610/P020261028557559461289.xlsx",
+      "jobIds": [
+        "NR619",
+        "NR620",
+        "NR621",
+        "NR622",
+        "NR623"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "unsupported_content_type",
+      "elapsedMs": 1330,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://jtte.swjtu.edu.cn/",
+      "finalUrl": "https://jtte.swjtu.edu.cn/",
+      "jobIds": [
+        "NA013"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "190e0fa37be2717d201afdb1fb1c16ee8afbd08118343736a8cb06c6c7bbd69a",
+      "previousTextHash": "1ca40c8896ee17240943320bd2b3b51aeeee8a5fcd962b83daa7a67bedef974b",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 1973,
+        "characters": 1852
+      },
+      "error": null,
+      "elapsedMs": 2069,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=a61677638d3449d18933a78d450bf6fd",
+      "finalUrl": "https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=a61677638d3449d18933a78d450bf6fd",
+      "jobIds": [
+        "NI006"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "b9e089c6380ad20d523ef2249c2181967771367a3ecd9a1afd430435492941e8",
+      "previousTextHash": "fe9a013b004bfb38dd929ec4b397cbded3a99a5b1bb9c7078f93faab3e673a45",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 2725,
+        "characters": 2548
+      },
+      "error": null,
+      "elapsedMs": 2154,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://dhxy.aust.edu.cn/info/1358/9264.htm",
+      "finalUrl": "https://dhxy.aust.edu.cn/info/1358/9264.htm",
+      "jobIds": [
+        "NI026"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "dd6a6d9518fe3ef35bb5930cdd142bf958bfa9c2c154f47ff751317ff35261b2",
+      "previousTextHash": "dd6a6d9518fe3ef35bb5930cdd142bf958bfa9c2c154f47ff751317ff35261b2",
+      "contentChanged": false,
+      "diff": {
+        "kind": "unchanged",
+        "previousCharacters": 3456,
+        "characters": 3456
+      },
+      "error": null,
+      "elapsedMs": 2290,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.henu.edu.cn/module/campustalkdetail/id-6aa2347ab314d85b779da158/nid-2570",
+      "finalUrl": "https://job.henu.edu.cn/module/campustalkdetail/id-6aa2347ab314d85b779da158/nid-2570",
+      "jobIds": [
+        "NI021"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": "d82e5428eb21c8f862724d4dbe36bd64b3c79da9ad0977fb2ecb6745305f1b4e",
+      "previousTextHash": "d82e5428eb21c8f862724d4dbe36bd64b3c79da9ad0977fb2ecb6745305f1b4e",
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": 3657,
+        "characters": null
+      },
+      "error": "TimeoutError",
+      "elapsedMs": 4001,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.hust.edu.cn/extxjh/971789883632717.do",
+      "finalUrl": "https://job.hust.edu.cn/extxjh/971789883632717.do",
+      "jobIds": [
+        "NI016"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "f4b2d0fe458efdcac85d11925d3647e056f56aa445ff0d8c22056ef95223ed2b",
+      "previousTextHash": "f4b2d0fe458efdcac85d11925d3647e056f56aa445ff0d8c22056ef95223ed2b",
+      "contentChanged": false,
+      "diff": {
+        "kind": "unchanged",
+        "previousCharacters": 1222,
+        "characters": 1222
+      },
+      "error": null,
+      "elapsedMs": 2893,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "http://bidr.hotjob.cn/",
+      "finalUrl": "https://bidr.hotjob.cn/",
+      "jobIds": [
+        "NI065",
+        "NI066",
+        "NI067",
+        "NI068",
+        "NI069",
+        "NI070",
+        "NI071",
+        "NI072",
+        "NI073",
+        "NI074",
+        "NI075",
+        "NI076",
+        "NI077",
+        "NI078",
+        "NI079",
+        "NI080",
+        "NI081",
+        "NI082",
+        "NI083",
+        "NI084",
+        "NI085",
+        "NI086",
+        "NI087",
+        "NI088",
+        "NI089"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "5edd1234fab1a2a94506ff74a5b7e4920fb215d906773d5c06c4142a7a0ed066",
+      "previousTextHash": "5edd1234fab1a2a94506ff74a5b7e4920fb215d906773d5c06c4142a7a0ed066",
+      "contentChanged": false,
+      "diff": {
+        "kind": "unchanged",
+        "previousCharacters": 4,
+        "characters": 4
+      },
+      "error": null,
+      "elapsedMs": 2079,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": [
+        {
+          "url": "http://bidr.hotjob.cn/",
+          "httpStatus": 301,
+          "location": "https://bidr.hotjob.cn/"
+        }
+      ]
+    },
+    {
+      "url": "https://xxgk.mot.gov.cn/jigou/rsjys/202607/t20260702_4208676.html",
+      "finalUrl": "https://xxgk.mot.gov.cn/jigou/rsjys/202607/t20260702_4208676.html",
+      "jobIds": [
+        "NR021"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=UTF-8",
+      "textHash": "dff07fa00d69f6dbf60e999a42434c8424668602fb5162b28142affde2b5ec3a",
+      "previousTextHash": "2f958a0c9ddac7886e9df356a105972691d131b8ca1a9ea01092dd768c043fe1",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 3852,
+        "characters": 3845
+      },
+      "error": null,
+      "elapsedMs": 4311,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://cosl.zhiye.com/custom/campus?hideAll=true",
+      "finalUrl": "https://cosl.zhiye.com/custom/campus?hideAll=true",
+      "jobIds": [
+        "NI090"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "6ba840cfd373487a62356e2dbeefc05e1bd9c99b6c534df59fbff856ce07e66c",
+      "previousTextHash": "9e3b8671546adb79fa771221f443aa049646841b9864ada01d9eeefd664b0a4f",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 12,
+        "characters": 12
+      },
+      "error": null,
+      "elapsedMs": 1955,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://jobs.tiangong.edu.cn/recruitment/content/type/2/id/2745.html",
+      "finalUrl": "https://jobs.tiangong.edu.cn/recruitment/content/type/2/id/2745.html",
+      "jobIds": [
+        "NI024"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "3c4b91bdf7886cbbe1ec9801c9ea335ef133f06785789e683d265fcb1bfa2b6b",
+      "previousTextHash": "f652bb7512ac650c20b5b8c8fd8678f5ce7648484132a9271f43f86901bcddc4",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 2500,
+        "characters": 2500
+      },
+      "error": null,
+      "elapsedMs": 4815,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://nxny.chinalco.com.cn/xwzx/ywdt/202609/W020260912753085992068.jpg",
+      "finalUrl": "https://nxny.chinalco.com.cn/xwzx/ywdt/202609/W020260912753085992068.jpg",
+      "jobIds": [
+        "NI037"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "image/jpeg",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "unsupported_content_type",
+      "elapsedMs": 1791,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://dhxy.aust.edu.cn/info/1358/9058.htm",
+      "finalUrl": "https://dhxy.aust.edu.cn/info/1358/9058.htm",
+      "jobIds": [
+        "NI043"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "0f0b7a20d791819681f3c78f0487bf81e8329e707bd3bcb8033dd8445c46dfdf",
+      "previousTextHash": "2caa09aaaede74d6c103376e10b9ba6f0d2c07815e60102d339cc85d2e84713e",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 2370,
+        "characters": 2367
+      },
+      "error": null,
+      "elapsedMs": 1489,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://cms.sdust.edu.cn/info/1076/10986.htm",
+      "finalUrl": "https://cms.sdust.edu.cn/info/1076/10986.htm",
+      "jobIds": [
+        "NA017"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "f4e5ff049a107c713ca0e2722a7e169c16dbdef077b112d7f48c978f824c4420",
+      "previousTextHash": "d2fdac5c88034552da1f47f9f393deb76cbb5a6fd92edd8302867f264633770c",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 3154,
+        "characters": 3105
+      },
+      "error": null,
+      "elapsedMs": 4120,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.hust.edu.cn/zpinfo1/2439775.htm",
+      "finalUrl": "https://job.hust.edu.cn/zpinfo1/2439775.htm",
+      "jobIds": [
+        "NI023"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "a981bd9f94bf8947bdcc88b9fe9dd963970f374066f42ae6820b5963e462d569",
+      "previousTextHash": "7406564aa950176738e54736ca69646aabdac38f3a505ba5545e8e941193f36f",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 2686,
+        "characters": 2573
+      },
+      "error": null,
+      "elapsedMs": 1964,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.gaodun.com/jr/1798726.html",
+      "finalUrl": "https://www.gaodun.com/jr/1798726.html",
+      "jobIds": [
+        "NI028"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "574fbd3acc6cb0248fab016cf4a17ab325bef210c550458532c6a641a2ecc33d",
+      "previousTextHash": "574fbd3acc6cb0248fab016cf4a17ab325bef210c550458532c6a641a2ecc33d",
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": 7291,
+        "characters": null
+      },
+      "error": "TimeoutError",
+      "elapsedMs": 5377,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://zpxt.tyut.edu.cn/indexzpw.aspx",
+      "finalUrl": "https://zpxt.tyut.edu.cn/indexzpw.aspx",
+      "jobIds": [
+        "NA034"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "9860f0d2cb33998b297f17dab0b811726a728efc874135deab5afe1a710b1157",
+      "previousTextHash": "86348521953c8e66dbd745a32010f4b25b843f0c98544017c6cc3a7cb4cf5f1c",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 833,
+        "characters": 833
+      },
+      "error": null,
+      "elapsedMs": 2071,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://sxjrzyxy.bysjy.com.cn/detail/career?id=714852",
+      "finalUrl": "https://sxjrzyxy.bysjy.com.cn/detail/career?id=714852",
+      "jobIds": [
+        "NI042"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=UTF-8",
+      "textHash": "e7b882e60649ea9cbedc0652609daeec8d02648571b34fbe831c7ce6e49f70d3",
+      "previousTextHash": "6d0eb671ac467e086467b84beeb7821d3f60f7215a3caeedc512f2e18bd1e75f",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 1816,
+        "characters": 1804
+      },
+      "error": null,
+      "elapsedMs": 2880,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://ioe.sigs.tsinghua.edu.cn/2022/1019/c4340a58337/page.psp",
+      "finalUrl": "https://ioe.sigs.tsinghua.edu.cn/2022/1019/c4340a58337/page.psp",
+      "jobIds": [
+        "NA011"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "fbb9f35fdb22c32f96b031083397447ced29f0b18403366183b6068ed8dae3df",
+      "previousTextHash": "870f0c305bc3f69388434820f5da7284a89404183a13517fc91e4264dd10236c",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 2936,
+        "characters": 2924
+      },
+      "error": null,
+      "elapsedMs": 3614,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://gzpi.hotjob.cn/",
+      "finalUrl": "https://gzpi.hotjob.cn/",
+      "jobIds": [
+        "NI100"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "5edd1234fab1a2a94506ff74a5b7e4920fb215d906773d5c06c4142a7a0ed066",
+      "previousTextHash": "5edd1234fab1a2a94506ff74a5b7e4920fb215d906773d5c06c4142a7a0ed066",
+      "contentChanged": false,
+      "diff": {
+        "kind": "unchanged",
+        "previousCharacters": 4,
+        "characters": 4
+      },
+      "error": null,
+      "elapsedMs": 1094,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.nankai.edu.cn/correcruit/content/id/119896.html",
+      "finalUrl": "https://career.nankai.edu.cn/correcruit/content/id/119896.html",
+      "jobIds": [
+        "NI120",
+        "NI121"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "e010ada7f75801c734ba3e71717f0fcb1ad0096188f76b175c1e4962cd846277",
+      "previousTextHash": "235ead522c149a36fe987fcf3c72419c29f6ba0dd7a75f8e3404ea6d039a8e0d",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 4806,
+        "characters": 4787
+      },
+      "error": null,
+      "elapsedMs": 5544,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.tjcu.edu.cn/recruitment/content/type/2/id/911.html",
+      "finalUrl": "https://career.tjcu.edu.cn/recruitment/content/type/2/id/911.html",
+      "jobIds": [
+        "NI122"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "21a260ca12a9f4a566fdb03d9048c0decf612540b77cb9c6c017f8f8f3dac141",
+      "previousTextHash": "bbc9d2efec72bdf387f9746ccd6eb5c7ea42c0691ccd9bc0f14b4906ee792539",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 4035,
+        "characters": 3885
+      },
+      "error": null,
+      "elapsedMs": 4543,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.hust.edu.cn/zpinfo1/2411248.htm",
+      "finalUrl": "https://job.hust.edu.cn/zpinfo1/2411248.htm",
+      "jobIds": [
+        "NI107"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "95afcadf1fe13dcb0b12e2bfe75d07ef91747d0c45b81ef9b412a0a061c48b67",
+      "previousTextHash": "28bcf3de908683a4db645a83a57f8a3b46b6edc8a4520779c2566705780b92ac",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 2365,
+        "characters": 2341
+      },
+      "error": null,
+      "elapsedMs": 1861,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://careers.oppo.com/university/oppo/campus",
+      "finalUrl": "https://careers.oppo.com/university/oppo/campus",
+      "jobIds": [
+        "NI008"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "0b17e860e45f3111ada6afe7ce6e44f0ab2d298620667069672f440e34e464c8",
+      "previousTextHash": "0b17e860e45f3111ada6afe7ce6e44f0ab2d298620667069672f440e34e464c8",
+      "contentChanged": false,
+      "diff": {
+        "kind": "unchanged",
+        "previousCharacters": 21,
+        "characters": 21
+      },
+      "error": null,
+      "elapsedMs": 1098,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.hust.edu.cn/zpinfo1/2433933.htm",
+      "finalUrl": "https://job.hust.edu.cn/zpinfo1/2433933.htm",
+      "jobIds": [
+        "NI032"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "2417de4d7346ee8c8d2ff1c4c332222e089a93784e7b758b13471cd511c91ad0",
+      "previousTextHash": "0da34e28eb47d3cf11850b0ca6a9329e0f0d10cff6cc5b825e1d238643a8ee03",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 3143,
+        "characters": 3019
+      },
+      "error": null,
+      "elapsedMs": 2242,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml",
+      "finalUrl": "https://www.hubwd.com/xwzx/gsgg/2105576544167661568.shtml",
+      "jobIds": [
+        "NI045",
+        "NI046",
+        "NI047",
+        "NI048",
+        "NI049",
+        "NI050",
+        "NI051",
+        "NI052",
+        "NI053",
+        "NI054"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "d7e8eb85fbcfd4f24187b6ba12dd76df3f4a810c72cb1204521c79441d1714f2",
+      "previousTextHash": "626a2078af827eb3461088566d7424e85baa7826ee294f70d161a4bc088d2eb1",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 2034,
+        "characters": 1939
+      },
+      "error": null,
+      "elapsedMs": 1675,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://xjrsks.zfoline.net/",
+      "finalUrl": "https://xjrsks.zfoline.net/",
+      "jobIds": [
+        "NR625"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "67a0b8f1569f71ea7308cb8abd10084a400ca837cd415fee8937e0e2f3e95e8d",
+      "previousTextHash": "67a0b8f1569f71ea7308cb8abd10084a400ca837cd415fee8937e0e2f3e95e8d",
+      "contentChanged": false,
+      "diff": {
+        "kind": "unchanged",
+        "previousCharacters": 8,
+        "characters": 8
+      },
+      "error": null,
+      "elapsedMs": 1065,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5169.html",
+      "finalUrl": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5169.html",
+      "jobIds": [
+        "NI031"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "8232c4643016cf4155c2a59866c8ba4737c241591e225b2fa52cca72572502cd",
+      "previousTextHash": "f73d3f5df7b208f76f9dfff65598181c9402710374d0c58ce2e4fee3a15ee60f",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 3494,
+        "characters": 3494
+      },
+      "error": null,
+      "elapsedMs": 1383,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5381.html",
+      "finalUrl": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5381.html",
+      "jobIds": [
+        "NI035"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "5cb40e70e4169e5f577716dcdf30cfa69b95ca238d3d7450792fdde4afa9b26c",
+      "previousTextHash": "7799017c87882eeec08c68afb6724c9e36820f36726690b97f56f23df5b91418",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 6374,
+        "characters": 6318
+      },
+      "error": null,
+      "elapsedMs": 1637,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/58287.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/58287.html",
+      "jobIds": [
+        "AUTO-b7393e5acbdba6f7"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "83c367c9264ba927498c486a88a1959949ecea392aa5766a77f9c5d8bac88df5",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3011
+      },
+      "error": null,
+      "elapsedMs": 1369,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/index.html",
+      "finalUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/index.html",
+      "jobIds": [
+        "AUTO-01b65221f896da6a"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "756032ac3c3a664d6451bc65654488a7ba9144cf5aef26dffa2b9437742e49a1",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 17694
+      },
+      "error": null,
+      "elapsedMs": 3484,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://zhaopin.pipechina.com.cn/",
+      "finalUrl": "https://zhaopin.pipechina.com.cn/",
+      "jobIds": [
+        "NI027"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "TimeoutError",
+      "elapsedMs": 15008,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.nankai.edu.cn/company/index/id/23533.html",
+      "finalUrl": "https://career.nankai.edu.cn/company/index/id/23533.html",
+      "jobIds": [
+        "NI119"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "97b720bef237215623f347f807cd69eb483d7141ebcb325e70e37e4c73fa6244",
+      "previousTextHash": "438a98ef65832962c27533c7a659907ec9730fe1d7cf4e40272fa7898397c229",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 756,
+        "characters": 751
+      },
+      "error": null,
+      "elapsedMs": 1729,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.gaoxiaojob.com/announcement/detail/226238.html",
+      "finalUrl": "https://www.gaoxiaojob.com/announcement/detail/226238.html",
+      "jobIds": [
+        "NA042"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=UTF-8",
+      "textHash": "0f4d08378270e669ae6f935eb7b165537a10fd581a40934fe540ed08f32d8b80",
+      "previousTextHash": "335edbc54485f2a50e876949a1704fa6c9e38f4b758851ab0c3e9b46a4703a8b",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 4583,
+        "characters": 3551
+      },
+      "error": null,
+      "elapsedMs": 1629,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www6.hpu.edu.cn/aqyj/info/1003/1101.htm",
+      "finalUrl": "https://www6.hpu.edu.cn/aqyj/info/1003/1101.htm",
+      "jobIds": [
+        "NA035"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "a55a02cd2cfd88a53ed20a97661353e4eba420ef0971e0a0b8b345255531a43a",
+      "previousTextHash": "ed5d614ccfa7e6139588f7f913d4c328993471fd58201abc63d28f7d9f8ccfe7",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 2175,
+        "characters": 2169
+      },
+      "error": null,
+      "elapsedMs": 1855,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "[rejected-url]",
+      "finalUrl": "[rejected-url]",
+      "jobIds": [
+        "J106"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "ValueError",
+      "elapsedMs": null,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.idsse.cas.cn/rcdw/rczp/202602/t20260214_8144718.html",
+      "finalUrl": "https://www.idsse.cas.cn/rcdw/rczp/202602/t20260214_8144718.html",
+      "jobIds": [
+        "NR016"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "SSLCertVerificationError",
+      "elapsedMs": 760,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/company/index/id/8149.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/company/index/id/8149.html",
+      "jobIds": [
+        "NI123"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "c4458025cd51bd60ae4e4065516e505cdd5035c0e021b116a122be2ad27d46ae",
+      "previousTextHash": "b3d3389104a2de3b443d6154386ac5cabbde84b81230cea9b03534e8989a12a1",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 2773,
+        "characters": 2750
+      },
+      "error": null,
+      "elapsedMs": 1386,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://jy.gzhu.edu.cn/web/index/jobs-brief-detail?id=SMUXSVZ",
+      "finalUrl": "https://jy.gzhu.edu.cn/web/index/jobs-brief-detail?id=SMUXSVZ",
+      "jobIds": [
+        "NI105"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "a7bb90c0f0b1e2cc6f2d3031767d1e87fa5c2a7c56212dd0cf1ad5d75bc3106c",
+      "previousTextHash": "e6cdd7ee74e0cbafc097362b6ce1507ca6101d65075dc26858ecacb3e3086c96",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 4645,
+        "characters": 4427
+      },
+      "error": null,
+      "elapsedMs": 2107,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.cjwsjy.com.cn/u/cms/www/202609/11103157ia6q.xlsx",
+      "finalUrl": "https://www.cjwsjy.com.cn/u/cms/www/202609/11103157ia6q.xlsx",
+      "jobIds": [
+        "NI030"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "TimeoutError",
+      "elapsedMs": 15020,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://civil.csu.edu.cn/info/1965/12167.htm",
+      "finalUrl": "https://civil.csu.edu.cn/info/1965/12167.htm",
+      "jobIds": [
+        "NA003"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "51f229fdfd2193b72667b8db717e1d9619f7832996c37f1664d46c8f722e8d51",
+      "previousTextHash": "09a2f63777253a3922540ee47f600ef7ffbf886b1ec027699a62093a0f7f89b2",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 3052,
+        "characters": 2943
+      },
+      "error": null,
+      "elapsedMs": 5096,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5145.html",
+      "finalUrl": "https://career.hebut.edu.cn/recruitment/content/type/2/id/5145.html",
+      "jobIds": [
+        "NI020"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "dc4a482fb8ae9ea2b44f18fd4cf9fc8c585a08a9444b4f2ebdec7d5f5dc0749a",
+      "previousTextHash": "0b2708e9d3f23f6196c3bae486376a1996a763f82afb783c6900d7224e9d056b",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 4204,
+        "characters": 4204
+      },
+      "error": null,
+      "elapsedMs": 1693,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "[rejected-url]",
+      "finalUrl": "[rejected-url]",
+      "jobIds": [
+        "J107"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "ValueError",
+      "elapsedMs": null,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "[rejected-url]",
+      "finalUrl": "[rejected-url]",
+      "jobIds": [
+        "J049"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "ValueError",
+      "elapsedMs": null,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://naoce.sjtu.edu.cn/bshou/14439.html",
+      "finalUrl": "https://naoce.sjtu.edu.cn/bshou/14439.html",
+      "jobIds": [
+        "AUTO-f85bb2720f173ae1"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=UTF-8",
+      "textHash": "8ec2556da614c1b0201b3be03d0b418a0e92cc146bd8d2613b9e6c18a16448b2",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 1366
+      },
+      "error": null,
+      "elapsedMs": 3442,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://naoce.sjtu.edu.cn/bshou/15326.html",
+      "finalUrl": "https://naoce.sjtu.edu.cn/bshou/15326.html",
+      "jobIds": [
+        "AUTO-f55192722db83d1c"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=UTF-8",
+      "textHash": "98ea46fcabed44b84d80ddc6df0f5554f971811cd28bd2ce991379670c7115af",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 1885
+      },
+      "error": null,
+      "elapsedMs": 3423,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://rsc.xauat.edu.cn/info/1275/1931.htm",
+      "finalUrl": "https://rsc.xauat.edu.cn/info/1275/1931.htm",
+      "jobIds": [
+        "AUTO-8650de6b144a6f67"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "f9a25f55eba45df0093c36ff646018700346032f2eaba3b7e4a17c444e801909",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2009
+      },
+      "error": null,
+      "elapsedMs": 3696,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://rsc.xauat.edu.cn/info/1275/1932.htm",
+      "finalUrl": "https://rsc.xauat.edu.cn/info/1275/1932.htm",
+      "jobIds": [
+        "AUTO-19d902b068cebe85"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "be280174a069d17e30575fdd7126fb17bd46e06af45d48aed1eb0f01821eb9da",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2679
+      },
+      "error": null,
+      "elapsedMs": 4272,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://rsc.xauat.edu.cn/info/1275/1934.htm",
+      "finalUrl": "https://rsc.xauat.edu.cn/info/1275/1934.htm",
+      "jobIds": [
+        "AUTO-84ba25d966a9bff8"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "0dfdb0372493cf00c0ba85ffaa79bdf912a2e5b1124d612c10a74bcd18a7ebcc",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3219
+      },
+      "error": null,
+      "elapsedMs": 4000,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://rsc.xauat.edu.cn/info/1275/1984.htm",
+      "finalUrl": "https://rsc.xauat.edu.cn/info/1275/1984.htm",
+      "jobIds": [
+        "AUTO-fcd6bd7415df4d8a"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "640f1575033d6581754658b9b3c5eb22d60640d02cb17bb69f2c9e364d887ee1",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2097
+      },
+      "error": null,
+      "elapsedMs": 3629,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://rsc.xauat.edu.cn/info/1275/2168.htm",
+      "finalUrl": "https://rsc.xauat.edu.cn/info/1275/2168.htm",
+      "jobIds": [
+        "AUTO-ca1154504a3edcb6"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "95aae641a6e4bbc7d35fd909ea2bc5b341fe8bb7106f9d2b7b0936d843f5a400",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3494
+      },
+      "error": null,
+      "elapsedMs": 1252,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://rsc.xauat.edu.cn/info/1275/6109.htm",
+      "finalUrl": "https://rsc.xauat.edu.cn/info/1275/6109.htm",
+      "jobIds": [
+        "AUTO-6b14901e6c5934c6"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "1db3069e4209bad8ee4c9e427a76ea39d0617566d56b86889c933f34fb8f9d01",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2160
+      },
+      "error": null,
+      "elapsedMs": 1188,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.shanghai.gov.cn/nw17239/20260910/440c534314f84abe906a3a005ae0f504.html",
+      "finalUrl": "https://www.shanghai.gov.cn/nw17239/20260910/440c534314f84abe906a3a005ae0f504.html",
+      "jobIds": [
+        "NR028"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "c479f002e0e823d31f57101f4f933e9ee1f730911f9ed9a98b542e34dce17c9f",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 1072
+      },
+      "error": null,
+      "elapsedMs": 1053,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.shou.edu.cn/2026/0119/c285a350059/page.htm",
+      "finalUrl": "https://www.shou.edu.cn/2026/0119/c285a350059/page.htm",
+      "jobIds": [
+        "NA019"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "7e4d36726de206db2d2b7c0bf31605f775fe615b987ea235911d5328d2ef0175",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2768
+      },
+      "error": null,
+      "elapsedMs": 4992,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.slrsks.cn/slgg/nasOplYmO",
+      "finalUrl": "https://www.slrsks.cn/slgg/nasOplYmO",
+      "jobIds": [
+        "NR019"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "b3d3c0ff1e1119c1ec7237d795b266fb0e7bcea603db8f89e78304698cbf67d4",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 5536
+      },
+      "error": null,
+      "elapsedMs": 3419,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.sunnyoptical.com/",
+      "finalUrl": "https://www.sunnyoptical.com/",
+      "jobIds": [
+        "J029",
+        "J030"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "117736136ea08ef9400dfe2aa138e4c8f991ea9c68abd05907a5a0698f39a62a",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 96
+      },
+      "error": null,
+      "elapsedMs": 1622,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.sxvtc.edu.cn/b29f6cfb-7b59-4bdb-bc1b-f6317c1764ca",
+      "finalUrl": "https://www.sxvtc.edu.cn/b29f6cfb-7b59-4bdb-bc1b-f6317c1764ca",
+      "jobIds": [
+        "J066"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "3c8fd73491cdf1d0ec9e13c5a617ce31229ccc7d21e2439f52fe21fed979339f",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2670
+      },
+      "error": null,
+      "elapsedMs": 2748,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.sydw8.com/2024/0709/506718.html",
+      "finalUrl": "https://www.sydw8.com/2024/0709/506718.html",
+      "jobIds": [
+        "J026"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "71d422aa837983c8c629913dce46b8b77e9a3fd9a14c6a3841dc1836a9c7485c",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 9806
+      },
+      "error": null,
+      "elapsedMs": 545,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.tzvtc.edu.cn/83/bb/c1416a33723/page.htm",
+      "finalUrl": "https://www.tzvtc.edu.cn/83/bb/c1416a33723/page.htm",
+      "jobIds": [
+        "J057"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "89bee50c9cf9f8534bafc0e08623a1b12717c1fee93b52c33b1d2563166a5aff",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 4402
+      },
+      "error": null,
+      "elapsedMs": 4599,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.tzvtc.edu.cn/_upload/article/files/71/41/6bcff3e24edf87496f1004af14c9/eef77e8e-5c17-4b0b-bd36-9863a42d2387.docx",
+      "finalUrl": "https://www.tzvtc.edu.cn/_upload/article/files/71/41/6bcff3e24edf87496f1004af14c9/eef77e8e-5c17-4b0b-bd36-9863a42d2387.docx",
+      "jobIds": [
+        "J057"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "unsupported_content_type",
+      "elapsedMs": 4169,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.wondercv.com/xiaozhao/galileo-2027-global-campus-recruitment-batch-2-hang-12407-022908/",
+      "finalUrl": "https://www.wondercv.com/xiaozhao/galileo-2027-global-campus-recruitment-batch-2-hang-12407-022908/",
+      "jobIds": [
+        "J110"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "992579b6472fee9193a855fb5a04b6c7898422b6f19faa63b12b6e2e7a87aebc",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 4324
+      },
+      "error": null,
+      "elapsedMs": 2628,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.xynova.com.cn/en/join-us",
+      "finalUrl": "https://www.xynova.com.cn/en/join-us",
+      "jobIds": [
+        "J101"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "63a288a06cd71aec38a4220bae4fff211268d1f58ce9adf936b37095406ba937",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2183
+      },
+      "error": null,
+      "elapsedMs": 1832,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.ypc.edu.cn/cpyc.htm",
+      "finalUrl": "https://www.ypc.edu.cn/cpyc.htm",
+      "jobIds": [
+        "J063"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "TimeoutError",
+      "elapsedMs": 15011,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.yyrc.com/",
+      "finalUrl": "https://www.yyrc.com/",
+      "jobIds": [
+        "J026",
+        "J027"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "TimeoutError",
+      "elapsedMs": 15020,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.zepdi.ceec.net.cn/col/col52520/index.html",
+      "finalUrl": "https://www.zepdi.ceec.net.cn/col/col52520/index.html",
+      "jobIds": [
+        "J111"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "SSLCertVerificationError",
+      "elapsedMs": 750,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.zepdi.ceec.net.cn/col/col55548/index.html",
+      "finalUrl": "https://www.zepdi.ceec.net.cn/col/col55548/index.html",
+      "jobIds": [
+        "J111"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "SSLCertVerificationError",
+      "elapsedMs": 755,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.zhaopin.com/jobdetail/CC477209280J40884317909.htm",
+      "finalUrl": "https://www.zhaopin.com/jobdetail/CC477209280J40884317909.htm",
+      "jobIds": [
+        "J095"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "9728bd435fc1ad7064fe817146e2d4fb7de01003d8345cabc34fdbb22a3e5706",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2957
+      },
+      "error": null,
+      "elapsedMs": 1962,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.zjshc.com/about/join.html",
+      "finalUrl": "https://www.zjshc.com/about/join.html",
+      "jobIds": [
+        "J103"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "46eaef25d3c0e003d1cf7c2e2b481b3acfbe8d7059e178a02e1d3ea780e9ff46",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 1457
+      },
+      "error": null,
+      "elapsedMs": 2806,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.zjsru.edu.cn/info/1083/51678.htm",
+      "finalUrl": "https://www.zjsru.edu.cn/info/1083/51678.htm",
+      "jobIds": [
+        "J065"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "9a8273c7c13b3a8a9a17276749cd51a10eaba90a38eae4fe195207f69590805a",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 5153
+      },
+      "error": null,
+      "elapsedMs": 2553,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.zsit.edu.cn/cpyc.htm",
+      "finalUrl": "https://www.zsit.edu.cn/cpyc.htm",
+      "jobIds": [
+        "J063"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "23b0cc4f8d304afe0226bf20bab90f7d84cc02915dd01ede63f1723f582428cf",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 510
+      },
+      "error": null,
+      "elapsedMs": 4445,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.zsit.edu.cn/info/1014/17797.htm",
+      "finalUrl": "https://www.zsit.edu.cn/info/1014/17797.htm",
+      "jobIds": [
+        "J063"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "9b5fadeb1a2006c38137159f0716c8fd8cca89a2a697c68cb52a5a5bd5831423",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3436
+      },
+      "error": null,
+      "elapsedMs": 2063,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.zsit.edu.cn/info/1014/36457.htm",
+      "finalUrl": "https://www.zsit.edu.cn/info/1014/36457.htm",
+      "jobIds": [
+        "J063"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "7a0faed2b89a5fe4b37caed1cc95352b38c7834dffbf3f9a82d9d7f631b06659",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 523
+      },
+      "error": null,
+      "elapsedMs": 1609,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.zzjc.edu.cn/info/1026/20911.htm",
+      "finalUrl": "https://www.zzjc.edu.cn/info/1026/20911.htm",
+      "jobIds": [
+        "J064"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "e6a0dad5421f64648cac0b43bbddf03a4add4b58bbe74efd933689249f95b51a",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3591
+      },
+      "error": null,
+      "elapsedMs": 4128,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.zzjc.edu.cn/rczp/zpxx1.htm",
+      "finalUrl": "https://www.zzjc.edu.cn/rczp/zpxx1.htm",
+      "jobIds": [
+        "J064"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "21dd6f2cbdca4e1d06a9a142b217a879fe573c4388bdbd2ceec1e2d562bb8398",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 698
+      },
+      "error": null,
+      "elapsedMs": 4107,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://xky.sndk.cn/content/1000001962",
+      "finalUrl": "https://xky.sndk.cn/content/1000001962",
+      "jobIds": [
+        "NI110",
+        "NI114",
+        "NI115"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "b2a98438d9cad8ee750194db41e894b4bdc982698205419b0d6c06838ef95321",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3368
+      },
+      "error": null,
+      "elapsedMs": 2190,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://xww.bucea.edu.cn/docs/2026-01/abbf25941bcb44e58dbcbebf3d9bc49c.pdf",
+      "finalUrl": "https://xww.bucea.edu.cn/docs/2026-01/abbf25941bcb44e58dbcbebf3d9bc49c.pdf",
+      "jobIds": [
+        "NA028"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "application/pdf",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "unsupported_content_type",
+      "elapsedMs": 2193,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://xww.bucea.edu.cn/docs/2026-06/b9fc5ae0505c446ca036ee5b1cbd636f.pdf",
+      "finalUrl": "https://xww.bucea.edu.cn/docs/2026-06/b9fc5ae0505c446ca036ee5b1cbd636f.pdf",
+      "jobIds": [
+        "NA028"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "application/pdf",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "unsupported_content_type",
+      "elapsedMs": 1910,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://xww.bucea.edu.cn/tgx/0900461b8dc84934b61e3097920165ff.htm",
+      "finalUrl": "https://xww.bucea.edu.cn/tgx/0900461b8dc84934b61e3097920165ff.htm",
+      "jobIds": [
+        "NA028"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "822c895e6f5e0ef0b07b1630653dcee154ececc4e16b0210a5015b38242fd536",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 1415
+      },
+      "error": null,
+      "elapsedMs": 2183,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://xww.bucea.edu.cn/tgx/c0cada1222b8449fb7287dea83056912.htm",
+      "finalUrl": "https://xww.bucea.edu.cn/tgx/c0cada1222b8449fb7287dea83056912.htm",
+      "jobIds": [
+        "NA028"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "bbbcb3ae845533d2a32af087acf80baeaf4c279ae5e3d8bb924785c7567dcc14",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3108
+      },
+      "error": null,
+      "elapsedMs": 1282,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://xww.bucea.edu.cn/tgx/ee849512c58f4007983578da2519fc62.htm",
+      "finalUrl": "https://xww.bucea.edu.cn/tgx/ee849512c58f4007983578da2519fc62.htm",
+      "jobIds": [
+        "NA028"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "94a4809fd3db08d5a8ba197abe2c37717a6d373aaf0f6f848291030670e3fd2c",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3018
+      },
+      "error": null,
+      "elapsedMs": 1277,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://yan.sicau.edu.cn/info/1038/19059.htm",
+      "finalUrl": "https://yan.sicau.edu.cn/info/1038/19059.htm",
+      "jobIds": [
+        "NR031"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "4d1b0fd8e56fd60a9259974632f017cad179e1dc8586ff03add02707c57568c0",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3622
+      },
+      "error": null,
+      "elapsedMs": 2890,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://yan.sicau.edu.cn/info/1038/20159.htm",
+      "finalUrl": "https://yan.sicau.edu.cn/info/1038/20159.htm",
+      "jobIds": [
+        "NR627"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "8845481353224cceb8899d216c19ecdf7e13a959d7b2d62e4c651297d8845761",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 9974
+      },
+      "error": null,
+      "elapsedMs": 3129,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://yan.sicau.edu.cn/system/_content/download.jsp?owner=1553038503&urltype=news.DownloadAttachUrl&wbfileid=7230E0B23DD3E9DA4CF9A0FAC8FD90DC",
+      "finalUrl": "https://yan.sicau.edu.cn/system/_content/download.jsp?owner=1553038503&urltype=news.DownloadAttachUrl&wbfileid=7230E0B23DD3E9DA4CF9A0FAC8FD90DC",
+      "jobIds": [
+        "NR031"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "b6e006dd45ea7eb317ff98ff3ccdeb5dae716b075e4ffa6c23d3bdfa0ffba07d",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 15
+      },
+      "error": null,
+      "elapsedMs": 1397,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://yan.sicau.edu.cn/system/_content/download.jsp?owner=1553038503&urltype=news.DownloadAttachUrl&wbfileid=8F3A2CA102F762245CAB854B1DFB76F3",
+      "finalUrl": "https://yan.sicau.edu.cn/system/_content/download.jsp?owner=1553038503&urltype=news.DownloadAttachUrl&wbfileid=8F3A2CA102F762245CAB854B1DFB76F3",
+      "jobIds": [
+        "NR031"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "b6e006dd45ea7eb317ff98ff3ccdeb5dae716b075e4ffa6c23d3bdfa0ffba07d",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 15
+      },
+      "error": null,
+      "elapsedMs": 1387,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=868f87bf-a8cf-497f-bb86-07cf49da2d76",
+      "finalUrl": "https://ycyg.nbhr.org.cn/JobFairJob/info?guid=868f87bf-a8cf-497f-bb86-07cf49da2d76",
+      "jobIds": [
+        "J074"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "39b9242a2ac82ddad19bc617b49392c39cc05dfdfe2ac1874003bb4433ee301d",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 1289
+      },
+      "error": null,
+      "elapsedMs": 4223,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://ypc.edu.cn/info/1014/16281.htm",
+      "finalUrl": "https://ypc.edu.cn/info/1014/16281.htm",
+      "jobIds": [
+        "J063"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "TimeoutError",
+      "elapsedMs": 15020,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://zhaocai.hzmetro.com/cmsfwcggg/5dcd76dd1f5041778fc19a25c59e8294.html",
+      "finalUrl": "https://zhaocai.hzmetro.com/cmsfwcggg/5dcd76dd1f5041778fc19a25c59e8294.html",
+      "jobIds": [
+        "J050"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "16a49d4b7f5701ddb7cff1619d0a9111708f401e7acc36fe004afd5106ef741c",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2546
+      },
+      "error": null,
+      "elapsedMs": 4482,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://zhaopin.cugb.edu.cn/zp.html",
+      "finalUrl": "https://zhaopin.cugb.edu.cn/zp.html",
+      "jobIds": [
+        "NA020"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 0
+      },
+      "error": null,
+      "elapsedMs": 3541,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://zhaopin.zstu.edu.cn/product/recruit/website/RecruitIndex.jsp?FM_SYS_ID=zjlgdx_hr851",
+      "finalUrl": "https://zhaopin.zstu.edu.cn/product/recruit/website/RecruitIndex.jsp?FM_SYS_ID=zjlgdx_hr851",
+      "jobIds": [
+        "J045"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 483,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "text/html",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "http_status",
+      "elapsedMs": 4819,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://zjjcmspublicnew.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/cms_files/filemanager/1574755/attach/202611/0bd1a702660b439ca6050521a818778c.xlsx?fileName=2027%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%90%84%E7%BA%A7%E6%9C%BA%E5%85%B3%E5%8D%95%E4%BD%8D%E5%85%AC%E5%8A%A1%E5%91%98%E6%8B%9B%E8%80%83%E8%81%8C%E4%BD%8D%E4%B8%80%E8%A7%88%E8%A1%A8.xlsx",
+      "finalUrl": "https://zjjcmspublicnew.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/cms_files/filemanager/1574755/attach/202611/0bd1a702660b439ca6050521a818778c.xlsx?fileName=2027%E5%B9%B4%E6%B5%99%E6%B1%9F%E7%9C%81%E5%90%84%E7%BA%A7%E6%9C%BA%E5%85%B3%E5%8D%95%E4%BD%8D%E5%85%AC%E5%8A%A1%E5%91%98%E6%8B%9B%E8%80%83%E8%81%8C%E4%BD%8D%E4%B8%80%E8%A7%88%E8%A1%A8.xlsx",
+      "jobIds": [
+        "NR627"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "unsupported_content_type",
+      "elapsedMs": 1591,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "http://xd.zjks.com/",
+      "finalUrl": "http://xd.zjks.com/tyzpwb/",
+      "jobIds": [
+        "NR347",
+        "NR350",
+        "NR351",
+        "NR352",
+        "NR353",
+        "NR354",
+        "NR355",
+        "NR356",
+        "NR357",
+        "NR358",
+        "NR359",
+        "NR360",
+        "NR361",
+        "NR362",
+        "NR363",
+        "NR364",
+        "NR365",
+        "NR366",
+        "NR367",
+        "NR368",
+        "NR369",
+        "NR370",
+        "NR371",
+        "NR372",
+        "NR373",
+        "NR374",
+        "NR375",
+        "NR376",
+        "NR377",
+        "NR378",
+        "NR379",
+        "NR380",
+        "NR381",
+        "NR382",
+        "NR383",
+        "NR384",
+        "NR385",
+        "NR386",
+        "NR387",
+        "NR388",
+        "NR389",
+        "NR390",
+        "NR391",
+        "NR392",
+        "NR393",
+        "NR394",
+        "NR395",
+        "NR396",
+        "NR397",
+        "NR398",
+        "NR399",
+        "NR400",
+        "NR401",
+        "NR402",
+        "NR403",
+        "NR404",
+        "NR405",
+        "NR406",
+        "NR407",
+        "NR408",
+        "NR409",
+        "NR410",
+        "NR411",
+        "NR412",
+        "NR413",
+        "NR414",
+        "NR415",
+        "NR416",
+        "NR417",
+        "NR418",
+        "NR419",
+        "NR420",
+        "NR421",
+        "NR422",
+        "NR423",
+        "NR424",
+        "NR425",
+        "NR426",
+        "NR427",
+        "NR428",
+        "NR429",
+        "NR430",
+        "NR431",
+        "NR432",
+        "NR433",
+        "NR434",
+        "NR435",
+        "NR436",
+        "NR437",
+        "NR438",
+        "NR439",
+        "NR440",
+        "NR441",
+        "NR442",
+        "NR443",
+        "NR444",
+        "NR445",
+        "NR446",
+        "NR447",
+        "NR448",
+        "NR449",
+        "NR450",
+        "NR451",
+        "NR452",
+        "NR453",
+        "NR454",
+        "NR455",
+        "NR456",
+        "NR457",
+        "NR458",
+        "NR459",
+        "NR460",
+        "NR461",
+        "NR462",
+        "NR463",
+        "NR464",
+        "NR465",
+        "NR466",
+        "NR467",
+        "NR468",
+        "NR469",
+        "NR470",
+        "NR471",
+        "NR472",
+        "NR473",
+        "NR474",
+        "NR475",
+        "NR476",
+        "NR477",
+        "NR478",
+        "NR479",
+        "NR480",
+        "NR481",
+        "NR482",
+        "NR483",
+        "NR484",
+        "NR485",
+        "NR486",
+        "NR487",
+        "NR488",
+        "NR489",
+        "NR490",
+        "NR491",
+        "NR492",
+        "NR493",
+        "NR494",
+        "NR495",
+        "NR496",
+        "NR497",
+        "NR498",
+        "NR499",
+        "NR500",
+        "NR501",
+        "NR502",
+        "NR503",
+        "NR504",
+        "NR505",
+        "NR506",
+        "NR507",
+        "NR508",
+        "NR509",
+        "NR510",
+        "NR511",
+        "NR512",
+        "NR513",
+        "NR514",
+        "NR515",
+        "NR516",
+        "NR517",
+        "NR518",
+        "NR519",
+        "NR520",
+        "NR521",
+        "NR522",
+        "NR523",
+        "NR524",
+        "NR525",
+        "NR526",
+        "NR527",
+        "NR528",
+        "NR529",
+        "NR530",
+        "NR531",
+        "NR532",
+        "NR533",
+        "NR534",
+        "NR535",
+        "NR536",
+        "NR537",
+        "NR538",
+        "NR539",
+        "NR540",
+        "NR541",
+        "NR542",
+        "NR543",
+        "NR544",
+        "NR545",
+        "NR546",
+        "NR547",
+        "NR548",
+        "NR549",
+        "NR550",
+        "NR551",
+        "NR552",
+        "NR553",
+        "NR554",
+        "NR555",
+        "NR556",
+        "NR557",
+        "NR558",
+        "NR559",
+        "NR560",
+        "NR561",
+        "NR562",
+        "NR563",
+        "NR564",
+        "NR565",
+        "NR566",
+        "NR567",
+        "NR568",
+        "NR569",
+        "NR570",
+        "NR571",
+        "NR572",
+        "NR573",
+        "NR574",
+        "NR575",
+        "NR576",
+        "NR577",
+        "NR578",
+        "NR579",
+        "NR580",
+        "NR581",
+        "NR582",
+        "NR583",
+        "NR584",
+        "NR585",
+        "NR586",
+        "NR587",
+        "NR588",
+        "NR589",
+        "NR590",
+        "NR591",
+        "NR592",
+        "NR593"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "d7ab1d621e7982e33eda691eca167d3c43d59c826dc6b88c3159087b95d44c30",
+      "previousTextHash": "ec340988f19bd359255cd512775f6cb26d32447a98139c16f3164489d311f320",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 390,
+        "characters": 387
+      },
+      "error": null,
+      "elapsedMs": 2174,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": [
+        {
+          "url": "http://xd.zjks.com/",
+          "httpStatus": 302,
+          "location": "http://xd.zjks.com/tyzpwb"
+        },
+        {
+          "url": "http://xd.zjks.com/tyzpwb",
+          "httpStatus": 302,
+          "location": "http://xd.zjks.com/tyzpwb/"
+        }
+      ]
+    },
+    {
+      "url": "http://zhaopin.nbu.edu.cn/",
+      "finalUrl": "https://zhaopin.nbu.edu.cn/newrsfw/sys/zpglxt/login/index.do",
+      "jobIds": [
+        "J001",
+        "J002",
+        "J003"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "9d815e9497ae930dcd49839331c56b8203a581421de12cac7bbf8f4a999539b4",
+      "previousTextHash": "2a8f59e28ca4cf12beb08a6a1fa891f57d88e3ce3cfada15916b3b8189409e66",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 1094,
+        "characters": 1092
+      },
+      "error": null,
+      "elapsedMs": 5582,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": [
+        {
+          "url": "http://zhaopin.nbu.edu.cn/",
+          "httpStatus": 302,
+          "location": "https://zhaopin.nbu.edu.cn/"
+        },
+        {
+          "url": "https://zhaopin.nbu.edu.cn/",
+          "httpStatus": 302,
+          "location": "https://zhaopin.nbu.edu.cn/newrsfw/sys/zpglxt/login/index.do"
+        }
+      ]
+    },
+    {
+      "url": "http://zp.nbut.edu.cn/",
+      "finalUrl": "http://zp.nbut.edu.cn/",
+      "jobIds": [
+        "J007"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "TimeoutError",
+      "elapsedMs": 15016,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://bmxt.nbhr.org.cn/",
+      "finalUrl": "https://bmxt.nbhr.org.cn/",
+      "jobIds": [
+        "J023",
+        "J024"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "6f5cd7e5616961c3cd32742fad2a2b2d3e4e583c261e630a41ee73b7497048a3",
+      "previousTextHash": "8a5e605899a18ba6b8140c8bd9a81a7cb7b0ae995a6138ee5607d57e07dca0c6",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 393,
+        "characters": 767
+      },
+      "error": null,
+      "elapsedMs": 4005,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://campus.geely.com/",
+      "finalUrl": "https://campus.geely.com/",
+      "jobIds": [
+        "J054"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "SSLError",
+      "elapsedMs": 786,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.ylab.ac.cn/",
+      "finalUrl": "https://career.ylab.ac.cn/",
+      "jobIds": [
+        "J011",
+        "J012"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "cd9922be86c1ab459eb95b426621d89fa82bc85163641b06c5abee96f1183e9b",
+      "previousTextHash": "59ebed1e0f9316a0e0e55bb5a254296c9d9d1ec7e3b8829463429947eafe2449",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 9,
+        "characters": 9
+      },
+      "error": null,
+      "elapsedMs": 3275,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.nbmetro.com/apply/index.action",
+      "finalUrl": "https://job.nbmetro.com/apply/index.action",
+      "jobIds": [
+        "J020"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "0ccf28e6e185f4c33f0cf38dacba8114d283e72e13ddd4c0f6ba27916ee59011",
+      "previousTextHash": "ed0275a59a9ff65f9a3b4d65657e1cf789415f23ec131e36d82b1f6888590767",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 532,
+        "characters": 530
+      },
+      "error": null,
+      "elapsedMs": 5902,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.xidian.edu.cn/campus/view/id/753610",
+      "finalUrl": "https://job.xidian.edu.cn/campus/view/id/753610",
+      "jobIds": [
+        "J033"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=utf-8",
+      "textHash": "de057a3fe077105d2b4663228ec23e43d6ff9b00819f7c760c03e8b437db016c",
+      "previousTextHash": "0807b37b0a0043808b6b9a087af71626a8dd0eb62332046ac670462569e8bbc2",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 395,
+        "characters": 395
+      },
+      "error": null,
+      "elapsedMs": 5662,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.xidian.edu.cn/campus/view/id/754717",
+      "finalUrl": "https://job.xidian.edu.cn/campus/view/id/754717",
+      "jobIds": [
+        "J007"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=utf-8",
+      "textHash": "e248e6ffa4a95828c39e100019971e6e02b1df412ab13913db2a9d30d3212b06",
+      "previousTextHash": "56f970ab15e1a7393e29dafab21c19dc2d5d16663f2cf6475873b08693d8ac5b",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 378,
+        "characters": 378
+      },
+      "error": null,
+      "elapsedMs": 1311,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://jy.zafu.edu.cn/news/view/aid/196297/tag/tzgg",
+      "finalUrl": "https://jy.zafu.edu.cn/news/view/aid/196297/tag/tzgg",
+      "jobIds": [
+        "NR347",
+        "NR350",
+        "NR351",
+        "NR352",
+        "NR353",
+        "NR354",
+        "NR355",
+        "NR356",
+        "NR357",
+        "NR358",
+        "NR359",
+        "NR360",
+        "NR361",
+        "NR362",
+        "NR363",
+        "NR364",
+        "NR365",
+        "NR366",
+        "NR367",
+        "NR368",
+        "NR369",
+        "NR370",
+        "NR371",
+        "NR372",
+        "NR373",
+        "NR374",
+        "NR375",
+        "NR376",
+        "NR377",
+        "NR378",
+        "NR379",
+        "NR380",
+        "NR381",
+        "NR382",
+        "NR383",
+        "NR384",
+        "NR385",
+        "NR386",
+        "NR387",
+        "NR388",
+        "NR389",
+        "NR390",
+        "NR391",
+        "NR392",
+        "NR393",
+        "NR394",
+        "NR395",
+        "NR396",
+        "NR397",
+        "NR398",
+        "NR399",
+        "NR400",
+        "NR401",
+        "NR402",
+        "NR403",
+        "NR404",
+        "NR405",
+        "NR406",
+        "NR407",
+        "NR408",
+        "NR409",
+        "NR410",
+        "NR411",
+        "NR412",
+        "NR413",
+        "NR414",
+        "NR415",
+        "NR416",
+        "NR417",
+        "NR418",
+        "NR419",
+        "NR420",
+        "NR421",
+        "NR422",
+        "NR423",
+        "NR424",
+        "NR425",
+        "NR426",
+        "NR427",
+        "NR428",
+        "NR429",
+        "NR430",
+        "NR431",
+        "NR432",
+        "NR433",
+        "NR434",
+        "NR435",
+        "NR436",
+        "NR437",
+        "NR438",
+        "NR439",
+        "NR440",
+        "NR441",
+        "NR442",
+        "NR443",
+        "NR444",
+        "NR445",
+        "NR446",
+        "NR447",
+        "NR448",
+        "NR449",
+        "NR450",
+        "NR451",
+        "NR452",
+        "NR453",
+        "NR454",
+        "NR455",
+        "NR456",
+        "NR457",
+        "NR458",
+        "NR459",
+        "NR460",
+        "NR461",
+        "NR462",
+        "NR463",
+        "NR464",
+        "NR465",
+        "NR466",
+        "NR467",
+        "NR468",
+        "NR469",
+        "NR470",
+        "NR471",
+        "NR472",
+        "NR473",
+        "NR474",
+        "NR475",
+        "NR476",
+        "NR477",
+        "NR478",
+        "NR479",
+        "NR480",
+        "NR481",
+        "NR482",
+        "NR483",
+        "NR484",
+        "NR485",
+        "NR486",
+        "NR487",
+        "NR488",
+        "NR489",
+        "NR490",
+        "NR491",
+        "NR492",
+        "NR493",
+        "NR494",
+        "NR495",
+        "NR496",
+        "NR497",
+        "NR498",
+        "NR499",
+        "NR500",
+        "NR501",
+        "NR502",
+        "NR503",
+        "NR504",
+        "NR505",
+        "NR506",
+        "NR507",
+        "NR508",
+        "NR509",
+        "NR510",
+        "NR511",
+        "NR512",
+        "NR513",
+        "NR514",
+        "NR515",
+        "NR516",
+        "NR517",
+        "NR518",
+        "NR519",
+        "NR520",
+        "NR521",
+        "NR522",
+        "NR523",
+        "NR524",
+        "NR525",
+        "NR526",
+        "NR527",
+        "NR528",
+        "NR529",
+        "NR530",
+        "NR531",
+        "NR532",
+        "NR533",
+        "NR534",
+        "NR535",
+        "NR536",
+        "NR537",
+        "NR538",
+        "NR539",
+        "NR540",
+        "NR541",
+        "NR542",
+        "NR543",
+        "NR544",
+        "NR545",
+        "NR546",
+        "NR547",
+        "NR548",
+        "NR549",
+        "NR550",
+        "NR551",
+        "NR552",
+        "NR553",
+        "NR554",
+        "NR555",
+        "NR556",
+        "NR557",
+        "NR558",
+        "NR559",
+        "NR560",
+        "NR561",
+        "NR562",
+        "NR563",
+        "NR564",
+        "NR565",
+        "NR566",
+        "NR567",
+        "NR568",
+        "NR569",
+        "NR570",
+        "NR571",
+        "NR572",
+        "NR573",
+        "NR574",
+        "NR575",
+        "NR576",
+        "NR577",
+        "NR578",
+        "NR579",
+        "NR580",
+        "NR581",
+        "NR582",
+        "NR583",
+        "NR584",
+        "NR585",
+        "NR586",
+        "NR587",
+        "NR588",
+        "NR589",
+        "NR590",
+        "NR591",
+        "NR592",
+        "NR593"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=utf-8",
+      "textHash": "c0c894bf19125dd3182acd4289a962d4e2a23ad0a911bff575d72b0a45a9b3ad",
+      "previousTextHash": "d15e13a2325a01f021d4b779ddd065cee431a325065d4fcc00ae5e0283bff169",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 396,
+        "characters": 380
+      },
+      "error": null,
+      "elapsedMs": 2251,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://m.gaoxiaojob.com/announcement/detail/386397.html",
+      "finalUrl": "https://m.gaoxiaojob.com/announcement/detail/386397.html",
+      "jobIds": [
+        "J003"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=UTF-8",
+      "textHash": "f0a5411ab5ed2077f0abe9db647747e5b0b0ed166b4cc32f56837f291d1e254d",
+      "previousTextHash": "7af2d8e775ef0daa7fe60b0387ab0989f8237ecd02208f4f632e02bc563c694e",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 7982,
+        "characters": 7836
+      },
+      "error": null,
+      "elapsedMs": 1742,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://my.yingjiesheng.com/xjh-006-289-398.html",
+      "finalUrl": "https://my.yingjiesheng.com/xjh-006-289-398.html",
+      "jobIds": [
+        "J033"
+      ],
+      "checkedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html",
+      "textHash": "3f7dea1bc2c94fd210af6c7191b36b405f04873ff0da347c22ec7bf6d0a38b8b",
+      "previousTextHash": "b2216341fb420f02450f9dfc93e4d11aaadf45ba0a82371a39a97335518ce75b",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 1861,
+        "characters": 1851
+      },
+      "error": null,
+      "elapsedMs": 1149,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    }
+  ],
+  "expiredJobIds": [],
+  "newCandidateIds": [
+    "CLOUD-0ad2223994e3d346",
+    "CLOUD-294437aefd131225",
+    "CLOUD-58179a9cd20929ca",
+    "CLOUD-fcc128ef8baa8f91",
+    "CLOUD-d387f23f290668f8",
+    "CLOUD-8ed2449bbf4b3a44",
+    "CLOUD-83e4505824adde7a",
+    "CLOUD-0812984ee142b562",
+    "CLOUD-c6e6ecefb545651e",
+    "CLOUD-1907aa7e8554403a",
+    "CLOUD-5b09f4eb1eb545e2",
+    "CLOUD-a584e1ee7a24a41b",
+    "CLOUD-6e3728d9f195d1a9",
+    "CLOUD-25f7ee8e39d0be5a",
+    "CLOUD-e5f7cb270469be81",
+    "CLOUD-f4be619005db7f8b",
+    "CLOUD-3526861c096d4f93",
+    "CLOUD-b0973e37cabc95d2",
+    "CLOUD-a7c8b64bc0fb5170",
+    "CLOUD-20f04d464333be1e",
+    "CLOUD-5b6d7d3ed411da67",
+    "CLOUD-57eaed5d9c5e7209",
+    "CLOUD-5c9bc5e983dc55d2",
+    "CLOUD-613b3adfab8d4f8f",
+    "CLOUD-dcc9905aaf6e16ff",
+    "CLOUD-a8b77e3a12368b5a"
+  ],
+  "inputSha256": "b3da64b22480ca6c1a92db794e8fa3719d1efbd2eea13ef6090cfc93052a26ce",
+  "attachments": [],
+  "archivedCandidateIds": [
+    "CLOUD-c6e08bb141393606",
+    "CLOUD-f59f65cce48ffa01",
+    "CLOUD-ac733db980d53df3",
+    "CLOUD-884b61ae3ccc823e",
+    "CLOUD-00a1d0f32a82e88b",
+    "CLOUD-5c57a3fec9e51f80",
+    "CLOUD-3586770eec87647a"
+  ],
+  "detailAttempts": [
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/58413.html",
+      "candidateId": "CLOUD-c6e08bb141393606",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "not_detail_page"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/48222.html",
+      "candidateId": "CLOUD-ecfb7c2f1567e2ba",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "3533887143db8db91f0a60d086f1321cec7a97ae04ce1b31e7eba1ad17ba4cd6",
+      "jobId": "AUTO-ecfb7c2f1567e2ba"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/32355.html",
+      "candidateId": "CLOUD-ade2c495475378d7",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "763f156d5c73f739291037d0abd45cf4d9e1a4f15cc7ee40f48ac05e65a5d1c5",
+      "jobId": "AUTO-ade2c495475378d7"
+    },
+    {
+      "url": "https://rsc.nxu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1720080213&wbfileid=18036273",
+      "candidateId": "CLOUD-e112efb76020b197",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "https://www.12371.gov.cn/web/article/1512478023206821888/web/content_1512478023206821888.html",
+      "candidateId": "CLOUD-f59f65cce48ffa01",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "unrelated_body"
+    },
+    {
+      "url": "https://www6.hpu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=2084976735&wbfileid=9868DED1266D9B020054A0F77DE81184",
+      "candidateId": "CLOUD-9ef8d37b416b14fe",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "https://earth.tju.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1541562274&wbfileid=382EDC58D7B528FF3566075B5792D10E",
+      "candidateId": "CLOUD-1ab34ef75f564aa7",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "https://earth.tju.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1541562274&wbfileid=CB929F0F239E8827BB18584692B406E4",
+      "candidateId": "CLOUD-6886046c4db613bf",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "https://sft.sdu.edu.cn/info/1131/1483.htm",
+      "candidateId": "CLOUD-1ab2717ebcbcd97e",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "7629b2d979d88d07a1511ad8b527a01d90785a4942cc2c747368ec8802a76204",
+      "jobId": "AUTO-1ab2717ebcbcd97e"
+    },
+    {
+      "url": "https://sft.sdu.edu.cn/info/1131/2028.htm",
+      "candidateId": "CLOUD-7086ce8ac223a3c4",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "0b6e56c46b2dcf99a8fe428391fb3930601fc8006ad0750bd54e25c0a73882c5",
+      "jobId": "AUTO-7086ce8ac223a3c4"
+    },
+    {
+      "url": "https://sft.sdu.edu.cn/info/1131/2367.htm",
+      "candidateId": "CLOUD-25145f4b0ef1a551",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "647f0eb6d4e33e3c14ddaecfbb25d258fdba1cc44c67e10918f92c1f15c412c6",
+      "jobId": "AUTO-25145f4b0ef1a551"
+    },
+    {
+      "url": "https://sklimacm.sdu.edu.cn/info/1043/1247.htm",
+      "candidateId": "CLOUD-6738e806847a17b5",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "b7cc5263667f4a4ff881a4542d08bb3c1d2a509ec819d87db2efc359dc6f1d73",
+      "jobId": "AUTO-6738e806847a17b5"
+    },
+    {
+      "url": "https://sklimacm.sdu.edu.cn/info/1043/1464.htm",
+      "candidateId": "CLOUD-785c2fecd057ba38",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "03a56677f8c520d250c37ecc83d3fdaf68eb6fc151a3467b34accf70c48ca060",
+      "jobId": "AUTO-785c2fecd057ba38"
+    },
+    {
+      "url": "https://sklimacm.sdu.edu.cn/info/1043/1334.htm",
+      "candidateId": "CLOUD-21a113fe2ac5478f",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "535e0f9a8d8155d2dd33c8a518bc54656469ff0c7f6d591d557dd1bb2036abf3",
+      "jobId": "AUTO-21a113fe2ac5478f"
+    },
+    {
+      "url": "https://sklimacm.sdu.edu.cn/info/1043/1424.htm",
+      "candidateId": "CLOUD-c1e04231fa2ce54d",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "4633d1cf637cc74eb1843f817b4e5165350516705d6be737aa34fe7a869482ad",
+      "jobId": "AUTO-c1e04231fa2ce54d"
+    },
+    {
+      "url": "https://sklimacm.sdu.edu.cn/info/1043/1134.htm",
+      "candidateId": "CLOUD-6ebcaef1bbb7249c",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "fef2b7ca655a694ff94a41fd33e4ae1935bee13e6248d07a6aa2a30f21fe41d1",
+      "jobId": "AUTO-6ebcaef1bbb7249c"
+    },
+    {
+      "url": "https://sklimacm.sdu.edu.cn/info/1043/1246.htm",
+      "candidateId": "CLOUD-5668e1a387ad4473",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "dd4744bb6a8afd133098fa727d7bbff20476f54aa57c5a3b1081fc7a7449b557",
+      "jobId": "AUTO-5668e1a387ad4473"
+    },
+    {
+      "url": "https://job.tju.edu.cn/recruitment/content/type/2/id/6829.html",
+      "candidateId": "CLOUD-cdaa52a716e2016c",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "228887f663ce6243424c52efb0f91ee1ed0a90a54893441d36bb0cd1bf2bd965",
+      "jobId": "AUTO-cdaa52a716e2016c"
+    },
+    {
+      "url": "https://civil.sysu.edu.cn/article/3232",
+      "candidateId": "CLOUD-a1e81f2256fc2394",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "db2d920a0591ce85eefd0646e81a40f0f32da4d32d9f3cc4d58c53d6e458b79b",
+      "jobId": "AUTO-a1e81f2256fc2394"
+    },
+    {
+      "url": "https://postdoctor.chd.edu.cn/2026/0303/c8131a258758/page.htm",
+      "candidateId": "CLOUD-ac733db980d53df3",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "unrelated_body"
+    },
+    {
+      "url": "https://postdoctor.chd.edu.cn/2026/0303/c8131a258759/page.htm",
+      "candidateId": "CLOUD-884b61ae3ccc823e",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "unrelated_body"
+    },
+    {
+      "url": "https://postdoctor.chd.edu.cn/2026/0320/c8133a259463/page.htm",
+      "candidateId": "CLOUD-5de4f787e54ad627",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "041ac2ca6374dcb582a9e50f8dca389620c89932c728149776ebbbd4e6701041",
+      "jobId": "AUTO-5de4f787e54ad627"
+    },
+    {
+      "url": "https://postdoctor.chd.edu.cn/2026/0814/c8134a262243/page.htm",
+      "candidateId": "CLOUD-00a1d0f32a82e88b",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "not_detail_page"
+    },
+    {
+      "url": "https://postdoctor.chd.edu.cn/2026/0920/c8134a262726/page.htm",
+      "candidateId": "CLOUD-5c57a3fec9e51f80",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "unrelated_body"
+    },
+    {
+      "url": "https://rsc.hqu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1959797382&wbfileid=11F3AD9E1D9C8BB9ADFA40420B4B13BC",
+      "candidateId": "CLOUD-d16943f2542d9c5b",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "https://rsc.hqu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1959797382&wbfileid=14780E0E845A01AA8C780DF0C0FBDAFE",
+      "candidateId": "CLOUD-91683a979eb5760c",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "https://rsc.hqu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1959797382&wbfileid=51221269CA5267BB40A4F06A987C03CA",
+      "candidateId": "CLOUD-552edf1a65b422fc",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "https://rsc.hqu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1959797382&wbfileid=518F5D0804018A85B4A8C383D4052445",
+      "candidateId": "CLOUD-5c13bd5c5fceb8aa",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "https://rsc.hqu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1959797382&wbfileid=BF7EF703AC6F5ADF39A1010FE34CDC8B",
+      "candidateId": "CLOUD-05231ec9aacb41fa",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "http://postdoctor.chd.edu.cn/ldzgk/list.htm",
+      "candidateId": "CLOUD-3586770eec87647a",
+      "attemptedAt": "2026-11-20T15:39:11+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "not_detail_page"
+    }
+  ],
+  "autoAddedJobIds": [
+    "AUTO-ecfb7c2f1567e2ba",
+    "AUTO-ade2c495475378d7",
+    "AUTO-1ab2717ebcbcd97e",
+    "AUTO-7086ce8ac223a3c4",
+    "AUTO-25145f4b0ef1a551",
+    "AUTO-6738e806847a17b5",
+    "AUTO-785c2fecd057ba38",
+    "AUTO-21a113fe2ac5478f",
+    "AUTO-c1e04231fa2ce54d",
+    "AUTO-6ebcaef1bbb7249c",
+    "AUTO-5668e1a387ad4473",
+    "AUTO-cdaa52a716e2016c",
+    "AUTO-a1e81f2256fc2394",
+    "AUTO-5de4f787e54ad627"
+  ],
+  "autoUpdatedJobIds": [],
+  "autoArchivedJobIds": []
+}
