@@ -7,19 +7,89 @@
     "profileAsOf": "2026-11-20"
   },
   "stats": {
-    "jobs": 984,
-    "nationalAdded": 844,
+    "jobs": 991,
+    "nationalAdded": 851,
     "nearby": 250,
     "provinces": 31,
-    "organizations": 589,
+    "organizations": 591,
     "priorityA": 161,
-    "actionable": 132,
+    "actionable": 139,
     "yuyao": 11,
     "surrounding": 134,
     "direct": 237,
     "civilSamples": 40
   },
   "updates": [
+    {
+      "date": "2026-11-20",
+      "type": "自动新增",
+      "target": "南京大学工程管理学院｜南京大学工程管理学院2026年度准聘长聘岗位（事业编制）招聘公告",
+      "priority": "B",
+      "jobId": "AUTO-11ebe6b7069426b2",
+      "summary": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261030/i428029.html",
+      "ingestionMode": "automatic"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "自动新增",
+      "target": "南京大学国际地球系统科学研究所｜南京大学国际地球系统科学研究所2026年度准聘长聘岗位（事业编制）招聘公告",
+      "priority": "B",
+      "jobId": "AUTO-b1931ec8bfb5e9f5",
+      "summary": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261014/i425787.html",
+      "ingestionMode": "automatic"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "自动新增",
+      "target": "南京大学工程管理学院｜南京大学工程管理学院2026年度准聘长聘岗位（事业编制）招聘公告",
+      "priority": "B",
+      "jobId": "AUTO-2934468f17fcb738",
+      "summary": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20260920/i417840.html",
+      "ingestionMode": "automatic"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "自动新增",
+      "target": "公告未明确/自动提取未取得｜招聘公告YJGC202608362生物医学工程学院特任助理研究员",
+      "priority": "B",
+      "jobId": "AUTO-38c020883c5271cc",
+      "summary": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261116/i432391.html",
+      "ingestionMode": "automatic"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "自动新增",
+      "target": "公告未明确/自动提取未取得｜招聘公告YJ20260630工程管理学院特任副研究员",
+      "priority": "B",
+      "jobId": "AUTO-95e8974eebff214b",
+      "summary": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432288.html",
+      "ingestionMode": "automatic"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "自动新增",
+      "target": "公告未明确/自动提取未取得｜招聘公告SZYJ202600145生物医学工程学院特任助理研究员",
+      "priority": "B",
+      "jobId": "AUTO-d2cea678e2ef946f",
+      "summary": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432287.html",
+      "ingestionMode": "automatic"
+    },
+    {
+      "date": "2026-11-20",
+      "type": "自动新增",
+      "target": "公告未明确/自动提取未取得｜招聘公告YJ20260093信息管理学院博士后",
+      "priority": "B",
+      "jobId": "AUTO-9a464c2bd1351711",
+      "summary": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261028/i427672.html",
+      "ingestionMode": "automatic"
+    },
     {
       "date": "2026-11-20",
       "type": "自动更新",
@@ -6502,7 +6572,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T15:06:47+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.cncico.com/content/82659": {
@@ -6514,7 +6584,7 @@
             "error": null
           },
           "[rejected-url]": {
-            "checkedAt": "2026-11-20T15:06:47+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -11196,11 +11266,11 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T15:06:47+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "[rejected-url]": {
-            "checkedAt": "2026-11-20T15:06:47+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -11291,11 +11361,11 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T15:06:47+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "[rejected-url]": {
-            "checkedAt": "2026-11-20T15:06:47+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -20173,7 +20243,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://rsc.zit.edu.cn/info/1001/1682.htm": {
@@ -20193,7 +20263,7 @@
             "error": "SSLError"
           },
           "https://rsc.zit.edu.cn/rczp/gccrczp.htm": {
-            "checkedAt": "2026-11-16T15:08:01+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -22135,14 +22205,14 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-17T16:20:54+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.hebut.edu.cn/home/correcruit/content/id/80581.html": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "c907cc00b4921a46c897b0a5eb7d4b48af3593727d7ca1550484debbd392bcdb",
+            "textHash": "4ef883e9e2c42010859129319130fbecb3bbd9f7389efbe6ead1579798e5b485",
             "contentChanged": true,
             "error": null
           }
@@ -23127,15 +23197,15 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.nankai.edu.cn/correcruit/content/id/119091.html": {
-            "checkedAt": "2026-11-18T15:51:40+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "5965e4311570ec5cd1b20057308421fe247e94809e37b7643d4803bab05c8eb1",
-            "contentChanged": false,
+            "textHash": "55f35777efe5e389575b433a102028dfd2018598d9912bd211377404b914d9ce",
+            "contentChanged": true,
             "error": null
           },
           "https://zhaopin.pipechina.com.cn/": {
@@ -23534,14 +23604,14 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://career.hebut.edu.cn/recruitment/content/type/2/id/5169.html": {
-            "checkedAt": "2026-11-20T14:11:47+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "24f531b11f322f3315dee588a9dfae1832f35779827b8618ea2975c619a23a26",
+            "textHash": "f73d3f5df7b208f76f9dfff65598181c9402710374d0c58ce2e4fee3a15ee60f",
             "contentChanged": true,
             "error": null
           }
@@ -23917,16 +23987,16 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:11:47+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://zhaopin.cnpc.com.cn/": {
-            "checkedAt": "2026-11-18T15:51:40+08:00",
-            "httpStatus": 412,
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
             "contentChanged": false,
-            "error": "http_status"
+            "error": "TimeoutError"
           },
           "https://career.hebut.edu.cn/recruitment/content/type/2/id/5381.html": {
             "checkedAt": "2026-11-20T14:11:47+08:00",
@@ -24010,16 +24080,16 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:46:18+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://zhaopin.cnpc.com.cn/": {
-            "checkedAt": "2026-11-18T15:51:40+08:00",
-            "httpStatus": 412,
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
             "contentChanged": false,
-            "error": "http_status"
+            "error": "TimeoutError"
           },
           "https://career.hebut.edu.cn/home/correcruit/content/id/80508.html": {
             "checkedAt": "2026-11-20T14:46:18+08:00",
@@ -30548,7 +30618,7 @@
       "sourceTrust": "official",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:58:41+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.orca3d.cn/careers/?tab=social": {
@@ -30556,6 +30626,22 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "733a8ff8fe664b1f361f17f5d037bb86b8cddd3e9b181aba7815eba4d5fd0187",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.orca3d.cn/careers/campus-physics-simulation-phd/": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "9aa44333cfc142dea9f3f8565b0f37e128e99b4a39f8c622a132b9515502d9f6",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.orca3d.cn/careers/physics-simulation-engineer-phd/": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "cc62967be30a25de54556c46c374fe2bb86c2f692a3f5f26bd23b980ee57a534",
             "contentChanged": false,
             "error": null
           }
@@ -31717,15 +31803,15 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:18:35+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://ideal.51job.com/zywk2027": {
-            "checkedAt": "2026-11-17T16:20:54+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "b40cc571727b2f6c392ab722deb492fa6cb88df8268d4570b7460dc7408e1727",
-            "contentChanged": false,
+            "textHash": "7f1c6a0c4df8cf631133535dfdc8be2e8af34c435ddd1a42b1ec057d494862da",
+            "contentChanged": true,
             "error": null
           },
           "https://jy.gzhu.edu.cn/web/index/jobs-brief-detail?id=SMUXSVZ": {
@@ -33059,15 +33145,15 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-17T16:20:54+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://jmc.zhiye.com/campus": {
-            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": 200,
             "bodyFetched": true,
-            "textHash": "b9e8f5f5493044c17a1b779ad213d7875faf086941f4f209cf7030ca10e72785",
-            "contentChanged": false,
+            "textHash": "84d850172836033e99adef472fe7702378d38dbf951039bd84ffa738b3be60b2",
+            "contentChanged": true,
             "error": null
           },
           "https://career.nankai.edu.cn/company/index/id/23533.html": {
@@ -34860,11 +34946,11 @@
       "sourceTrust": "mixed",
       "sourceHealth": "unreachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:18:35+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.idsse.cas.cn/rcdw/rczp/202602/P020260316553715586041.pdf": {
-            "checkedAt": "2026-11-19T15:46:58+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -35025,7 +35111,7 @@
       "sourceTrust": "mixed",
       "sourceHealth": "reachable",
       "cloudMonitor": {
-        "checkedAt": "2026-11-19T15:46:58+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://pxzx.nhri.cn/tzgg/zpxx/art/2026/art_0cbe2b32de6241da847732cbcbd3b1fa.html": {
@@ -35033,6 +35119,14 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "0fef1725b4f779c118523cb4739d6d7656825bdfcb32fa896c5e0b4aef33bba1",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.nhri.cn/tzgg/zpxx/index.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d7a0b39b93abb3202ac4ff731f853e2f9e8cc8bbfb012a969d3ae1276d7028a4",
             "contentChanged": false,
             "error": null
           }
@@ -36217,7 +36311,7 @@
       "sourceTrust": "mixed",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T15:06:47+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://www.jsxf.gov.cn/xwzx/szyw/jssy/art/2026/art_043eb3a09038491f9360d25aa6eb27cc.html": {
@@ -36225,6 +36319,46 @@
             "httpStatus": 200,
             "bodyFetched": true,
             "textHash": "f54329591d46895345b7c4c6dd611fb0385670743009fbe05c1f7c4189d05651",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "b72929747d357d03d03885256971d953bcc71c17219e0ebfa50fda15e4f6544e",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/tzgg/art/2026/art_2cd76f601ab84b7bbb6164e1168a13ff.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "f820d57f510d9757dc9ed5ea1195b81e32c764cce49e2dc8a7e9917f4056267d",
             "contentChanged": false,
             "error": null
           }
@@ -117964,7 +118098,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:18:35+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/P020261020562416765430.xlsx": {
@@ -117976,7 +118110,7 @@
             "error": "TimeoutError"
           },
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/t20261020_63609.shtml": {
-            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -118088,7 +118222,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:18:35+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/P020261020562416765430.xlsx": {
@@ -118100,7 +118234,7 @@
             "error": "TimeoutError"
           },
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/t20261020_63609.shtml": {
-            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -118212,7 +118346,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:18:35+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/P020261020562416765430.xlsx": {
@@ -118224,7 +118358,7 @@
             "error": "TimeoutError"
           },
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/t20261020_63609.shtml": {
-            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -118335,7 +118469,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-20T14:18:35+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/P020261020562416765430.xlsx": {
@@ -118347,7 +118481,7 @@
             "error": "TimeoutError"
           },
           "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/t20261020_63609.shtml": {
-            "checkedAt": "2026-11-15T14:59:50+08:00",
+            "checkedAt": "2026-11-20T15:10:17+08:00",
             "httpStatus": null,
             "bodyFetched": false,
             "textHash": null,
@@ -118464,7 +118598,45 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3afA2hn0Yiof9z6OdCrD4QQCnmwwv6BAgyF7TgCx%2FJx5e8UZ1GGObhJu5eTS4cEGgAafBHdtTyrcu0S4BodSjJPFWB7uzU6ABiUEx3DigbH4LjaLGm94sv2ik8Mmc1VVT%2BA%3D&fileName=%E6%B1%9F%E8%8B%8F%E7%9C%812027%E5%B9%B4%E5%BA%A6%E8%80%83%E8%AF%95%E5%BD%95%E7%94%A8%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%84%E5%B8%82%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.zip": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          }
+        }
+      }
     },
     {
       "id": "NR610",
@@ -118564,7 +118736,45 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3afA2hn0Yiof9z6OdCrD4QQCnmwwv6BAgyF7TgCx%2FJx5e8UZ1GGObhJu5eTS4cEGgAafBHdtTyrcu0S4BodSjJPFWB7uzU6ABiUEx3DigbH4LjaLGm94sv2ik8Mmc1VVT%2BA%3D&fileName=%E6%B1%9F%E8%8B%8F%E7%9C%812027%E5%B9%B4%E5%BA%A6%E8%80%83%E8%AF%95%E5%BD%95%E7%94%A8%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%84%E5%B8%82%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.zip": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          }
+        }
+      }
     },
     {
       "id": "NR611",
@@ -118666,7 +118876,45 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3afA2hn0Yiof9z6OdCrD4QQCnmwwv6BAgyF7TgCx%2FJx5e8UZ1GGObhJu5eTS4cEGgAafBHdtTyrcu0S4BodSjJPFWB7uzU6ABiUEx3DigbH4LjaLGm94sv2ik8Mmc1VVT%2BA%3D&fileName=%E6%B1%9F%E8%8B%8F%E7%9C%812027%E5%B9%B4%E5%BA%A6%E8%80%83%E8%AF%95%E5%BD%95%E7%94%A8%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%84%E5%B8%82%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.zip": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          }
+        }
+      }
     },
     {
       "id": "NR612",
@@ -118768,7 +119016,45 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3afA2hn0Yiof9z6OdCrD4QQCnmwwv6BAgyF7TgCx%2FJx5e8UZ1GGObhJu5eTS4cEGgAafBHdtTyrcu0S4BodSjJPFWB7uzU6ABiUEx3DigbH4LjaLGm94sv2ik8Mmc1VVT%2BA%3D&fileName=%E6%B1%9F%E8%8B%8F%E7%9C%812027%E5%B9%B4%E5%BA%A6%E8%80%83%E8%AF%95%E5%BD%95%E7%94%A8%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%84%E5%B8%82%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.zip": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          }
+        }
+      }
     },
     {
       "id": "NR613",
@@ -118870,7 +119156,45 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3afA2hn0Yiof9z6OdCrD4QQCnmwwv6BAgyF7TgCx%2FJx5e8UZ1GGObhJu5eTS4cEGgAafBHdtTyrcu0S4BodSjJPFWB7uzU6ABiUEx3DigbH4LjaLGm94sv2ik8Mmc1VVT%2BA%3D&fileName=%E6%B1%9F%E8%8B%8F%E7%9C%812027%E5%B9%B4%E5%BA%A6%E8%80%83%E8%AF%95%E5%BD%95%E7%94%A8%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%84%E5%B8%82%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.zip": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          }
+        }
+      }
     },
     {
       "id": "NR614",
@@ -118972,7 +119296,45 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3afA2hn0Yiof9z6OdCrD4QQCnmwwv6BAgyF7TgCx%2FJx5e8UZ1GGObhJu5eTS4cEGgAafBHdtTyrcu0S4BodSjJPFWB7uzU6ABiUEx3DigbH4LjaLGm94sv2ik8Mmc1VVT%2BA%3D&fileName=%E6%B1%9F%E8%8B%8F%E7%9C%812027%E5%B9%B4%E5%BA%A6%E8%80%83%E8%AF%95%E5%BD%95%E7%94%A8%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%84%E5%B8%82%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.zip": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          }
+        }
+      }
     },
     {
       "id": "NR615",
@@ -119074,7 +119436,45 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3afA2hn0Yiof9z6OdCrD4QQCnmwwv6BAgyF7TgCx%2FJx5e8UZ1GGObhJu5eTS4cEGgAafBHdtTyrcu0S4BodSjJPFWB7uzU6ABiUEx3DigbH4LjaLGm94sv2ik8Mmc1VVT%2BA%3D&fileName=%E6%B1%9F%E8%8B%8F%E7%9C%812027%E5%B9%B4%E5%BA%A6%E8%80%83%E8%AF%95%E5%BD%95%E7%94%A8%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%84%E5%B8%82%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.zip": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          }
+        }
+      }
     },
     {
       "id": "NR616",
@@ -119177,7 +119577,45 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3afA2hn0Yiof9z6OdCrD4QQCnmwwv6BAgyF7TgCx%2FJx5e8UZ1GGObhJu5eTS4cEGgAafBHdtTyrcu0S4BodSjJPFWB7uzU6ABiUEx3DigbH4LjaLGm94sv2ik8Mmc1VVT%2BA%3D&fileName=%E6%B1%9F%E8%8B%8F%E7%9C%812027%E5%B9%B4%E5%BA%A6%E8%80%83%E8%AF%95%E5%BD%95%E7%94%A8%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%84%E5%B8%82%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.zip": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          }
+        }
+      }
     },
     {
       "id": "NR617",
@@ -119279,7 +119717,45 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3afA2hn0Yiof9z6OdCrD4QQCnmwwv6BAgyF7TgCx%2FJx5e8UZ1GGObhJu5eTS4cEGgAafBHdtTyrcu0S4BodSjJPFWB7uzU6ABiUEx3DigbH4LjaLGm94sv2ik8Mmc1VVT%2BA%3D&fileName=%E6%B1%9F%E8%8B%8F%E7%9C%812027%E5%B9%B4%E5%BA%A6%E8%80%83%E8%AF%95%E5%BD%95%E7%94%A8%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%84%E5%B8%82%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.zip": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          }
+        }
+      }
     },
     {
       "id": "NR618",
@@ -119381,7 +119857,45 @@
       "availability": "historical",
       "eligibility": "uncertain",
       "sourceTrust": "official_platform",
-      "sourceHealth": "not_checked"
+      "sourceHealth": "not_checked",
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+            "contentChanged": false,
+            "error": null
+          },
+          "https://www.jszzb.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3afA2hn0Yiof9z6OdCrD4QQCnmwwv6BAgyF7TgCx%2FJx5e8UZ1GGObhJu5eTS4cEGgAafBHdtTyrcu0S4BodSjJPFWB7uzU6ABiUEx3DigbH4LjaLGm94sv2ik8Mmc1VVT%2BA%3D&fileName=%E6%B1%9F%E8%8B%8F%E7%9C%812027%E5%B9%B4%E5%BA%A6%E8%80%83%E8%AF%95%E5%BD%95%E7%94%A8%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%84%E5%B8%82%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.zip": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": false,
+            "textHash": null,
+            "contentChanged": false,
+            "error": "unsupported_content_type"
+          }
+        }
+      }
     },
     {
       "id": "NR619",
@@ -120591,7 +121105,7 @@
       "sourceTrust": "official_platform",
       "sourceHealth": "not_checked",
       "cloudMonitor": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "scope": "自动抓取，不是人工全文/资格核验",
         "sources": {
           "https://gwy.zjks.gov.cn/": {
@@ -120601,6 +121115,14 @@
             "textHash": null,
             "contentChanged": false,
             "error": "TimeoutError"
+          },
+          "https://www.lysrsks.cn/index/news/detail.html?id=2652": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "9792ba6cd2d8924b6679e5b8d2c39faa2b6acb1e7e4b039705850c82a09a3dcc",
+            "contentChanged": false,
+            "error": null
           }
         }
       }
@@ -124581,6 +125103,20 @@
           "eligibility2027"
         ],
         "identityHash": "52262e2df7df57d4c5ef8512d757a4588d37ea10c2430aa333b5e48272b983bb"
+      },
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://hr.zju.edu.cn/postdoctor/2026/0215/c29116a3134825/page.htm": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "f637537af96cc20c4aa19e6a57d7f4fb041092c0e26482e3487928e4307c7c1d",
+            "contentChanged": false,
+            "error": null
+          }
+        }
       }
     },
     {
@@ -124678,6 +125214,701 @@
           "eligibility2027"
         ],
         "identityHash": "5cd41dd572b42fcea9487e19a5b317802a18b95741712ef82564077347a364ce"
+      },
+      "cloudMonitor": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "scope": "自动抓取，不是人工全文/资格核验",
+        "sources": {
+          "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261027/i427658.html": {
+            "checkedAt": "2026-11-20T15:10:17+08:00",
+            "httpStatus": 200,
+            "bodyFetched": true,
+            "textHash": "d40e9aae11b3668adebb17d47c65697b307354d0dee5e6cd17d6a3d1f44338f3",
+            "contentChanged": false,
+            "error": null
+          }
+        }
+      }
+    },
+    {
+      "id": "AUTO-9a464c2bd1351711",
+      "organization": "公告未明确/自动提取未取得",
+      "position": "招聘公告YJ20260093信息管理学院博士后",
+      "region": "公告未明确/自动提取未取得",
+      "province": "未知",
+      "provinceList": [],
+      "route": "博士后",
+      "routeCategory": "博士后",
+      "scope": "national",
+      "timeWindow": "申请截止日期\n2026年12月31日",
+      "match": "专业相关（自动提取）",
+      "priority": "B",
+      "researchTags": [
+        "工程"
+      ],
+      "education": "已获金融、经济、财务、会计等人文社科领域博士学位",
+      "requirements": "3、研究方向",
+      "eligibility2027": "公告未明确2027届资格/自动提取未取得",
+      "eligibility": "uncertain",
+      "eligibilityCode": "uncertain",
+      "availability": "open",
+      "availabilityCode": "open",
+      "currentStatus": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "sourcePublishedAt": "2026-10-28",
+      "deadline": "2026-12-31",
+      "deadlineTime": null,
+      "announcementUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261028/i427672.html",
+      "recruitmentUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261028/i427672.html",
+      "links": [
+        {
+          "label": "自动抓取的招聘正文",
+          "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261028/i427672.html"
+        }
+      ],
+      "sourceTrust": "official_platform",
+      "sourceLevel": "已知官方/高校就业来源招聘正文（机器提取）",
+      "employerNature": {
+        "code": "unknown",
+        "label": "性质未知",
+        "evidence": "未从来源归属推定招聘雇主所有制。",
+        "sourceUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261028/i427672.html",
+        "verifiedAt": null
+      },
+      "verifiedAt": "",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "autoCollectedAt": "2026-11-20T15:10:17+08:00",
+      "ingestionMode": "automatic",
+      "ingestionMethod": "official_body_rules_v3",
+      "notes": "自动入库，无人工审核门槛；未知字段持续自动监测，不代表本人资格或人才档次已达标。",
+      "fitReason": "正文出现目标专业或相关工程科研方向；匹配由规则提取。",
+      "risks": "机器抽取可能遗漏附件和复杂限制；学历、毕业日期、论文门槛分别保留原文信息或未知。",
+      "paperPolicy": {
+        "policyStatus": "公告未明确/自动提取未取得",
+        "gradingRule": "未自动认定论文分区、数量或人才等级。",
+        "authorshipLimits": "自动提取未取得完整作者位次口径。",
+        "sourceUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261028/i427672.html",
+        "verifiedAt": ""
+      },
+      "autoEvidence": {
+        "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261028/i427672.html",
+        "discoverySourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
+        "sourceJobIds": [
+          "NA068"
+        ],
+        "textHash": "fd296d1fc243fb2c491a5c9600b065cfc6849b1d445d5ba590eae07278052a53",
+        "extractionVersion": "official_body_rules_v3",
+        "fields": {
+          "education": {
+            "value": "已获金融、经济、财务、会计等人文社科领域博士学位",
+            "quote": "已获金融、经济、财务、会计等人文社科领域博士学位",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "requirements": {
+            "value": "3、研究方向",
+            "quote": "3、研究方向",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "sourcePublishedAt": {
+            "value": "2026-10-28",
+            "quote": "发布时间：2026-10-28",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "deadline": {
+            "value": "2026-12-31",
+            "quote": "申请截止日期\n2026年12月31日",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          }
+        },
+        "uncertainties": [
+          "organization",
+          "region",
+          "eligibility2027"
+        ],
+        "identityHash": "7756f33a269ca14a8851c991cd3da926f633c72f52069865ca196720eb0b2d9a"
+      }
+    },
+    {
+      "id": "AUTO-d2cea678e2ef946f",
+      "organization": "公告未明确/自动提取未取得",
+      "position": "招聘公告SZYJ202600145生物医学工程学院特任助理研究员",
+      "region": "公告未明确/自动提取未取得",
+      "province": "未知",
+      "provinceList": [],
+      "route": "综合招聘",
+      "routeCategory": "综合招聘",
+      "scope": "national",
+      "timeWindow": "申请截止日期\n2026年12月14日",
+      "match": "专业相关（自动提取）",
+      "priority": "B",
+      "researchTags": [
+        "工程"
+      ],
+      "education": "具有理工科博士学位",
+      "requirements": "公告未明确/自动提取未取得",
+      "eligibility2027": "公告未明确2027届资格/自动提取未取得",
+      "eligibility": "uncertain",
+      "eligibilityCode": "uncertain",
+      "availability": "open",
+      "availabilityCode": "open",
+      "currentStatus": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "sourcePublishedAt": "2026-11-12",
+      "deadline": "2026-12-14",
+      "deadlineTime": null,
+      "announcementUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432287.html",
+      "recruitmentUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432287.html",
+      "links": [
+        {
+          "label": "自动抓取的招聘正文",
+          "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432287.html"
+        }
+      ],
+      "sourceTrust": "official_platform",
+      "sourceLevel": "已知官方/高校就业来源招聘正文（机器提取）",
+      "employerNature": {
+        "code": "unknown",
+        "label": "性质未知",
+        "evidence": "未从来源归属推定招聘雇主所有制。",
+        "sourceUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432287.html",
+        "verifiedAt": null
+      },
+      "verifiedAt": "",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "autoCollectedAt": "2026-11-20T15:10:17+08:00",
+      "ingestionMode": "automatic",
+      "ingestionMethod": "official_body_rules_v3",
+      "notes": "自动入库，无人工审核门槛；未知字段持续自动监测，不代表本人资格或人才档次已达标。",
+      "fitReason": "正文出现目标专业或相关工程科研方向；匹配由规则提取。",
+      "risks": "机器抽取可能遗漏附件和复杂限制；学历、毕业日期、论文门槛分别保留原文信息或未知。",
+      "paperPolicy": {
+        "policyStatus": "公告未明确/自动提取未取得",
+        "gradingRule": "未自动认定论文分区、数量或人才等级。",
+        "authorshipLimits": "自动提取未取得完整作者位次口径。",
+        "sourceUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432287.html",
+        "verifiedAt": ""
+      },
+      "autoEvidence": {
+        "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432287.html",
+        "discoverySourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
+        "sourceJobIds": [
+          "NA068"
+        ],
+        "textHash": "72a432b2eead733bef5f643056714fc48553d721ff3b3f16aa6dac6331b4b697",
+        "extractionVersion": "official_body_rules_v3",
+        "fields": {
+          "education": {
+            "value": "具有理工科博士学位",
+            "quote": "具有理工科博士学位",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "sourcePublishedAt": {
+            "value": "2026-11-12",
+            "quote": "发布时间：2026-11-12",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "deadline": {
+            "value": "2026-12-14",
+            "quote": "申请截止日期\n2026年12月14日",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          }
+        },
+        "uncertainties": [
+          "organization",
+          "region",
+          "eligibility2027"
+        ],
+        "identityHash": "3318dcc8cee4fb9490be96f2ce3d2e14d38dc7d0959d24a4e16400b8c727ba97"
+      }
+    },
+    {
+      "id": "AUTO-95e8974eebff214b",
+      "organization": "公告未明确/自动提取未取得",
+      "position": "招聘公告YJ20260630工程管理学院特任副研究员",
+      "region": "公告未明确/自动提取未取得",
+      "province": "未知",
+      "provinceList": [],
+      "route": "综合招聘",
+      "routeCategory": "综合招聘",
+      "scope": "national",
+      "timeWindow": "申请截止日期\n2026年11月20日",
+      "match": "专业相关（自动提取）",
+      "priority": "B",
+      "researchTags": [
+        "工程"
+      ],
+      "education": "具有海内外高校或研究机构博士学位",
+      "requirements": "公告未明确/自动提取未取得",
+      "eligibility2027": "公告未明确2027届资格/自动提取未取得",
+      "eligibility": "uncertain",
+      "eligibilityCode": "uncertain",
+      "availability": "open",
+      "availabilityCode": "open",
+      "currentStatus": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "sourcePublishedAt": "2026-11-12",
+      "deadline": "2026-11-20",
+      "deadlineTime": null,
+      "announcementUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432288.html",
+      "recruitmentUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432288.html",
+      "links": [
+        {
+          "label": "自动抓取的招聘正文",
+          "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432288.html"
+        }
+      ],
+      "sourceTrust": "official_platform",
+      "sourceLevel": "已知官方/高校就业来源招聘正文（机器提取）",
+      "employerNature": {
+        "code": "unknown",
+        "label": "性质未知",
+        "evidence": "未从来源归属推定招聘雇主所有制。",
+        "sourceUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432288.html",
+        "verifiedAt": null
+      },
+      "verifiedAt": "",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "autoCollectedAt": "2026-11-20T15:10:17+08:00",
+      "ingestionMode": "automatic",
+      "ingestionMethod": "official_body_rules_v3",
+      "notes": "自动入库，无人工审核门槛；未知字段持续自动监测，不代表本人资格或人才档次已达标。",
+      "fitReason": "正文出现目标专业或相关工程科研方向；匹配由规则提取。",
+      "risks": "机器抽取可能遗漏附件和复杂限制；学历、毕业日期、论文门槛分别保留原文信息或未知。",
+      "paperPolicy": {
+        "policyStatus": "公告未明确/自动提取未取得",
+        "gradingRule": "未自动认定论文分区、数量或人才等级。",
+        "authorshipLimits": "自动提取未取得完整作者位次口径。",
+        "sourceUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432288.html",
+        "verifiedAt": ""
+      },
+      "autoEvidence": {
+        "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432288.html",
+        "discoverySourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
+        "sourceJobIds": [
+          "NA068"
+        ],
+        "textHash": "a5c4d8cf67ff80d4b545e525df56f7621e24549200713791446d61501cce5ea7",
+        "extractionVersion": "official_body_rules_v3",
+        "fields": {
+          "education": {
+            "value": "具有海内外高校或研究机构博士学位",
+            "quote": "具有海内外高校或研究机构博士学位",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "sourcePublishedAt": {
+            "value": "2026-11-12",
+            "quote": "发布时间：2026-11-12",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "deadline": {
+            "value": "2026-11-20",
+            "quote": "申请截止日期\n2026年11月20日",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          }
+        },
+        "uncertainties": [
+          "organization",
+          "region",
+          "eligibility2027"
+        ],
+        "identityHash": "b59bf293196e49b5a3fcfa2d8e4da36a1be3ccb51a665935a2d79577961dc3b2"
+      }
+    },
+    {
+      "id": "AUTO-38c020883c5271cc",
+      "organization": "公告未明确/自动提取未取得",
+      "position": "招聘公告YJGC202608362生物医学工程学院特任助理研究员",
+      "region": "公告未明确/自动提取未取得",
+      "province": "未知",
+      "provinceList": [],
+      "route": "综合招聘",
+      "routeCategory": "综合招聘",
+      "scope": "national",
+      "timeWindow": "申请截止日期\n2026年12月17日",
+      "match": "专业相关（自动提取）",
+      "priority": "B",
+      "researchTags": [
+        "工程"
+      ],
+      "education": "具有相关专业博士学位",
+      "requirements": "1、具有相关专业博士学位，38岁以下",
+      "eligibility2027": "公告未明确2027届资格/自动提取未取得",
+      "eligibility": "uncertain",
+      "eligibilityCode": "uncertain",
+      "availability": "open",
+      "availabilityCode": "open",
+      "currentStatus": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "sourcePublishedAt": "2026-11-16",
+      "deadline": "2026-12-17",
+      "deadlineTime": null,
+      "announcementUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261116/i432391.html",
+      "recruitmentUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261116/i432391.html",
+      "links": [
+        {
+          "label": "自动抓取的招聘正文",
+          "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261116/i432391.html"
+        }
+      ],
+      "sourceTrust": "official_platform",
+      "sourceLevel": "已知官方/高校就业来源招聘正文（机器提取）",
+      "employerNature": {
+        "code": "unknown",
+        "label": "性质未知",
+        "evidence": "未从来源归属推定招聘雇主所有制。",
+        "sourceUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261116/i432391.html",
+        "verifiedAt": null
+      },
+      "verifiedAt": "",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "autoCollectedAt": "2026-11-20T15:10:17+08:00",
+      "ingestionMode": "automatic",
+      "ingestionMethod": "official_body_rules_v3",
+      "notes": "自动入库，无人工审核门槛；未知字段持续自动监测，不代表本人资格或人才档次已达标。",
+      "fitReason": "正文出现目标专业或相关工程科研方向；匹配由规则提取。",
+      "risks": "机器抽取可能遗漏附件和复杂限制；学历、毕业日期、论文门槛分别保留原文信息或未知。",
+      "paperPolicy": {
+        "policyStatus": "公告未明确/自动提取未取得",
+        "gradingRule": "未自动认定论文分区、数量或人才等级。",
+        "authorshipLimits": "自动提取未取得完整作者位次口径。",
+        "sourceUrl": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261116/i432391.html",
+        "verifiedAt": ""
+      },
+      "autoEvidence": {
+        "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261116/i432391.html",
+        "discoverySourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
+        "sourceJobIds": [
+          "NA068"
+        ],
+        "textHash": "d0c25c486e14faf0f92b2f9c182b03c8e7d36470b2d672115710b733e12adbae",
+        "extractionVersion": "official_body_rules_v3",
+        "fields": {
+          "education": {
+            "value": "具有相关专业博士学位",
+            "quote": "具有相关专业博士学位",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "requirements": {
+            "value": "1、具有相关专业博士学位，38岁以下",
+            "quote": "1、具有相关专业博士学位，38岁以下",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "sourcePublishedAt": {
+            "value": "2026-11-16",
+            "quote": "发布时间：2026-11-16",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "deadline": {
+            "value": "2026-12-17",
+            "quote": "申请截止日期\n2026年12月17日",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          }
+        },
+        "uncertainties": [
+          "organization",
+          "region",
+          "eligibility2027"
+        ],
+        "identityHash": "cb68ab9331a04e30dc5bd8f1676540dcaf2903d817a320243bc62f2de1eaf5bd"
+      }
+    },
+    {
+      "id": "AUTO-2934468f17fcb738",
+      "organization": "南京大学工程管理学院",
+      "position": "南京大学工程管理学院2026年度准聘长聘岗位（事业编制）招聘公告",
+      "region": "公告未明确/自动提取未取得",
+      "province": "未知",
+      "provinceList": [],
+      "route": "高校科研",
+      "routeCategory": "高校科研",
+      "scope": "national",
+      "timeWindow": "申请截止日期\n2026年12月20日",
+      "match": "专业相关（自动提取）",
+      "priority": "B",
+      "researchTags": [
+        "工程"
+      ],
+      "education": "具有相关学科领域的博士学位",
+      "requirements": "南京大学工程管理学院拟面向全球招聘有志于从事管理科学与工程领域各主要研究方向的优秀青年人才到学院工作；招聘研究方向包括；应聘条件；5.突出的科研成果显示度与未来科研发展潜力：应有相关研究方向的成果显示度，对相关研究领域有原创性观点，未来研究计划思路清晰，具有较好的学术潜力",
+      "eligibility2027": "公告未明确2027届资格/自动提取未取得",
+      "eligibility": "uncertain",
+      "eligibilityCode": "uncertain",
+      "availability": "open",
+      "availabilityCode": "open",
+      "currentStatus": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "sourcePublishedAt": "2026-09-20",
+      "deadline": "2026-12-20",
+      "deadlineTime": null,
+      "announcementUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20260920/i417840.html",
+      "recruitmentUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20260920/i417840.html",
+      "links": [
+        {
+          "label": "自动抓取的招聘正文",
+          "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20260920/i417840.html"
+        }
+      ],
+      "sourceTrust": "official_platform",
+      "sourceLevel": "已知官方/高校就业来源招聘正文（机器提取）",
+      "employerNature": {
+        "code": "unknown",
+        "label": "性质未知",
+        "evidence": "未从来源归属推定招聘雇主所有制。",
+        "sourceUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20260920/i417840.html",
+        "verifiedAt": null
+      },
+      "verifiedAt": "",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "autoCollectedAt": "2026-11-20T15:10:17+08:00",
+      "ingestionMode": "automatic",
+      "ingestionMethod": "official_body_rules_v3",
+      "notes": "自动入库，无人工审核门槛；未知字段持续自动监测，不代表本人资格或人才档次已达标。",
+      "fitReason": "正文出现目标专业或相关工程科研方向；匹配由规则提取。",
+      "risks": "机器抽取可能遗漏附件和复杂限制；学历、毕业日期、论文门槛分别保留原文信息或未知。",
+      "paperPolicy": {
+        "policyStatus": "公告未明确/自动提取未取得",
+        "gradingRule": "未自动认定论文分区、数量或人才等级。",
+        "authorshipLimits": "自动提取未取得完整作者位次口径。",
+        "sourceUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20260920/i417840.html",
+        "verifiedAt": ""
+      },
+      "autoEvidence": {
+        "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20260920/i417840.html",
+        "discoverySourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
+        "sourceJobIds": [
+          "NA068"
+        ],
+        "textHash": "bea20ae30b6e583d99a13064ca53eeea81e0377032624a025822df3bd8e8141b",
+        "extractionVersion": "official_body_rules_v3",
+        "fields": {
+          "organization": {
+            "value": "南京大学工程管理学院",
+            "quote": "南京大学工程管理学院2026年度准聘长聘岗位（事业编制）招聘公告",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "education": {
+            "value": "具有相关学科领域的博士学位",
+            "quote": "具有相关学科领域的博士学位",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "requirements": {
+            "value": "南京大学工程管理学院拟面向全球招聘有志于从事管理科学与工程领域各主要研究方向的优秀青年人才到学院工作；招聘研究方向包括；应聘条件；5.突出的科研成果显示度与未来科研发展潜力：应有相关研究方向的成果显示度，对相关研究领域有原创性观点，未来研究计划思路清晰，具有较好的学术潜力",
+            "quote": "南京大学工程管理学院拟面向全球招聘有志于从事管理科学与工程领域各主要研究方向的优秀青年人才到学院工作；招聘研究方向包括；应聘条件；5.突出的科研成果显示度与未来科研发展潜力：应有相关研究方向的成果显示度，对相关研究领域有原创性观点，未来研究计划思路清晰，具有较好的学术潜力",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "sourcePublishedAt": {
+            "value": "2026-09-20",
+            "quote": "发布时间：2026-09-20",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "deadline": {
+            "value": "2026-12-20",
+            "quote": "申请截止日期\n2026年12月20日",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          }
+        },
+        "uncertainties": [
+          "region",
+          "eligibility2027"
+        ],
+        "identityHash": "5d267f920ab313498e64adcd413c3e2971accc8a7b713136109fd52c9f189883"
+      }
+    },
+    {
+      "id": "AUTO-b1931ec8bfb5e9f5",
+      "organization": "南京大学国际地球系统科学研究所",
+      "position": "南京大学国际地球系统科学研究所2026年度准聘长聘岗位（事业编制）招聘公告",
+      "region": "公告未明确/自动提取未取得",
+      "province": "未知",
+      "provinceList": [],
+      "route": "高校科研",
+      "routeCategory": "高校科研",
+      "scope": "national",
+      "timeWindow": "申请截止日期\n2027年02月28日",
+      "match": "专业相关（自动提取）",
+      "priority": "B",
+      "researchTags": [
+        "simulation"
+      ],
+      "education": "具有相关学科领域的博士学位",
+      "requirements": "研究所以定量遥感及其应用、全球变化与碳循环为两个主要研究方向，包括资源环境遥感、植被定量遥感、叶绿素荧光遥感、高光谱遥感、热红外遥感、海洋遥感、生态系统模型、全球碳同化系统、数据同化、碳源汇优化计算及其变化机制等方面；应聘条件；5.突出的科研成果显示度与未来科研发展潜力：应有相关研究方向的成果显示度，对相关研究领域有原创性观点，未来研究计划思路清晰，具有较好的学术潜力",
+      "eligibility2027": "公告未明确2027届资格/自动提取未取得",
+      "eligibility": "uncertain",
+      "eligibilityCode": "uncertain",
+      "availability": "open",
+      "availabilityCode": "open",
+      "currentStatus": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "sourcePublishedAt": "2026-10-14",
+      "deadline": "2027-02-28",
+      "deadlineTime": null,
+      "announcementUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261014/i425787.html",
+      "recruitmentUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261014/i425787.html",
+      "links": [
+        {
+          "label": "自动抓取的招聘正文",
+          "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261014/i425787.html"
+        }
+      ],
+      "sourceTrust": "official_platform",
+      "sourceLevel": "已知官方/高校就业来源招聘正文（机器提取）",
+      "employerNature": {
+        "code": "unknown",
+        "label": "性质未知",
+        "evidence": "未从来源归属推定招聘雇主所有制。",
+        "sourceUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261014/i425787.html",
+        "verifiedAt": null
+      },
+      "verifiedAt": "",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "autoCollectedAt": "2026-11-20T15:10:17+08:00",
+      "ingestionMode": "automatic",
+      "ingestionMethod": "official_body_rules_v3",
+      "notes": "自动入库，无人工审核门槛；未知字段持续自动监测，不代表本人资格或人才档次已达标。",
+      "fitReason": "正文出现目标专业或相关工程科研方向；匹配由规则提取。",
+      "risks": "机器抽取可能遗漏附件和复杂限制；学历、毕业日期、论文门槛分别保留原文信息或未知。",
+      "paperPolicy": {
+        "policyStatus": "公告未明确/自动提取未取得",
+        "gradingRule": "未自动认定论文分区、数量或人才等级。",
+        "authorshipLimits": "自动提取未取得完整作者位次口径。",
+        "sourceUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261014/i425787.html",
+        "verifiedAt": ""
+      },
+      "autoEvidence": {
+        "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261014/i425787.html",
+        "discoverySourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
+        "sourceJobIds": [
+          "NA068"
+        ],
+        "textHash": "898b26acf99cfc9ef190d180a966a565d9011bd6a7f43d59b7b3339f23353807",
+        "extractionVersion": "official_body_rules_v3",
+        "fields": {
+          "organization": {
+            "value": "南京大学国际地球系统科学研究所",
+            "quote": "南京大学国际地球系统科学研究所2026年度准聘长聘岗位（事业编制）招聘公告",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "education": {
+            "value": "具有相关学科领域的博士学位",
+            "quote": "具有相关学科领域的博士学位",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "requirements": {
+            "value": "研究所以定量遥感及其应用、全球变化与碳循环为两个主要研究方向，包括资源环境遥感、植被定量遥感、叶绿素荧光遥感、高光谱遥感、热红外遥感、海洋遥感、生态系统模型、全球碳同化系统、数据同化、碳源汇优化计算及其变化机制等方面；应聘条件；5.突出的科研成果显示度与未来科研发展潜力：应有相关研究方向的成果显示度，对相关研究领域有原创性观点，未来研究计划思路清晰，具有较好的学术潜力",
+            "quote": "研究所以定量遥感及其应用、全球变化与碳循环为两个主要研究方向，包括资源环境遥感、植被定量遥感、叶绿素荧光遥感、高光谱遥感、热红外遥感、海洋遥感、生态系统模型、全球碳同化系统、数据同化、碳源汇优化计算及其变化机制等方面；应聘条件；5.突出的科研成果显示度与未来科研发展潜力：应有相关研究方向的成果显示度，对相关研究领域有原创性观点，未来研究计划思路清晰，具有较好的学术潜力",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "sourcePublishedAt": {
+            "value": "2026-10-14",
+            "quote": "发布时间：2026-10-14",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "deadline": {
+            "value": "2027-02-28",
+            "quote": "申请截止日期\n2027年02月28日",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          }
+        },
+        "uncertainties": [
+          "region",
+          "eligibility2027"
+        ],
+        "identityHash": "775bdceefedeff784ebfd2268c2a480366428a984fdfbfc5e207c934045d5b84"
+      }
+    },
+    {
+      "id": "AUTO-11ebe6b7069426b2",
+      "organization": "南京大学工程管理学院",
+      "position": "南京大学工程管理学院2026年度准聘长聘岗位（事业编制）招聘公告",
+      "region": "公告未明确/自动提取未取得",
+      "province": "未知",
+      "provinceList": [],
+      "route": "高校科研",
+      "routeCategory": "高校科研",
+      "scope": "national",
+      "timeWindow": "申请截止日期\n2027年01月30日",
+      "match": "专业相关（自动提取）",
+      "priority": "B",
+      "researchTags": [
+        "工程"
+      ],
+      "education": "具有相关学科领域的博士学位",
+      "requirements": "南京大学工程管理学院拟面向全球招聘有志于从事管理科学与工程领域各主要研究方向的优秀青年人才到学院工作；招聘研究方向为智能系统管理；应聘条件；5.突出的科研成果显示度与未来科研发展潜力：应有相关研究方向的成果显示度，对相关研究领域有原创性观点，未来研究计划思路清晰，具有较好的学术潜力",
+      "eligibility2027": "公告未明确2027届资格/自动提取未取得",
+      "eligibility": "uncertain",
+      "eligibilityCode": "uncertain",
+      "availability": "open",
+      "availabilityCode": "open",
+      "currentStatus": "自动采集：公告所列报名窗口内，个人资格仍不确定",
+      "sourcePublishedAt": "2026-10-30",
+      "deadline": "2027-01-30",
+      "deadlineTime": null,
+      "announcementUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261030/i428029.html",
+      "recruitmentUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261030/i428029.html",
+      "links": [
+        {
+          "label": "自动抓取的招聘正文",
+          "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261030/i428029.html"
+        }
+      ],
+      "sourceTrust": "official_platform",
+      "sourceLevel": "已知官方/高校就业来源招聘正文（机器提取）",
+      "employerNature": {
+        "code": "unknown",
+        "label": "性质未知",
+        "evidence": "未从来源归属推定招聘雇主所有制。",
+        "sourceUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261030/i428029.html",
+        "verifiedAt": null
+      },
+      "verifiedAt": "",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "autoCollectedAt": "2026-11-20T15:10:17+08:00",
+      "ingestionMode": "automatic",
+      "ingestionMethod": "official_body_rules_v3",
+      "notes": "自动入库，无人工审核门槛；未知字段持续自动监测，不代表本人资格或人才档次已达标。",
+      "fitReason": "正文出现目标专业或相关工程科研方向；匹配由规则提取。",
+      "risks": "机器抽取可能遗漏附件和复杂限制；学历、毕业日期、论文门槛分别保留原文信息或未知。",
+      "paperPolicy": {
+        "policyStatus": "公告未明确/自动提取未取得",
+        "gradingRule": "未自动认定论文分区、数量或人才等级。",
+        "authorshipLimits": "自动提取未取得完整作者位次口径。",
+        "sourceUrl": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261030/i428029.html",
+        "verifiedAt": ""
+      },
+      "autoEvidence": {
+        "url": "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261030/i428029.html",
+        "discoverySourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
+        "sourceJobIds": [
+          "NA068"
+        ],
+        "textHash": "65449bb90a2beac480b13daa16446a62ef8be6edb0772acb6ecaa200a78dcf73",
+        "extractionVersion": "official_body_rules_v3",
+        "fields": {
+          "organization": {
+            "value": "南京大学工程管理学院",
+            "quote": "南京大学工程管理学院2026年度准聘长聘岗位（事业编制）招聘公告",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "education": {
+            "value": "具有相关学科领域的博士学位",
+            "quote": "具有相关学科领域的博士学位",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "requirements": {
+            "value": "南京大学工程管理学院拟面向全球招聘有志于从事管理科学与工程领域各主要研究方向的优秀青年人才到学院工作；招聘研究方向为智能系统管理；应聘条件；5.突出的科研成果显示度与未来科研发展潜力：应有相关研究方向的成果显示度，对相关研究领域有原创性观点，未来研究计划思路清晰，具有较好的学术潜力",
+            "quote": "南京大学工程管理学院拟面向全球招聘有志于从事管理科学与工程领域各主要研究方向的优秀青年人才到学院工作；招聘研究方向为智能系统管理；应聘条件；5.突出的科研成果显示度与未来科研发展潜力：应有相关研究方向的成果显示度，对相关研究领域有原创性观点，未来研究计划思路清晰，具有较好的学术潜力",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "sourcePublishedAt": {
+            "value": "2026-10-30",
+            "quote": "发布时间：2026-10-30",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          },
+          "deadline": {
+            "value": "2027-01-30",
+            "quote": "申请截止日期\n2027年01月30日",
+            "observedAt": "2026-11-20T15:10:17+08:00"
+          }
+        },
+        "uncertainties": [
+          "region",
+          "eligibility2027"
+        ],
+        "identityHash": "87aca6414bb7d68491a0abf3332f5b692ba758f194897e460f94494ab0f10569"
       }
     }
   ],
@@ -141558,28 +142789,13 @@
         "NA026"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
+      "reviewStatus": "retry",
       "availability": "unknown",
       "eligibility": "uncertain",
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-66c69fe51a024a28",
-      "url": "https://hr.cumt.edu.cn/info/1038/3882.htm",
-      "title": "全职博士后进站报到流程图",
-      "sourceUrl": "https://hr.cumt.edu.cn/info/1038/2594.htm",
-      "sourceJobIds": [
-        "NA026"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+      "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
     },
     {
       "id": "CLOUD-4c36f27d31f4ab44",
@@ -141703,22 +142919,6 @@
       "sourceUrl": "https://career.hebut.edu.cn/home/company/index/id/8149.html",
       "sourceJobIds": [
         "NI123"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-18b05e7aa103a8dd",
-      "url": "https://civil.csu.edu.cn/szdw/bshgz.htm",
-      "title": "博士后工作",
-      "sourceUrl": "https://civil.csu.edu.cn/info/1965/12167.htm",
-      "sourceJobIds": [
-        "NA003"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
       "reviewStatus": "queued",
@@ -141930,112 +143130,12 @@
       "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
     },
     {
-      "id": "CLOUD-4d6dc64d62532862",
-      "url": "https://hr.zju.edu.cn/cn/1194/list.htm",
-      "title": "博士后管理",
-      "sourceUrl": "https://hr.zju.edu.cn/cn/2026/0402/c29598a3147475/page.psp",
-      "sourceJobIds": [
-        "J041",
-        "J062"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-de06ade3c1fb6684",
-      "url": "https://hr.zju.edu.cn/cn/28766/list.htm",
-      "title": "博士后工作",
-      "sourceUrl": "https://hr.zju.edu.cn/cn/2026/0402/c29598a3147475/page.psp",
-      "sourceJobIds": [
-        "J041",
-        "J062"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-191bc6dec7b947e1",
-      "url": "http://hr.zju.edu.cn/postdoctor/bgxz/list.htm",
-      "title": "博士后工作",
-      "sourceUrl": "https://hr.zju.edu.cn/cn/2026/0402/c29598a3147475/page.psp",
-      "sourceJobIds": [
-        "J041",
-        "J062"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-f63b3a5c8abdb52d",
-      "url": "https://hr.zju.edu.cn/cn/bshgz/list.htm",
-      "title": "博士后工作",
-      "sourceUrl": "https://hr.zju.edu.cn/cn/2026/0402/c29598a3147475/page.psp",
-      "sourceJobIds": [
-        "J041",
-        "J062"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
       "id": "CLOUD-4be1cfccecbf98ea",
       "url": "https://hr.zju.edu.cn/postdoctor/zssqb/list.htm",
       "title": "《浙江大学“求是博士后”项目申请书》",
       "sourceUrl": "https://hr.zju.edu.cn/cn/2026/0402/c29598a3147475/page.psp",
       "sourceJobIds": [
         "J041",
-        "J062"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-f0c83e740a60c544",
-      "url": "https://hr.zju.edu.cn/postdoctor/bshglgzgd/list.htm",
-      "title": "博士后管理工...",
-      "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
-      "sourceJobIds": [
-        "J062"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-4c08ee1ac9089490",
-      "url": "https://hr.zju.edu.cn/postdoctor/bshjjxm_29093/list.htm",
-      "title": "博士后基金项...",
-      "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
-      "sourceJobIds": [
         "J062"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
@@ -142087,44 +143187,13 @@
         "J062"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
+      "reviewStatus": "retry",
       "availability": "unknown",
       "eligibility": "uncertain",
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-4f0bb02dcb018e63",
-      "url": "https://hr.zju.edu.cn/postdoctor/2026/0911/c29114a3201317/page.htm",
-      "title": "关于中国博士后科学基金第19批特别资助、第79批面上...",
-      "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
-      "sourceJobIds": [
-        "J062"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-33c4acd113bb6730",
-      "url": "https://hr.zju.edu.cn/postdoctor/2026/0106/c29114a3193339/page.htm",
-      "title": "关于做好中国博士后科学基金第80批面上资助申报工作...",
-      "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
-      "sourceJobIds": [
-        "J062"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+      "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
     },
     {
       "id": "CLOUD-c96a753fcc696708",
@@ -142163,54 +143232,6 @@
       "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
     },
     {
-      "id": "CLOUD-7ae8c16ef9dd49ab",
-      "url": "https://hr.zju.edu.cn/postdoctor/2026/0911/c29117a3201317/page.htm",
-      "title": "关于中国博士后科学基金第19批特别资助、第...",
-      "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
-      "sourceJobIds": [
-        "J062"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-4efae421f06953ed",
-      "url": "https://hr.zju.edu.cn/postdoctor/2026/0106/c29117a3126341/page.htm",
-      "title": "关于做好中国博士后科学基金第79批面上资助...",
-      "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
-      "sourceJobIds": [
-        "J062"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-2e567af399192bb1",
-      "url": "https://hr.zju.edu.cn/postdoctor/2026/0106/c29117a3126344/page.htm",
-      "title": "关于做好中国博士后科学基金第19批特别资助...",
-      "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
-      "sourceJobIds": [
-        "J062"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
       "id": "CLOUD-949d2b939a3986d7",
       "url": "https://hr.zju.edu.cn/postdoctor/2025/1216/c29117a3120181/page.htm",
       "title": "​关于公布我校获中国博士后科学基金第78批...",
@@ -142219,33 +143240,18 @@
         "J062"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
+      "reviewStatus": "retry",
       "availability": "unknown",
       "eligibility": "uncertain",
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+      "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
     },
     {
       "id": "CLOUD-f7c9fce5af05a514",
       "url": "https://hr.zju.edu.cn/postdoctor/bshzxzz_29116/list.htm",
       "title": "博士后专项资助",
-      "sourceUrl": "https://hr.zju.edu.cn/postdoctor/zpxx/list.htm",
-      "sourceJobIds": [
-        "J041"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-8c63afd1a7e85382",
-      "url": "https://hr.zju.edu.cn/postdoctor/bshjjxm_29117/list.htm",
-      "title": "博士后基金项目",
       "sourceUrl": "https://hr.zju.edu.cn/postdoctor/zpxx/list.htm",
       "sourceJobIds": [
         "J041"
@@ -142419,12 +143425,16 @@
         "NA068"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
+      "reviewStatus": "imported",
       "availability": "unknown",
       "eligibility": "uncertain",
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+      "jobId": "AUTO-11ebe6b7069426b2",
+      "importedAt": "2026-11-20T15:10:17+08:00",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
     },
     {
       "id": "CLOUD-b1931ec8bfb5e9f5",
@@ -142435,12 +143445,16 @@
         "NA068"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
+      "reviewStatus": "imported",
       "availability": "unknown",
       "eligibility": "uncertain",
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+      "jobId": "AUTO-b1931ec8bfb5e9f5",
+      "importedAt": "2026-11-20T15:10:17+08:00",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
     },
     {
       "id": "CLOUD-2934468f17fcb738",
@@ -142451,12 +143465,16 @@
         "NA068"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
+      "reviewStatus": "imported",
       "availability": "unknown",
       "eligibility": "uncertain",
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+      "jobId": "AUTO-2934468f17fcb738",
+      "importedAt": "2026-11-20T15:10:17+08:00",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
     },
     {
       "id": "CLOUD-38c020883c5271cc",
@@ -142467,12 +143485,16 @@
         "NA068"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
+      "reviewStatus": "imported",
       "availability": "unknown",
       "eligibility": "uncertain",
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+      "jobId": "AUTO-38c020883c5271cc",
+      "importedAt": "2026-11-20T15:10:17+08:00",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
     },
     {
       "id": "CLOUD-95e8974eebff214b",
@@ -142483,12 +143505,16 @@
         "NA068"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
+      "reviewStatus": "imported",
       "availability": "unknown",
       "eligibility": "uncertain",
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+      "jobId": "AUTO-95e8974eebff214b",
+      "importedAt": "2026-11-20T15:10:17+08:00",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
     },
     {
       "id": "CLOUD-d2cea678e2ef946f",
@@ -142499,76 +143525,16 @@
         "NA068"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
+      "reviewStatus": "imported",
       "availability": "unknown",
       "eligibility": "uncertain",
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-4df5855a56010754",
-      "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261113/i432316.html",
-      "title": "招聘公告YJ20260009文学院博士后 11-13",
-      "sourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
-      "sourceJobIds": [
-        "NA068"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-7bfb5a5f195dca8c",
-      "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261109/i432057.html",
-      "title": "招聘公告SZYJ20260062前沿科学学院博士后 11-09",
-      "sourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
-      "sourceJobIds": [
-        "NA068"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-b566dbaa22cc6bf6",
-      "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261106/i430339.html",
-      "title": "招聘公告YJ20260403化学学院博士后 11-06",
-      "sourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
-      "sourceJobIds": [
-        "NA068"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-5690d07bdb6c0a34",
-      "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261030/i428168.html",
-      "title": "招聘公告SZYJ20260059集成电路学院博士后 11-01",
-      "sourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
-      "sourceJobIds": [
-        "NA068"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+      "jobId": "AUTO-d2cea678e2ef946f",
+      "importedAt": "2026-11-20T15:10:17+08:00",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
     },
     {
       "id": "CLOUD-d619aaef8d8fe2ea",
@@ -142599,12 +143565,16 @@
         "NA068"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
+      "reviewStatus": "imported",
       "availability": "unknown",
       "eligibility": "uncertain",
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+      "jobId": "AUTO-9a464c2bd1351711",
+      "importedAt": "2026-11-20T15:10:17+08:00",
+      "sourceCheckedAt": "2026-11-20T15:10:17+08:00",
+      "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
     },
     {
       "id": "CLOUD-3f1f203502d0f7dc",
@@ -142727,22 +143697,6 @@
       "id": "CLOUD-0e6d1f3ab0198e05",
       "url": "https://rlzyb.cug.edu.cn/bshgz/bshjj.htm",
       "title": "博士后基金",
-      "sourceUrl": "https://rlzyb.cug.edu.cn/info/1038/9245.htm",
-      "sourceJobIds": [
-        "NA044"
-      ],
-      "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
-      "availability": "unknown",
-      "eligibility": "uncertain",
-      "eligibility2027": "尚未核验，不代表2027届可投",
-      "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
-    },
-    {
-      "id": "CLOUD-8c14803fa1e707de",
-      "url": "https://rlzyb.cug.edu.cn/info/1038/9135.htm",
-      "title": "人力资源部关于申报2026年度“湖北省博士后卓越人才跟踪培养项目”的通知",
       "sourceUrl": "https://rlzyb.cug.edu.cn/info/1038/9245.htm",
       "sourceJobIds": [
         "NA044"
@@ -142892,12 +143846,13 @@
         "J044"
       ],
       "discoveredAt": "2026-11-16T15:08:01+08:00",
-      "reviewStatus": "queued",
+      "reviewStatus": "retry",
       "availability": "unknown",
       "eligibility": "uncertain",
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
-      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"
+      "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+      "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
     },
     {
       "id": "CLOUD-f59f65cce48ffa01",
@@ -144438,6 +145393,54 @@
       "eligibility2027": "尚未核验，不代表2027届可投",
       "sourceKind": "same_host_link_from_recorded_official_source",
       "notes": "自动抓取队列；将轮转读取正文并直接入库，不等待人工审核。"
+    },
+    {
+      "id": "CLOUD-06d2e63e7c9a44e1",
+      "url": "https://hr.zju.edu.cn/_upload/article/files/58/a5/44558a8945cc86fe27e272b77f69/db76cb7f-a875-4498-ac67-9ab376f0a5dc.pdf",
+      "title": "博士后创新人才支持计划（国家资助博士后研究人员计划A档）申报书",
+      "sourceUrl": "https://hr.zju.edu.cn/postdoctor/2026/0215/c29116a3134825/page.htm",
+      "sourceJobIds": [
+        "AUTO-c96a753fcc696708"
+      ],
+      "discoveredAt": "2026-11-20T15:10:17+08:00",
+      "reviewStatus": "queued",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "自动抓取队列；将轮转读取正文并直接入库，不等待人工审核。"
+    },
+    {
+      "id": "CLOUD-3bdc407267c7c8d9",
+      "url": "https://hr.zju.edu.cn/_upload/article/files/58/a5/44558a8945cc86fe27e272b77f69/bc39caa2-faaf-43ed-aac5-ce553abad071.pdf",
+      "title": "博士后合作导师推荐意见表",
+      "sourceUrl": "https://hr.zju.edu.cn/postdoctor/2026/0215/c29116a3134825/page.htm",
+      "sourceJobIds": [
+        "AUTO-c96a753fcc696708"
+      ],
+      "discoveredAt": "2026-11-20T15:10:17+08:00",
+      "reviewStatus": "queued",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "自动抓取队列；将轮转读取正文并直接入库，不等待人工审核。"
+    },
+    {
+      "id": "CLOUD-f4293c41e2e73a63",
+      "url": "https://hr.zju.edu.cn/_upload/article/files/58/a5/44558a8945cc86fe27e272b77f69/daef5a36-dedf-46fd-960c-a5ca336c1753.pdf",
+      "title": "博士后创新人才支持计划（国家资助博士后研究人员计划A档）评分标准",
+      "sourceUrl": "https://hr.zju.edu.cn/postdoctor/2026/0215/c29116a3134825/page.htm",
+      "sourceJobIds": [
+        "AUTO-c96a753fcc696708"
+      ],
+      "discoveredAt": "2026-11-20T15:10:17+08:00",
+      "reviewStatus": "queued",
+      "availability": "unknown",
+      "eligibility": "uncertain",
+      "eligibility2027": "尚未核验，不代表2027届可投",
+      "sourceKind": "same_host_link_from_recorded_official_source",
+      "notes": "自动抓取队列；将轮转读取正文并直接入库，不等待人工审核。"
     }
   ],
   "cloudAttachments": [
@@ -144577,34 +145580,32 @@
   "cloudUpdate": {
     "success": true,
     "completed": true,
-    "updatedAt": "2026-11-20T15:06:47+08:00",
-    "checkedAt": "2026-11-20T15:06:47+08:00",
+    "updatedAt": "2026-11-20T15:10:17+08:00",
+    "checkedAt": "2026-11-20T15:10:17+08:00",
     "timezone": "Asia/Shanghai",
     "checked": 24,
-    "successful": 15,
-    "failed": 9,
-    "changed": 6,
-    "newCandidates": 0,
-    "archivedCandidates": 6,
+    "successful": 16,
+    "failed": 8,
+    "changed": 5,
+    "newCandidates": 3,
+    "archivedCandidates": 19,
     "candidateFilterVersion": "title-relevance-v2",
     "expired": 0,
-    "provinceCursor": 36,
+    "provinceCursor": 48,
     "provincesChecked": [
-      "山东、海南、福建",
-      "山西",
-      "山西、内蒙古、北京、天津、河北、湖南、广东等",
-      "广东",
-      "广东、北京、上海、重庆、湖北、陕西等",
-      "广东、四川",
-      "广东、江苏、北京、上海、河南",
-      "广东、重庆、湖南、湖北、广西、海南、陕西",
-      "广东等",
-      "广西",
-      "待确认",
-      "新疆",
+      "上海",
+      "新疆、山东",
+      "新疆、青海、宁夏、甘肃、黑龙江、吉林、辽宁、河北、陕西、四川、天津",
       "未知",
       "江苏",
-      "浙江"
+      "江苏、安徽、江西",
+      "江西",
+      "河北",
+      "河南",
+      "浙江",
+      "海南",
+      "湖北",
+      "湖北、上海、广东、四川、天津、陕西、云南"
     ],
     "limitReached": false,
     "maxPages": 24,
@@ -144862,17 +145863,17 @@
         "bodyFetched": true
       },
       "https://career.hebut.edu.cn/recruitment/content/type/2/id/5169.html": {
-        "checkedAt": "2026-11-20T14:11:47+08:00",
-        "textHash": "24f531b11f322f3315dee588a9dfae1832f35779827b8618ea2975c619a23a26",
-        "characters": 3625,
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "f73d3f5df7b208f76f9dfff65598181c9402710374d0c58ce2e4fee3a15ee60f",
+        "characters": 3494,
         "httpStatus": 200,
         "bodyFetched": true
       },
       "https://zhaopin.cnpc.com.cn/": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "textHash": null,
         "characters": null,
-        "httpStatus": 412,
+        "httpStatus": null,
         "bodyFetched": false
       },
       "https://hr.cumt.edu.cn/index.htm": {
@@ -144883,8 +145884,8 @@
         "bodyFetched": true
       },
       "https://career.nankai.edu.cn/correcruit/content/id/119091.html": {
-        "checkedAt": "2026-11-18T15:51:40+08:00",
-        "textHash": "5965e4311570ec5cd1b20057308421fe247e94809e37b7643d4803bab05c8eb1",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "55f35777efe5e389575b433a102028dfd2018598d9912bd211377404b914d9ce",
         "characters": 34,
         "httpStatus": 200,
         "bodyFetched": true
@@ -144897,9 +145898,9 @@
         "bodyFetched": true
       },
       "https://career.hebut.edu.cn/home/correcruit/content/id/80581.html": {
-        "checkedAt": "2026-11-17T16:20:54+08:00",
-        "textHash": "c907cc00b4921a46c897b0a5eb7d4b48af3593727d7ca1550484debbd392bcdb",
-        "characters": 3176,
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "4ef883e9e2c42010859129319130fbecb3bbd9f7389efbe6ead1579798e5b485",
+        "characters": 3067,
         "httpStatus": 200,
         "bodyFetched": true
       },
@@ -144918,7 +145919,7 @@
         "bodyFetched": true
       },
       "https://www.idsse.cas.cn/rcdw/rczp/202602/P020260316553715586041.pdf": {
-        "checkedAt": "2026-11-19T15:46:58+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "textHash": null,
         "characters": null,
         "httpStatus": null,
@@ -144932,8 +145933,8 @@
         "bodyFetched": false
       },
       "http://ideal.51job.com/zywk2027": {
-        "checkedAt": "2026-11-17T16:20:54+08:00",
-        "textHash": "b40cc571727b2f6c392ab722deb492fa6cb88df8268d4570b7460dc7408e1727",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "7f1c6a0c4df8cf631133535dfdc8be2e8af34c435ddd1a42b1ec057d494862da",
         "characters": 61,
         "httpStatus": 200,
         "bodyFetched": true
@@ -145821,8 +146822,8 @@
         "bodyFetched": false
       },
       "http://jmc.zhiye.com/campus": {
-        "checkedAt": "2026-11-15T14:59:50+08:00",
-        "textHash": "b9e8f5f5493044c17a1b779ad213d7875faf086941f4f209cf7030ca10e72785",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "84d850172836033e99adef472fe7702378d38dbf951039bd84ffa738b3be60b2",
         "characters": 8,
         "httpStatus": 200,
         "bodyFetched": true
@@ -145856,7 +146857,7 @@
         "bodyFetched": false
       },
       "http://www.cjw.gov.cn/zwzc/zdgk/rsgl/rszl/jgsy/202610/t20261020_63609.shtml": {
-        "checkedAt": "2026-11-15T14:59:50+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "textHash": null,
         "characters": null,
         "httpStatus": null,
@@ -146584,7 +147585,7 @@
         "bodyFetched": false
       },
       "https://rsc.zit.edu.cn/rczp/gccrczp.htm": {
-        "checkedAt": "2026-11-16T15:08:01+08:00",
+        "checkedAt": "2026-11-20T15:10:17+08:00",
         "textHash": null,
         "characters": null,
         "httpStatus": null,
@@ -149172,16 +150173,100 @@
         "characters": 1198,
         "httpStatus": 200,
         "bodyFetched": true
+      },
+      "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261027/i427658.html": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "d40e9aae11b3668adebb17d47c65697b307354d0dee5e6cd17d6a3d1f44338f3",
+        "characters": 813,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.jszzb.gov.cn/": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "b72929747d357d03d03885256971d953bcc71c17219e0ebfa50fda15e4f6544e",
+        "characters": 14135,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://hr.zju.edu.cn/postdoctor/2026/0215/c29116a3134825/page.htm": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "f637537af96cc20c4aa19e6a57d7f4fb041092c0e26482e3487928e4307c7c1d",
+        "characters": 4748,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_b5e34f2b81ff43d0b7d236a37aac5d37.html": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "5b74eb4d1db4d3154d2d318c4e39fdeb5c3599350f90b991040e09ab42e0ac8d",
+        "characters": 12433,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_d8bec4f4afcf4cbaa5842b8b611e504f.html": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "d17f8f3eb382e1ab8f9ae10ae812888d77b56a3486f1561be05e3332e5459c1a",
+        "characters": 408,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.jszzb.gov.cn/2027ndkslygwyzt/zkgg/art/2026/art_f9d91bae1e764231843f0be62ffadffa.html": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "92e474414d8db2fc667172932d17b3de6a8dec75724fafac9bcdd733831e0838",
+        "characters": 7250,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.jszzb.gov.cn/api-gateway/jpaas-web-server/front/document/download?fileUrl=YW5UzzlvCwcM%2FNHHX%2FtT6NIl%2F%2Fx1E3zQDGt6b1FE3afA2hn0Yiof9z6OdCrD4QQCnmwwv6BAgyF7TgCx%2FJx5e8UZ1GGObhJu5eTS4cEGgAafBHdtTyrcu0S4BodSjJPFWB7uzU6ABiUEx3DigbH4LjaLGm94sv2ik8Mmc1VVT%2BA%3D&fileName=%E6%B1%9F%E8%8B%8F%E7%9C%812027%E5%B9%B4%E5%BA%A6%E8%80%83%E8%AF%95%E5%BD%95%E7%94%A8%E5%85%AC%E5%8A%A1%E5%91%98%E5%90%84%E5%B8%82%E8%81%8C%E4%BD%8D%E7%AE%80%E4%BB%8B%E8%A1%A8.zip": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": null,
+        "characters": null,
+        "httpStatus": 200,
+        "bodyFetched": false
+      },
+      "https://www.jszzb.gov.cn/tzgg/art/2026/art_2cd76f601ab84b7bbb6164e1168a13ff.html": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "f820d57f510d9757dc9ed5ea1195b81e32c764cce49e2dc8a7e9917f4056267d",
+        "characters": 743,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.lysrsks.cn/index/news/detail.html?id=2652": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "9792ba6cd2d8924b6679e5b8d2c39faa2b6acb1e7e4b039705850c82a09a3dcc",
+        "characters": 9847,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.nhri.cn/tzgg/zpxx/index.html": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "d7a0b39b93abb3202ac4ff731f853e2f9e8cc8bbfb012a969d3ae1276d7028a4",
+        "characters": 42,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.orca3d.cn/careers/campus-physics-simulation-phd/": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "9aa44333cfc142dea9f3f8565b0f37e128e99b4a39f8c622a132b9515502d9f6",
+        "characters": 575,
+        "httpStatus": 200,
+        "bodyFetched": true
+      },
+      "https://www.orca3d.cn/careers/physics-simulation-engineer-phd/": {
+        "checkedAt": "2026-11-20T15:10:17+08:00",
+        "textHash": "cc62967be30a25de54556c46c374fe2bb86c2f692a3f5f26bd23b980ee57a534",
+        "characters": 664,
+        "httpStatus": 200,
+        "bodyFetched": true
       }
     },
     "scope": "自动读取官方招聘正文并直接入库；不确定字段保留未知，不据此认定本人资格、论文等级或人才档次，不刷新原人工核验日期。",
     "maxDetailPages": 30,
-    "autoAdded": 2,
-    "autoUpdated": 9,
+    "autoAdded": 7,
+    "autoUpdated": 0,
     "autoArchived": 0,
-    "pendingDetails": 176,
+    "pendingDetails": 153,
     "detailChecked": 30,
-    "detailSuccessful": 22,
+    "detailSuccessful": 7,
     "detailState": {
       "http://hr.cumt.edu.cn/bshgl/shfw.htm": {
         "attemptedAt": "2026-11-20T14:46:18+08:00"
@@ -149595,6 +150680,163 @@
         "attemptedVersion": "official_body_rules_v3",
         "attemptedFromVersion": null,
         "successfulAt": "2026-11-20T15:06:47+08:00"
+      },
+      "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261028/i427672.html": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null,
+        "successfulAt": "2026-11-20T15:10:17+08:00"
+      },
+      "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261030/i428168.html": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261106/i430339.html": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261109/i432057.html": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261113/i432316.html": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432287.html": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null,
+        "successfulAt": "2026-11-20T15:10:17+08:00"
+      },
+      "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261112/i432288.html": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null,
+        "successfulAt": "2026-11-20T15:10:17+08:00"
+      },
+      "https://rczp.nju.edu.cn//yjxlhbsh/trxl/trxlgwlb/20261116/i432391.html": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null,
+        "successfulAt": "2026-11-20T15:10:17+08:00"
+      },
+      "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20260920/i417840.html": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null,
+        "successfulAt": "2026-11-20T15:10:17+08:00"
+      },
+      "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261014/i425787.html": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null,
+        "successfulAt": "2026-11-20T15:10:17+08:00"
+      },
+      "https://rczp.nju.edu.cn//zrjs/zrjsgwlb/20261030/i428029.html": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null,
+        "successfulAt": "2026-11-20T15:10:17+08:00"
+      },
+      "https://rlzyb.cug.edu.cn/info/1038/9135.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://rsc.zjxu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1289128877&wbfileid=7877581": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "http://hr.zju.edu.cn/postdoctor/bgxz/list.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://civil.csu.edu.cn/szdw/bshgz.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.cumt.edu.cn/info/1038/3882.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.cumt.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1989217584&wbfileid=18198024": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/cn/1194/list.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/cn/28766/list.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/cn/bshgz/list.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/postdoctor/2025/1216/c29117a3120181/page.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/postdoctor/2026/0106/c29114a3193339/page.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/postdoctor/2026/0106/c29117a3126341/page.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/postdoctor/2026/0106/c29117a3126344/page.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/postdoctor/2026/0911/c29114a3201317/page.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/postdoctor/2026/0911/c29117a3201317/page.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/postdoctor/bshcjgjxshyzxzzsqb/list.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/postdoctor/bshglgzgd/list.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/postdoctor/bshjjxm_29093/list.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
+      },
+      "https://hr.zju.edu.cn/postdoctor/bshjjxm_29117/list.htm": {
+        "attemptedAt": "2026-11-20T15:10:17+08:00",
+        "attemptedVersion": "official_body_rules_v3",
+        "attemptedFromVersion": null
       }
     },
     "attachmentsDownloaded": 0
@@ -155859,6 +157101,428 @@
         "lastDetailAttemptAt": "2026-11-20T15:06:47+08:00"
       },
       "archivedAt": "2026-11-20T15:06:47+08:00",
+      "reason": "not_detail_page",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-5690d07bdb6c0a34",
+        "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261030/i428168.html",
+        "title": "招聘公告SZYJ20260059集成电路学院博士后 11-01",
+        "sourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
+        "sourceJobIds": [
+          "NA068"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "unrelated_body",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-b566dbaa22cc6bf6",
+        "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261106/i430339.html",
+        "title": "招聘公告YJ20260403化学学院博士后 11-06",
+        "sourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
+        "sourceJobIds": [
+          "NA068"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "not_detail_page",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-7bfb5a5f195dca8c",
+        "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261109/i432057.html",
+        "title": "招聘公告SZYJ20260062前沿科学学院博士后 11-09",
+        "sourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
+        "sourceJobIds": [
+          "NA068"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "not_detail_page",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-4df5855a56010754",
+        "url": "https://rczp.nju.edu.cn//yjxlhbsh/trxl/bshgwlb/20261113/i432316.html",
+        "title": "招聘公告YJ20260009文学院博士后 11-13",
+        "sourceUrl": "https://rczp.nju.edu.cn/yjxlhbsh/trxl/bshgwlb/20261104/i428542.html",
+        "sourceJobIds": [
+          "NA068"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "unrelated_body",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-8c14803fa1e707de",
+        "url": "https://rlzyb.cug.edu.cn/info/1038/9135.htm",
+        "title": "人力资源部关于申报2026年度“湖北省博士后卓越人才跟踪培养项目”的通知",
+        "sourceUrl": "https://rlzyb.cug.edu.cn/info/1038/9245.htm",
+        "sourceJobIds": [
+          "NA044"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "not_detail_page",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-191bc6dec7b947e1",
+        "url": "http://hr.zju.edu.cn/postdoctor/bgxz/list.htm",
+        "title": "博士后工作",
+        "sourceUrl": "https://hr.zju.edu.cn/cn/2026/0402/c29598a3147475/page.psp",
+        "sourceJobIds": [
+          "J041",
+          "J062"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "not_detail_page",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-18b05e7aa103a8dd",
+        "url": "https://civil.csu.edu.cn/szdw/bshgz.htm",
+        "title": "博士后工作",
+        "sourceUrl": "https://civil.csu.edu.cn/info/1965/12167.htm",
+        "sourceJobIds": [
+          "NA003"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "not_detail_page",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-66c69fe51a024a28",
+        "url": "https://hr.cumt.edu.cn/info/1038/3882.htm",
+        "title": "全职博士后进站报到流程图",
+        "sourceUrl": "https://hr.cumt.edu.cn/info/1038/2594.htm",
+        "sourceJobIds": [
+          "NA026"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "unrelated_body",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-4d6dc64d62532862",
+        "url": "https://hr.zju.edu.cn/cn/1194/list.htm",
+        "title": "博士后管理",
+        "sourceUrl": "https://hr.zju.edu.cn/cn/2026/0402/c29598a3147475/page.psp",
+        "sourceJobIds": [
+          "J041",
+          "J062"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "unrelated_body",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-de06ade3c1fb6684",
+        "url": "https://hr.zju.edu.cn/cn/28766/list.htm",
+        "title": "博士后工作",
+        "sourceUrl": "https://hr.zju.edu.cn/cn/2026/0402/c29598a3147475/page.psp",
+        "sourceJobIds": [
+          "J041",
+          "J062"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "unrelated_body",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-f63b3a5c8abdb52d",
+        "url": "https://hr.zju.edu.cn/cn/bshgz/list.htm",
+        "title": "博士后工作",
+        "sourceUrl": "https://hr.zju.edu.cn/cn/2026/0402/c29598a3147475/page.psp",
+        "sourceJobIds": [
+          "J041",
+          "J062"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "unrelated_body",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-33c4acd113bb6730",
+        "url": "https://hr.zju.edu.cn/postdoctor/2026/0106/c29114a3193339/page.htm",
+        "title": "关于做好中国博士后科学基金第80批面上资助申报工作...",
+        "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
+        "sourceJobIds": [
+          "J062"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "unrelated_body",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-4efae421f06953ed",
+        "url": "https://hr.zju.edu.cn/postdoctor/2026/0106/c29117a3126341/page.htm",
+        "title": "关于做好中国博士后科学基金第79批面上资助...",
+        "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
+        "sourceJobIds": [
+          "J062"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "unrelated_body",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-2e567af399192bb1",
+        "url": "https://hr.zju.edu.cn/postdoctor/2026/0106/c29117a3126344/page.htm",
+        "title": "关于做好中国博士后科学基金第19批特别资助...",
+        "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
+        "sourceJobIds": [
+          "J062"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "unrelated_body",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-4f0bb02dcb018e63",
+        "url": "https://hr.zju.edu.cn/postdoctor/2026/0911/c29114a3201317/page.htm",
+        "title": "关于中国博士后科学基金第19批特别资助、第79批面上...",
+        "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
+        "sourceJobIds": [
+          "J062"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "unrelated_body",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-7ae8c16ef9dd49ab",
+        "url": "https://hr.zju.edu.cn/postdoctor/2026/0911/c29117a3201317/page.htm",
+        "title": "关于中国博士后科学基金第19批特别资助、第...",
+        "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
+        "sourceJobIds": [
+          "J062"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "unrelated_body",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-f0c83e740a60c544",
+        "url": "https://hr.zju.edu.cn/postdoctor/bshglgzgd/list.htm",
+        "title": "博士后管理工...",
+        "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
+        "sourceJobIds": [
+          "J062"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "policy_document",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-4c08ee1ac9089490",
+        "url": "https://hr.zju.edu.cn/postdoctor/bshjjxm_29093/list.htm",
+        "title": "博士后基金项...",
+        "sourceUrl": "https://hr.zju.edu.cn/postdoctor/",
+        "sourceJobIds": [
+          "J062"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
+      "reason": "not_detail_page",
+      "ruleVersion": "official_body_rules_v3"
+    },
+    {
+      "candidate": {
+        "id": "CLOUD-8c63afd1a7e85382",
+        "url": "https://hr.zju.edu.cn/postdoctor/bshjjxm_29117/list.htm",
+        "title": "博士后基金项目",
+        "sourceUrl": "https://hr.zju.edu.cn/postdoctor/zpxx/list.htm",
+        "sourceJobIds": [
+          "J041"
+        ],
+        "discoveredAt": "2026-11-16T15:08:01+08:00",
+        "reviewStatus": "queued",
+        "availability": "unknown",
+        "eligibility": "uncertain",
+        "eligibility2027": "尚未核验，不代表2027届可投",
+        "sourceKind": "same_host_link_from_recorded_official_source",
+        "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。",
+        "lastDetailAttemptAt": "2026-11-20T15:10:17+08:00"
+      },
+      "archivedAt": "2026-11-20T15:10:17+08:00",
       "reason": "not_detail_page",
       "ruleVersion": "official_body_rules_v3"
     }
