@@ -1,0 +1,1408 @@
+{
+  "run": {
+    "success": true,
+    "completed": true,
+    "updatedAt": "2026-11-20T14:58:41+08:00",
+    "checkedAt": "2026-11-20T14:58:41+08:00",
+    "timezone": "Asia/Shanghai",
+    "checked": 24,
+    "successful": 18,
+    "failed": 6,
+    "changed": 6,
+    "newCandidates": 0,
+    "archivedCandidates": 13,
+    "candidateFilterVersion": "title-relevance-v2",
+    "expired": 0,
+    "provinceCursor": 12,
+    "provincesChecked": [
+      "上海",
+      "云南",
+      "云南、四川、贵州、重庆、西藏、新疆、青海、甘肃、陕西、山西、吉林、黑龙江等",
+      "云南及全国",
+      "全国",
+      "全国、浙江",
+      "内蒙古",
+      "北京",
+      "北京、天津、湖南、内蒙古",
+      "北京、江苏及全国",
+      "吉林",
+      "四川",
+      "未知",
+      "浙江"
+    ],
+    "limitReached": false,
+    "maxPages": 24,
+    "scope": "自动读取官方招聘正文并直接入库；不确定字段保留未知，不据此认定本人资格、论文等级或人才档次，不刷新原人工核验日期。",
+    "maxDetailPages": 30,
+    "autoAdded": 0,
+    "autoUpdated": 12,
+    "autoArchived": 1,
+    "pendingDetails": 200,
+    "detailChecked": 30,
+    "detailSuccessful": 14,
+    "attachmentsDownloaded": 0
+  },
+  "attempts": [
+    {
+      "url": "https://www.orca3d.cn/careers/?tab=social",
+      "finalUrl": "https://www.orca3d.cn/careers/?tab=social",
+      "jobIds": [
+        "NI094"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "733a8ff8fe664b1f361f17f5d037bb86b8cddd3e9b181aba7815eba4d5fd0187",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 1826
+      },
+      "error": null,
+      "elapsedMs": 903,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "http://job.ucas.ac.cn/frontpage/ucas/html/newsDetail.html?id=3b4c1193ef874f7889363bece66cb31e",
+      "finalUrl": "http://job.ucas.ac.cn/frontpage/ucas/html/newsDetail.html?id=3b4c1193ef874f7889363bece66cb31e",
+      "jobIds": [
+        "NR626"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "previousTextHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "contentChanged": false,
+      "diff": {
+        "kind": "unchanged",
+        "previousCharacters": 0,
+        "characters": 0
+      },
+      "error": null,
+      "elapsedMs": 1329,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://14j.powerchina.cn/",
+      "finalUrl": "https://14j.powerchina.cn/",
+      "jobIds": [
+        "NI039"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "c8efaf012d66299248eadee9d8c836222c82f1537d10658f64c18c656e679f63",
+      "previousTextHash": "c5facb9febbec515d2c04cf13b5c2f23bf4729dcca9b8d9023e0d61ddc16391f",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 5992,
+        "characters": 5794
+      },
+      "error": null,
+      "elapsedMs": 3405,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.hust.edu.cn/zpinfo1/2434516.htm",
+      "finalUrl": "https://job.hust.edu.cn/zpinfo1/2434516.htm",
+      "jobIds": [
+        "NI012"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html;charset=UTF-8",
+      "textHash": "a2ab6782db08da373d0e27b94a9ecbbdf925ad242c688daa1f30c292193e66aa",
+      "previousTextHash": "25201b967760293e5820aa59e0d4560c9b751fb85fc324e47fb0d5e26b216f93",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 3102,
+        "characters": 2967
+      },
+      "error": null,
+      "elapsedMs": 3999,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://zhaopin.chnenergy.com.cn/annc/downattachment?id=ab145100514b427db5c11af30c38f789",
+      "finalUrl": "https://zhaopin.chnenergy.com.cn/annc/downattachment?id=ab145100514b427db5c11af30c38f789",
+      "jobIds": [
+        "NI055",
+        "NI056",
+        "NI057",
+        "NI058",
+        "NI059",
+        "NI060",
+        "NI061",
+        "NI062",
+        "NI063"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "application/octet-stream",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "unsupported_content_type",
+      "elapsedMs": 3552,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.tju.edu.cn/recruitment/content/type/2/id/6600.html",
+      "finalUrl": "https://job.tju.edu.cn/recruitment/content/type/2/id/6600.html",
+      "jobIds": [
+        "J047"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "4c4a4d3c1cb389b5eefacf0b28805da7be6140ddbb4c8a548b0d84edf97914ea",
+      "previousTextHash": "e7c70ae52429169be343571117e4962852420f16fe84fa4df8798aa6b21c2830",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 2350,
+        "characters": 2322
+      },
+      "error": null,
+      "elapsedMs": 2434,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.usth.edu.cn/detail/career?id=694460",
+      "finalUrl": "https://job.usth.edu.cn/detail/career?id=694460",
+      "jobIds": [
+        "NI038"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=UTF-8",
+      "textHash": "b3d1a99814fb3ea65a77cab947d421794062600f361c89214c4c7123ea00937d",
+      "previousTextHash": "6e758f19a408573c146047aeba425a533c4ac7f5e66b1a8b28e034507b98973c",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 1858,
+        "characters": 1851
+      },
+      "error": null,
+      "elapsedMs": 2626,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://www.rioh.cn/art/2026/3/12/art_51_20298.html",
+      "finalUrl": "https://www.rioh.cn/art/2026/3/12/art_51_20298.html",
+      "jobIds": [
+        "NR020"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "TimeoutError",
+      "elapsedMs": 15016,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/80134.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/80134.html",
+      "jobIds": [
+        "NI040"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "5dbcc3fb015f7c754719a3e330a12753157846054bb67299fd3c5a00dfd64b3b",
+      "previousTextHash": "20df4b4e74b3fa6fb150da5b99f800f03f61c6bcbb9027919c7cae26e22263f7",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 3880,
+        "characters": 3772
+      },
+      "error": null,
+      "elapsedMs": 1923,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://job.tju.edu.cn/recruitment/content/type/2/id/6537.html",
+      "finalUrl": "https://job.tju.edu.cn/recruitment/content/type/2/id/6537.html",
+      "jobIds": [
+        "NI101"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "c82f33a3dbe395df3893d4aa79ad2054c834f280b4779f8139c394b65d98a18e",
+      "previousTextHash": "df38f446afab0bf8d25232a56971c5e0f1828c09ac96cf160a6f8df912184500",
+      "contentChanged": true,
+      "diff": {
+        "kind": "changed",
+        "previousCharacters": 3399,
+        "characters": 3321
+      },
+      "error": null,
+      "elapsedMs": 2131,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://iga.cas.cn/temp/zp/202610/P020261028557559160142.xlsx",
+      "finalUrl": "https://iga.cas.cn/temp/zp/202610/P020261028557559160142.xlsx",
+      "jobIds": [
+        "NR619",
+        "NR620",
+        "NR621",
+        "NR622",
+        "NR623"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "unsupported_content_type",
+      "elapsedMs": 1781,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://zp.xhu.edu.cn/",
+      "finalUrl": "https://zp.xhu.edu.cn/",
+      "jobIds": [
+        "NA029"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 412,
+      "reachable": true,
+      "bodyFetched": false,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "http_status",
+      "elapsedMs": 3604,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "[rejected-url]",
+      "finalUrl": "[rejected-url]",
+      "jobIds": [
+        "J106"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "ValueError",
+      "elapsedMs": null,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "[rejected-url]",
+      "finalUrl": "[rejected-url]",
+      "jobIds": [
+        "J107"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": null,
+      "reachable": false,
+      "bodyFetched": false,
+      "contentType": "",
+      "textHash": null,
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "fetch_failed",
+        "previousCharacters": null,
+        "characters": null
+      },
+      "error": "ValueError",
+      "elapsedMs": null,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/62817.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/62817.html",
+      "jobIds": [
+        "AUTO-d5e6b364ed28f8e6"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "65c8ff47dc990a3ce3ca7446f39287ab815128824ba92cc195ac73d4278d5efc",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3674
+      },
+      "error": null,
+      "elapsedMs": 1394,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/66772.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/66772.html",
+      "jobIds": [
+        "AUTO-7e8ac54a322afff9"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "67d420d0ccb011cdbfb67d06beb4d019591d1f377c285b0f7c660ee3a6840716",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2391
+      },
+      "error": null,
+      "elapsedMs": 1246,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/69390.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/69390.html",
+      "jobIds": [
+        "AUTO-ed3e581aa6ded0a1"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "3ececa22e78796fd37019d326fd2a72c58680e860d848fcc9e3c5b6d772d0a3d",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2989
+      },
+      "error": null,
+      "elapsedMs": 1444,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/69750.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/69750.html",
+      "jobIds": [
+        "AUTO-0e58fd572c2c07a5"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "af4997acf9d71f349a5df593826e312a8841b5f77500b1a14ad9ae90e28a9275",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3194
+      },
+      "error": null,
+      "elapsedMs": 1732,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/70947.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/70947.html",
+      "jobIds": [
+        "AUTO-70597c95253a9f27"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "d8155406e3f45f614334e2f4a22d3c554f9449e79d16001386e2d62247c26a66",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3048
+      },
+      "error": null,
+      "elapsedMs": 1247,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/74880.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/74880.html",
+      "jobIds": [
+        "AUTO-b4f9e29b02e1e230"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "4ec1af1a99650ced46327c0a09771b39dbb179bbbd1db315405d1f896ee57f33",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3122
+      },
+      "error": null,
+      "elapsedMs": 1340,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/76064.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/76064.html",
+      "jobIds": [
+        "AUTO-36a2d41621e0e3dd"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "b3d8646e26ca0de1c4ba3bd4923b74593c1fe232c65fc70edc2f76d22ff41bc8",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 2868
+      },
+      "error": null,
+      "elapsedMs": 1617,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/76282.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/76282.html",
+      "jobIds": [
+        "AUTO-cdfa0632fc73c401"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "18dbac86586b1f2168c2e53659841d2eb07c31f6ec35118e1affea9569905f72",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 1820
+      },
+      "error": null,
+      "elapsedMs": 1384,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/77545.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/77545.html",
+      "jobIds": [
+        "AUTO-aaa61d3ecafd39d9"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "4ea4d177f5b6aebe98a0a43c05e0eee7099ee2e0f0c64315e82d6f61fc85896e",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3017
+      },
+      "error": null,
+      "elapsedMs": 1273,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/78447.html",
+      "finalUrl": "https://career.hebut.edu.cn/home/correcruit/content/id/78447.html",
+      "jobIds": [
+        "AUTO-e4e41d7eef74a93a"
+      ],
+      "checkedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "reachable": true,
+      "bodyFetched": true,
+      "contentType": "text/html; charset=utf-8",
+      "textHash": "53e1138bbc54801d065e42a437571f0b453eff9e14ca2e9fa15f9393d030e5e7",
+      "previousTextHash": null,
+      "contentChanged": false,
+      "diff": {
+        "kind": "baseline",
+        "previousCharacters": null,
+        "characters": 3020
+      },
+      "error": null,
+      "elapsedMs": 1368,
+      "scope": "fetch_and_normalized_text_hash_only",
+      "redirects": []
+    }
+  ],
+  "expiredJobIds": [],
+  "newCandidateIds": [],
+  "inputSha256": "0bbcc85e758763c9bcd0da833e3ed355ef93343be0fa6c6dabbb34c6405b4984",
+  "attachments": [],
+  "archivedCandidateIds": [
+    "CLOUD-59b9652fab0625e0",
+    "CLOUD-bb92ebe024962a2d",
+    "CLOUD-6a857aa03af63493",
+    "CLOUD-d0bd29c936dcad57",
+    "CLOUD-91d9a22557bc7d95",
+    "CLOUD-d143addcea986c34",
+    "CLOUD-c2ac63c97a9e9e19",
+    "CLOUD-336ff4d5318b6b29",
+    "CLOUD-92cafc3d99477322",
+    "CLOUD-30cee6233148e018",
+    "CLOUD-dc7dec885320ff5e",
+    "CLOUD-28f43a0054a299e6",
+    "CLOUD-65fc53e20d4504af"
+  ],
+  "detailAttempts": [
+    {
+      "url": "https://career.hebut.edu.cn/home/news/content/id/932.html",
+      "candidateId": "AUTO-4aeb8255f60415e5",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/74880.html",
+      "candidateId": "AUTO-b4f9e29b02e1e230",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "0cbe8e0e69e41ee5daa35776b0897feaf356eb50368441c2291de39c3d90cb93",
+      "changes": {
+        "position": {
+          "before": "中国电建集团河北省电力勘测设计研究院有限公司2026年校园招聘公告-中国电建集团河北省电力勘测设计研究院有限公司",
+          "after": "中国电建集团河北省电力勘测设计研究院有限公司2026年校园招聘公告"
+        },
+        "education": {
+          "before": "硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "requirements": {
+          "before": "学历要求：硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "sourcePublishedAt": {
+          "before": "2025-09-28",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "eligibility2027": {
+          "before": "河北工业大学2027届毕业生生源信息表；河北工业大学2027届毕业生秋季学期校园招聘；广州市增城区事业单位公开招聘2027年 应届",
+          "after": "公告未明确2027届资格/自动提取未取得"
+        },
+        "availability": {
+          "before": "monitoring",
+          "after": "historical"
+        },
+        "researchTags": {
+          "before": [
+            "工程",
+            "结构工程",
+            "能源",
+            "水利",
+            "交通",
+            "地质",
+            "岩土"
+          ],
+          "after": [
+            "结构工程",
+            "能源",
+            "工程",
+            "水利",
+            "交通",
+            "地质",
+            "岩土"
+          ]
+        }
+      },
+      "jobId": "AUTO-b4f9e29b02e1e230"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/76064.html",
+      "candidateId": "AUTO-36a2d41621e0e3dd",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "a1d564d104eb10ddf310a0a926df051037263a37e335f59c0afc320f56fb54a3",
+      "changes": {
+        "position": {
+          "before": "中国电建河北院2026年校园招聘公告-中国电建集团河北省电力勘测设计研究院有限公司",
+          "after": "中国电建河北院2026年校园招聘公告"
+        },
+        "organization": {
+          "before": "中国电建河北院2026年校园招聘公告-中国电建集团河北省电力勘测设计研究院有限公司",
+          "after": "中国电建集团河北省电力勘测设计研究院有限公司"
+        },
+        "education": {
+          "before": "硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "requirements": {
+          "before": "学历要求：硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "sourcePublishedAt": {
+          "before": "2025-12-19",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "eligibility2027": {
+          "before": "河北工业大学2027届毕业生生源信息表；河北工业大学2027届毕业生秋季学期校园招聘；广州市增城区事业单位公开招聘2027年 应届",
+          "after": "公告未明确2027届资格/自动提取未取得"
+        },
+        "availability": {
+          "before": "monitoring",
+          "after": "historical"
+        },
+        "route": {
+          "before": "工程技术",
+          "after": "综合招聘"
+        },
+        "routeCategory": {
+          "before": "工程技术",
+          "after": "综合招聘"
+        },
+        "researchTags": {
+          "before": [
+            "工程",
+            "能源",
+            "岩土",
+            "交通",
+            "水利"
+          ],
+          "after": [
+            "工程",
+            "能源",
+            "岩土",
+            "交通"
+          ]
+        }
+      },
+      "jobId": "AUTO-36a2d41621e0e3dd"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/76282.html",
+      "candidateId": "AUTO-cdfa0632fc73c401",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "155973b85fed3dbf0ca0cab820a0e9dfc3e48103dd49ece0e2e5d1ab9a1a3020",
+      "changes": {
+        "position": {
+          "before": "中国能建中电工程华北院2026春季校园招聘-中国电力工程顾问集团华北电力设计院有限公司",
+          "after": "中国能建中电工程华北院2026春季校园招聘"
+        },
+        "organization": {
+          "before": "中国能建中电工程华北院2026春季校园招聘-中国电力工程顾问集团华北电力设计院有限公司",
+          "after": "中国电力工程顾问集团华北电力设计院有限公司"
+        },
+        "education": {
+          "before": "硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "requirements": {
+          "before": "学历要求：硕士；4、在校成绩优异，所学专业与需求岗位匹配",
+          "after": "4、在校成绩优异，所学专业与需求岗位匹配"
+        },
+        "sourcePublishedAt": {
+          "before": "2026-01-22",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "eligibility2027": {
+          "before": "中国能建中国电力工程顾问集团华北电力设计院有限公司2027年秋季应届高校毕业生招聘启事；河北工业大学2027届毕业生生源信息表；河北工业大学2027届毕业生秋季学期校园招聘",
+          "after": "公告未明确2027届资格/自动提取未取得"
+        },
+        "availability": {
+          "before": "monitoring",
+          "after": "historical"
+        },
+        "route": {
+          "before": "工程技术",
+          "after": "综合招聘"
+        },
+        "routeCategory": {
+          "before": "工程技术",
+          "after": "综合招聘"
+        },
+        "researchTags": {
+          "before": [
+            "工程",
+            "土木",
+            "结构工程",
+            "能源",
+            "交通",
+            "水利"
+          ],
+          "after": [
+            "工程",
+            "土木",
+            "结构工程",
+            "能源",
+            "交通"
+          ]
+        }
+      },
+      "jobId": "AUTO-cdfa0632fc73c401"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/77545.html",
+      "candidateId": "AUTO-aaa61d3ecafd39d9",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "2047d729e9e53d46b3c4a55b437b14805f0091ae346cf3d9c6433057a396dbcb",
+      "changes": {
+        "position": {
+          "before": "中国电建集团河北省电力勘测设计研究院有限公司2026年春季校园招聘公告-中国电建集团河北省电力勘测设计研究院有限公司",
+          "after": "中国电建集团河北省电力勘测设计研究院有限公司2026年春季校园招聘公告"
+        },
+        "education": {
+          "before": "硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "requirements": {
+          "before": "学历要求：硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "sourcePublishedAt": {
+          "before": "2026-03-17",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "eligibility2027": {
+          "before": "河北工业大学2027届毕业生生源信息表；河北工业大学2027届毕业生秋季学期校园招聘；广州市增城区事业单位公开招聘2027年 应届",
+          "after": "公告未明确2027届资格/自动提取未取得"
+        },
+        "availability": {
+          "before": "monitoring",
+          "after": "historical"
+        },
+        "researchTags": {
+          "before": [
+            "工程",
+            "能源",
+            "岩土",
+            "交通",
+            "水利"
+          ],
+          "after": [
+            "工程",
+            "能源",
+            "岩土",
+            "交通"
+          ]
+        }
+      },
+      "jobId": "AUTO-aaa61d3ecafd39d9"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/78447.html",
+      "candidateId": "AUTO-e4e41d7eef74a93a",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "b542e9d28a2b750092ae83a5552ec82ccf596f473b887d25e7d86ddf1979bce8",
+      "jobId": "AUTO-aaa61d3ecafd39d9"
+    },
+    {
+      "url": "https://hr.cumt.edu.cn/info/1026/4337.htm",
+      "candidateId": "AUTO-0a89b8f2906315fe",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "8eb1013a39155f85a0ab406afb15061e12ff36e19946250bc00f64c760a2cbfb",
+      "changes": {
+        "position": {
+          "before": "博士后",
+          "after": "中国矿业大学范钢伟教授团队博士后招聘启事"
+        },
+        "organization": {
+          "before": "公告未明确/自动提取未取得",
+          "after": "中国矿业大学"
+        },
+        "education": {
+          "before": "获得或即将获得环境、水文、材料等相关专业的博士学位",
+          "after": "已获得或即将获得环境、水文、材料等相关专业的博士学位"
+        }
+      },
+      "jobId": "AUTO-0a89b8f2906315fe"
+    },
+    {
+      "url": "https://hr.cumt.edu.cn/info/1026/4346.htm",
+      "candidateId": "AUTO-53e0a97cbb011532",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "5b31b17a3f439a31b4dd16f415392e9a07f839de3966d8a266e2ccdac2062c46",
+      "changes": {
+        "position": {
+          "before": "博士后",
+          "after": "中国矿业大学沐乐院士领衔城乡发展与绿色转型研究中心(URGT) 具有海外学术背景博士后招聘启事"
+        },
+        "organization": {
+          "before": "公告未明确/自动提取未取得",
+          "after": "中国矿业大学"
+        },
+        "education": {
+          "before": "具有指导博士研究生",
+          "after": "申请人已获得城市研究、城乡规划、建筑学或城市地理学等相关专业博士学位"
+        }
+      },
+      "jobId": "AUTO-53e0a97cbb011532"
+    },
+    {
+      "url": "https://hr.cumt.edu.cn/info/1026/4348.htm",
+      "candidateId": "AUTO-19b240ab1c1b7c30",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "d95c6296fe7a4509283d14672152f1a7cc7923553c8bad4adbde47e299a15660",
+      "changes": {
+        "position": {
+          "before": "博士后",
+          "after": "中国矿业大学沐乐院士领衔城乡发展与绿色转型研究中心(URGT)博士后招聘启事"
+        },
+        "organization": {
+          "before": "公告未明确/自动提取未取得",
+          "after": "中国矿业大学"
+        },
+        "education": {
+          "before": "获得城乡规划、城市地理等相关专业博士学位",
+          "after": "申请人已获得城乡规划、城市地理等相关专业博士学位"
+        }
+      },
+      "jobId": "AUTO-19b240ab1c1b7c30"
+    },
+    {
+      "url": "https://hr.cumt.edu.cn/info/1033/4475.htm",
+      "candidateId": "AUTO-6a857aa03af63493",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "error": "policy_document",
+      "disposition": "job_archived",
+      "jobId": "AUTO-6a857aa03af63493"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/66772.html",
+      "candidateId": "AUTO-7e8ac54a322afff9",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "c0da2fca1f8504eead068a53d3e7c4d318a15767f1955940c9be98418f8e0c1d",
+      "changes": {
+        "position": {
+          "before": "中国能建中电工程华北院2025秋季校园招聘-中国电力工程顾问集团华北电力设计院有限公司",
+          "after": "中国能建中电工程华北院2025秋季校园招聘"
+        },
+        "organization": {
+          "before": "中国能建中电工程华北院2025秋季校园招聘-中国电力工程顾问集团华北电力设计院有限公司",
+          "after": "中国电力工程顾问集团华北电力设计院有限公司"
+        },
+        "education": {
+          "before": "硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "requirements": {
+          "before": "学历要求：硕士；4、在校成绩优异，所学专业与需求岗位匹配",
+          "after": "4、在校成绩优异，所学专业与需求岗位匹配"
+        },
+        "sourcePublishedAt": {
+          "before": "2024-09-06",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "eligibility2027": {
+          "before": "中国能建中国电力工程顾问集团华北电力设计院有限公司2027年秋季应届高校毕业生招聘启事；河北工业大学2027届毕业生生源信息表；河北工业大学2027届毕业生秋季学期校园招聘",
+          "after": "公告未明确2027届资格/自动提取未取得"
+        },
+        "availability": {
+          "before": "monitoring",
+          "after": "historical"
+        },
+        "route": {
+          "before": "工程技术",
+          "after": "综合招聘"
+        },
+        "routeCategory": {
+          "before": "工程技术",
+          "after": "综合招聘"
+        },
+        "researchTags": {
+          "before": [
+            "工程",
+            "港口",
+            "土木",
+            "结构工程",
+            "交通",
+            "水利"
+          ],
+          "after": [
+            "工程",
+            "港口",
+            "土木",
+            "结构工程",
+            "交通"
+          ]
+        }
+      },
+      "jobId": "AUTO-7e8ac54a322afff9"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/69390.html",
+      "candidateId": "AUTO-ed3e581aa6ded0a1",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "985cc2d0e9edb75efd96fcf07e2b6d9bc69aa163d06debdc3acca8becded8956",
+      "changes": {
+        "position": {
+          "before": "中国电建集团河北省电力勘测设计研究院有限公司2025年校园招聘公告-中国电建集团河北省电力勘测设计研究院有限公司",
+          "after": "中国电建集团河北省电力勘测设计研究院有限公司2025年校园招聘公告"
+        },
+        "education": {
+          "before": "硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "requirements": {
+          "before": "学历要求：硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "sourcePublishedAt": {
+          "before": "2024-12-16",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "eligibility2027": {
+          "before": "河北工业大学2027届毕业生生源信息表；河北工业大学2027届毕业生秋季学期校园招聘；广州市增城区事业单位公开招聘2027年 应届",
+          "after": "公告未明确2027届资格/自动提取未取得"
+        },
+        "availability": {
+          "before": "monitoring",
+          "after": "historical"
+        },
+        "researchTags": {
+          "before": [
+            "工程",
+            "能源",
+            "岩土",
+            "交通",
+            "水利"
+          ],
+          "after": [
+            "工程",
+            "能源",
+            "岩土",
+            "交通"
+          ]
+        }
+      },
+      "jobId": "AUTO-ed3e581aa6ded0a1"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/69750.html",
+      "candidateId": "AUTO-0e58fd572c2c07a5",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "44f9881a1b8c3d36fdf05386cd2769dae3b8622339b4a2736d1a87c63beacbe8",
+      "changes": {
+        "position": {
+          "before": "中国能建中电工程华北院2025春季校园招聘-中国电力工程顾问集团华北电力设计院有限公司",
+          "after": "中国能建中电工程华北院2025春季校园招聘"
+        },
+        "organization": {
+          "before": "中国能建中电工程华北院2025春季校园招聘-中国电力工程顾问集团华北电力设计院有限公司",
+          "after": "中国电力工程顾问集团华北电力设计院有限公司"
+        },
+        "education": {
+          "before": "硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "requirements": {
+          "before": "学历要求：硕士；一、 招聘专业；4、在校成绩优异，所学专业与需求岗位匹配",
+          "after": "一、 招聘专业；4、在校成绩优异，所学专业与需求岗位匹配"
+        },
+        "sourcePublishedAt": {
+          "before": "2025-02-13",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "eligibility2027": {
+          "before": "中国能建中国电力工程顾问集团华北电力设计院有限公司2027年秋季应届高校毕业生招聘启事；河北工业大学2027届毕业生生源信息表；河北工业大学2027届毕业生秋季学期校园招聘",
+          "after": "公告未明确2027届资格/自动提取未取得"
+        },
+        "route": {
+          "before": "工程技术",
+          "after": "综合招聘"
+        },
+        "routeCategory": {
+          "before": "工程技术",
+          "after": "综合招聘"
+        },
+        "researchTags": {
+          "before": [
+            "工程",
+            "能源",
+            "岩土",
+            "交通",
+            "水利"
+          ],
+          "after": [
+            "工程",
+            "能源",
+            "岩土",
+            "交通"
+          ]
+        }
+      },
+      "jobId": "AUTO-0e58fd572c2c07a5"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/70947.html",
+      "candidateId": "AUTO-70597c95253a9f27",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "0a922c29f3cc032102e993ca3bb1ae244c0b987f3e897401f128c2450de9c01e",
+      "changes": {
+        "position": {
+          "before": "中国电建集团河北省电力勘测设计研究院有限公司2025年春季校园招聘公告-中国电建集团河北省电力勘测设计研究院有限公司",
+          "after": "中国电建集团河北省电力勘测设计研究院有限公司2025年春季校园招聘公告"
+        },
+        "education": {
+          "before": "硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "requirements": {
+          "before": "学历要求：硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "sourcePublishedAt": {
+          "before": "2025-03-11",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "eligibility2027": {
+          "before": "河北工业大学2027届毕业生生源信息表；河北工业大学2027届毕业生秋季学期校园招聘；广州市增城区事业单位公开招聘2027年 应届",
+          "after": "公告未明确2027届资格/自动提取未取得"
+        },
+        "availability": {
+          "before": "monitoring",
+          "after": "historical"
+        },
+        "researchTags": {
+          "before": [
+            "工程",
+            "能源",
+            "岩土",
+            "交通",
+            "水利"
+          ],
+          "after": [
+            "工程",
+            "能源",
+            "岩土",
+            "交通"
+          ]
+        }
+      },
+      "jobId": "AUTO-70597c95253a9f27"
+    },
+    {
+      "url": "https://career.hebut.edu.cn/home/correcruit/content/id/62817.html",
+      "candidateId": "AUTO-d5e6b364ed28f8e6",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": true,
+      "textHash": "f15e4e655d33411fb74340c1dd9ebbba052442e15cf1f38f93883f237aaebec4",
+      "changes": {
+        "position": {
+          "before": "华北院2024应届毕业生招聘-中国电力工程顾问集团华北电力设计院有限公司",
+          "after": "华北院2024应届毕业生招聘"
+        },
+        "organization": {
+          "before": "华北院2024应届毕业生招聘-中国电力工程顾问集团华北电力设计院有限公司",
+          "after": "中国电力工程顾问集团华北电力设计院有限公司"
+        },
+        "education": {
+          "before": "硕士",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "requirements": {
+          "before": "学历要求：硕士；一、招聘专业；4、在校成绩优异，所学专业与需求岗位匹配",
+          "after": "一、招聘专业；4、在校成绩优异，所学专业与需求岗位匹配"
+        },
+        "sourcePublishedAt": {
+          "before": "2024-01-19",
+          "after": "公告未明确/自动提取未取得"
+        },
+        "eligibility2027": {
+          "before": "中国能建中国电力工程顾问集团华北电力设计院有限公司2027年秋季应届高校毕业生招聘启事；河北工业大学2027届毕业生生源信息表；河北工业大学2027届毕业生秋季学期校园招聘",
+          "after": "公告未明确2027届资格/自动提取未取得"
+        },
+        "availability": {
+          "before": "monitoring",
+          "after": "historical"
+        },
+        "route": {
+          "before": "工程技术",
+          "after": "综合招聘"
+        },
+        "routeCategory": {
+          "before": "工程技术",
+          "after": "综合招聘"
+        },
+        "researchTags": {
+          "before": [
+            "工程",
+            "能源",
+            "水利",
+            "水电",
+            "地质",
+            "交通"
+          ],
+          "after": [
+            "能源",
+            "工程",
+            "水利",
+            "水电",
+            "地质",
+            "交通"
+          ]
+        }
+      },
+      "jobId": "AUTO-d5e6b364ed28f8e6"
+    },
+    {
+      "url": "https://hr.cumt.edu.cn/info/1074/4566.htm",
+      "candidateId": "CLOUD-d0bd29c936dcad57",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "unrelated_body"
+    },
+    {
+      "url": "https://nbidut.dlut.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1856354015&wbfileid=BE1F52F527BCB481CB3EE5D57243B594",
+      "candidateId": "CLOUD-fc80328f60347104",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "https://recruit.nbu.edu.cn/info/1009/2491.htm",
+      "candidateId": "CLOUD-91d9a22557bc7d95",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "unrelated_body"
+    },
+    {
+      "url": "https://recruit.nbu.edu.cn/info/1009/2541.htm",
+      "candidateId": "CLOUD-d143addcea986c34",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "unrelated_body"
+    },
+    {
+      "url": "https://recruit.nbu.edu.cn/system/_content/download.jsp?urltype=news.DownloadAttachUrl&owner=1354998032&wbfileid=8EEF22802B741D58FFA6EB8096B93A9B",
+      "candidateId": "CLOUD-124d809eba94e17a",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "incomplete_body"
+    },
+    {
+      "url": "https://www.nbpu.edu.cn/_upload/article/files/1e/d8/fa744f2848aba54ac507114fa89b/be904d30-7183-4054-8ab4-3253d99480b5.xls",
+      "candidateId": "CLOUD-51220e6d1b64e632",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": null,
+      "success": false,
+      "error": "fetch_failed_or_untrusted_redirect"
+    },
+    {
+      "url": "https://www.nbpu.edu.cn/_upload/article/files/1e/d8/fa744f2848aba54ac507114fa89b/ef232cbd-c061-470a-be06-a35f6e15b8c8.xls",
+      "candidateId": "CLOUD-5a71e9d81bd02fd5",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "fetch_failed_or_untrusted_redirect"
+    },
+    {
+      "url": "https://hr.cumt.edu.cn/info/1076/2477.htm",
+      "candidateId": "CLOUD-c2ac63c97a9e9e19",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "unrelated_body"
+    },
+    {
+      "url": "https://hr.cumt.edu.cn/info/1076/2479.htm",
+      "candidateId": "CLOUD-336ff4d5318b6b29",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "unrelated_body"
+    },
+    {
+      "url": "https://www.liepin.com/city-ningbo/career/nengyuankuangchanhuanbao",
+      "candidateId": "CLOUD-92cafc3d99477322",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "not_detail_page"
+    },
+    {
+      "url": "https://www.liepin.com/city-ningbo/zpaezhuguangongchengshi",
+      "candidateId": "CLOUD-30cee6233148e018",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "navigation_page"
+    },
+    {
+      "url": "https://www.liepin.com/city-ningbo/zpcaeruanjiangongchengshi",
+      "candidateId": "CLOUD-dc7dec885320ff5e",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "navigation_page"
+    },
+    {
+      "url": "https://www.liepin.com/city-ningbo/zpcaeyingyonggongchengshi",
+      "candidateId": "CLOUD-28f43a0054a299e6",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "navigation_page"
+    },
+    {
+      "url": "https://www.nbpu.edu.cn/_upload/article/files/1e/d8/fa744f2848aba54ac507114fa89b/b2d0c063-555c-4e00-beee-d3d2380e1fa9.doc",
+      "candidateId": "CLOUD-d5a0e09e50dcf06c",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "fetch_failed_or_untrusted_redirect"
+    },
+    {
+      "url": "https://www.nbsz.com.cn/cms/index/newsd.html?id=56",
+      "candidateId": "CLOUD-65fc53e20d4504af",
+      "attemptedAt": "2026-11-20T14:58:41+08:00",
+      "httpStatus": 200,
+      "success": false,
+      "error": "not_detail_page"
+    }
+  ],
+  "autoAddedJobIds": [],
+  "autoUpdatedJobIds": [
+    "AUTO-b4f9e29b02e1e230",
+    "AUTO-36a2d41621e0e3dd",
+    "AUTO-cdfa0632fc73c401",
+    "AUTO-aaa61d3ecafd39d9",
+    "AUTO-0a89b8f2906315fe",
+    "AUTO-53e0a97cbb011532",
+    "AUTO-19b240ab1c1b7c30",
+    "AUTO-7e8ac54a322afff9",
+    "AUTO-ed3e581aa6ded0a1",
+    "AUTO-0e58fd572c2c07a5",
+    "AUTO-70597c95253a9f27",
+    "AUTO-d5e6b364ed28f8e6"
+  ],
+  "autoArchivedJobIds": [
+    "AUTO-6a857aa03af63493"
+  ]
+}
