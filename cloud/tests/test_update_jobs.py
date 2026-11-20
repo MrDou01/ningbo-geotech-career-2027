@@ -49,6 +49,31 @@ def fake_fetch(url, text="某工程院招聘信息 2027 届，完整条件待人
             "bodyText": text, "links": links or [], "contentType": "text/html"}
 
 
+DETAIL_TITLE = "某地质研究院2027岩土工程博士招聘公告"
+DETAIL_BODY = """某地质研究院2027岩土工程博士招聘公告。
+招聘单位：某地质研究院。
+招聘岗位：岩土工程科研博士。
+工作地点：武汉市。
+发布日期：2026年11月20日。
+学历要求：博士研究生。
+招聘专业：岩土工程、工程力学。
+招聘对象：2027届毕业生。
+应聘者须于2027年7月31日前取得博士学历学位证书。
+报名时间：2026年11月20日至2026年12月10日17:00。
+报名截止时间：2026年12月10日17:00。
+研究工作围绕地震灾害、土体动力响应和数值仿真开展，要求具有独立研究能力及良好合作意识。
+本次招聘采用网上报名，应聘人员提交真实材料，经单位考核后择优录用。
+岗位的具体任务由研究团队结合工程项目安排，待遇根据单位有关规定执行。"""
+DETAIL_NOW = datetime(2026, 11, 21, 1, tzinfo=timezone.utc)
+
+
+def detail_response(url, body=DETAIL_BODY, title=DETAIL_TITLE, page_body=None):
+    return {"url": url, "finalUrl": url, "httpStatus": 200, "ok": True,
+            "bodyText": page_body if page_body is not None else body,
+            "articleText": body, "pageTitle": title, "headings": [title],
+            "links": [], "contentType": "text/html"}
+
+
 class UpdateTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -62,9 +87,10 @@ class UpdateTests(unittest.TestCase):
     def tearDown(self):
         self.temp.cleanup()
 
-    def run_monitor(self, now, fetcher=fake_fetch, max_pages=80):
+    def run_monitor(self, now, fetcher=fake_fetch, max_pages=80, max_detail_pages=0):
         return monitor.run_update(self.path, self.path, self.evidence, self.db,
-                                  max_pages=max_pages, now=now, fetcher=fetcher)
+                                  max_pages=max_pages, now=now, fetcher=fetcher,
+                                  max_detail_pages=max_detail_pages)
 
     def read(self):
         return json.loads(self.path.read_text(encoding="utf-8"))
@@ -133,7 +159,7 @@ class UpdateTests(unittest.TestCase):
         old_hash = second["cloudUpdate"]["urlState"]["https://example.edu.cn/jobs/1.html"]["textHash"]
         self.assertEqual(third["cloudUpdate"]["urlState"]["https://example.edu.cn/jobs/1.html"]["textHash"], old_hash)
 
-    def test_candidates_are_isolated_same_host_pending(self):
+    def test_discovered_candidates_queue_for_automatic_details(self):
         links = [{"url": "/jobs/2.html", "title": "2027岩土工程博士招聘"},
                  {"url": "https://other.edu.cn/2", "title": "2027招聘"},
                  {"url": "/news/a", "title": "普通校友新闻"},
@@ -144,7 +170,7 @@ class UpdateTests(unittest.TestCase):
         self.assertEqual(len(data["jobs"]), 1)
         self.assertEqual(len(data["cloudCandidates"]), 1)
         candidate = data["cloudCandidates"][0]
-        self.assertEqual(candidate["reviewStatus"], "pending")
+        self.assertIn(candidate["reviewStatus"], ("queued", "retry"))
         self.assertEqual(candidate["eligibility"], "uncertain")
         self.assertEqual(candidate["availability"], "unknown")
         self.assertNotIn("verifiedAt", candidate)
@@ -300,6 +326,407 @@ class UpdateTests(unittest.TestCase):
         self.assertEqual(evidence["attempts"][0]["jobIds"], ["NI001"])
         self.assertIn("diff", evidence["attempts"][0])
         self.assertIn("redirects", evidence["attempts"][0])
+
+    def queue_detail(self, title=DETAIL_TITLE, url="https://example.edu.cn/jobs/new.html", candidate_id="C1"):
+        candidate = {"id": candidate_id, "url": url, "title": title,
+                     "sourceUrl": self.data["jobs"][0]["announcementUrl"],
+                     "sourceJobIds": ["NI001"], "reviewStatus": "queued",
+                     "discoveredAt": "2026-11-20T12:00:00+08:00"}
+        self.data.setdefault("cloudCandidates", []).append(candidate)
+        self.path.write_text(json.dumps(self.data, ensure_ascii=False), encoding="utf-8")
+        return candidate
+
+    def run_details(self, fetcher=detail_response, now=DETAIL_NOW, limit=30):
+        monitor.run_update(self.path, self.path, self.evidence, self.db,
+                           max_pages=0, max_detail_pages=limit, now=now,
+                           fetcher=fetcher, detail_fetcher=fetcher)
+        return self.read()
+
+    def automatic_jobs(self, data):
+        return [job for job in data["jobs"] if job.get("ingestionMode") == "automatic"]
+
+    def test_automatic_body_ingestion_persists_without_human_gate(self):
+        self.queue_detail()
+        data = self.run_details()
+        auto = self.automatic_jobs(data)
+        self.assertEqual(len(auto), 1)
+        job = auto[0]
+        self.assertEqual(job["verifiedAt"], "")
+        self.assertEqual(job["organization"], "某地质研究院")
+        self.assertIn("武汉", job["region"])
+        self.assertEqual(job["sourcePublishedAt"], "2026-11-20")
+        self.assertEqual(job["eligibility"], "uncertain")
+        self.assertEqual(job["employerNature"]["code"], "unknown")
+        self.assertTrue(job["sourceCheckedAt"])
+        self.assertTrue(job["ingestionMethod"])
+        self.assertIn("autoEvidence", job)
+        self.assertIn("博士", job["requirements"])
+        self.assertIn("2027", job["eligibility2027"])
+        self.assertEqual(monitor.parse_deadline(job).strftime("%Y-%m-%d %H:%M"), "2026-12-10 17:00")
+        self.assertEqual(data["cloudUpdate"]["autoAdded"], 1)
+        self.assertEqual(data["stats"]["jobs"], len(data["jobs"]))
+        candidate = next(c for c in data["cloudCandidates"] if c["id"] == "C1")
+        self.assertEqual(candidate["reviewStatus"], "imported")
+        self.assertEqual(candidate["jobId"], job["id"])
+        self.assertEqual(data["jobs"][0]["verifiedAt"], "2026-10-29")
+        for key in ("profile", "papers", "talentAssessments", "journalRankings"):
+            self.assertEqual(data[key], self.data[key])
+        with closing(sqlite3.connect(self.db)) as connection:
+            payload = json.loads(connection.execute(
+                "SELECT payload_json FROM jobs WHERE id=?", (job["id"],)).fetchone()[0])
+        self.assertEqual(payload, job)
+        self.assertNotIn(DETAIL_BODY, json.dumps(job, ensure_ascii=False))
+
+    def test_auto_ingestion_duplicate_urls_and_body_do_not_add_twice(self):
+        self.queue_detail()
+        self.queue_detail(url="https://example.edu.cn/jobs/mirror.html", candidate_id="C2")
+        first = self.run_details()
+        self.assertEqual(len(self.automatic_jobs(first)), 1)
+        first_id = self.automatic_jobs(first)[0]["id"]
+        second = self.run_details(now=datetime(2026, 11, 22, 1, tzinfo=timezone.utc))
+        self.assertEqual([j["id"] for j in self.automatic_jobs(second)], [first_id])
+        self.assertEqual(second["cloudUpdate"]["autoAdded"], 0)
+        self.assertEqual(second["cloudUpdate"]["autoUpdated"], 0)
+
+    def test_auto_updated_counts_changed_extraction_not_http_or_footer(self):
+        self.queue_detail()
+        first = self.run_details()
+        job_id = self.automatic_jobs(first)[0]["id"]
+        second = self.run_details(lambda url: detail_response(
+            url, page_body=DETAIL_BODY + "\n相关新闻：2028年12月31日栏目有效期结束。"),
+            now=datetime(2026, 11, 22, 1, tzinfo=timezone.utc))
+        self.assertEqual(second["cloudUpdate"]["autoUpdated"], 0)
+        changed_body = DETAIL_BODY.replace("工作地点：武汉市。", "工作地点：长沙市。")
+        third = self.run_details(lambda url: detail_response(url, body=changed_body),
+                                 now=datetime(2026, 11, 23, 1, tzinfo=timezone.utc))
+        self.assertEqual(third["cloudUpdate"]["autoAdded"], 0)
+        self.assertEqual(third["cloudUpdate"]["autoUpdated"], 1)
+        job = next(j for j in third["jobs"] if j["id"] == job_id)
+        self.assertIn("长沙", job["region"])
+
+    def test_degree_and_platform_dates_never_become_application_deadline(self):
+        self.queue_detail()
+        body = DETAIL_BODY.replace(
+            "报名时间：2026年11月20日至2026年12月10日17:00。", "").replace(
+            "报名截止时间：2026年12月10日17:00。", "")
+        body += "\n高校就业平台信息有效期：2026年12月31日。"
+        result = self.run_details(lambda url: detail_response(url, body=body))
+        job = self.automatic_jobs(result)[0]
+        self.assertIsNone(job.get("deadline"))
+        self.assertIsNone(monitor.parse_deadline(job))
+        self.assertEqual(job["availability"], "monitoring")
+        self.assertEqual(job["eligibility"], "uncertain")
+        self.assertIn("2027", job["eligibility2027"])
+
+    def test_source_university_never_becomes_advertised_employer_or_location(self):
+        self.data["jobs"][0].update(organization="某转载大学", province="江苏", region="南京")
+        self.queue_detail()
+        body = DETAIL_BODY.replace("工作地点：武汉市。", "")
+        body += "\n某地质研究院总部地址：北京市。学校就业平台仅提供信息发布。"
+        result = self.run_details(lambda url: detail_response(url, body=body))
+        job = self.automatic_jobs(result)[0]
+        self.assertEqual(job["organization"], "某地质研究院")
+        self.assertNotEqual(job.get("province"), "江苏")
+        self.assertNotIn("南京", job.get("region", ""))
+        self.assertNotIn("北京", job.get("region", ""))
+        self.assertNotIn("武汉", job.get("region", ""))
+        self.assertEqual(job["employerNature"]["code"], "unknown")
+
+    def test_missing_employer_stays_unknown_not_source_organization(self):
+        self.data["jobs"][0].update(organization="某转载大学", province="江苏", region="南京")
+        title = "岩土工程博士后招聘公告"
+        self.queue_detail(title=title)
+        body = DETAIL_BODY.replace(DETAIL_TITLE, title).replace("招聘单位：某地质研究院。", "")
+        result = self.run_details(lambda url: detail_response(url, body=body, title=title))
+        job = self.automatic_jobs(result)[0]
+        self.assertNotEqual(job["organization"], "某转载大学")
+        self.assertNotEqual(job["organization"], "某地质研究院")
+        self.assertTrue(any(term in job["organization"] for term in ("未明确", "未取得", "未知")))
+
+    def test_detail_fetch_failure_retries_without_false_ingestion(self):
+        self.queue_detail()
+        failed = self.run_details(lambda url: {"ok": False, "httpStatus": 503, "error": "http_status",
+                                               "finalUrl": url})
+        self.assertEqual(len(self.automatic_jobs(failed)), 0)
+        self.assertEqual(failed["cloudUpdate"]["autoAdded"], 0)
+        self.assertEqual(failed["cloudUpdate"]["autoUpdated"], 0)
+        self.assertGreaterEqual(failed["cloudUpdate"]["pendingDetails"], 1)
+        self.assertEqual(failed["cloudCandidates"][0]["reviewStatus"], "retry")
+        recovered = self.run_details(now=datetime(2026, 11, 22, 1, tzinfo=timezone.utc))
+        self.assertEqual(len(self.automatic_jobs(recovered)), 1)
+
+    def test_failed_refresh_preserves_last_successful_auto_evidence(self):
+        self.queue_detail()
+        first = self.run_details()
+        before = copy.deepcopy(self.automatic_jobs(first)[0])
+        failed = self.run_details(lambda url: {"ok": False, "httpStatus": 503, "error": "http_status",
+                                               "finalUrl": url},
+                                  now=datetime(2026, 11, 22, 1, tzinfo=timezone.utc))
+        after = self.automatic_jobs(failed)[0]
+        self.assertEqual(after["sourceCheckedAt"], before["sourceCheckedAt"])
+        self.assertEqual(after["autoEvidence"], before["autoEvidence"])
+        self.assertEqual(after["verifiedAt"], "")
+        self.assertEqual(failed["cloudUpdate"]["autoUpdated"], 0)
+
+    def test_non_positions_and_pure_medical_candidates_are_archived(self):
+        for index, title in enumerate(("某研究院博士后联谊会", "岩土招聘初面通过名单",
+                                       "某临床医科大学护理博士后招聘公告")):
+            self.queue_detail(title=title, url="https://example.edu.cn/jobs/noise" + str(index),
+                              candidate_id="NOISE" + str(index))
+        result = self.run_details()
+        self.assertEqual(len(self.automatic_jobs(result)), 0)
+        archived_ids = {entry["candidate"]["id"] for entry in result["cloudCandidateArchive"]}
+        self.assertTrue({"NOISE0", "NOISE1", "NOISE2"}.issubset(archived_ids))
+
+    def test_navigation_and_related_links_do_not_supply_job_evidence(self):
+        self.queue_detail()
+        page = "首页 新闻中心 人才招聘 岩土工程招聘链接 博士后招聘链接 登录 注册 联系我们"
+        result = self.run_details(lambda url: detail_response(url, body=page,
+                                   page_body=page + "\n" + DETAIL_BODY))
+        self.assertEqual(len(self.automatic_jobs(result)), 0)
+        self.assertEqual(result["cloudUpdate"]["autoAdded"], 0)
+
+    def test_past_or_future_dated_notices_are_not_promoted_as_open(self):
+        self.queue_detail()
+        old_body = DETAIL_BODY.replace("2026年12月10日", "2026年11月19日")
+        old = self.run_details(lambda url: detail_response(url, body=old_body))
+        self.assertEqual(self.automatic_jobs(old)[0]["availability"], "historical")
+        self.assertEqual(self.automatic_jobs(old)[0]["eligibility"], "uncertain")
+
+    def test_future_publication_date_is_not_current_open_job(self):
+        self.queue_detail()
+        future_body = DETAIL_BODY.replace("发布日期：2026年11月20日", "发布日期：2026年12月20日")
+        result = self.run_details(lambda url: detail_response(url, body=future_body))
+        self.assertNotEqual(self.automatic_jobs(result)[0]["availability"], "open")
+
+    def test_existing_manual_job_url_is_deduped_without_semantic_rewrite(self):
+        self.queue_detail(url=self.data["jobs"][0]["announcementUrl"])
+        result = self.run_details()
+        self.assertEqual(len(result["jobs"]), 1)
+        self.assertEqual(result["cloudUpdate"]["autoAdded"], 0)
+        self.assertEqual(result["jobs"][0]["verifiedAt"], "2026-10-29")
+        self.assertEqual(result["jobs"][0]["paperPolicy"], self.data["jobs"][0]["paperPolicy"])
+
+    def test_detail_budget_rotates_and_does_not_require_manual_review(self):
+        for index in range(3):
+            self.queue_detail(url="https://example.edu.cn/jobs/budget" + str(index),
+                              candidate_id="B" + str(index))
+        called = []
+        def fail(url):
+            called.append(url)
+            return {"ok": False, "httpStatus": 503, "error": "http_status", "finalUrl": url}
+        first = self.run_details(fail, limit=1)
+        self.assertEqual(len(called), 1)
+        self.assertEqual(first["cloudUpdate"]["detailChecked"], 1)
+        self.assertEqual(first["cloudUpdate"]["pendingDetails"], 3)
+        prior_url = called[0]
+        called.clear()
+        self.run_details(fail, limit=1, now=datetime(2026, 11, 22, 1, tzinfo=timezone.utc))
+        self.assertEqual(len(called), 1)
+        self.assertNotEqual(called[0], prior_url)
+
+    def test_secondary_domain_cannot_impersonate_official_source(self):
+        self.data["jobs"][0]["announcementUrl"] = "https://www.gaoxiaojob.com/announcement/seed.html"
+        self.data["jobs"][0]["sourceTrust"] = "official"
+        candidate = self.queue_detail(url="https://www.gaoxiaojob.com/announcement/new.html")
+        candidate["sourceKind"] = "same_host_link_from_recorded_official_source"
+        candidate["sourceTrust"] = "official"
+        self.path.write_text(json.dumps(self.data), encoding="utf-8")
+        result = self.run_details()
+        self.assertEqual(len(self.automatic_jobs(result)), 0)
+        self.assertEqual(result["cloudUpdate"]["autoAdded"], 0)
+        self.assertTrue(any(entry["candidate"]["id"] == "C1"
+                            for entry in result["cloudCandidateArchive"]))
+
+    def test_archived_url_rediscovery_is_not_queued_fetched_or_rearchived(self):
+        candidate = {"id": "ARCHIVED", "url": "https://example.edu.cn/jobs/old.html",
+                     "title": DETAIL_TITLE, "sourceUrl": self.data["jobs"][0]["announcementUrl"],
+                     "sourceJobIds": ["NI001"], "reviewStatus": "queued"}
+        old_entry = {"candidate": candidate, "archivedAt": "2026-11-20T12:00:00+08:00",
+                     "reason": "历史记录判定非岗位", "ruleVersion": "previous"}
+        self.data["cloudCandidateArchive"] = [copy.deepcopy(old_entry)]
+        self.path.write_text(json.dumps(self.data), encoding="utf-8")
+        detail_calls = []
+        def detail(url):
+            detail_calls.append(url)
+            return detail_response(url)
+        monitor.run_update(self.path, self.path, self.evidence, self.db, now=DETAIL_NOW,
+                           max_pages=1, max_detail_pages=30,
+                           fetcher=lambda url: fake_fetch(url, links=[
+                               {"url": candidate["url"], "title": DETAIL_TITLE}]),
+                           detail_fetcher=detail)
+        result = self.read()
+        self.assertEqual(result["cloudUpdate"]["newCandidates"], 0)
+        self.assertEqual(result["cloudUpdate"]["detailChecked"], 0)
+        self.assertEqual(detail_calls, [])
+        self.assertEqual(result["cloudCandidateArchive"], [old_entry])
+        self.assertEqual(result.get("cloudCandidates"), [])
+
+    def test_real_html_article_isolated_from_nav_and_related_news(self):
+        def parse_html(html, url):
+            parser = monitor.VisibleHTML()
+            parser.feed(html)
+            return {"url": url, "finalUrl": url, "httpStatus": 200, "ok": True,
+                    "bodyText": parser.text, "articleText": parser.article_text,
+                    "pageTitle": parser.title, "headings": parser.headings,
+                    "links": parser.links, "contentType": "text/html"}
+        html = ("<html><head><title>" + DETAIL_TITLE + "</title></head><body>"
+                "<nav><a href='/medical'>护理博士后招聘</a></nav>"
+                "<article><h1>" + DETAIL_TITLE + "</h1><p>" +
+                DETAIL_BODY.replace("\n", "</p><p>") + "</p></article>"
+                "<aside>报名截止时间：2030年1月1日；临床护理岗位招聘</aside>"
+                "<div class='related-news'>相关新闻：招聘单位：别的学院。</div></body></html>")
+        parsed = parse_html(html, "https://example.edu.cn/jobs/new.html")
+        self.assertIn("某地质研究院", parsed["articleText"])
+        self.assertNotIn("护理", parsed["articleText"])
+        self.assertNotIn("别的学院", parsed["articleText"])
+        self.queue_detail()
+        result = self.run_details(lambda url: parse_html(html, url))
+        self.assertEqual(len(self.automatic_jobs(result)), 1)
+        self.assertEqual(self.automatic_jobs(result)[0]["organization"], "某地质研究院")
+        self.assertEqual(self.automatic_jobs(result)[0]["deadline"], "2026-12-10")
+
+        # A related job present only in navigation/related-news is not the article.
+        self.data = sample()
+        self.queue_detail(candidate_id="NAV", url="https://example.edu.cn/jobs/nav.html")
+        nav_html = ("<html><head><title>服务门户</title></head><body>"
+                    "<nav><h1>" + DETAIL_TITLE + "</h1><p>" + DETAIL_BODY + "</p></nav>"
+                    "<article><h1>服务门户</h1><p>本页提供栏目导航，请选择所需服务。</p></article>"
+                    "<div class='related-news'>" + DETAIL_BODY + "</div></body></html>")
+        nav_result = self.run_details(lambda url: parse_html(nav_html, url))
+        self.assertEqual(len(self.automatic_jobs(nav_result)), 0)
+        self.assertEqual(nav_result["cloudUpdate"]["autoAdded"], 0)
+
+    def test_stats_province_whitelist_and_national_added_baseline(self):
+        data = {"stats": {"nationalAdded": 820}, "jobs": [
+            {"id": "1", "province": "湖北/浙江", "provinceList": ["湖北", "浙江"], "scope": "national"},
+            {"id": "2", "province": "湖北/浙江", "scope": "national"},
+            {"id": "3", "province": "公告未明确/自动提取未取得", "scope": "national"},
+            {"id": "4", "province": "北京", "provinceList": ["北京", "湖北/浙江", "未知"], "scope": "nearby"},
+        ]}
+        monitor.refresh_stats(data)
+        self.assertEqual(data["stats"]["provinces"], 3)
+        self.assertEqual(data["stats"]["nationalAdded"], 820)
+        monitor.refresh_stats(data, auto_added=1)
+        self.assertEqual(data["stats"]["nationalAdded"], 821)
+
+    def test_explicit_nearby_work_locations_receive_nearby_scope(self):
+        for city in ("宁波", "余姚", "杭州", "绍兴", "舟山", "台州", "嘉兴"):
+            with self.subTest(city=city):
+                self.data = sample()
+                self.queue_detail()
+                body = DETAIL_BODY.replace("工作地点：武汉市。", "工作地点：" + city + "市。")
+                result = self.run_details(lambda url: detail_response(url, body=body))
+                job = self.automatic_jobs(result)[0]
+                self.assertEqual(job["scope"], "nearby")
+                self.assertIn("浙江", job["provinceList"])
+                self.assertIsInstance(job["timeWindow"], str)
+                self.assertTrue(job["timeWindow"])
+
+    def test_source_nearby_address_does_not_create_nearby_job(self):
+        self.data["jobs"][0].update(organization="宁波某大学", region="宁波", province="浙江", scope="nearby")
+        self.queue_detail()
+        body = DETAIL_BODY.replace("工作地点：武汉市。", "")
+        body += "\n转载平台联系地址：宁波市。"
+        result = self.run_details(lambda url: detail_response(url, body=body))
+        job = self.automatic_jobs(result)[0]
+        self.assertNotEqual(job["scope"], "nearby")
+        self.assertNotIn("浙江", job.get("provinceList", []))
+        self.assertNotIn("宁波", job["region"])
+
+    def test_automatic_route_categories_follow_explicit_role(self):
+        cases = [
+            ("某地质研究院", "岩土工程博士后", "博士后"),
+            ("某大学土木工程学院", "土木工程专任教师", "高校科研"),
+            ("某市交通局", "事业单位岩土技术岗位", "公务员/事业单位"),
+            ("某仿真科技有限公司", "CAE软件研发工程师", "企业研发"),
+            ("某交通设计院", "岩土勘察设计工程师", "工程技术"),
+            ("某能源集团", "综合招聘", "综合招聘"),
+        ]
+        for organization, role, expected in cases:
+            with self.subTest(role=role):
+                self.data = sample()
+                title = organization + role + "招聘公告"
+                self.queue_detail(title=title)
+                body = DETAIL_BODY.replace(DETAIL_TITLE, title).replace(
+                    "招聘单位：某地质研究院。", "招聘单位：" + organization + "。").replace(
+                    "招聘岗位：岩土工程科研博士。", "招聘岗位：" + role + "。")
+                result = self.run_details(lambda url: detail_response(url, body=body, title=title))
+                job = self.automatic_jobs(result)[0]
+                self.assertEqual(job["routeCategory"], expected)
+                self.assertIsInstance(job["timeWindow"], str)
+
+    def test_location_refresh_updates_province_list_and_scope(self):
+        self.queue_detail()
+        first = self.run_details()
+        original = self.automatic_jobs(first)[0]
+        self.assertEqual(original["province"], "湖北")
+        body = DETAIL_BODY.replace("工作地点：武汉市。", "工作地点：宁波市。")
+        second = self.run_details(lambda url: detail_response(url, body=body),
+                                  now=datetime(2026, 11, 22, 1, tzinfo=timezone.utc))
+        changed = self.automatic_jobs(second)[0]
+        self.assertEqual(changed["id"], original["id"])
+        self.assertEqual(changed["province"], "浙江")
+        self.assertEqual(changed["provinceList"], ["浙江"])
+        self.assertEqual(changed["scope"], "nearby")
+        self.assertEqual(second["cloudUpdate"]["autoUpdated"], 1)
+
+    def test_total_run_budget_stops_details_without_losing_retry_queue(self):
+        self.queue_detail()
+        calls = []
+        def detail(url):
+            calls.append(url)
+            return detail_response(url)
+        with patch.object(monitor, "RUN_TIMEOUT", 0):
+            result = self.run_details(detail)
+        self.assertEqual(calls, [])
+        self.assertEqual(result["cloudUpdate"]["detailChecked"], 0)
+        self.assertEqual(result["cloudUpdate"]["pendingDetails"], 1)
+        self.assertEqual(len(result["cloudCandidates"]), 1)
+        self.assertEqual(len(self.automatic_jobs(result)), 0)
+
+    def test_public_contact_details_are_not_copied_into_jobs_or_field_evidence(self):
+        self.queue_detail()
+        body = DETAIL_BODY.replace(
+            "招聘专业：岩土工程、工程力学。",
+            "招聘专业：岩土工程、工程力学，联系人：张先生，联系电话：13800138000，邮箱：contact@example.org。")
+        result = self.run_details(lambda url: detail_response(url, body=body))
+        job = self.automatic_jobs(result)[0]
+        serialized = json.dumps(job, ensure_ascii=False)
+        self.assertIn("岩土", job["requirements"])
+        for contact in ("张先生", "13800138000", "contact@example.org"):
+            self.assertNotIn(contact, serialized)
+
+    def test_missing_new_deadline_retains_evidence_and_later_expires(self):
+        self.queue_detail()
+        first = self.run_details()
+        original = copy.deepcopy(self.automatic_jobs(first)[0])
+        self.assertEqual(original["deadline"], "2026-12-10")
+        self.assertEqual(original["availability"], "open")
+        original_evidence = copy.deepcopy(original["autoEvidence"]["fields"]["deadline"])
+        body = DETAIL_BODY.replace(
+            "报名时间：2026年11月20日至2026年12月10日17:00。", "").replace(
+            "报名截止时间：2026年12月10日17:00。", "")
+        second = self.run_details(lambda url: detail_response(url, body=body),
+                                  now=datetime(2026, 11, 22, 1, tzinfo=timezone.utc))
+        refreshed = self.automatic_jobs(second)[0]
+        self.assertEqual(refreshed["id"], original["id"])
+        self.assertEqual(refreshed["deadline"], original["deadline"])
+        self.assertEqual(refreshed["deadlineTime"], original["deadlineTime"])
+        retained = refreshed["autoEvidence"]["fields"]["deadline"]
+        self.assertEqual(retained["value"], original_evidence["value"])
+        self.assertEqual(retained["quote"], original_evidence["quote"])
+        self.assertTrue(retained["retainedFromEarlier"])
+        self.assertEqual(retained["observedAt"], original["sourceCheckedAt"])
+        self.assertEqual(refreshed["verifiedAt"], "")
+        self.assertIn("2027", refreshed["eligibility2027"])
+
+        self.run_monitor(datetime(2026, 12, 11, 1, tzinfo=timezone.utc), max_pages=0)
+        after = next(job for job in self.read()["jobs"] if job["id"] == original["id"])
+        self.assertEqual(after["availability"], "historical")
+        self.assertEqual(after["deadline"], "2026-12-10")
+        self.assertEqual(after["verifiedAt"], "")
+        self.assertEqual(after["autoEvidence"]["fields"]["deadline"], retained)
 
     def test_province_rotation_and_urgent_priority(self):
         jobs = []

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Public-source change monitor; never performs eligibility or talent assessment.
+"""Public-source recruitment ingestion and change monitor.
 
 Standard library only. No credentials, cookies, private materials or local research
 files are read. HTTP success and text changes are observations, not verification.
@@ -37,7 +37,7 @@ FETCH_TIMEOUT = 15
 RUN_TIMEOUT = 600
 SENSITIVE_KEYS = re.compile(r"(password|passwd|secret|token|authorization|cookie|api.?key|signature)", re.I)
 RECRUITMENT = re.compile(r"招聘|招募|引才|人才引进|博士后|校园招聘|recruit|career|vacanc|job", re.I)
-CAVEAT = "仅自动抓取、发现链接和变化监测；不自动完成岗位资格语义审查、论文认定或人才定档，不刷新人工核验日期。"
+CAVEAT = "自动读取官方招聘正文并直接入库；不确定字段保留未知，不据此认定本人资格、论文等级或人才档次，不刷新原人工核验日期。"
 
 
 def json_text(value):
@@ -125,43 +125,94 @@ def bounded_resolve(host, port, **kwargs):
 
 
 class VisibleHTML(HTMLParser):
+    ARTICLE_MARKERS = re.compile(r"v_news_content|wp_articlecontent|trs_editor|article[-_]?content|article[-_]?body|news[-_]?content|content[-_]?detail", re.I)
+    VOID = {"br", "hr", "img", "input", "meta", "link", "area", "source", "embed", "wbr"}
+
     def __init__(self):
         super().__init__(convert_charrefs=True)
-        self.hidden = 0
+        self.stack = []
         self.parts = []
+        self.article_parts = []
         self.links = []
         self.anchor = None
+        self.title_parts = []
+        self.heading_parts = []
+        self.headings = []
+        self.publication_meta = []
 
     def handle_starttag(self, tag, attrs):
         tag = tag.lower()
-        if tag in ("script", "style", "noscript", "template"):
-            self.hidden += 1
-        if self.hidden:
+        values = dict(attrs)
+        parent_hidden = self.stack[-1][1] if self.stack else False
+        hidden = parent_hidden or tag in ("script", "style", "noscript", "template", "nav", "footer", "aside")
+        parent_article = self.stack[-1][2] if self.stack else False
+        article = parent_article or tag == "article" or bool(self.ARTICLE_MARKERS.search(
+            str(values.get("id", "")) + " " + str(values.get("class", ""))))
+        if tag not in self.VOID:
+            self.stack.append((tag, hidden, article))
+        if tag == "meta":
+            name = str(values.get("name", values.get("property", ""))).lower()
+            if name in ("pubdate", "publishdate", "publish_date", "article:published_time", "datepublished"):
+                self.publication_meta.append("发布日期：" + str(values.get("content", ""))[:40])
+        if hidden:
             return
         if tag == "a":
-            self.anchor = [dict(attrs).get("href", ""), []]
+            self.anchor = [values.get("href", ""), []]
+        if tag in ("h1", "h2"):
+            self.heading_parts = []
         if tag in ("p", "div", "br", "li", "tr", "h1", "h2", "h3"):
-            self.parts.append(" ")
+            self.parts.append("\n")
+            if article:
+                self.article_parts.append("\n")
 
     def handle_endtag(self, tag):
-        if tag.lower() in ("script", "style", "noscript", "template"):
-            self.hidden = max(0, self.hidden - 1)
-        if not self.hidden and tag.lower() == "a" and self.anchor:
-            if len(self.links) < 500:
-                self.links.append({"url": self.anchor[0],
-                                   "title": " ".join("".join(self.anchor[1]).split())[:180]})
+        tag = tag.lower()
+        hidden = self.stack[-1][1] if self.stack else False
+        if tag == "a" and self.anchor:
+            if not hidden and len(self.links) < 500:
+                self.links.append({"url": self.anchor[0], "title": " ".join("".join(self.anchor[1]).split())[:180]})
             self.anchor = None
+        if tag in ("h1", "h2") and self.heading_parts:
+            self.headings.append(" ".join("".join(self.heading_parts).split())[:180])
+            self.heading_parts = []
+        for index in range(len(self.stack) - 1, -1, -1):
+            if self.stack[index][0] == tag:
+                del self.stack[index:]
+                break
+        if tag in ("p", "div", "li", "tr", "h1", "h2", "h3"):
+            self.parts.append("\n")
+            self.article_parts.append("\n")
 
     def handle_data(self, data):
-        if not self.hidden:
-            self.parts.append(data)
-            if self.anchor:
-                self.anchor[1].append(data)
+        hidden = self.stack[-1][1] if self.stack else False
+        if hidden:
+            return
+        tags = {entry[0] for entry in self.stack}
+        if "title" in tags:
+            self.title_parts.append(data)
+        if tags.intersection(("h1", "h2")):
+            self.heading_parts.append(data)
+        self.parts.append(data)
+        if self.stack and self.stack[-1][2]:
+            self.article_parts.append(data)
+        if self.anchor:
+            self.anchor[1].append(data)
+
+    @staticmethod
+    def clean(parts):
+        return "\n".join(" ".join(line.split()) for line in "".join(parts).splitlines() if line.strip())
 
     @property
     def text(self):
-        return " ".join(" ".join(self.parts).split())
+        return self.clean(self.parts)
 
+    @property
+    def article_text(self):
+        return self.clean(self.article_parts)
+
+    @property
+    def title(self):
+        return " ".join("".join(self.title_parts).split())
 
 def fetch_public(url, binary=False):
     """Resolve and pin public IP per hop; bypass proxies and revalidate redirects."""
@@ -256,6 +307,10 @@ def fetch_public(url, binary=False):
                 parser.feed(decoded)
                 result["bodyText"] = parser.text
                 result["links"] = parser.links
+                result["articleText"] = parser.article_text
+                result["pageTitle"] = parser.title
+                result["headings"] = parser.headings
+                result["publicationMeta"] = parser.publication_meta
             else:
                 result["bodyText"] = " ".join(decoded.split())
             result["bytes"] = total
@@ -308,8 +363,9 @@ def is_official(job):
 
 
 def known_deadline(job):
-    return (is_official(job) and any(job.get(key) for key in
-            ("verifiedAt", "windowVerifiedAt", "deadlineVerifiedAt", "windowRevalidatedAt")))
+    return is_official(job) and (any(job.get(key) for key in
+            ("verifiedAt", "windowVerifiedAt", "deadlineVerifiedAt", "windowRevalidatedAt"))
+            or (job.get("ingestionMode") == "automatic" and "deadline" in job.get("autoEvidence", {}).get("fields", {})))
 
 
 def validate_data(data):
@@ -410,10 +466,10 @@ NON_POSITION_TITLE = re.compile(
     r"报名.{0,8}(?:费用|指南)|缴费|报考指南|报名指南|申请指南|办事指南|"
     r"拟聘|拟录用|录用公示|录取公示|公示|招聘结果|考试结果|考核结果|"
     r"成绩|录取名单|合格名单|面试名单|体检名单|资格复审名单|"
-    r"面试通知|笔试通知|考试通知|常见问题|操作手册|指南|结果", re.I)
+    r"面试通知|笔试通知|考试通知|常见问题|操作手册|指南|结果|联谊会|通过名单|初面|复面|名单", re.I)
 UNRELATED_TITLE = re.compile(r"临床|护理|医科|口腔|助产|医学检验|药学|clinical|nursing", re.I)
 RELATED_TITLE = re.compile(
-    r"岩土|土木|地震|地质|力学|仿真|\\bCAE\\b|工程|能源|交通|港口|水利|"
+    r"岩土|土木|地震|地质|力学|仿真|\bCAE\b|工程|能源|交通|港口|水利|"
     r"科研软件|博士后|科研院所|研究所|研究院|研究中心|postdoc|"
     r"geotechn|civil engineering|seismic|geolog|mechanics|simulation", re.I)
 GENERIC_TITLES = {
@@ -430,18 +486,18 @@ GENERIC_TITLES = {
 def candidate_filter_reason(title, organizations=()):
     """Conservative discovery filter, not a semantic eligibility assessment."""
     title = " ".join(str(title or "").split())
-    compact = re.sub(r"\\s+", "", title).lower()
-    generic = re.sub(r"20\\d{2}(?:年|届)?|[【】\\[\\]（）():：·—_-]", "", compact)
+    compact = re.sub(r"\s+", "", title).lower()
+    generic = re.sub(r"20\d{2}(?:年|届)?|[【】\[\]（）():：·—_-]", "", compact)
     if not title or generic in GENERIC_TITLES:
         return "泛招聘导航或缺少具体主体/方向的短标题"
     if NON_POSITION_TITLE.search(title):
         return "招聘会、指南、场地、缴费、公示或结果等非岗位信息"
-    if UNRELATED_TITLE.search(title):
+    if UNRELATED_TITLE.search(title) and not STRONG_RELEVANCE.search(title):
         return "标题明确属于临床、护理、医科等非目标方向"
     if not RECRUITMENT.search(title):
         return "标题缺少招聘或博士后招收信号"
     organization_match = any(isinstance(org, str) and len(org.strip()) >= 4
-                             and re.sub(r"\\s+", "", org).lower() in compact
+                             and re.sub(r"\s+", "", org).lower() in compact
                              for org in organizations)
     if not RELATED_TITLE.search(title) and not organization_match:
         return "标题未提供目标专业、科研方向或原单位名称的关联证据"
@@ -474,7 +530,7 @@ def filter_existing_candidates(data, now):
     archived = []
     archive = data.setdefault("cloudCandidateArchive", [])
     for candidate in data.get("cloudCandidates", []):
-        if not isinstance(candidate, dict) or candidate.get("reviewStatus", "pending") != "pending" or candidate.get("reviewedAt") or candidate.get("reviewedBy"):
+        if not isinstance(candidate, dict) or candidate.get("reviewStatus", "queued") not in ("pending", "queued", "retry") or candidate.get("reviewedAt") or candidate.get("reviewedBy"):
             kept.append(candidate)
             continue
         organizations = [candidate.get("organization")]
@@ -516,12 +572,469 @@ def candidate_from_link(link, base_url, item, known_urls, existing, now):
     return {"id": "CLOUD-" + hashlib.sha256(url.encode()).hexdigest()[:16],
             "url": url, "title": " ".join(str(link.get("title", "")).split())[:180],
             "sourceUrl": item["url"], "sourceJobIds": [job["id"] for job in item["jobs"]],
-            "discoveredAt": stamp(now), "reviewStatus": "pending",
+            "discoveredAt": stamp(now), "reviewStatus": "queued",
             "availability": "unknown", "eligibility": "uncertain",
             "eligibility2027": "尚未核验，不代表2027届可投",
             "sourceKind": "same_host_link_from_recorded_official_source",
-            "notes": "仅发现链接；未读取候选正文，未确认新发日期、现有名额、岗位资格或单位性质。"}
+            "notes": "自动抓取队列；将轮转读取正文并直接入库，不等待人工审核。"}
 
+
+
+AUTO_VERSION = "official_body_rules_v1"
+STRONG_RELEVANCE = re.compile(r"岩土|土木|地震|地质|力学|仿真|\bCAE\b|水利|水电|地下工程|结构工程|防灾|能源|交通|港口|科研软件|计算物理|数值模拟|有限元|工程|geotechn|seismic|geolog|mechanics|simulation", re.I)
+SECONDARY_HOSTS = ("gaoxiaojob.com", "jobui.com", "zhipin.com", "51job.com", "zhaopin.com", "gongzhao.com", "shixiseng.com")
+UNKNOWN = "公告未明确/自动提取未取得"
+DATE_PATTERN = r"(20\d{2})[年./-](\d{1,2})[月./-](\d{1,2})日?(?:\s*(\d{1,2})[:时](\d{1,2})?分?)?"
+DATE_RE = re.compile(DATE_PATTERN)
+ORG_SUFFIX = r"(?:有限责任公司|股份有限公司|有限公司|研究院|研究所|设计院|大学|学院|集团|实验室|中心|勘察院|监测站)"
+FIELD_BOUNDARY = r"(?=\s*(?:工作地点|招聘单位|用人单位|公司名称|发布时间|发布日期|招聘专业|学历要求|报名时间|报名截止|岗位职责|招聘对象|应聘条件)\s*[：:]|[。；;\n]|$)"
+SEMANTIC_FIELDS = ("position", "organization", "region", "province", "education", "requirements",
+                   "sourcePublishedAt", "deadline", "deadlineTime", "eligibility2027", "availability",
+                   "availabilityCode", "currentStatus", "provinceList", "scope", "route", "routeCategory", "timeWindow", "researchTags")
+PROVINCES = {
+    "北京": ("北京",), "天津": ("天津",), "上海": ("上海",), "重庆": ("重庆",),
+    "浙江": ("浙江", "杭州", "宁波", "绍兴", "温州", "金华", "湖州", "嘉兴", "台州", "舟山", "余姚"),
+    "湖北": ("湖北", "武汉", "宜昌"), "四川": ("四川", "成都"), "陕西": ("陕西", "西安"),
+    "广东": ("广东", "广州", "深圳", "珠海", "佛山", "东莞"), "江苏": ("江苏", "南京", "苏州", "无锡"),
+    "安徽": ("安徽", "合肥"), "山东": ("山东", "济南", "青岛"), "福建": ("福建", "福州", "厦门"),
+    "湖南": ("湖南", "长沙"), "江西": ("江西", "南昌"), "河北": ("河北", "石家庄"),
+    "河南": ("河南", "郑州"), "山西": ("山西", "太原"), "辽宁": ("辽宁", "沈阳", "大连"),
+    "吉林": ("吉林", "长春"), "黑龙江": ("黑龙江", "哈尔滨"), "云南": ("云南", "昆明"),
+    "贵州": ("贵州", "贵阳"), "广西": ("广西", "南宁"), "海南": ("海南", "海口"),
+    "甘肃": ("甘肃", "兰州"), "青海": ("青海", "西宁"), "宁夏": ("宁夏", "银川"),
+    "新疆": ("新疆", "乌鲁木齐"), "内蒙古": ("内蒙古", "呼和浩特"), "西藏": ("西藏", "拉萨"),
+}
+
+
+def canonical_job_url(url):
+    normalized = normalize_url(url)
+    p = urlsplit(normalized)
+    query = "&".join(part for part in p.query.split("&") if part and not re.match(r"(?i)(?:utm_[^=]*|spm|from|ref)=", part))
+    return urlunsplit((p.scheme, p.netloc, p.path.rstrip("/") or "/", query, ""))
+
+
+def source_trust(candidate, data, final_url=None):
+    try:
+        target = urlsplit(normalize_url(final_url or candidate["url"])).hostname
+        source = urlsplit(normalize_url(candidate.get("sourceUrl", candidate["url"]))).hostname
+        requested = urlsplit(normalize_url(candidate["url"])).hostname
+    except (KeyError, ValueError, TypeError):
+        return False
+    if any(target == host or target.endswith("." + host) or source == host or source.endswith("." + host)
+           for host in SECONDARY_HOSTS):
+        return False
+    # Trust is re-derived from existing official job source hosts, never sourceKind alone.
+    ids = set(candidate.get("sourceJobIds", []))
+    for job in data["jobs"]:
+        if ids and job["id"] not in ids:
+            continue
+        if not is_official(job):
+            continue
+        hosts = set()
+        for key in ("announcementUrl", "recruitmentUrl"):
+            try:
+                hosts.add(urlsplit(normalize_url(job.get(key, ""))).hostname)
+            except (ValueError, TypeError):
+                pass
+        if source in hosts and requested == source and target in hosts:
+            return True
+    return False
+
+
+
+def public_condition_snippet(value):
+    value = str(value or "")
+    value = re.split(r"(?:联系人|联系电话|联系方式|咨询电话|电子邮箱|联系邮箱|邮箱)\s*[：:]?", value)[0]
+    value = re.sub(r"\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b", "[联系方式省略]", value, flags=re.I)
+    value = re.sub(r"(?<!\d)1[3-9]\d{9}(?!\d)|(?<!\d)0\d{2,3}[-－]\d{7,8}(?!\d)", "[联系方式省略]", value)
+    return value.strip(" ：:；;，,")
+
+def evidence_clause(text, start, end):
+    left = max(text.rfind(char, 0, start) for char in "。；;\n") + 1
+    right = min([index for char in "。；;\n" if (index := text.find(char, end)) >= 0] or [len(text)])
+    return public_condition_snippet(text[left:right])[:240]
+
+
+def labeled_value(text, labels, limit=100):
+    pattern = rf"(?:{labels})\s*(?:[：:]|为|在)\s*(.{{1,{limit}}}?){FIELD_BOUNDARY}"
+    match = re.search(pattern, text)
+    return (public_condition_snippet(match.group(1)), evidence_clause(text, match.start(), match.end())) if match else (None, None)
+
+
+def parse_date_match(match):
+    values = match.groups()
+    try:
+        return datetime(int(values[0]), int(values[1]), int(values[2]),
+                        int(values[3] or 0), int(values[4] or 0), tzinfo=SHANGHAI)
+    except (ValueError, TypeError):
+        return None
+
+
+def explicit_dates(text):
+    result = {}
+    publication = re.search(r"(?:发布日期|发布时间|发布于|发文日期|发布日期时间)\s*[：:]?\s*(" + DATE_PATTERN + r")", text)
+    if publication:
+        date_match = DATE_RE.search(publication.group())
+        value = parse_date_match(date_match)
+        if value:
+            result["published"] = (value, publication.group()[:160])
+    for match in re.finditer(r"(?:报名|网申|简历投递|应聘|申请)(?:截止(?:时间|日期)?|截至|时间|日期|期限)\s*[：:]?\s*([^。；;\n]{1,130})", text):
+        clause = match.group()
+        if re.search(r"学位|毕业证|入职|学历认证|缴费|体检|资格复审|面试", clause):
+            continue
+        dates = list(DATE_RE.finditer(clause))
+        if not dates:
+            continue
+        is_deadline = "截止" in clause or "截至" in clause
+        is_range = len(dates) >= 2 and re.search(r"至|到|—|~|～", clause[dates[0].end():dates[1].start()])
+        immediate = bool(re.search(r"即日起|自公告发布", clause))
+        if is_range:
+            start = parse_date_match(dates[0])
+            end = parse_date_match(dates[-1])
+            if start and end and end >= start:
+                result["start"] = (start, clause[:240])
+                result["deadline"] = (end, clause[:240], bool(dates[-1].group(4)))
+        elif is_deadline or (immediate and re.search(r"至|到", clause)):
+            end = parse_date_match(dates[-1])
+            if end:
+                result["deadline"] = (end, clause[:240], bool(dates[-1].group(4)))
+                if immediate and "published" in result:
+                    result["start"] = result["published"]
+        elif re.search(r"开始|起", clause[dates[0].end():]):
+            start = parse_date_match(dates[0])
+            if start:
+                result["start"] = (start, clause[:240])
+    return result
+
+
+def recruitment_body(candidate, result):
+    article = str(result.get("articleText") or "").strip()
+    text = article or str(result.get("bodyText") or "").strip()
+    if not article:
+        # Truncate recognizable related-news/footer sections in generic pages.
+        text = re.split(r"(?:相关文章|相关新闻|推荐阅读|上一条[：:]|下一条[：:]|上一篇[：:]|下一篇[：:]|友情链接)", text)[0]
+    title = str(candidate.get("title") or "")
+    headings = [str(value) for value in result.get("headings", []) if RECRUITMENT.search(str(value))]
+    page_title = str(result.get("pageTitle") or "").split(" - ")[0].split(" | ")[0]
+    if headings:
+        title = headings[0]
+    elif page_title and RECRUITMENT.search(page_title):
+        title = page_title[:180]
+    lead = title + "\n" + text[:160]
+    if NON_POSITION_TITLE.search(title) or re.search(r"联谊会|初面.{0,12}名单|面试.{0,12}名单|拟聘用|拟录用", lead):
+        return None, "non_position", title
+    if UNRELATED_TITLE.search(lead) and not STRONG_RELEVANCE.search(text):
+        return None, "unrelated_medical", title
+    if len(text) < 90:
+        return None, "incomplete_body", title
+    if not RECRUITMENT.search(title + text[:300]):
+        return None, "not_recruitment", title
+    if not STRONG_RELEVANCE.search(text):
+        return None, "unrelated_body", title
+    features = re.findall(r"招聘(?:条件|要求|对象|专业|岗位|人数)|岗位职责|任职要求|应聘条件|报名(?:时间|方式|截止)|学历|学位|工作地点|研究方向|现招聘|拟招聘|招收", text)
+    if len(set(features)) < 2:
+        return None, "not_detail_page", title
+    if not article:
+        anchor_chars = sum(len(str(link.get("title", ""))) for link in result.get("links", []) if isinstance(link, dict))
+        if anchor_chars > len(text) * 0.65:
+            return None, "navigation_page", title
+    return text[:80000], None, title
+
+
+
+def automatic_route(title, text, organization):
+    # Classify the advertised role, not the host school or presumed ownership.
+    role = title + "\n" + text[:250]
+    if re.search(r"博士后|postdoc", title, re.I):
+        return "博士后"
+    if re.search(r"公务员|选调生|公开招录|事业单位", role):
+        return "公务员/事业单位"
+    if organization and re.search(r"大学|学院", organization) and re.search(r"教师|教研|专任|教学|教授", role):
+        return "高校科研"
+    if re.search(r"科研院所|研究所", organization or "") and re.search(r"科研|研究人员|研究岗|研究助理", role):
+        return "高校科研"
+    if re.search(r"研发|软件|CAE|算法|仿真|制造", title, re.I):
+        return "企业研发"
+    if re.search(r"工程师|设计师|勘察|设计|监测|工程技术", title):
+        return "工程技术"
+    return "综合招聘"
+
+
+def automatic_scope(location):
+    return "nearby" if location and re.search(r"宁波|余姚|杭州|绍兴|舟山|台州|嘉兴", location) else "national"
+
+def extract_automatic_job(candidate, result, now):
+    text, reason, title = recruitment_body(candidate, result)
+    title = public_condition_snippet(title)
+    if reason:
+        return None, reason
+    fields = {}
+    def save(key, value, quote):
+        if value is not None:
+            fields[key] = {"value": value, "quote": public_condition_snippet(quote)[:240], "observedAt": stamp(now)}
+        return value
+
+    organization, quote = labeled_value(text, r"招聘单位|用人单位|聘用单位|单位名称|公司名称|招聘机构")
+    if organization:
+        organization = save("organization", organization, quote)
+    else:
+        org = re.search(r"^(?:关于)?([^，。；:\n]{2,70}?" + ORG_SUFFIX + r")(?=\s|20\d{2}|招聘|公开|博士后|面向|$)", title)
+        if org and org.group(1) in text:
+            organization = save("organization", org.group(1), title)
+    location, quote = labeled_value(text, r"工作地点|岗位地点|工作地区|任职地点|工作区域")
+    save("region", location, quote)
+    province_matches = [province for province, cities in PROVINCES.items() if location and any(city in location for city in cities)]
+    province = province_matches[0] if len(province_matches) == 1 else "未知"
+    if province != "未知":
+        save("province", province, quote)
+    education, quote = labeled_value(text, r"学历要求|学历学位要求|学历|学位要求|所需学历", 80)
+    if education:
+        save("education", education, quote)
+    else:
+        match = re.search(r"(?:须|应|需|具有|获得|取得|要求)[^。；;\n]{0,20}(?:博士|硕士)(?:研究生|学位|学历)", text)
+        if match:
+            education = save("education", match.group(), match.group())
+    requirement_clauses = []
+    for clause in re.split(r"[。；;\n]", text):
+        if re.search(r"招聘专业|所学专业|相关专业|研究方向|任职要求|应聘条件|学历要求|岗位职责", clause):
+            requirement_clauses.append(public_condition_snippet(clause)[:240])
+    requirements = "；".join(dict.fromkeys(requirement_clauses))[:900] or UNKNOWN
+    if requirements != UNKNOWN:
+        save("requirements", requirements, requirements)
+    eligibility = [public_condition_snippet(clause)[:240] for clause in re.split(r"[。；;\n]", text)
+                   if "2027" in clause and re.search(r"毕业|应届|学位|学历|取证|取得", clause)]
+    eligibility2027 = "；".join(eligibility[:3]) or "公告未明确2027届资格/自动提取未取得"
+    if eligibility:
+        save("eligibility2027", eligibility2027, eligibility2027)
+    dates_text = text + "\n" + "\n".join(result.get("publicationMeta", []))
+    dates = explicit_dates(dates_text)
+    published = dates.get("published")
+    deadline_entry = dates.get("deadline")
+    start = dates.get("start")
+    deadline, deadline_time = None, None
+    if published:
+        save("sourcePublishedAt", published[0].date().isoformat(), published[1])
+    if deadline_entry:
+        deadline = deadline_entry[0].date().isoformat()
+        deadline_time = stamp(deadline_entry[0]) if deadline_entry[2] else None
+        save("deadline", deadline, deadline_entry[1])
+        if deadline_time:
+            save("deadlineTime", deadline_time, deadline_entry[1])
+    if start:
+        save("applicationStartAt", stamp(start[0]), start[1])
+    window = parse_deadline({"deadline": deadline, "deadlineTime": deadline_time})
+    availability = "monitoring"
+    if window and now >= window:
+        availability = "historical"
+    elif (published and published[0] > now) or (start and start[0] > now):
+        availability = "upcoming"
+    elif window and window > now and ((start and start[0] <= now) or (published and published[0] <= now)):
+        availability = "open"
+    status = {"monitoring": "自动采集：相关招聘正文已入库，开放窗口或部分条件未明确",
+              "historical": "自动采集：公告所列报名截止已过，保留历史",
+              "upcoming": "自动采集：公告所列发布或报名开始时间尚未到达",
+              "open": "自动采集：公告所列报名窗口内，个人资格仍不确定"}[availability]
+    window_quotes = list(dict.fromkeys(entry[1] for key, entry in dates.items() if key in ("start", "deadline")))
+    time_window = "；".join(public_condition_snippet(value) for value in window_quotes) or UNKNOWN
+    category = automatic_route(title, text, organization)
+    identity = canonical_job_url(candidate["url"])
+    source_url = safe_url(result.get("finalUrl", candidate["url"]))
+    digest = hashlib.sha256(text.encode("utf-8")).hexdigest()
+    job = {"id": "AUTO-" + hashlib.sha256(identity.encode()).hexdigest()[:16],
+           "organization": organization or UNKNOWN, "position": title or "相关招聘公告",
+           "region": location or UNKNOWN, "province": province, "provinceList": province_matches,
+           "route": category, "routeCategory": category, "scope": automatic_scope(location), "timeWindow": time_window,
+           "match": "专业相关（自动提取）", "priority": "B", "researchTags": list(dict.fromkeys(STRONG_RELEVANCE.findall(text)))[:12], "education": education or UNKNOWN,
+           "requirements": requirements, "eligibility2027": eligibility2027,
+           "eligibility": "uncertain", "eligibilityCode": "uncertain",
+           "availability": availability, "availabilityCode": availability, "currentStatus": status,
+           "sourcePublishedAt": published[0].date().isoformat() if published else UNKNOWN,
+           "deadline": deadline, "deadlineTime": deadline_time,
+           "announcementUrl": source_url, "recruitmentUrl": source_url,
+           "links": [{"label": "自动抓取的招聘正文", "url": source_url}],
+           "sourceTrust": "official_platform" if urlsplit(source_url).hostname.endswith(".edu.cn") else "official",
+           "sourceLevel": "已知官方/高校就业来源招聘正文（机器提取）",
+           "employerNature": {"code": "unknown", "label": "性质未知",
+                              "evidence": "未从来源归属推定招聘雇主所有制。", "sourceUrl": source_url, "verifiedAt": None},
+           "verifiedAt": "", "sourceCheckedAt": stamp(now), "autoCollectedAt": stamp(now),
+           "ingestionMode": "automatic", "ingestionMethod": AUTO_VERSION,
+           "notes": "自动入库，无人工审核门槛；未知字段持续自动监测，不代表本人资格或人才档次已达标。",
+           "fitReason": "正文出现目标专业或相关工程科研方向；匹配由规则提取。",
+           "risks": "机器抽取可能遗漏附件和复杂限制；学历、毕业日期、论文门槛分别保留原文信息或未知。",
+           "paperPolicy": {"policyStatus": "公告未明确/自动提取未取得",
+                           "gradingRule": "未自动认定论文分区、数量或人才等级。",
+                           "authorshipLimits": "自动提取未取得完整作者位次口径。", "sourceUrl": source_url, "verifiedAt": ""},
+           "autoEvidence": {"url": source_url, "discoverySourceUrl": safe_url(candidate.get("sourceUrl", source_url)),
+                            "sourceJobIds": candidate.get("sourceJobIds", []), "textHash": digest,
+                            "extractionVersion": AUTO_VERSION, "fields": fields,
+                            "uncertainties": [key for key in ("organization", "region", "education", "sourcePublishedAt", "deadline", "eligibility2027") if key not in fields]}}
+    job["autoEvidence"]["identityHash"] = hashlib.sha256(
+        json.dumps({"title": title, "organization": organization, "requirements": requirements,
+                    "published": job["sourcePublishedAt"], "deadline": deadline, "region": location, "education": education}, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+    return job, None
+
+
+def automatic_detail_phase(data, now, fetcher, max_detail_pages, cache, previous, started):
+    detail_state = copy.deepcopy(previous.get("detailState", {}))
+    queue_items = []
+    seen_urls = set()
+    by_id = {job["id"]: job for job in data["jobs"]}
+    for candidate in data.get("cloudCandidates", []):
+        if not isinstance(candidate, dict) or candidate.get("reviewStatus") in ("imported", "rejected", "archived"):
+            continue
+        try:
+            url = canonical_job_url(candidate.get("url", ""))
+        except (ValueError, TypeError):
+            continue
+        if url not in seen_urls:
+            seen_urls.add(url)
+            candidate["reviewStatus"] = "queued" if candidate.get("reviewStatus") == "pending" else candidate.get("reviewStatus", "queued")
+            queue_items.append({"url": url, "candidate": candidate})
+    for job in data["jobs"]:
+        if job.get("ingestionMode") != "automatic":
+            continue
+        try:
+            url = canonical_job_url(job["announcementUrl"])
+        except (KeyError, ValueError):
+            continue
+        if url not in seen_urls:
+            seen_urls.add(url)
+            ev = job.get("autoEvidence", {})
+            queue_items.append({"url": url, "candidate": {
+                "id": job["id"], "url": url, "title": job["position"], "jobId": job["id"],
+                "sourceUrl": ev.get("discoverySourceUrl", url), "sourceJobIds": ev.get("sourceJobIds", [])}})
+    queue_items.sort(key=lambda item: (detail_state.get(item["url"], {}).get("attemptedAt", ""),
+                                      item["candidate"].get("discoveredAt", ""), item["url"]))
+    selected = queue_items[:max_detail_pages]
+    attempts, added, updated, archived = [], [], [], []
+    permanent = {"non_position", "unrelated_medical", "unrelated_body", "not_recruitment", "not_detail_page", "navigation_page"}
+    for item in selected:
+        if time.monotonic() - started >= RUN_TIMEOUT:
+            break
+        candidate, url = item["candidate"], item["url"]
+        observation = {"url": safe_url(url), "candidateId": candidate.get("id"), "attemptedAt": stamp(now),
+                       "httpStatus": None, "success": False}
+        detail_state[url] = {"attemptedAt": stamp(now)}
+        existing = by_id.get(candidate.get("jobId"))
+        if not source_trust(candidate, data):
+            observation["error"] = "untrusted_origin"
+            candidate["reviewStatus"] = "retry"
+            candidate["lastDetailError"] = "非可信官方来源；继续从已知官方来源自动发现，未作为官方岗位入库"
+            if not existing:
+                data.setdefault("cloudCandidateArchive", []).append({
+                    "candidate": copy.deepcopy(candidate), "archivedAt": stamp(now),
+                    "reason": "非可信官方来源，不以sourceKind标记作为官方证据", "ruleVersion": AUTO_VERSION})
+                candidate["reviewStatus"] = "archived"
+                archived.append(candidate.get("id"))
+            attempts.append(observation)
+            continue
+        result = cache.get(url) or fetch_one(url, fetcher)
+        observation["httpStatus"] = result.get("httpStatus")
+        if not result.get("ok") or result.get("httpStatus") != 200 or not source_trust(candidate, data, result.get("finalUrl", url)):
+            observation["error"] = "fetch_failed_or_untrusted_redirect"
+            candidate["reviewStatus"] = "retry" if not existing else "imported"
+            candidate["lastDetailAttemptAt"] = stamp(now)
+            candidate["lastDetailError"] = observation["error"]
+            attempts.append(observation)
+            continue
+        new, reason = extract_automatic_job(candidate, result, now)
+        if reason:
+            observation["error"] = reason
+            candidate["lastDetailAttemptAt"] = stamp(now)
+            if reason in permanent and not existing:
+                data.setdefault("cloudCandidateArchive", []).append({"candidate": copy.deepcopy(candidate),
+                    "archivedAt": stamp(now), "reason": reason, "ruleVersion": AUTO_VERSION})
+                candidate["reviewStatus"] = "archived"
+                archived.append(candidate.get("id"))
+            else:
+                candidate["reviewStatus"] = "retry" if not existing else "imported"
+            attempts.append(observation)
+            continue
+        observation.update(success=True, textHash=new["autoEvidence"]["textHash"])
+        detail_state[url]["successfulAt"] = stamp(now)
+        # URL and source-text identity dedupe; never overwrite a manually maintained job.
+        for job in data["jobs"]:
+            urls = set()
+            for known in job_urls(job):
+                try:
+                    urls.add(canonical_job_url(known))
+                except ValueError:
+                    pass
+            same_body = job.get("autoEvidence", {}).get("identityHash") == new["autoEvidence"]["identityHash"]
+            same_hash = job.get("autoEvidence", {}).get("textHash") == new["autoEvidence"]["textHash"]
+            if url in urls or canonical_job_url(new["announcementUrl"]) in urls or same_body or same_hash:
+                existing = job
+                break
+        if existing:
+            if existing.get("ingestionMode") == "automatic":
+                changes = {}
+                explicit = new["autoEvidence"]["fields"]
+                for key in SEMANTIC_FIELDS:
+                    if key in ("organization", "region", "province", "education", "requirements", "sourcePublishedAt",
+                               "deadline", "deadlineTime", "eligibility2027") and key not in explicit:
+                        continue
+                    if key in ("provinceList", "scope") and "region" not in explicit:
+                        continue
+                    if key == "timeWindow" and new.get(key) == UNKNOWN:
+                        continue
+                    if key in ("availability", "availabilityCode", "currentStatus") and existing.get("availability") == "historical":
+                        continue
+                    if existing.get(key) != new.get(key):
+                        changes[key] = {"before": existing.get(key), "after": new.get(key)}
+                        existing[key] = new.get(key)
+                earlier_evidence = existing.get("autoEvidence", {})
+                for key, value in earlier_evidence.get("fields", {}).items():
+                    if key not in explicit and isinstance(value, dict):
+                        retained = copy.deepcopy(value)
+                        retained["retainedFromEarlier"] = True
+                        retained.setdefault("observedAt", existing.get("sourceCheckedAt"))
+                        retained.setdefault("sourceUrl", earlier_evidence.get("url"))
+                        new["autoEvidence"]["fields"][key] = retained
+                existing["sourceCheckedAt"] = stamp(now)
+                existing["autoEvidence"] = new["autoEvidence"]
+                if changes:
+                    existing.setdefault("autoHistory", []).append({"at": stamp(now), "changes": changes,
+                                                                  "sourceUrl": new["announcementUrl"]})
+                    updated.append(existing["id"])
+                    observation["changes"] = changes
+            job_id = existing["id"]
+        else:
+            data["jobs"].append(new)
+            by_id[new["id"]] = new
+            added.append(new["id"])
+            job_id = new["id"]
+        candidate.update(reviewStatus="imported", jobId=job_id, importedAt=stamp(now),
+                         sourceCheckedAt=stamp(now), lastDetailAttemptAt=stamp(now))
+        candidate.pop("lastDetailError", None)
+        observation["jobId"] = job_id
+        attempts.append(observation)
+    data["cloudCandidates"] = [candidate for candidate in data.get("cloudCandidates", [])
+                               if not isinstance(candidate, dict) or candidate.get("reviewStatus") != "archived"]
+    pending = sum(isinstance(candidate, dict) and candidate.get("reviewStatus") != "imported"
+                  for candidate in data.get("cloudCandidates", []))
+    return {"attempts": attempts, "added": list(dict.fromkeys(added)), "updated": list(dict.fromkeys(updated)),
+            "archived": archived, "pending": pending, "state": detail_state}
+
+
+def refresh_stats(data, auto_added=0):
+    stats = data.setdefault("stats", {})
+    jobs = data["jobs"]
+    provinces = set()
+    for job in jobs:
+        values = job.get("provinceList", [])
+        if not isinstance(values, list):
+            values = []
+        if not values and job.get("province") in PROVINCES:
+            values = [job["province"]]
+        provinces.update(value for value in values if isinstance(value, str) and value in PROVINCES)
+    stats.update(jobs=len(jobs), actionable=sum(job.get("availability") in ("open", "rolling", "upcoming") for job in jobs),
+                 organizations=len({job.get("organization") for job in jobs if job.get("organization") and job["organization"] != UNKNOWN}),
+                 provinces=len(provinces), priorityA=sum(job.get("priority") == "A" for job in jobs),
+                 nearby=sum(job.get("scope") == "nearby" for job in jobs))
+    if isinstance(stats.get("nationalAdded"), int):
+        stats["nationalAdded"] += auto_added
+    elif auto_added:
+        stats["nationalAdded"] = auto_added
 
 
 def attachment_link(link, item, base_url):
@@ -628,9 +1141,11 @@ def fetch_pages(items, fetcher, started):
             for item, future in zip(batch, futures):
                 yield item, future.result()
 
-def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80, now=None, fetcher=None, attachment_fetcher=None):
+def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80, now=None, fetcher=None, attachment_fetcher=None, max_detail_pages=30, detail_fetcher=None):
     if not isinstance(max_pages, int) or not 0 <= max_pages <= 500:
         raise ValueError("max_pages must be between 0 and 500")
+    if not isinstance(max_detail_pages, int) or not 0 <= max_detail_pages <= 100:
+        raise ValueError("max_detail_pages must be between 0 and 100")
     now = now or datetime.now(SHANGHAI)
     if now.tzinfo is None:
         raise ValueError("now must include a timezone")
@@ -648,6 +1163,8 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
     candidates = data.setdefault("cloudCandidates", [])
     known_urls = {url for job in data["jobs"] for url in job_urls(job)}
     candidate_urls = {candidate.get("url") for candidate in candidates if isinstance(candidate, dict)}
+    candidate_urls.update(entry.get("candidate", {}).get("url") for entry in data.get("cloudCandidateArchive", [])
+                          if isinstance(entry, dict) and isinstance(entry.get("candidate"), dict))
     expired = []
     for job in data["jobs"]:
         deadline = parse_deadline(job)
@@ -657,9 +1174,13 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
                 "scope": "已记录且有官方核验依据的截止时间计算；不确认延期或重新开放。"}
             job["availability"] = "historical"
             job["availabilityCode"] = "historical"
+            if job.get("ingestionMode") == "automatic":
+                job["currentStatus"] = "自动采集：公告所列报名截止已过，保留历史"
             expired.append(job["id"])
     selected, cursor = select_pages(data, now, max_pages)
     fetcher = fetcher or fetch_public
+    detail_fetcher = detail_fetcher or fetcher
+    detail_cache = {}
     attachment_fetcher = attachment_fetcher or (lambda url: fetch_public(url, binary=True))
     attachment_attempts = []
     attachment_files = []
@@ -669,6 +1190,10 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
     started = time.monotonic()
     for item, result in fetch_pages(selected, fetcher, started):
         url = item["url"]
+        try:
+            detail_cache[canonical_job_url(url)] = result
+        except ValueError:
+            pass
         old = states.get(url, {})
         text = result.get("bodyText", "") if isinstance(result.get("bodyText", ""), str) else ""
         digest = hashlib.sha256(text.encode("utf-8")).hexdigest() if result.get("ok") else old.get("textHash")
@@ -733,8 +1258,21 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
                 except Exception as exc:
                     entry["error"] = type(exc).__name__
                 attachment_attempts.append(entry)
+    details = automatic_detail_phase(data, now, detail_fetcher, max_detail_pages, detail_cache, previous, started)
+    archived_candidates.extend(details["archived"])
+    updates = data.setdefault("updates", [])
+    indexed = {job["id"]: job for job in data["jobs"]}
+    for kind, ids in (("自动新增", details["added"]), ("自动更新", details["updated"]), ("自动归档", expired)):
+        for job_id in ids:
+            job = indexed[job_id]
+            updates.insert(0, {"date": now.date().isoformat(), "type": kind,
+                              "target": job.get("organization", "") + "｜" + job.get("position", ""),
+                              "priority": job.get("priority", "B"), "jobId": job_id,
+                              "summary": job.get("currentStatus", "") if kind != "自动归档" else "已过公告所列截止；自动归档保留历史。",
+                              "url": job.get("announcementUrl", ""), "ingestionMode": "automatic"})
+    detail_successes = sum(item["success"] for item in details["attempts"])
     successes = sum(attempt["bodyFetched"] for attempt in attempts)
-    summary = {"success": successes > 0 or (max_pages == 0), "completed": True,
+    summary = {"success": bool(successes or detail_successes or (not attempts and not details["attempts"])), "completed": True,
         "updatedAt": stamp(now), "checkedAt": stamp(now), "timezone": "Asia/Shanghai", "checked": len(attempts),
         "successful": successes, "failed": len(attempts) - successes,
         "changed": sum(attempt["contentChanged"] for attempt in attempts),
@@ -742,23 +1280,28 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
         "candidateFilterVersion": CANDIDATE_FILTER_VERSION, "expired": len(expired),
         "provinceCursor": cursor, "provincesChecked": sorted({item["province"] for item in selected[:len(attempts)]}),
         "limitReached": len(attempts) < len(selected), "maxPages": max_pages,
-        "urlState": states, "scope": CAVEAT}
+        "urlState": states, "scope": CAVEAT, "maxDetailPages": max_detail_pages,
+        "autoAdded": len(details["added"]), "autoUpdated": len(details["updated"]),
+        "pendingDetails": details["pending"], "detailChecked": len(details["attempts"]),
+        "detailSuccessful": detail_successes, "detailState": details["state"]}
     summary["attachmentsDownloaded"] = len(attachment_files)
     data["cloudUpdate"] = summary
-    if isinstance(data.get("stats"), dict):
-        data["stats"]["actionable"] = sum(job.get("availability") in ("open", "rolling", "upcoming") for job in data["jobs"])
+    refresh_stats(data, len(details["added"]))
     # Deliberate invariants: automated monitoring cannot alter semantic conclusions.
     for old, new in zip(original["jobs"], data["jobs"]):
         for key in ("verifiedAt", "eligibility", "eligibilityCode", "eligibility2027", "paperPolicy"):
+            if key == "eligibility2027" and old.get("ingestionMode") == "automatic":
+                continue
             if old.get(key) != new.get(key):
                 raise AssertionError("semantic verification field changed")
     for key in ("profile", "papers", "talentAssessments", "journalRankings"):
         if original.get(key) != data.get(key):
             raise AssertionError("protected section changed")
-    evidence = {"run": {key: value for key, value in summary.items() if key != "urlState"},
+    evidence = {"run": {key: value for key, value in summary.items() if key not in ("urlState", "detailState")},
                 "attempts": attempts, "expiredJobIds": expired, "newCandidateIds": new_candidates,
                 "inputSha256": hashlib.sha256(raw).hexdigest(), "attachments": attachment_attempts,
-                "archivedCandidateIds": archived_candidates}
+                "archivedCandidateIds": archived_candidates, "detailAttempts": details["attempts"],
+                "autoAddedJobIds": details["added"], "autoUpdatedJobIds": details["updated"]}
     output = Path(output_path)
     database = Path(database_path)
     if output.resolve() == database.resolve() or Path(data_path).resolve() == database.resolve():
@@ -794,7 +1337,7 @@ def run_update(data_path, output_path, evidence_dir, database_path, max_pages=80
     finally:
         for path in staged:
             path.unlink(missing_ok=True)
-    return {key: value for key, value in summary.items() if key != "urlState"}
+    return {key: value for key, value in summary.items() if key not in ("urlState", "detailState")}
 
 
 def main(argv=None):
@@ -804,9 +1347,10 @@ def main(argv=None):
     parser.add_argument("--evidence-dir", required=True)
     parser.add_argument("--database", required=True)
     parser.add_argument("--max-pages", type=int, default=80)
+    parser.add_argument("--max-detail-pages", type=int, default=30)
     args = parser.parse_args(argv)
     try:
-        result = run_update(args.data, args.output, args.evidence_dir, args.database, args.max_pages)
+        result = run_update(args.data, args.output, args.evidence_dir, args.database, args.max_pages, max_detail_pages=args.max_detail_pages)
     except Exception as exc:
         print(json.dumps({"success": False, "error": type(exc).__name__,
                           "message": "更新未完成；输入/输出错误，请检查数据与路径。"}, ensure_ascii=False), file=sys.stderr)

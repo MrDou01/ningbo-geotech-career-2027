@@ -1,18 +1,17 @@
-# 云端每日更新
+# 每日云端自动收录
 
-GitHub Actions每日北京时间08:30运行，排队时可能延迟。电脑关机、Codex关闭均不影响GitHub托管运行器。手动或代码推送验收24页，日常定时每轮最多120页，优先临期/宁波/高匹配并轮换省份与招聘栏目。
+每天计划北京时间08:30在GitHub托管运行器执行，不依赖个人电脑开机；平台调度可能延迟。定时轮换读取最多120个已知来源，每次另自动处理最多30个公告详情；手动/推送运行读取24个已知来源。任务有时间与页面上限，未处理或失败详情进入机器队列后续自动轮转重试，不需要人工审批。
 
-两站共用 data/dashboard.json；既有密码门不变。Sites运行时读取同一公开数据源，日常仅更新数据，无需重复发布Sites。
+从2026-11-20起取消人工核验作为入库门槛。招聘相关正文经过自动相关性过滤、去重及字段提取后直接进入jobs和SQLite。导航、结果名单、非目标方向等机器归档并保存原因。相关但信息缺失的公告也可入库，标明公告未明确/自动提取未取得；未知状态不当作当前开放，发现时间不当作发布日期。自动收录记录保留来源URL、抓取时间与字段证据。
 
-自动处理：读取官方来源、记录HTTP与正文哈希变化、抓取同域新招聘链接到独立待核库、按已记录的官方截止信息标历史、有限下载公务员附件原件并保留历史、输出JSON与SQLite，构建Pages发布包并校验线上时间戳。
+旧人工日期只作为历史字段保留。自动流程不伪造论文分区、本人资格或学校人才档次，不变更个人成果与私有材料发布范围。访问受限、登录与验证码不绕过；来源读取失败保留上次成功数据。
 
-范围：这不是人工资格审核。新线索不自动当现招，2027资格、人才档次、论文认定和期刊分区不凭网页200或关键词自动确认。人工核验日期不随抓取刷新。验证码、登录、访问限制不绕过。仅抓现有已记录来源与可发现的同域链接，不承诺全网穷尽。
+主站与既有Sites站点都读取同一份data/dashboard.json，日常数据发布无需电脑参与，也无需重复发布Sites。前端密码门不变。云端产生JSON、SQLite、运行证据以及公务员附件原件；历史附件不覆盖。
 
-失败：Actions失败会留下日志与诊断artifact，保留上次成功网站；通知由仓库Actions通知设置控制。详情：https://github.com/MrDou01/ningbo-geotech-career-2027/actions/workflows/daily.yml
+- 主网站：https://mrdou01.github.io/ningbo-geotech-career-2027/
+- 运行记录：https://github.com/MrDou01/ningbo-geotech-career-2027/actions/workflows/daily.yml
+- 数据库：https://mrdou01.github.io/ningbo-geotech-career-2027/data/jobs.sqlite
 
-数据库下载：https://mrdou01.github.io/ningbo-geotech-career-2027/data/jobs.sqlite
-数据下载：https://mrdou01.github.io/ningbo-geotech-career-2027/data/dashboard.json
+本地开机后执行npm run sync:cloud下载最新云端数据和数据库并保留备份。不要用旧手工快照覆盖云端自动收录结果。
 
-本地电脑开机后，在04-在线网页执行npm run sync:cloud可下载云端JSON/SQLite，覆盖前保存历史副本；不会改写本地私有成果档案。断网时保留现有缓存。今后构建默认先取云端，避免旧快照倒灌；有新人工证据时需显式运行sync:data并审查合并，不直接覆盖更新的云端数据。
-
-公开仓库只含已授权的求职资料及访问密码摘要；不添加API密钥、Cookie或明文密码。GitHub工作流使用平台短期GITHUB_TOKEN，未新增外部计费服务。
+公开仓库只保存已授权内容及访问密码摘要，不保存明文密码、Cookie或令牌。工作流只使用GitHub自带短期权限，无新增外部付费服务。
